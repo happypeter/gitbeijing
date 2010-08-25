@@ -1,3 +1,7 @@
+---
+layout: name
+title: Home
+---
 
   <h1>GitBeijing Website</h1>
   <ul class="posts">
