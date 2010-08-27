@@ -1,8 +1,8 @@
 ---
-layout: name
-title: Home
+layout: default
 ---
   <h1>GitBeijing Website</h1>
+welcome
 <img class='inset right' src='images/gitbeijing.png' title='GitBeijing' alt='GitBeijing Logo' width='120px' />
   <ul class="posts">
     {% for post in site.posts %}
