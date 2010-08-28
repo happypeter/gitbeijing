@@ -15,6 +15,8 @@ Welcome.
     {% endfor %}
   </ul>
 
+<p><br /><b><a href="http://github.com/happypeter/GitBeijing/wiki">wiki</a></b></p>
+
 <p><br /><b>Contact Information:</b></p>
 
 <blockquote>
