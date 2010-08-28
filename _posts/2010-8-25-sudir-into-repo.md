@@ -2,7 +2,7 @@
 layout: post
 ---
 
-originally posted on
+originally posted at
 [help.github.com](http://help.github.com/splitting-a-subpath-to-a-new-repo/)
 
 basiclly it is just one command:
