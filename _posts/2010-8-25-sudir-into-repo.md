@@ -9,8 +9,9 @@ basiclly it is just one command:
 
     git filter-branch --prune-empty --subdirectory-filter sudir master
 
-if there is a file outside `sudir`, now you move it into `sudir`. with all its historybe kept?
-NO, as my test shows, all the commits out of `sudir` is lost. if you want all the commits, try to use
+_Q:_if there is a file outside `sudir`, now you move it into `sudir`. will all its historybe kept?
+
+_A:_NO, as my test shows, all the commits out of `sudir` are lost. if you want all the commits, try to use
 
     git log --follow -p filename
 
