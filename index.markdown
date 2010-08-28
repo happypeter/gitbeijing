@@ -1,13 +1,26 @@
 ---
 layout: default
 ---
-  <h1>GitBeijing Website</h1>
-welcome
-<img class='inset right' src='images/gitbeijing.png' title='GitBeijing' alt='GitBeijing Logo' width='66px' />
+<h1 style="text-align:center">GitBeijing</h1>
+
+<br />
+
+<p>
+Welcome.
+</p>
+<p><br /><b>Blog:</b></p>
   <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/GitBeijing{{ post.url }}">{{ post.title }}</a></li>
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="GitBeijing{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 
-<a href="http://happypeter.github.com">happypeter</a>
+<p><br /><b>Contact Information:</b></p>
+
+<blockquote>
+<p>
+happypeter1983 at gmail.com
+</p>
+</blockquote>
+
+
