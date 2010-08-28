@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
+<br />
 <h1 style="text-align:center">GitBeijing</h1>
-
 <br />
 
 <p>
