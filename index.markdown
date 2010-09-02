@@ -16,7 +16,7 @@ Welcome.
   </ul>
 
 <p><br /><b><a href="http://github.com/happypeter/GitBeijing/wiki">wiki</a></b></p>
-
+<p><br /><b><a href="http://www.beijinglug.org/en/index.php?option=com_groupjive&action=gj.core.groups.showgroup&groupid=31&Itemid=134http://www.beijinglug.org/en/index.php?option=com_groupjive&action=gj.core.groups.showgroup&groupid=31&Itemid=134">BLUG GROUP PAGE</a></b></p>
 <p><br /><b>Contact Information:</b></p>
 
 <blockquote>
