@@ -6,9 +6,16 @@ layout: default
 <br />
 
 <p>
-Welcome to GitBeijing, here we talk about how to use git-scm to do our job
+Welcome to GitBeijing, here we talk about how to use [git-scm][git] to do our job
 neatly and efficiently. We will try to foucus on something simple and useful,
 so that everybody will be interested and join the conversation.
+
+[git]: http://git-scm.com
+
+We have a 
+<i><a href="http://github.com/happypeter/GitBeijing/wiki">group wiki</a></i>
+for people to post their random ideas and questions. And feel free to 
+join us at <i><a href="http://www.beijinglug.org/en/index.php?option=com_groupjive&action=gj.core.groups.showgroup&groupid=31&Itemid=134http://www.beijinglug.org/en/index.php?option=com_groupjive&action=gj.core.groups.showgroup&groupid=31&Itemid=134">GitBeijing group page at BLUG website</a></i>.
 </p>
 <p><br /><b>Blog:</b></p>
   <ul class="posts">
@@ -17,10 +24,6 @@ so that everybody will be interested and join the conversation.
     {% endfor %}
   </ul>
 
-We have a 
-<i><a href="http://github.com/happypeter/GitBeijing/wiki">group wiki</a></i>
-for people to post their random ideas and questions. And feel free to 
-join us at <i><a href="http://www.beijinglug.org/en/index.php?option=com_groupjive&action=gj.core.groups.showgroup&groupid=31&Itemid=134http://www.beijinglug.org/en/index.php?option=com_groupjive&action=gj.core.groups.showgroup&groupid=31&Itemid=134">GitBeijing group page at BLUG website</a></i>.
 <p><br /><b>Contact Information:</b></p>
 
 <blockquote>
