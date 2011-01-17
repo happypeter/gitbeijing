@@ -1,12 +1,10 @@
 ---
 layout: post
 ---
-
-learn vim with happypeter.
-
 ## NO.1 how to start vim 
 <http://www.youtube.com/watch?v=oZpGAAZj9Mo>
 
+[transcript](./files/start_vim.trans)
 ## NO.2 the most important two modes
 <http://www.youtube.com/watch?v=QRxLqlfV4Pk>
 
