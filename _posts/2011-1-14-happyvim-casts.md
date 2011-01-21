@@ -5,7 +5,10 @@ layout: post
 <http://www.youtube.com/watch?v=oZpGAAZj9Mo>
 
 [transcript](./files/start_vim.trans)
-## NO.2 the most important two modes
+## NO.2 the most important two modes 
+[click to get the subtitle](./files/2_two_modes.srt)
+
+and video: 
 <http://www.youtube.com/watch?v=QRxLqlfV4Pk>
 
 ## NO.3 why vim has many modes

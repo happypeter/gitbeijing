@@ -1,0 +1,249 @@
+﻿1
+00:00:00,000 --> 00:00:02,571
+hello everybody
+
+2
+00:00:02,821 --> 00:00:05,694
+um...this is Peter here... peter again
+
+3
+00:00:05,944 --> 00:00:13,955
+so today we are going to explore more powerful stuff about ...
+
+4
+00:00:14,255 --> 00:00:19,691
+about vim... the best editor that ever, you know ...created
+
+5
+00:00:19,941 --> 00:00:24,474
+um ... so, let's start vim
+
+6
+00:00:23,691 --> 00:00:31,370
+ah... we are going to create a new file named hello.c
+and  within this file
+
+7
+00:00:31,381 --> 00:00:37,036
+now what I want to talk about here is when you start vim
+
+8
+00:00:37,100 --> 00:00:41,448
+you directly come into the "normal mode"
+
+9
+00:00:40,591 --> 00:00:45,140
+so, you may wonder what the normal mode means
+
+10
+00:00:45,812 --> 00:00:52,315
+if you don't know normal mode means. Now I can tell you, it's just ...
+
+11
+00:00:52,361 --> 00:00:57,516
+when you start vim, vim directly take you to normal mode
+
+12
+00:00:58,305 --> 00:01:05,248
+and now, you can try to type something, like 'd' and 'c'
+
+13
+00:01:06,038 --> 00:01:08,081
+Ah, you type something but nothing happened
+
+14
+00:01:09,041 --> 00:01:11,657
+So, you may feel strange here,
+
+15
+00:01:11,187 --> 00:01:15,860
+but this is actual not bug of vim
+
+16
+00:01:17,728 --> 00:01:19,737
+but rather it's a nice feature of vim.
+
+17
+00:01:19,987 --> 00:01:24,056
+it means vim has something called "modes"
+
+18
+00:01:24,306 --> 00:01:31,649
+so let's check how vim modes works
+
+19
+00:01:31,899 --> 00:01:35,155
+you just type help, "h" stands for "help"
+
+20
+00:01:35,405 --> 00:01:39,869
+help vim-modes, OK?
+
+21
+00:01:40,119 --> 00:01:44,211
+so you can see there are many modes here... many modes
+
+22
+00:01:44,461 --> 00:01:49,343
+but most ... now in this screencast I want to talk about really
+
+23
+00:01:49,593 --> 00:01:51,827
+only two of those modes
+
+24
+00:01:52,077 --> 00:01:53,731
+two most important one(s)
+
+25
+00:01:53,981 --> 00:01:58,259
+one is normal mode, the other one is I think...
+
+26
+00:01:58,509 --> 00:02:00,465
+insert mode, like this
+
+27
+00:02:00,715 --> 00:02:07,896
+so when you first come into ah...
+
+28
+00:02:08,146 --> 00:02:14,792
+into vim, ah... you first go into normal mode
+
+29
+00:02:15,042 --> 00:02:17,300
+normal mode also is called command mode
+
+30
+00:02:17,550 --> 00:02:22,060
+which means everything you type here will be considered as a command
+
+31
+00:02:22,310 --> 00:02:27,029
+and like 'x' for deleting one word(shall be a character)
+
+32
+00:02:27,279 --> 00:02:33,763
+and there are also some other commands that can take you into insert mode
+
+33
+00:02:34,013 --> 00:02:37,513
+like the most often used one is 'i'
+
+34
+00:02:37,763 --> 00:02:41,100
+press 'i', and vim will go into insert mode
+
+35
+00:02:41,350 --> 00:02:50,783
+and you can see in the lower left corner of this screen
+
+36
+00:02:51,033 --> 00:02:53,314
+you see a "insert"
+
+37
+00:02:53,564 --> 00:02:56,913
+insert, that means vim is now in insert mode
+
+38
+00:02:57,163 --> 00:02:59,281
+in insert mode, you can generally type something
+
+39
+00:02:59,531 --> 00:03:02,579
+like "sss", whatever you type here
+
+40
+00:03:02,829 --> 00:03:11,890
+will be considered as some visible characters, will show up eventually into your file
+
+41
+00:03:12,140 --> 00:03:18,089
+ah... in your file created, but when you press "esc"
+
+42
+00:03:18,339 --> 00:03:20,202
+you go back normal mode again
+
+43
+00:03:20,452 --> 00:03:25,357
+now whatever you type here, as we already mentioned, will be considered as command(s)
+
+44
+00:03:25,607 --> 00:03:27,052
+like you type 'x'
+
+45
+00:03:27,302 --> 00:03:35,156
+then ah... you delete one word(shall be one character) rather than insert "x" into your file
+
+46
+00:03:35,406 --> 00:03:38,871
+so that is the difference, as you type "dd", so "dd", whole long
+
+47
+00:03:39,121 --> 00:03:42,621
+as you type 'u', it means undo
+
+48
+00:03:42,871 --> 00:03:47,161
+you can type "ctrl + r", means redo
+
+49
+00:03:47,411 --> 00:03:52,618
+anyway, don't worry if you can not remember all these things
+
+50
+00:03:52,868 --> 00:03:54,986
+we will talk about these in details later
+
+51
+00:03:55,236 --> 00:04:00,489
+anyway in this talk, I just want you know
+
+52
+00:04:00,739 --> 00:04:05,899
+vim has modes and most important two modes I want you know
+
+53
+00:04:06,149 --> 00:04:07,943
+here is just two
+
+54
+00:04:08,193 --> 00:04:11,356
+normal mode and insert mode
+
+55
+00:04:11,606 --> 00:04:19,529
+so, you still remember how to go into insert mode? you type 'i'
+
+56
+00:04:19,779 --> 00:04:30,118
+and like this, you press "Esc" and you go back to normal mode
+
+57
+00:04:30,368 --> 00:04:32,324
+normal mode is also called command mode
+
+58
+00:04:32,574 --> 00:04:36,805
+which means you type everything as commands
+
+59
+00:04:37,055 --> 00:04:40,961
+so this is all I want to talk about here
+
+60
+00:04:41,211 --> 00:04:45,977
+I hope you are not confused, but anyway
+
+61
+00:04:46,227 --> 00:04:49,622
+it doesn't matter. we will talk about more later
+
+62
+00:04:49,872 --> 00:04:55,822
+so have a good day. bye
+
