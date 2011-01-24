@@ -56,7 +56,7 @@ insert mode, this one yeah!
 
 15
 00:01:17,805 --> 00:01:31,858
-insert mode, but today i like to talk more about why vim has these modes
+insert mode, but today I'd like to talk more about why vim has these modes
 
 16
 00:01:32,108 --> 00:01:35,364
@@ -108,11 +108,11 @@ and "ctrl +option +command+s" , something like these
 
 28
 00:02:29,740 --> 00:02:36,363
-you can't avoid these. you really want to some powerful shortcuts
+you can't avoid these, if you really want some more powerful shortcuts
 
 29
 00:02:36,613 --> 00:02:42,656
-that what is happening in some other editors all the time
+that's what is happening in some other editors all the time
 
 30
 00:02:42,906 --> 00:02:51,549
@@ -128,7 +128,7 @@ and that's the problem.
 
 33
 00:02:56,443 --> 00:03:01,139
-that's why vim has its modes. and its normal mode is the command mode
+that's why vim has its modes. and its normal mode is command mode
 
 34
 00:03:01,389 --> 00:03:09,823
