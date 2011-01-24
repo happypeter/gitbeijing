@@ -8,7 +8,7 @@ uh... since I have a little bit stomachache
 
 3
 00:00:18,501 --> 00:00:25,008
-uh... my stomach hurts a bit. so, OK, not so horrible
+uh... my stomach hurts a bit. it's OK, not so horrible
 
 4
 00:00:25,258 --> 00:00:29,257
@@ -32,7 +32,7 @@ so it can probably set our heart peaceful and put us on the right track
 
 9
 00:00:56,791 --> 00:01:03,692
-so, and doing technologies is one of things do make me feel peaceful
+so, and doing technology is one of things do make me feel peaceful
 
 10
 00:01:03,942 --> 00:01:08,406
@@ -96,11 +96,11 @@ motions, how to move around
 
 25
 00:02:26,512 --> 00:02:32,323
-let's see, we have "hello world"
+let's say, we have "hello world"
 
 26
 00:02:32,573 --> 00:02:37,942
-and how to, you know how to move at(to) the beginning of this line
+and how to, you know how to move to the beginning of this line
 
 27
 00:02:38,192 --> 00:02:45,280
@@ -188,7 +188,7 @@ operators are some things like change, like 'c', change a word
 
 48
 00:04:59,114 --> 00:05:02,835
-like "dd", word "yank", I means something like copy
+like "d", delete a word, "yank",something like copy
 
 49
 00:05:03,085 --> 00:05:08,709
@@ -252,7 +252,7 @@ like three lines, anyway, it's 'd' two 'j', like this
 
 64
 00:06:43,139 --> 00:06:49,693
-so, if you want know more, peter here is not giving you very clear explanation
+so, if you want know more, if peter here is not giving you very clear explanation
 
 65
 00:06:49,943 --> 00:06:58,656
