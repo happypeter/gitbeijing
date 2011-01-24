@@ -16,7 +16,7 @@ are you still remembering general rules?
 
 5
 00:00:24,213 --> 00:00:27,051
-uh... let's see "hello world", something like this
+uh... let's say "hello world", something like this
 
 6
 00:00:27,301 --> 00:00:34,366
@@ -28,11 +28,11 @@ it's something like this. like "dj", anything like this
 
 8
 00:00:40,722 --> 00:00:50,736
-uh... we talk about that, but we didn't cover enough of those motions and lots of operators
+uh... we talk about that, but we didn't cover enough of those motions and  operators
 
 9
 00:00:50,986 --> 00:00:59,234
-of course not all of those operators, and all of them, uh... hundred of them
+of course not all of those operators, and all of them, uh... there are hundred of them
 
 10
 00:00:59,484 --> 00:01:05,666
@@ -56,11 +56,11 @@ just now, I just think about that how to do this screencast
 
 15
 00:01:25,699 --> 00:01:36,456
-I certainly believe to be really boring to just talk about operators and motions
+I certainly believe it will be really boring to just talk about operators and motions
 
 16
 00:01:36,706 --> 00:01:42,679
-in a plan way, I just type one by one, will be really boring
+in a plain way, I just type one by one, it will be really boring
 
 17
 00:01:42,929 --> 00:01:48,484
@@ -68,7 +68,7 @@ like 'w', like 'jj' like 'j', something like this it will be boring
 
 18
 00:01:48,734 --> 00:02:02,694
-so, but certainly a good idea come to me, and I need to, I think I would rather to talk, give this screencast a topic
+so, but suddenly a good idea come to me, and I need to, I think I would rather to talk, give this screencast a topic
 
 19
 00:02:02,944 --> 00:02:09,080
@@ -104,7 +104,7 @@ and the uppercase as something big
 
 27
 00:02:52,333 --> 00:02:56,565
-uh... I am not sure the native speaks talk this way
+uh... I am not sure the native speakers talk this way
 
 28
 00:02:56,815 --> 00:03:01,626
@@ -112,7 +112,7 @@ uh... anyway I  don't care
 
 29
 00:03:01,876 --> 00:03:06,758
-so, but anyway why the so important, let me show you
+so, but anyway why they arep so important, let me show you
 
 30
 00:03:07,008 --> 00:03:13,144
@@ -188,7 +188,7 @@ uh... maybe you don't know what "yank" means, you can help, try help 'y', like t
 
 48
 00:05:04,733 --> 00:05:11,681
-and also if you don't know any of those big and small bull shit
+and also if you don't know any of those big and small bullshit
 
 49
 00:05:11,931 --> 00:05:17,138
@@ -212,7 +212,7 @@ that's different words, big word and small word
 
 54
 00:05:32,829 --> 00:05:38,222
-and that's the different. you can check help file for more information
+and they are different. you can check help file for more information
 
 55
 00:05:38,472 --> 00:05:49,321
@@ -220,15 +220,15 @@ and anything you know vim help system is really powerful, you generally can find
 
 56
 00:05:49,571 --> 00:06:00,049
-but why not going show you all of them in our screencast? time is limited. so
+but we are not going show you all of them in our screencast... time is limited. so
 
 57
 00:06:00,299 --> 00:06:10,126
-let's continue. maybe I think, I talk about yank a piece. OK, how to yank a line
+let's continue. maybe I think,  I need talk about yank a paste. OK, how to yank a line
 
 58
 00:06:10,238 --> 00:06:18,067
-it's like this. 'y', OK, all of this line was in one of those special buffer
+it's like this. 'y', OK, now this line is in one of those special buffer
 
 59
 00:06:18,317 --> 00:06:26,357
@@ -236,7 +236,7 @@ then  I can type, put. it's not paste, it's like paste, but it's not paste
 
 60
 00:06:26,607 --> 00:06:34,948
-we called put, then it's small 'p'. I'm sorry
+we call it put, then it's small 'p'. I'm sorry
 
 61
 00:06:35,198 --> 00:06:39,662
