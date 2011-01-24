@@ -1,6 +1,6 @@
 ﻿1
 00:00:00,000 --> 00:00:12,005
-hi, good afternoon. so, now, I am not feeling very uh... very great
+hi, you, good afternoon. so, now, I am not feeling very uh... very great
 
 2
 00:00:12,255 --> 00:00:18,251
@@ -20,23 +20,23 @@ except that we can think, we talk, we work
 
 6
 00:00:34,499 --> 00:00:41,494
-uh..., so what our life get . I think at least one form may true
+uh..., so when our life get messy . I think at least for me it is true
 
 7
 00:00:41,494 --> 00:00:47,972
-I tend to, I think about doing something, then make some sense
+I tend to think about doing something that make some sense
 
 8
 00:00:48,222 --> 00:00:56,541
-so can probably set our heart peaceful and put us on the right track
+so it can probably set our heart peaceful and put us on the right track
 
 9
 00:00:56,791 --> 00:01:03,692
-so, that doing technologies is one of things do make me feel peaceful
+so, and doing technologies is one of things do make me feel peaceful
 
 10
 00:01:03,942 --> 00:01:08,406
-because technology just something funny, it's no big deal, right?
+because technology is just something fun, it's no big deal, right?
 
 11
 00:01:08,656 --> 00:01:15,511
@@ -48,7 +48,7 @@ let's start, continue our study of vim
 
 13
 00:01:20,591 --> 00:01:26,819
-OK, as you can see. we can do, let's start vim
+OK, let's see what we can do, let's start vim
 
 14
 00:01:27,069 --> 00:01:28,909
@@ -56,7 +56,7 @@ check what's in this
 
 15
 00:01:29,159 --> 00:01:31,022
-uh... it's bull shit, OK
+uh... it's bullshit, OK
 
 16
 00:01:31,272 --> 00:01:40,496
@@ -64,7 +64,7 @@ we don't need. OK, so, now let's create a new file
 
 17
 00:01:40,746 --> 00:01:47,485
-we don't always create dot 'c' file, we can create any file
+we don't always create '.c' file, we can create any file
 
 18
 00:01:47,735 --> 00:01:53,824
@@ -76,7 +76,7 @@ I'm sure you now know how to go to insert mode
 
 20
 00:01:57,255 --> 00:02:01,789
-and maybe you are already reading the help file and
+and maybe you already read the help file and
 
 21
 00:02:02,039 --> 00:02:12,493
@@ -84,11 +84,11 @@ you know the difference between switching among those modes, normal mode and ins
 
 22
 00:02:12,743 --> 00:02:16,185
-and a big more, other modes
+and a bit more, other modes
 
 23
 00:02:16,435 --> 00:02:24,637
-so, today I want to talk about it's still motions
+so, today I want to talk about is still motions
 
 24
 00:02:24,887 --> 00:02:26,262
@@ -100,7 +100,7 @@ let's see, we have "hello world"
 
 26
 00:02:32,573 --> 00:02:37,942
-and how to, you know how to move at the beginning of this line
+and how to, you know how to move at(to) the beginning of this line
 
 27
 00:02:38,192 --> 00:02:45,280
@@ -112,7 +112,7 @@ zero, I'm sorry. uh... so, you know how to move one word a time. "ww" and
 
 29
 00:02:58,254 --> 00:03:03,507
-now, I guess how to move two words a time. it's two 'w'
+now, guess how to move two words a time. it's  '2w'
 
 30
 00:03:03,757 --> 00:03:05,690
@@ -124,11 +124,11 @@ it's like this. "hello world peter is your friend", move to the beginning , it's
 
 32
 00:03:20,104 --> 00:03:25,148
-three 'w' and maybe two 'w', like this
+'3w' and maybe '2w', like this
 
 33
 00:03:25,398 --> 00:03:33,322
-and now get how to move two lines down one time
+and now guess how to move two lines down one time
 
 34
 00:03:33,572 --> 00:03:35,737
@@ -140,7 +140,7 @@ we go to the... first go to the top of this file
 
 36
 00:03:39,632 --> 00:03:44,560
-down by "jj", and two 'j'
+done by "gg", and two 'j'
 
 37
 00:03:44,810 --> 00:03:49,970
@@ -152,11 +152,11 @@ two 'j' and "gg", three 'j' and it's like this
 
 39
 00:03:59,346 --> 00:04:09,382
-now, you can see it's just number with motion, and that will just do
+now, you can see it's just a number with a motion, and that will just do
 
 40
 00:04:09,632 --> 00:04:15,164
-what you want very obviously and maybe a little bit childish way
+what you want in a very obvious and maybe a little bit childish way
 
 41
 00:04:15,414 --> 00:04:18,624
@@ -168,11 +168,11 @@ uh... but what I want talk about here is the general rule of vim operation
 
 43
 00:04:27,674 --> 00:04:35,319
-it's one operator and then followed with motion
+it's one operator and then followed with a motion
 
 44
 00:04:35,569 --> 00:04:40,706
-let's check the general rule. first you don't know what the operator is, it's maybe
+let's check the general rule. first you don't know what the operator is maybe
 
 45
 00:04:40,806 --> 00:04:45,350
@@ -184,7 +184,7 @@ help operators, help operator, OK I think we are luck
 
 47
 00:04:53,054 --> 00:04:58,864
-operators are somethings like change, like 'c', change a word
+operators are some things like change, like 'c', change a word
 
 48
 00:04:59,114 --> 00:05:02,835
@@ -196,7 +196,7 @@ yank means copy, and lots of other more
 
 50
 00:05:08,959 --> 00:05:14,189
-those are... I think those operators are comfortable way we fulfill something simple
+those are... I think those are operators, but currently we foucs on something simple
 
 51
 00:05:14,439 --> 00:05:16,116
@@ -204,11 +204,11 @@ like change and delete
 
 52
 00:05:16,366 --> 00:05:27,262
-uh... let's show how to use operators and motions the same time. OK
+uh... let's show how to work using operators and motions the same time. OK
 
 53
 00:05:27,512 --> 00:05:36,573
-like, let's try to delete two words. you want to go like 'd' two 'w'. OK
+like, let's try to delete two words. in one go, it is 'd' two 'w'. OK
 
 54
 00:05:36,823 --> 00:05:42,750
@@ -216,7 +216,7 @@ uh... undo this thing. 'd' three word
 
 55
 00:05:40,573 --> 00:05:52,804
-OK, undo and how can we delete from this line to the end of this file
+OK, and how can we delete from this line to the end of this file
 
 56
 00:05:53,054 --> 00:05:58,237
@@ -236,7 +236,7 @@ OK, so let's try d (delete) four word
 
 60
 00:06:13,464 --> 00:06:24,940
-OK, I think you can see the rules, very,  it's very childish. what's the very complete
+OK, I think you can see the rules, very,  it's very childish, but it is very convinent
 
 61
 00:06:25,190 --> 00:06:29,979
@@ -248,15 +248,15 @@ delete two lines, 'd' two 'j', two lines
 
 63
 00:06:35,129 --> 00:06:42,889
-what's three lines, anyway, it's 'd' two 'j', like this
+like three lines, anyway, it's 'd' two 'j', like this
 
 64
 00:06:43,139 --> 00:06:49,693
-so, if you found no more peter here not giving you very clear
+so, if you want know more, peter here is not giving you very clear explanation
 
 65
 00:06:49,943 --> 00:06:58,656
-it's best... you can check more in documentation yourself. it's like help motions. motions, I think
+you can check more in documentation yourself. it's like help motions. motions, I think
 
 66
 00:06:58,906 --> 00:07:09,523
@@ -296,7 +296,7 @@ uh... how to use vim in this normal mode. the general rule is one operator then 
 
 75
 00:08:18,562 --> 00:08:27,820
-command, motion commands can be operated by numbers
+command, motion commands can be multiplied by numbers
 
 76
 00:08:28,070 --> 00:08:33,904
@@ -312,7 +312,7 @@ you see, then we type something new. "hello", then press "Esc"
 
 79
 00:08:47,250 --> 00:08:51,946
-then you see three words change into one word, in this way
+then you see three words changed into one word, in this way
 
 80
 00:08:52,196 --> 00:08:59,585
@@ -332,11 +332,11 @@ still other more operators and other more motions, check help file and enjoy the
 
 84
 00:09:19,758 --> 00:09:25,104
-anyway, OK. let's it today. my stomach still hurts.
+anyway, OK. let's call it today. my stomach still hurts.
 
 85
 00:09:25,354 --> 00:09:34,485
-uh... but I done something meaningful and I feel my life is meaningful. OK
+uh... but I've done something meaningful and I feel my life is meaningful. OK
 
 86
 00:09:34,735 --> 00:09:39,106
