@@ -21,3 +21,11 @@ subtitle: [click to get the subtitle](./files/4_basic_move.srt)
 
 video: <http://www.youtube.com/watch?v=rzkzsC8FH9c>
 
+## NO.5 command rule
+subtitle: [click to get the subtitle](./files/5_command_rule.srt)
+
+video: <http://www.youtube.com/watch?v=B_l5m2TdDCs>
+## NO.5 big and small
+subtitle: [click to get the subtitle](./files/6_big_small.srt)
+
+video: <http://www.youtube.com/watch?v=BW-3JUZ5kV4>

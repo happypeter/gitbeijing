@@ -1,0 +1,288 @@
+﻿1
+00:00:00,000 --> 00:00:02,647
+hi, hi, peter again
+
+2
+00:00:02,897 --> 00:00:10,937
+in our earlier talk we mentioned operators and motions
+
+3
+00:00:11,187 --> 00:00:20,503
+and how can we use both of them to constitute, uh... construct a whole vim command
+
+4
+00:00:20,753 --> 00:00:23,963
+are you still remembering general rules?
+
+5
+00:00:24,213 --> 00:00:27,051
+uh... let's see "hello world", something like this
+
+6
+00:00:27,301 --> 00:00:34,366
+you have, first type one operator, then a number, then motion
+
+7
+00:00:34,616 --> 00:00:40,472
+it's something like this. like "dj", anything like this
+
+8
+00:00:40,722 --> 00:00:50,736
+uh... we talk about that, but we didn't cover enough of those motions and lots of operators
+
+9
+00:00:50,986 --> 00:00:59,234
+of course not all of those operators, and all of them, uh... hundred of them
+
+10
+00:00:59,484 --> 00:01:05,666
+maybe not hundred of them, but certainly lots of them
+
+11
+00:01:05,916 --> 00:01:08,545
+we don't need to remember all of them, but there are still,
+
+12
+00:01:08,795 --> 00:01:13,956
+maybe a few of them that are really really useful.
+
+13
+00:01:14,206 --> 00:01:19,552
+so that I really need to talk about in our screencast
+
+14
+00:01:19,802 --> 00:01:25,449
+just now, I just think about that how to do this screencast
+
+15
+00:01:25,699 --> 00:01:36,456
+I certainly believe to be really boring to just talk about operators and motions
+
+16
+00:01:36,706 --> 00:01:42,679
+in a plan way, I just type one by one, will be really boring
+
+17
+00:01:42,929 --> 00:01:48,484
+like 'w', like 'jj' like 'j', something like this it will be boring
+
+18
+00:01:48,734 --> 00:02:02,694
+so, but certainly a good idea come to me, and I need to, I think I would rather to talk, give this screencast a topic
+
+19
+00:02:02,944 --> 00:02:09,080
+it's something uh... stupid. uh... named big and small
+
+20
+00:02:09,330 --> 00:02:15,605
+big and small, maybe you don't know what big and small means
+
+21
+00:02:15,855 --> 00:02:24,103
+here, I want to say, just I will talk about 'O', I talk about 'o'
+
+22
+00:02:24,353 --> 00:02:27,377
+it's lowercase 'o' and capital 'O'
+
+23
+00:02:27,627 --> 00:02:30,233
+so we just call it small 'o' and big 'O'
+
+24
+00:02:30,483 --> 00:02:40,194
+and, small 'y' and big 'Y', small 'p' and big 'P', small 'i' and big 'I'
+
+25
+00:02:40,444 --> 00:02:48,252
+so, uh... I'm Chinese, in China, we always talk about lowercase as something small
+
+26
+00:02:48,502 --> 00:02:52,083
+and the uppercase as something big
+
+27
+00:02:52,333 --> 00:02:56,565
+uh... I am not sure the native speaks talk this way
+
+28
+00:02:56,815 --> 00:03:01,626
+uh... anyway I  don't care
+
+29
+00:03:01,876 --> 00:03:06,758
+so, but anyway why the so important, let me show you
+
+30
+00:03:07,008 --> 00:03:13,144
+so, first let's talk about how to go into insert mode from normal mode
+
+31
+00:03:13,394 --> 00:03:16,603
+it's the most often used one is 'i'
+
+32
+00:03:16,853 --> 00:03:22,989
+but, you know what is big 'I', it's like this, you type uh...
+
+33
+00:03:23,239 --> 00:03:28,120
+small 'i' and you are in insert right before the cursor
+
+34
+00:03:28,370 --> 00:03:36,271
+and if you type big 'I', then you start your insert at the beginning of the line
+
+35
+00:03:36,521 --> 00:03:38,384
+this is really useful
+
+36
+00:03:38,634 --> 00:03:45,489
+and another useful one is, you type 'a' and the small 'a'
+
+37
+00:03:45,739 --> 00:03:48,949
+uh... you can insert right after the cursor position
+
+38
+00:03:49,199 --> 00:03:53,802
+and if you want to start editing at the end of this line
+
+39
+00:03:54,052 --> 00:03:55,613
+you just type big 'A'
+
+40
+00:03:55,623 --> 00:04:00,164
+it's like this the small 'a' and big 'A'
+
+41
+00:04:00,414 --> 00:04:12,145
+uh... OK, small 'a' and big 'A'. OK, now what small 'o' and big 'O' means?
+
+42
+00:04:12,395 --> 00:04:24,150
+small 'o' means this, you open, you go from normal mode to insert mode, but you open a new line
+
+43
+00:04:24,400 --> 00:04:30,234
+and this start editing. what big 'O' means? it's like this. you type big 'O' and
+
+44
+00:04:30,484 --> 00:04:35,319
+you also go to insert mode but you start a new line above the cursor position
+
+45
+00:04:35,569 --> 00:04:47,579
+so that's the difference. then uh... one common editing task is that you need to copy and paste
+
+46
+00:04:47,829 --> 00:04:53,547
+uh... in vim you don't call it copy, you call it yank, "yank", yank
+
+47
+00:04:53,797 --> 00:05:04,483
+uh... maybe you don't know what "yank" means, you can help, try help 'y', like this
+
+48
+00:05:04,733 --> 00:05:11,681
+and also if you don't know any of those big and small bull shit
+
+49
+00:05:11,931 --> 00:05:17,138
+you can just help, help 'p', like this
+
+50
+00:05:17,388 --> 00:05:19,530
+and of course, you get a big 'P' here
+
+51
+00:05:19,780 --> 00:05:25,149
+and you can also check, maybe help 'w'
+
+52
+00:05:25,399 --> 00:05:27,912
+you also have small 'w' and big 'W'
+
+53
+00:05:28,162 --> 00:05:32,579
+that's different words, big word and small word
+
+54
+00:05:32,829 --> 00:05:38,222
+and that's the different. you can check help file for more information
+
+55
+00:05:38,472 --> 00:05:49,321
+and anything you know vim help system is really powerful, you generally can find anything in the help system
+
+56
+00:05:49,571 --> 00:06:00,049
+but why not going show you all of them in our screencast? time is limited. so
+
+57
+00:06:00,299 --> 00:06:10,126
+let's continue. maybe I think, I talk about yank a piece. OK, how to yank a line
+
+58
+00:06:10,238 --> 00:06:18,067
+it's like this. 'y', OK, all of this line was in one of those special buffer
+
+59
+00:06:18,317 --> 00:06:26,357
+then  I can type, put. it's not paste, it's like paste, but it's not paste
+
+60
+00:06:26,607 --> 00:06:34,948
+we called put, then it's small 'p'. I'm sorry
+
+61
+00:06:35,198 --> 00:06:39,662
+you find to yank the whole line, you need to type 'yy'
+
+62
+00:06:39,912 --> 00:06:43,377
+and if you want to put, you type 'p'
+
+63
+00:06:43,627 --> 00:06:52,711
+and let's try again, you have, you have 'yy' here, now 'p'
+
+64
+00:06:52,961 --> 00:06:57,263
+you type 'p', then you put something below the current line
+
+65
+00:06:57,513 --> 00:07:03,369
+and, but if you type big 'P', you put something above the current line
+
+66
+00:07:03,619 --> 00:07:05,622
+so that's the difference
+
+67
+00:07:05,872 --> 00:07:10,498
+and yeah that's big and small
+
+68
+00:07:10,748 --> 00:07:17,905
+cut and paste, big and small, and anything
+
+69
+00:07:18,155 --> 00:07:26,404
+OK, that's my stupid idea of giving such name big and small
+
+70
+00:07:26,654 --> 00:07:31,582
+of this screencast to make things maybe a little more funny
+
+71
+00:07:31,832 --> 00:07:34,577
+uh... maybe it's not funny at all
+
+72
+00:07:34,827 --> 00:07:41,311
+but, OK that's all i want to talk about. so, enjoy, bye
+
