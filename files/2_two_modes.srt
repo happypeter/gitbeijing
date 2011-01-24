@@ -41,7 +41,7 @@ if you don't know normal mode means. Now I can tell you, it's just ...
 
 11
 00:00:52,361 --> 00:00:57,516
-when you start vim, vim directly take you to normal mode
+when you start vim, vim directly take(s) you to normal mode
 
 12
 00:00:58,305 --> 00:01:05,248
@@ -181,7 +181,7 @@ then ah... you delete one word(shall be one character) rather than insert "x" in
 
 46
 00:03:35,406 --> 00:03:38,871
-so that is the difference, as you type "dd", so "dd", whole long
+so that is the difference, as you type "dd", so "dd", whole line
 
 47
 00:03:39,121 --> 00:03:42,621
