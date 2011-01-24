@@ -56,7 +56,7 @@ like vim,  and "newfilename"
 
 15
 00:01:00,088 --> 00:01:04,250
-I mean, vim will creat a new file for you
+I mean, vim will create a new file for you
 
 16
 00:01:04,500 --> 00:01:08,824
@@ -87,11 +87,11 @@ the option I love is sth like this
 remote and a few others
 
 23
-00:01:39,736 --> 00:01:43,236
+00:01:39,736 --> 00:01:46,463
 but that's not what we are going to talk in this episode
 
 24
-00:01:43,486 --> 00:01:47,880
+00:01:46,986 --> 00:01:48,159
 we will talk about (them) later
 
 25
