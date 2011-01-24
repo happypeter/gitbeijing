@@ -196,7 +196,7 @@ yank means copy, and lots of other more
 
 50
 00:05:08,959 --> 00:05:14,189
-those are... I think those are operators, but currently we foucs on something simple
+those are... I think those are operators, but currently we focus on something simple
 
 51
 00:05:14,439 --> 00:05:16,116
@@ -236,7 +236,7 @@ OK, so let's try d (delete) four word
 
 60
 00:06:13,464 --> 00:06:24,940
-OK, I think you can see the rules, very,  it's very childish, but it is very convinent
+OK, I think you can see the rules, very,  it's very childish, but it is very convenient.
 
 61
 00:06:25,190 --> 00:06:29,979
@@ -280,7 +280,7 @@ OK, anyway you can get anything here, like what's operator, operator, it's not s
 
 71
 00:07:55,493 --> 00:08:00,560
-you can get this way. operator. motions and operators.
+you can get this way. operator... motions and operators.
 
 72
 00:08:00,810 --> 00:08:02,580
