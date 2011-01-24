@@ -8,7 +8,7 @@ so today I want to talk about a little bit
 
 3
 00:00:11,326 --> 00:00:16,951
-why vim take us first directly into normal mode
+why vim takes us first directly into normal mode
 
 4
 00:00:17,201 --> 00:00:26,842
@@ -20,7 +20,7 @@ and efficiently. if you are in the insert mode, the movement,
 
 6
 00:00:31,992 --> 00:00:41,982
-uh..., will be, well have to use arrow key or something like this
+uh..., will be, will have to use arrow key or something like this
 
 7
 00:00:42,232 --> 00:00:48,483
@@ -32,7 +32,7 @@ much much simpler. uh..., so and in the career of a programmer
 
 9
 00:00:57,092 --> 00:01:05,178
-most of time will be spend in the changing things rather than inserting things
+most of time will be spend on changing things rather than inserting things
 
 10
 00:01:05,428 --> 00:01:11,308
