@@ -5,7 +5,7 @@ layout: default
 <h1 style="text-align:center">GitBeijing</h1>
 <br />
 
-Welcome to GitBeijing, here we talk about how to use [git-scm][git] to do our
+<img src="./images/logo-black.png" alt="Angry face" />Welcome to GitBeijing, here we talk about how to use [git-scm][git] to do our
 job neatly and efficiently, and also any other topics related to Linux and
 Open Source. We will try to foucus on something simple and useful, so that
 everybody will be interested and join the conversation.
