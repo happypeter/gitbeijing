@@ -37,16 +37,17 @@ that data and put it in the input buffer of the associated character device
 file and then the process may read form the character device file to get that
 data. So again, be clear the terminal is a totally dumb device. When you see
 text displayed on the terminal that is something that coming from processes
-running on the attached computer. The only exception to this is that with the
-terminal character device file we can turn on a mode called echoing. When the
-terminal character device operates in the echoing mode, then any input
-received from the terminal was immediately echo back out to the terminal so
-that is can be displayed on the screen. In practice what this means when
-echoing is on and the user types on the keyboard, then whatever key they
-type, they will immediately see it appear on their screen. Just be clear that
-the terminal doesn't have echoing mode, it is the terminal character device
-file has echoing mode, so the data actually has been sent from the terminal and
-immediately back to the terminal.
+running on the attached computer. 
+
+The only exception to this is that with the terminal character device file we
+can turn on a mode called echoing. When the terminal character device operates
+in the echoing mode, then any input received from the terminal was immediately
+echo back out to the terminal so that is can be displayed on the screen. In
+practice what this means when echoing is on and the user types on the
+keyboard, then whatever key they type, they will immediately see it appear on
+their screen. Just be clear that the terminal doesn't have echoing mode, it is
+the terminal character device file has echoing mode, so the data actually has
+been sent from the terminal and immediately back to the terminal.
 
 As the years went on, some terminals begin to add more features, like for
 example, some terminals feature the ability to change text color, the way this
@@ -58,15 +59,16 @@ behaviors, like, say, what color text may be displayed, say, how many lines of
 text get displayed on the screen, things like that.
 
 Now the trouble with this arrangement is that early on escape sequences were
-not really standardized. Many manufactures did the wrong thing. So what you need to
-do to control one terminal differs from what you do to control another. In
-time though, eventually standards did more or less merge. Unfortunately, the
-end result of this process ended up quite messy, so if you look at the details of terminals
-and want to know what exactly you can do with the escape codes, it is all surprisingly
-complicated. So that's a whole area we're going to laid over. We will just think
-of terminals as simply displaying a sequence of text, and sending back to the
-computer whatever gets typed at the keyboard and end of story.
+not really standardized. Many manufactures did the wrong thing. So what you
+need to do to control one terminal differs from what you do to control
+another. In time though, eventually standards did more or less merge.
+Unfortunately, the end result of this process ended up quite messy, so if you
+look at the details of terminals and want to know what exactly you can do with
+the escape codes, it is all surprisingly complicated. So that's a whole area
+we're going to laid over. We will just think of terminals as simply displaying
+a sequence of text, and sending back to the computer whatever gets typed at
+the keyboard and end of story.
 
 However I do mention these capabilities, because you will likely interact with
-some programs that when they do use the terminal, they seem to do things that are
-otherwise impossible, like say, changing the color of the text.
+some programs that when they do use the terminal, they seem to do things that
+are otherwise impossible, like say, changing the color of the text.
