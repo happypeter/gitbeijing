@@ -51,7 +51,8 @@ their screen. Just be clear that the terminal doesn't have echo mode, it is
 the terminal character device file has echo mode, so the data actually has
 been sent from the terminal and immediately back to the terminal.
 
-不过这里有个例外：我们可以把设备文件调成echo模式，这样每当终端读到输入数据时，会马上把这些数据发送回终端显示（这就好像“回音”），也就是说，当启用这个模式之后，用户在自己键盘上敲什么，那她就会马上在自己的屏幕上看到什么。注意，是设备文件有echo模式，而不是终端本身有。所以应该说数据已经从终端发出去了（发到了设备文件），只是马上有“弹“回了终端。 
+不过这里有个例外：我们可以把设备文件调成echo模式，这样每当终端读到输入数据时，会马上把这些数据发送回终端显示（这就好像“回音”），也就是说，当启用这个模式之后，用户在自己键盘上敲什么，那她就会马上在自己的屏幕上看到什么。注意，是设备文件有echo模式，而不是终端本身有。所以应该说数据已经从终端发出去了（发到了设备文件），只是马上又“弹“回了终端。 
+
 As the years went on, some terminals begin to add more features, like for
 example, some terminals feature the ability to change text color, the way this
 work is that you would set terminal's mode like, say, what color is printing,
@@ -61,7 +62,7 @@ sequences to the terminal, we can set its modes, and thereby change its
 behaviors, like, say, what color text may be displayed, say, how many lines of
 text get displayed on the screen, things like that.
 
-后来，终端逐渐开始增加新功能。比如说显示带颜色的文本。工作原理是这样，我们发一个转意序列（以ASCII转意字符27开头的一串字符），给终端以改变它的工作模式，从而改变字符打印的颜色。当然，也可以改变显示的行数等等。
+后来，终端逐渐开始增加新功能。比如说显示带颜色的文本。工作原理是这样，我们发一个转意序列（以ASCII转意字符27开头的一串字符）给终端以改变它的工作模式，从而改变字符打印的颜色。当然，也可以改变显示的行数等等。
 
 Now the trouble with this arrangement is that early on escape sequences were
 not really standardized. Many manufactures did the wrong thing. So what you
@@ -75,6 +76,9 @@ a sequence of text, and sending back to the computer whatever gets typed at
 the keyboard and end of story.
 
 相应的问题是，早期各个厂商对转意序列没有一个统一的标准。所一在一种终端上使用转意序列的方法和另一终端上往往不同。虽然最终大家终于弄出一套标准，但这个标准其实也是乱七八糟。你可以自己学一下转意码，繁琐的很。所以在这里我们干脆就把转意抛开不管。我们就认为终端就是用来显示文本和发送文本到计算机的，这就足够了。
+
 However I do mention these capabilities, because you will likely interact with
 some programs that when they do use the terminal, they seem to do things that
 are otherwise impossible, like say, changing the color of the text.
+
+当然，我觉的提一提这些功能还是很有必要的，以后你很可能会遇到一些程序，它们会试图改变终端的文本颜色。
