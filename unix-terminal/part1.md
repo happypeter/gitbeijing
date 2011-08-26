@@ -49,10 +49,22 @@ file has echoing mode, so the data actually has been sent from the terminal and
 immediately back to the terminal.
 
 As the years went on, some terminals begin to add more features, like for
-example, some terminals feature the ability to change text coloe, the way this
+example, some terminals feature the ability to change text color, the way this
 work is that you would set terminal's mode like, say, what color is printing,
-by sending a escape sequence(that is, a sequence of characters beginning wiht
+by sending an escape sequence(that is, a sequence of characters beginning with
 the ASCII escape character, which is ASCII code 27). By sending escape
 sequences to the terminal, we can set its modes, and thereby change its
-behaviors, like, say, what color text may be displayed, say, how many lines
-get displayed on the screen, things like that.
+behaviors, like, say, what color text may be displayed, say, how many lines of
+text get displayed on the screen, things like that.
+
+Now the trouble with this arrangement is that early on escape sequences were
+on really standardized. Manufactures did the wrong thing. So what you need to
+do to control one terminal differs from what you do to control another in
+time. Though eventually standards did more or less merge. Unfortunately, the
+end result ended up quite messy, so if you look at the details of terminals
+and want to know what you can do with the escape codes, it is all surprisingly
+complicated. So that's whole area were going to laid over. We will just think
+of terminals are simply display a sequence of text, and sending back to the
+computer whatever gets typed at the keyboard and end the story.
+
+However I do mention...
