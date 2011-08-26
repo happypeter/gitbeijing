@@ -39,16 +39,19 @@ data. So again, be clear the terminal is a totally dumb device. When you see
 text displayed on the terminal that is something that coming from processes
 running on the attached computer. 
 
+在Unix系统下，一个进程可以通过一个代表特定终端的文件来和该终端通信，我们把这个文件叫做”终端字符设备文件“。当一个进程向一个终端字符设备文件写数据的时候，这些数据就被放到了设备文件的输出缓冲区里，操作系统继而会把这些数据送给相应的终端。反之，当用户用键盘输入数据时，操作系统会把数据放到相应设备文件的输入缓冲区内，这时相关的进程就可以从设备文件里读到这些数据了。注意，终端是没有什么智能的设备，当你看到终端上显示很多文本时，其实数据是来自与终端连接的那台计算机，数据是计算机上运行着的进程发过来的，终端只是起显示作用而已。
+
 The only exception to this is that with the terminal character device file we
-can turn on a mode called echoing. When the terminal character device operates
-in the echoing mode, then any input received from the terminal was immediately
+can turn on a mode called echo. When the terminal character device operates
+in the echo mode, then any input received from the terminal was immediately
 echo back out to the terminal so that is can be displayed on the screen. In
-practice what this means when echoing is on and the user types on the
+practice what this means when echo is on and the user types on the
 keyboard, then whatever key they type, they will immediately see it appear on
-their screen. Just be clear that the terminal doesn't have echoing mode, it is
-the terminal character device file has echoing mode, so the data actually has
+their screen. Just be clear that the terminal doesn't have echo mode, it is
+the terminal character device file has echo mode, so the data actually has
 been sent from the terminal and immediately back to the terminal.
 
+不过这里有个例外：我们可以把设备文件调成echo模式，这样每当终端读到输入数据时，会马上把这些数据发送回终端显示（这就好像“回音”），也就是说，当启用这个模式之后，用户在自己键盘上敲什么，那她就会马上在自己的屏幕上看到什么。注意，是设备文件有echo模式，而不是终端本身有。所以应该说数据已经从终端发出去了（发到了设备文件），只是马上有“弹“回了终端。 
 As the years went on, some terminals begin to add more features, like for
 example, some terminals feature the ability to change text color, the way this
 work is that you would set terminal's mode like, say, what color is printing,
@@ -57,6 +60,8 @@ the ASCII escape character, which is ASCII code 27). By sending escape
 sequences to the terminal, we can set its modes, and thereby change its
 behaviors, like, say, what color text may be displayed, say, how many lines of
 text get displayed on the screen, things like that.
+
+后来，终端逐渐开始增加新功能。比如说显示带颜色的文本。工作原理是这样，我们发一个转意序列（以ASCII转意字符27开头的一串字符），给终端以改变它的工作模式，从而改变字符打印的颜色。当然，也可以改变显示的行数等等。
 
 Now the trouble with this arrangement is that early on escape sequences were
 not really standardized. Many manufactures did the wrong thing. So what you
@@ -69,6 +74,7 @@ we're going to laid over. We will just think of terminals as simply displaying
 a sequence of text, and sending back to the computer whatever gets typed at
 the keyboard and end of story.
 
+相应的问题是，早期各个厂商对转意序列没有一个统一的标准。所一在一种终端上使用转意序列的方法和另一终端上往往不同。虽然最终大家终于弄出一套标准，但这个标准其实也是乱七八糟。你可以自己学一下转意码，繁琐的很。所以在这里我们干脆就把转意抛开不管。我们就认为终端就是用来显示文本和发送文本到计算机的，这就足够了。
 However I do mention these capabilities, because you will likely interact with
 some programs that when they do use the terminal, they seem to do things that
 are otherwise impossible, like say, changing the color of the text.
