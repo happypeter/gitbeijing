@@ -25,3 +25,25 @@ the text going in both directions was almost ASCII text.
 
 所以终端总体上就是这么个东西，你把它连到计算机上，计算机就可以把文本（就是一个一个的字符）和序列（例如转意序列）送到终端，然后一个字符一个字符的显示出来；同样，当用户敲字的时候，这些字就从终端传给了计算机。这里也不需要对称同步，就是一串字符从计算机传到终端，或者反过来从终端传到计算机。可能大家能猜到，这些传来传去的数据基本都是ASCII字符。
 #SLIDE 3
+
+In Unix systems, a process may communicate with a terminal through a file
+representing that terminal, a terminal character device file. When a process
+writes to a terminal character device file, that is putting in data in the
+output buffer of the device file which then going to to get sent out by the
+operating system to the terminal device associated with that character device
+file. Conversely, when the user at the keyboard types something, that data
+get sent from the terminal to the computer and the operating system will take
+that data and put it in the input buffer of the associated character device
+file and then process then may read form the character device file to get that
+data. So again, be cleat the terminal is a totally dumb device. When you see
+text displayed on the terminal that is something that coming from processes
+running on the attached computer. The only exception to this is that with the
+terminal character device file we can turn on a mode called echoing. When the
+terminal character device operates in the echoing mode, then any input
+received from the terminal was immediately echo back out to the terminal so
+that is can be displayed on the screen. In practice what this means when
+echoing is non and the user types on the keyboard, then whatever key they
+type, they will immediately see it appear on their screen. Just be clear that
+the terminal doesn't have echoing mode, it is the terminal character device
+file has echoing mode, so the data actually be sent from the terminal and
+immediately back to the terminal.
