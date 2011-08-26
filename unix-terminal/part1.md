@@ -58,13 +58,15 @@ behaviors, like, say, what color text may be displayed, say, how many lines of
 text get displayed on the screen, things like that.
 
 Now the trouble with this arrangement is that early on escape sequences were
-on really standardized. Manufactures did the wrong thing. So what you need to
-do to control one terminal differs from what you do to control another in
-time. Though eventually standards did more or less merge. Unfortunately, the
-end result ended up quite messy, so if you look at the details of terminals
-and want to know what you can do with the escape codes, it is all surprisingly
-complicated. So that's whole area were going to laid over. We will just think
-of terminals are simply display a sequence of text, and sending back to the
-computer whatever gets typed at the keyboard and end the story.
+not really standardized. Many manufactures did the wrong thing. So what you need to
+do to control one terminal differs from what you do to control another. In
+time though, eventually standards did more or less merge. Unfortunately, the
+end result of this process ended up quite messy, so if you look at the details of terminals
+and want to know what exactly you can do with the escape codes, it is all surprisingly
+complicated. So that's a whole area we're going to laid over. We will just think
+of terminals as simply displaying a sequence of text, and sending back to the
+computer whatever gets typed at the keyboard and end of story.
 
-However I do mention...
+However I do mention these capabilities, because you will likely interact with
+some programs that when they do use the terminal, they seem to do things that are
+otherwise impossible, like say, changing the color of the text.
