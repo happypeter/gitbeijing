@@ -13,10 +13,10 @@ and also the devices only have one display font and one display color.
 
 So the idea of terminal is that when they are hooked up to computer, the
 computer then can send text characters and sequences to the terminal which get
-displayed character by character on the screen and when the user sitting on
+displayed character by character on the screen and when the user sitting at
 the keyboard types anything, a character sent from the terminal to the
-computer, so does not need symmetry. A strict sequence of characters flows from
-computer to the terminal and vice versa. AS you can probably guess, the text
-going in both directions was almost ASCII text.
+computer, so does not need symmetry there. A strict sequence of characters
+flows from computer to the terminal and vice versa. AS you can probably guess,
+the text going in both directions was almost ASCII text.
 
 #SLIDE 3
