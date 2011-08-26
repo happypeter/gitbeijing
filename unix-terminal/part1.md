@@ -34,16 +34,25 @@ operating system to the terminal device associated with that character device
 file. Conversely, when the user at the keyboard types something, that data
 get sent from the terminal to the computer and the operating system will take
 that data and put it in the input buffer of the associated character device
-file and then process then may read form the character device file to get that
-data. So again, be cleat the terminal is a totally dumb device. When you see
+file and then the process may read form the character device file to get that
+data. So again, be clear the terminal is a totally dumb device. When you see
 text displayed on the terminal that is something that coming from processes
 running on the attached computer. The only exception to this is that with the
 terminal character device file we can turn on a mode called echoing. When the
 terminal character device operates in the echoing mode, then any input
 received from the terminal was immediately echo back out to the terminal so
 that is can be displayed on the screen. In practice what this means when
-echoing is non and the user types on the keyboard, then whatever key they
+echoing is on and the user types on the keyboard, then whatever key they
 type, they will immediately see it appear on their screen. Just be clear that
 the terminal doesn't have echoing mode, it is the terminal character device
-file has echoing mode, so the data actually be sent from the terminal and
+file has echoing mode, so the data actually has been sent from the terminal and
 immediately back to the terminal.
+
+As the years went on, some terminals begin to add more features, like for
+example, some terminals feature the ability to change text coloe, the way this
+work is that you would set terminal's mode like, say, what color is printing,
+by sending a escape sequence(that is, a sequence of characters beginning wiht
+the ASCII escape character, which is ASCII code 27). By sending escape
+sequences to the terminal, we can set its modes, and thereby change its
+behaviors, like, say, what color text may be displayed, say, how many lines
+get displayed on the screen, things like that.
