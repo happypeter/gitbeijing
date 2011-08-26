@@ -1,9 +1,10 @@
 #Slide 1
-#幻灯片1
+幻灯片1
 NULL
+
 没内容
 #Slide 2
-#幻灯片2
+幻灯片2
 Throughout 1960's and 1970's, most human interaction with computers was done
 through what are called terminals. A terminal device is a piece of hardware
 that combines the keyboard with some kind of character display, which in early
