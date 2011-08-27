@@ -84,27 +84,40 @@ are otherwise impossible, like say, changing the color of the text.
 
 当然，我觉的提一提这些功能还是很有必要的，以后你很可能会遇到一些程序，它们会试图改变终端的文本颜色。
 
-#SLIDE 4 In Unix, we have this convention whereby processes when they are
+#SLIDE 4 
+In Unix, we have this convention whereby processes when they are
 started expect to inherit from their parent to open file descriptors, 0 and 1.
 File descriptor 0, we call it standard in, abbreviated as stdin, and file
 descriptor 1, we call it standard out, abbreviated as stdout. 
 
+Unix系统下有这样一个传统，当一个进程开始时，它会从他的父进程继承文件描述符0和1。
+我们把文件描述符0称为标准输入，简称stdin;把文件描述符1称为标准输出，简称stdout。
+
 In the usual case, processes expect standard in to be a file descriptor open
 for reading a terminal character device file and standard out is expected to
 be open for writing that same terminal device file, 
+
+通常，进程会从标准输入（stdin）来读取终端设备文件中的数据，而当进程想要向终端设备文件写数据时就会用到标准输出（stdout）。
 
 In practice, what this means is that when a program wishes to read input from
 the terminal, it reads from standard in, its file descriptor 0, and when a
 program wish to display text on that same terminal it writes data to its
 standard out.
 
-#SLIDE 5 Now be clear, this is what processes expect to inherit from their
-parent, we call that when a process forks in Unix, the file descriptors from
+在实际使用中这意味着，当进程想要从终端中读输入时，会读标准输入（文件描述符为0）；
+而当进程要在同一个终端上显示文本时，它就会把数据写到标准输出上。
+
+#SLIDE 5 
+Now be clear, this is what processes expect to inherit from their
+parent. We call that when a process forks in Unix, the file descriptors from
 the parent will be copied to the child, so has all the same open file
 descriptors. So the convention in Unix is that when program wish to interact
 with terminal, they usually don't locate a appropriate terminal themselves,
 they just expect to inherit these file descriptors already open to a
 appropriate terminal. 
+
+注意，如图所示的就是进程要向它的父进程继承什么。一般我们把这个继承过程叫做一个fork.
+那么fork进程就意味着父进程的文件描述符会被直接拷贝到子进程，那自然的，子进程就拥有了和父进程相同的那些文件描述符。当程序想要和终端交互时，一般不用自行定位一个终端，因为它们会从父进程继承到文件描述符（其中当然也包括0和1），这些描述符本身就已经指向了特定终端。
 
 Now you maybe wondering why do we have two separate file descriptors, one for
 reading, one for writing.  First off something I did not explicitly mention in
@@ -115,5 +128,8 @@ descriptors, when we could just get away with one for both reading and
 writing. This is something we will be explaining a bit later when we talk
 about what's called redirection.
 
-#SLIDE 6 Something else you maybe wondering at this point is that, hey, my
+你现在可能感觉很奇怪，为什么我们会有两个文件描述符，一个用来读，一个用于写。当初我在讲Unix系统调用的时候没有提到的一点是，文件打开是可以设置模式为只读，或是只写。当然，这样也不足以说明明明我们可以用一个描述符，既读又写，为什么偏偏却非要有两个呢。后续，我们在降到重定向（redirection)的时候，会对此做进一步的说明。
+
+#SLIDE 6 
+Something else you maybe wondering at this point is that, hey, my
 computer doesn't have a terminal...
