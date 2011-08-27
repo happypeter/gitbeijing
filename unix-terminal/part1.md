@@ -2,6 +2,7 @@
 NULL
 
 没内容
+
 #Slide 2
 Throughout 1960's and 1970's, most human interaction with computers was done
 through what are called terminals. A terminal device is a piece of hardware
@@ -24,8 +25,8 @@ flows from computer to the terminal and vice versa. As you can probably guess,
 the text going in both directions was almost always ASCII text.
 
 所以终端总体上就是这么个东西，你把它连到计算机上，计算机就可以把文本（就是一个一个的字符）和序列（例如转意序列）送到终端，然后一个字符一个字符的显示出来；同样，当用户敲字的时候，这些字就从终端传给了计算机。这里也不需要对称同步，就是一串字符从计算机传到终端，或者反过来从终端传到计算机。可能大家能猜到，这些传来传去的数据基本都是ASCII字符。
-#SLIDE 3
 
+#SLIDE 3
 In Unix systems, a process may communicate with a terminal through a file
 representing that terminal, a terminal character device file. When a process
 writes to a terminal character device file, that is putting in data in the
@@ -82,11 +83,10 @@ some programs that when they do use the terminal, they seem to do things that
 are otherwise impossible, like say, changing the color of the text.
 
 当然，我觉的提一提这些功能还是很有必要的，以后你很可能会遇到一些程序，它们会试图改变终端的文本颜色。
-#SLIDE 4
 
-In Unix, we have this convention whereby processes when they are started
-expect to inherit from their parent to open file descriptors, 0 and 1. File
-descriptor 0, we call it standard in, abbreviated as stdin, and file
+#SLIDE 4 In Unix, we have this convention whereby processes when they are
+started expect to inherit from their parent to open file descriptors, 0 and 1.
+File descriptor 0, we call it standard in, abbreviated as stdin, and file
 descriptor 1, we call it standard out, abbreviated as stdout. 
 
 In the usual case, processes expect standard in to be a file descriptor open
@@ -98,24 +98,22 @@ the terminal, it reads from standard in, its file descriptor 0, and when a
 program wish to display text on that same terminal it writes data to its
 standard out.
 
-#SLIDE 5
+#SLIDE 5 Now be clear, this is what processes expect to inherit from their
+parent, we call that when a process forks in Unix, the file descriptors from
+the parent will be copied to the child, so has all the same open file
+descriptors. So the convention in Unix is that when program wish to interact
+with terminal, they usually don't locate a appropriate terminal themselves,
+they just expect to inherit these file descriptors already open to a
+appropriate terminal. 
 
-Now be clear, this is what processes expect to inherit from their parent, we
-call that when a process forks in Unix, the file descriptors from the parent will be
-copied to the child, so has all the same open file descriptors. So the convention in
-Unix is that when program wish to interact with terminal, they usually don't locate
-a appropriate terminal themselves, they just expect to inherit these file
-descriptors already open to a appropriate terminal. 
+Now you maybe wondering why do we have two separate file descriptors, one for
+reading, one for writing.  First off something I did not explicitly mention in
+the coverage of Unix System calls is that when you open a file you can open in
+a mode such that only reading is allowed, or only writing is allowed, that is
+possible. Still that doesn't explain why we have two separate file
+descriptors, when we could just get away with one for both reading and
+writing. This is something we will be explaining a bit later when we talk
+about what's called redirection.
 
-Now you maybe wondering
-why do we have two separate file descriptors, one for reading, one for writing.
-First off something I did not explicitly mention in the coverage of Unix System calls is that when
-you open a file you can open in a mode such that only reading is allowed, or
-only writing is allowed, that is possible. Still that doesn't explain why we
-have two separate file descriptors, when we could just get away with one for both
-reading and writing. This is something we will be explaining a bit later when
-we talk about what's called redirection.
-
-#SLIDE 6
-Something else you maybe wondering at this point is that, hey, my computer
-doesn't have a terminal...
+#SLIDE 6 Something else you maybe wondering at this point is that, hey, my
+computer doesn't have a terminal...
