@@ -82,3 +82,40 @@ some programs that when they do use the terminal, they seem to do things that
 are otherwise impossible, like say, changing the color of the text.
 
 当然，我觉的提一提这些功能还是很有必要的，以后你很可能会遇到一些程序，它们会试图改变终端的文本颜色。
+#SLIDE 4
+
+In Unix, we have this convention whereby processes when they are started
+expect to inherit from their parent to open file descriptors, 0 and 1. File
+descriptor 0, we call it standard in, abbreviated as stdin, and file
+descriptor 1, we call it standard out, abbreviated as stdout. 
+
+In the usual case, processes expect standard in to be a file descriptor open
+for reading a terminal character device file and standard out is expected to
+be open for writing that same terminal device file, 
+
+In practice, what this means is that when a program wishes to read input from
+the terminal, it reads from standard in, its file descriptor 0, and when a
+program wish to display text on that same terminal it writes data to its
+standard out.
+
+#SLIDE 5
+
+Now be clear, this is what processes expect to inherit from their parent, we
+call that when a process forks in Unix, the file descriptors from the parent will be
+copied to the child, so has all the same open file descriptors. So the convention in
+Unix is that when program wish to interact with terminal, they usually don't locate
+a appropriate terminal themselves, they just expect to inherit these file
+descriptors already open to a appropriate terminal. 
+
+Now you maybe wondering
+why do we have two separate file descriptors, one for reading, one for writing.
+First off something I did not explicitly mention in the coverage of Unix System calls is that when
+you open a file you can open in a mode such that only reading is allowed, or
+only writing is allowed, that is possible. Still that doesn't explain why we
+have two separate file descriptors, when we could just get away with one for both
+reading and writing. This is something we will be explaining a bit later when
+we talk about what's called redirection.
+
+#SLIDE 6
+Something else you maybe wondering at this point is that, hey, my computer
+doesn't have a terminal...
