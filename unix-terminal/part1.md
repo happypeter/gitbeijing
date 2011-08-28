@@ -1,9 +1,13 @@
-#Slide 1
+#Slide 1(00:00-00:02)
+NULL
+
+没内容
+#Slide 2(00:02-00:06)
 NULL
 
 没内容
 
-#Slide 2
+#Slide 3(00:06-01:24)
 Throughout 1960's and 1970's, most human interaction with computers was done
 through what are called terminals. A terminal device is a piece of hardware
 that combines the keyboard with some kind of character display, which in early
@@ -26,7 +30,7 @@ the text going in both directions was almost always ASCII text.
 
 所以终端总体上就是这么个东西，你把它连到计算机上，计算机就可以把文本（就是一个一个的字符）和序列（例如转意序列）送到终端，然后一个字符一个字符的显示出来；同样，当用户敲字的时候，这些字就从终端传给了计算机。这里也不需要对称同步，就是一串字符从计算机传到终端，或者反过来从终端传到计算机。可能大家能猜到，这些传来传去的数据基本都是ASCII字符。
 
-#SLIDE 3
+#SLIDE 4(01:24-04:21)
 In Unix systems, a process may communicate with a terminal through a file
 representing that terminal, a terminal character device file. When a process
 writes to a terminal character device file, that is putting in data in the
@@ -84,7 +88,7 @@ are otherwise impossible, like say, changing the color of the text.
 
 当然，我觉的提一提这些功能还是很有必要的，以后你很可能会遇到一些程序，它们会试图改变终端的文本颜色。
 
-#SLIDE 4 
+#SLIDE 5(04:21-05:18) 
 In Unix, we have this convention whereby processes when they are
 started expect to inherit from their parent to open file descriptors, 0 and 1.
 File descriptor 0, we call it standard in, abbreviated as stdin, and file
@@ -107,7 +111,7 @@ standard out.
 在实际使用中这意味着，当进程想要从终端中读输入时，会读标准输入（文件描述符为0）；
 而当进程要在同一个终端上显示文本时，它就会把数据写到标准输出上。
 
-#SLIDE 5 
+#SLIDE 6(05:18-06:20)
 Now be clear, this is what processes expect to inherit from their
 parent. We call that when a process forks in Unix, the file descriptors from
 the parent will be copied to the child, so has all the same open file
@@ -130,6 +134,85 @@ about what's called redirection.
 
 你现在可能感觉很奇怪，为什么我们会有两个文件描述符，一个用来读，一个用于写。当初我在讲Unix系统调用的时候没有提到的一点是，文件打开是可以设置模式为只读，或是只写。当然，这样也不足以说明明明我们可以用一个描述符，既读又写，为什么偏偏却非要有两个呢。后续，我们在降到重定向（redirection)的时候，会对此做进一步的说明。
 
-#SLIDE 6 
+#SLIDE 7(06:20-06:50) 
 Something else you maybe wondering at this point is that, hey, my
-computer doesn't have a terminal...
+computer doesn't have a terminal. I have a proper monitor that has full
+graphical display, and on that display, I have a graphical user interface
+which interact with mouse and keyboard. But these are totally separate
+devices, I do not have a keyboard bundled together with a monitor as a single
+unit called terminal. So what's the hell is going on here, we do not seem to
+have any terminal in modern system. The answer is that well, hardware
+terminals are thing of the past. What we do today is that we imitate them. We
+emulate them in software. What we have are called terminal emulators.
+
+#SLIDE 8(06:50-07:24)
+This window here, for example, is a terminal emulator program. To explain what
+is going on here, we actually first have to talk about the graphical user interface in Linux in
+general. 
+
+In Microsoft Windows, the graphical user interface is a part of the operating
+system itself. It is tangled up with all the other operating system code. In
+Unix systems in contrast, including today's Linux, the graphical user
+interface runs basically as an ordinary  program, not a component of Linux kernel
+at all in fact.
+
+#SLIDE 9(07:24-07:42)
+When running a graphical environment in Linux, the program which
+controls your screen and which gets the input directly from the mouse and
+keyboard is called a X Window System Server. 
+#SLIDE 10(07:42-08:21)
+When you then run a program which
+has graphical interface, like, say, the Firefox web browser or the Gimp image
+editing program, these programs send the content of their windows to the
+X Window Server and then the X Window Server is responsible for actually
+displaying those windows on the screen. 
+
+When the user then, say, click on one of these windows, that mouse data is read by the X
+Window Server, which then sends on to the appropriate program. 
+
+Usually in the setup we have a program running responsible for, say, drawing
+all the interface elements on the desktop, like,say the desktop wallpaper or
+the icons on the desktop, and also whatever interface element you have for
+task switching and studying the programs. 
+#SLIDE 11(08:21-
+One program commonly for that purpose is the program called Gnome Panel, which is
+part of Gnome Desktop, which is whole collection of programs and libraries for
+creating a graphical user environment on Linux. 
+
+And then additionally within a Linux window
+server, you need what is called a window manager, which is the program which
+is
+responsible for drawing the borders around windows,and also keeping track of
+the positions of the windows on screen and moving them around and resizing them
+and such.
+
+The Window Manager included with the Gnome desktop is called Metacity. So notice that Gnome
+Panel and the Metacity Window Manager  are both otherwise ordinary processes
+that talk to the X Window Server, so they actually talk to the X Window Server
+using the same X protocol that all other programs, like Firefox and Gimp use. 
+
+Be clear that the X Window System is defined really by a protocol, the X
+protocol. And there are a few different X Window Servers available, the most
+widely used one  is called XORG. If you have a Linux system today, most likely
+it is using XORG. Also be clear that, although we call it a server, the X Window Server is
+usually talking to programs running on the very same machine. So when I run Firefox on the system, and I see it displayed on my screen, that it is 
+ connecting to the X Window Server running on my same system.
+
+ Part of the reason though, for this client-server architecture, is that it is
+ possible to run a program like Firefox and have it talk to a X Window
+ server running on a different system. So if we run, say, Firefox on your
+ system, but have it connected to the X Window Server running on my system,
+ then I will be seeing that Firefox window displayed on my screen, and I can
+ interact with it, just like it were a program running locally on my system,
+ but in fact it's actually running on your system.
+
+ This is a example of a feature called Network Transparency. And the idea
+ going back 30 years ago, when the system was first device(?) is that  we will have a batch of what are called Thin
+ Clients, computers which do not have to be very powerful, yet simply just
+ display programs that are actually been run on other systems. It is the
+ arrangement that very much like the idea of having a batch of terminals all connecting to one system, when all the
+ code is really running on a computer system, terminals themselves can be very
+ thin client, say, they do not have that much smarts in them. 
+
+ #SLIDE 12
+ So now getting back to terminal...
