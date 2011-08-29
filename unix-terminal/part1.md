@@ -72,7 +72,7 @@ text get displayed on the screen, things like that.
 Now the trouble with this arrangement is that early on escape sequences were
 not really standardized. Many manufactures did the wrong thing. So what you
 need to do to control one terminal differs from what you do to control
-another. In time though, eventually standards did more or less merge.
+another. In time though, eventually standard did more or less emerge.
 Unfortunately, the end result of this process ended up quite messy, so if you
 look at the details of terminals and want to know what exactly you can do with
 the escape codes, it is all surprisingly complicated. So that's a whole area
@@ -196,23 +196,55 @@ protocol. And there are a few different X Window Servers available, the most
 widely used one  is called XORG. If you have a Linux system today, most likely
 it is using XORG. Also be clear that, although we call it a server, the X Window Server is
 usually talking to programs running on the very same machine. So when I run Firefox on the system, and I see it displayed on my screen, that it is 
- connecting to the X Window Server running on my same system.
+connecting to the X Window Server running on my same system.
 
- Part of the reason though, for this client-server architecture, is that it is
- possible to run a program like Firefox and have it talk to a X Window
- server running on a different system. So if we run, say, Firefox on your
- system, but have it connected to the X Window Server running on my system,
- then I will be seeing that Firefox window displayed on my screen, and I can
- interact with it, just like it were a program running locally on my system,
- but in fact it's actually running on your system.
+Part of the reason though, for this client-server architecture, is that it is
+possible to run a program like Firefox and have it talk to a X Window
+server running on a different system. So if we run, say, Firefox on your
+system, but have it connected to the X Window Server running on my system,
+then I will be seeing that Firefox window displayed on my screen, and I can
+interact with it, just like it were a program running locally on my system,
+but in fact it's actually running on your system.
 
- This is a example of a feature called Network Transparency. And the idea
- going back 30 years ago, when the system was first device(?) is that  we will have a batch of what are called Thin
- Clients, computers which do not have to be very powerful, yet simply just
- display programs that are actually been run on other systems. It is the
- arrangement that very much like the idea of having a batch of terminals all connecting to one system, when all the
- code is really running on a computer system, terminals themselves can be very
- thin client, say, they do not have that much smarts in them. 
+This is a example of a feature called Network Transparency. And the idea
+going back 30 years ago, when the system was first devised is that  we will have a batch of what are called Thin
+Clients, computers which do not have to be very powerful, yet simply just
+display programs that are actually been run on other systems. It is the
+arrangement that very much like the idea of having a batch of terminals all connecting to one system, when all the
+code is really running on a computer system, terminals themselves can be very
+thin client, say, they do not have that much smarts in them. 
 
- #SLIDE 12
- So now getting back to terminal...
+#SLIDE 12
+So now getting back to terminals. A terminal emulator is a program which
+sends window content to a X Window Server to display on screen as graphical
+window, and it also receives textual input from the keyboard and also perhaps
+mouse clicks from the X Window Server.
+
+The question now is how do we get other programs to read and write from the
+terminal emulator as if it just like a regular terminal, and actual terminal
+character device file. 
+
+#SLIDE 13
+The way this is achieved is with another mechanism introduced in Unix systems
+called pseduo-terminal device files. These pseduo-terminal files actually
+called in pairs, one the slave, one the master. And the program which is
+imitating the terminal, it reads and writes from the master, and the program
+that actually wishes to use the fake terminal, reads and writes from the
+slave.
+
+So for example, I open up my terminal emulator in X windows, and then I click
+the window, and, say, start to type something. That text data I type is sent
+from the X window server to the terminal emulator which then writes it to the
+master pseduo-terminal character device file. The operating system then copies
+that data over to the associated slave to be read by a process. 
+
+So be clear that pseduo-terminals are in a sense of fiction, they represents
+terminal devices which don't actually exist. And in fact, it is the
+responsible of the terminal emulator, when it start, to ask the operating system to
+allocate a new pseduo-terminal just for its purposes. You generally want
+each terminal to have its own unique pseduo˜-terminal master-slave pair.
+
+#SLIDE
+In the context of Linux, you will hear talk about a feature called Virtual
+Consoles. On a Linux system, if you hold down Ctrl and Alt...
+Unix called 
