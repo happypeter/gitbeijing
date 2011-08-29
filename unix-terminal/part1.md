@@ -174,7 +174,7 @@ Usually in the setup we have a program running responsible for, say, drawing
 all the interface elements on the desktop, like,say the desktop wallpaper or
 the icons on the desktop, and also whatever interface element you have for
 task switching and studying the programs. 
-#SLIDE 11(08:21-
+#SLIDE 11(08:21-10:46)
 One program commonly for that purpose is the program called Gnome Panel, which is
 part of Gnome Desktop, which is whole collection of programs and libraries for
 creating a graphical user environment on Linux. 
@@ -214,7 +214,7 @@ arrangement that very much like the idea of having a batch of terminals all conn
 code is really running on a computer system, terminals themselves can be very
 thin client, say, they do not have that much smarts in them. 
 
-#SLIDE 12
+#SLIDE 12(10:46-11:15)
 So now getting back to terminals. A terminal emulator is a program which
 sends window content to a X Window Server to display on screen as graphical
 window, and it also receives textual input from the keyboard and also perhaps
@@ -224,7 +224,7 @@ The question now is how do we get other programs to read and write from the
 terminal emulator as if it just like a regular terminal, and actual terminal
 character device file. 
 
-#SLIDE 13
+#SLIDE 13(11:15-12:25)
 The way this is achieved is with another mechanism introduced in Unix systems
 called pseduo-terminal device files. These pseduo-terminal files actually
 called in pairs, one the slave, one the master. And the program which is
@@ -244,7 +244,7 @@ responsible of the terminal emulator, when it start, to ask the operating system
 allocate a new pseduo-terminal just for its purposes. You generally want
 each terminal to have its own unique pseduo˜-terminal master-slave pair.
 
-#SLIDE
+#SLIDE 14(12:25-
 In the context of Linux, you will hear talk about a feature called Virtual
 Consoles. On a Linux system, if you hold down Ctrl and Alt...
 Unix called 
