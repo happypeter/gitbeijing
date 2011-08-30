@@ -244,7 +244,69 @@ responsible of the terminal emulator, when it start, to ask the operating system
 allocate a new pseduo-terminal just for its purposes. You generally want
 each terminal to have its own unique pseduo˜-terminal master-slave pair.
 
-#SLIDE 14(12:25-
+#SLIDE 14(12:25-14:15)
 In the context of Linux, you will hear talk about a feature called Virtual
-Consoles. On a Linux system, if you hold down Ctrl and Alt...
-Unix called 
+Consoles. On a Linux system, if you hold down Ctrl and Alt and hit F1 or
+F2..F3 up to F8, it will switch you to another virtual console. 
+
+So the X window system by default actually runs as usually the 6th, 7th or 8th
+virtual console. So you switch your X window server by holding down Ctrl-Alt
+and hitting F7, or sometimes F8. If you hold down Ctrl-Alt and hit F1, that
+switches you to a different virtual console, one without an X window server
+but rather just a terminal. 
+
+So a virtual console sort of acts like a terminal
+emulator. It is just embedded inside the Linux kernel itself. And though these virtual consoles by
+default simply run with terminal command line, you can in a virtual console launch
+a X window server, and thereby turning that virtual console into a proper GUI desktop. So
+what typically happens in most Linux system upon boot up, it launch an X window server
+in one of the virtual consoles and switches to that virtual console.
+
+So the purpose of the system is that the way Linux gives us a terminal even if we
+don't have a X window server and also it allows us to in case something goes
+wrong with the X window server, we can just switch over to another virtual
+console, and use the command line there.
+
+Assuming you have a X window server in which it never goes wrong, you probably
+don't ever need virtual consoles, but it's there as a nice fall back feature
+basically. 
+
+Just remember though, if you accidently, for whatever reason, switch
+away from your X window server, because you hit Ctrl-ALt and say, F3. Just
+remember you can get back by hitting Ctrl-Alt-F7, or sometimes F6 or F8,
+it depends on your Linux distribution.
+
+#SLIDE 15(14:15-
+The Last thing to say about terminal here is where you will find the character
+device files. This is something may vary depended upon which Unix you are using
+and if you are using Linux, which distribution. But on my Ubuntu system for
+example, if I open /dev, I will see a directory called pts, which stands for
+"pseduo-terminal slaves", and in this directory, I find all of these
+pseduo-terminal slaves that are currently being used. 
+
+And then in the /dev/ directory itself you will find a file called tty, this
+is a special kind of special file. It does not represent a character device,
+when a program opens the /dev/tty file, what you get back is a file descriptor for the so called
+controlling terminal. That is terminal that is associated with their process,
+which is a concept we will talk about later on, but the point here is that
+when you open this file, there is some special magic going on, where what you get form
+file descriptors depends upon which process is opening he file.
+
+And finally also in /dev/ you will see a number of files starting with tty and
+then a number. These are character device files representing the virtual
+consoles. And again remember virtual consoles are Linux specific feature. But
+in any case if say, you open and write to /dev/tty1, what you are doing is you
+are writing to the terminal of the first virtual console. 
+
+I believe actually these virtual console are numbered starting from 1 rather than
+zero. If you wonder what tty stand for, Let's see historical mechanism, back
+in the 
+50-60 and 70s, we have this device called teltype machines. That is over a
+communication line, you have 2 devices, on either end. You type on one end and the
+characters printed out on the other end. So there are actually predecessors to
+hardware terminals. 
+
+And for whatever reason that is the name of the creators
+of Linux went with, even though it didn't really make sense at that time, it certainly
+doesn't make sense as a given name 40 years later, but that's what we are stock
+with, when people talk about ttys, they are talking about terminals.
