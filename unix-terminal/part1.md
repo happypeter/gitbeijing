@@ -276,7 +276,7 @@ away from your X window server, because you hit Ctrl-ALt and say, F3. Just
 remember you can get back by hitting Ctrl-Alt-F7, or sometimes F6 or F8,
 it depends on your Linux distribution.
 
-#SLIDE 15(14:15-
+#SLIDE 15(14:15-16:20)
 The Last thing to say about terminal here is where you will find the character
 device files. This is something may vary depended upon which Unix you are using
 and if you are using Linux, which distribution. But on my Ubuntu system for
