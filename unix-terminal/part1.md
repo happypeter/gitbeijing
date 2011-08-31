@@ -145,16 +145,22 @@ have any terminal in modern system. The answer is that well, hardware
 terminals are thing of the past. What we do today is that we imitate them. We
 emulate them in software. What we have are called terminal emulators.
 
+你现在可能觉得很奇怪，我的计算机上哪有什么终端啊？我有个显示器，显示给我一套图形界面，在上面我可以用鼠标，也可以用键盘。这几部分也不像是所谓的终端啊。实际上，终端作为硬件出现已经是过去的事情了，现代系统中我们根本看不到终端这套硬件。我们现在的做法是模拟它们，用软件来做仿真，也就是我们所说的终端仿真器。
 #SLIDE 8(06:50-07:24)
 This window here, for example, is a terminal emulator program. To explain what
 is going on here, we actually first have to talk about the graphical user interface in Linux in
 general. 
+
+ 现在我们看到的这个窗口，就是一个终端仿真器程序。如果真正想搞清楚它的原理，我们就不得不从Linux图形化用户界面开始说起（GUI）。
+
 
 In Microsoft Windows, the graphical user interface is a part of the operating
 system itself. It is tangled up with all the other operating system code. In
 Unix systems in contrast, including today's Linux, the graphical user
 interface runs basically as an ordinary  program, not a component of Linux kernel
 at all in fact.
+
+在微软的Windows系统中，GUI就是操作系统的一部分。GUI的代码和其他的系统代码是混在一起的。但是对于Unix系统而言，当然也包括今天的Linux，GUI是作为一个普通的应用程序出现的，并不是Linux 内核（kernel）的一部分。
 
 #SLIDE 9(07:24-07:42)
 When running a graphical environment in Linux, the program which
