@@ -166,6 +166,9 @@ at all in fact.
 When running a graphical environment in Linux, the program which
 controls your screen and which gets the input directly from the mouse and
 keyboard is called a X Window System Server. 
+
+当我们在Linux下运行图形界面时，负责控制屏幕并且直接接受鼠标和键盘输入的程序叫做X窗口系统服务器（X
+Window System Server)
 #SLIDE 10(07:42-08:21)
 When you then run a program which
 has graphical interface, like, say, the Firefox web browser or the Gimp image
@@ -173,13 +176,20 @@ editing program, these programs send the content of their windows to the
 X Window Server and then the X Window Server is responsible for actually
 displaying those windows on the screen. 
 
+当一个像火狐浏览器这样的有图形界面的程序运行时，它会把他窗口中的内容发送给X
+Window Server, 然后由 X Window Server 把这些内容显示在屏幕上。
+
 When the user then, say, click on one of these windows, that mouse data is read by the X
 Window Server, which then sends on to the appropriate program. 
+
+当用户点击一个窗口时，X Window Server 会读取鼠标数据，然后再把数据发送给该窗口所对应的程序。
 
 Usually in the setup we have a program running responsible for, say, drawing
 all the interface elements on the desktop, like,say the desktop wallpaper or
 the icons on the desktop, and also whatever interface element you have for
 task switching and studying the programs. 
+
+通常我们还会专门用一个程序来负责画出桌面上的各种图形元素，比如壁纸和图标，还有其他所有用来作任务转换和查看程序的图形元素。
 #SLIDE 11(08:21-10:46)
 One program commonly for that purpose is the program called Gnome Panel, which is
 part of Gnome Desktop, which is whole collection of programs and libraries for
