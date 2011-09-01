@@ -195,6 +195,9 @@ One program commonly for that purpose is the program called Gnome Panel, which i
 part of Gnome Desktop, which is whole collection of programs and libraries for
 creating a graphical user environment on Linux. 
 
+这类程序中常见的一款叫做Gnome Panel, 是Gnome Desktop 桌面环境的一部分。Gnome
+Desktop 是一大堆用来构建Linux下的GUI的程序和库(library)的总和。
+
 And then additionally within a Linux window
 server, you need what is called a window manager, which is the program which
 is
@@ -202,10 +205,18 @@ responsible for drawing the borders around windows,and also keeping track of
 the positions of the windows on screen and moving them around and resizing them
 and such.
 
+另外，还要有 Window Manager，用来画出各个窗口的边界，跟踪窗口位置，移动和缩放窗口。
+
+
 The Window Manager included with the Gnome desktop is called Metacity. So notice that Gnome
 Panel and the Metacity Window Manager  are both otherwise ordinary processes
 that talk to the X Window Server, so they actually talk to the X Window Server
 using the same X protocol that all other programs, like Firefox and Gimp use. 
+
+在X Window System 中使用的Window Manager 叫做Metacity。注意，Gnome Panel 和
+Metacity
+窗口管理器虽然作用比较特殊，但是本质上也和其他普通程序一样，使用完全相同的X
+协议来和X Window Server 通信，这一点上它们和火狐没什么区别。
 
 Be clear that the X Window System is defined really by a protocol, the X
 protocol. And there are a few different X Window Servers available, the most
@@ -213,6 +224,8 @@ widely used one  is called XORG. If you have a Linux system today, most likely
 it is using XORG. Also be clear that, although we call it a server, the X Window Server is
 usually talking to programs running on the very same machine. So when I run Firefox on the system, and I see it displayed on my screen, that it is 
 connecting to the X Window Server running on my same system.
+
+
 
 Part of the reason though, for this client-server architecture, is that it is
 possible to run a program like Firefox and have it talk to a X Window
