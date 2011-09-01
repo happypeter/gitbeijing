@@ -350,4 +350,4 @@ with, when people talk about ttys, they are talking about terminals.
 
 # QUIZ
 
-Q: What are terminal, console, tty?  Are they the same thing?
+Q: What is terminal? console? tty?  Are they the same thing?
