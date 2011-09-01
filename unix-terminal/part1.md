@@ -225,6 +225,14 @@ it is using XORG. Also be clear that, although we call it a server, the X Window
 usually talking to programs running on the very same machine. So when I run Firefox on the system, and I see it displayed on my screen, that it is 
 connecting to the X Window Server running on my same system.
 
+需要搞清楚的是，其实所谓的X Window System 本质上就是一款协议：X
+协议。所以系统具体的内部实现如何的不同都没问题，应用程序不会感觉到有差异。而且实际上X
+Window Server
+的实现也确实不仅一种，不过最常见的一种叫xorg。如果你用的是Linux，很可能你用的就是xorg。
+同时要注意的是，尽管我们把它叫服务器（server），其实X Window
+Server一般都是和本机程序通信的。所以比如说，我使用火狐，我看见它的窗口显示在我的屏幕上，那跟他通信的X
+Window Server其实也运行在同一个系统上。
+
 
 
 Part of the reason though, for this client-server architecture, is that it is
