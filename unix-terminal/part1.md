@@ -347,3 +347,7 @@ And for whatever reason that is the name of the creators
 of Linux went with, even though it didn't really make sense at that time, it certainly
 doesn't make sense as a given name 40 years later, but that's what we are stock
 with, when people talk about ttys, they are talking about terminals.
+
+# QUIZ
+
+Q: What are terminal, console, tty?  Are they the same thing?
