@@ -254,6 +254,8 @@ arrangement that very much like the idea of having a batch of terminals all conn
 code is really running on a computer system, terminals themselves can be very
 thin client, say, they do not have that much smarts in them. 
 
+这个就是网络透明性（Network Transparency)，的一个实例。30年前，在最初设计计算机系统时，我们就有了瘦客户机（Thin Client）的概念。Thin Client 自己不用很强大，一般我们都是把它连到其他的系统上，通过它来显示其他系统上运行的程序。早期，我们一般一个系统会有很多个终端，终端就是Thin Client.
+
 #SLIDE 12(10:46-11:15)
 So now getting back to terminals. A terminal emulator is a program which
 sends window content to a X Window Server to display on screen as graphical
