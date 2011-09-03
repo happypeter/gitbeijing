@@ -233,8 +233,6 @@ Window Server
 Server一般都是和本机程序通信的。所以比如说，我使用火狐，我看见它的窗口显示在我的屏幕上，那跟他通信的X
 Window Server其实也运行在同一个系统上。
 
-
-
 Part of the reason though, for this client-server architecture, is that it is
 possible to run a program like Firefox and have it talk to a X Window
 server running on a different system. So if we run, say, Firefox on your
@@ -242,6 +240,11 @@ system, but have it connected to the X Window Server running on my system,
 then I will be seeing that Firefox window displayed on my screen, and I can
 interact with it, just like it were a program running locally on my system,
 but in fact it's actually running on your system.
+
+当然，一旦我们有了这种客户机-服务器(client-server)的架构，我们就可以在我们本机上运行一个程序（例如firefox)，并让它和运行在另一系统上的X
+Window Server 通信。现在假设你在你自己的系统上运行firefox,
+同时你让它和我系统上的 X Window Server
+进行通信。这样，我就可以在我的机器上看到firefox，并且也能操作它，就像它是我本地运行的一个程序一样。当然，实际上这个firefox是运行在你的系统之上的。
 
 This is a example of a feature called Network Transparency. And the idea
 going back 30 years ago, when the system was first devised is that  we will have a batch of what are called Thin
