@@ -307,11 +307,17 @@ In the context of Linux, you will hear talk about a feature called Virtual
 Consoles. On a Linux system, if you hold down Ctrl and Alt and hit F1 or
 F2..F3 up to F8, it will switch you to another virtual console. 
 
+用Linux的人们时常会提到一种叫做“虚拟工作台”（virtual
+console）的东西。在Linux系统中，如果按Ctrl-Alt-F1或F2...一直到F8，
+你就可以切换到不同的虚拟终端里。
+
 So the X window system by default actually runs as usually the 6th, 7th or 8th
 virtual console. So you switch your X window server by holding down Ctrl-Alt
 and hitting F7, or sometimes F8. If you hold down Ctrl-Alt and hit F1, that
 switches you to a different virtual console, one without an X window server
 but rather just a terminal. 
+
+默认，X是运行在第七个虚拟工作台之上的（有时，也可能是第六个或第八个）。所以，如果你按Alt-Ctrl-F1，那你就可以切换到一个没有X的虚拟工作台下，如果你想切换会有X的工作台，那就Alt-Ctrl-F7。
 
 So a virtual console sort of acts like a terminal
 emulator. It is just embedded inside the Linux kernel itself. And though these virtual consoles by
@@ -320,19 +326,27 @@ a X window server, and thereby turning that virtual console into a proper GUI de
 what typically happens in most Linux system upon boot up, it launch an X window server
 in one of the virtual consoles and switches to that virtual console.
 
+所以虚拟工作台，在很大程度上就是一个终端仿真器，不同的是它是Linux内核自带的功能。虚拟工作台一般默认是一个命令行的界面。但是理论上你可以在任何终端上启动X（实际中不同的Linux发行版上，未必都能直接成功），从而把这个虚拟工作台变成图形界面环境。一般Linux的启动过程是，现在某个虚拟工作台上启动X，然后在切换到那个工作台。
+
 So the purpose of the system is that the way Linux gives us a terminal even if we
 don't have a X window server and also it allows us to in case something goes
 wrong with the X window server, we can just switch over to another virtual
 console, and use the command line there.
 
+虚拟终端的作用基本就是当我们没有X的时候，给我们提供一个命令行来进行操作。或者是我们有X，但是死掉了，我们也可以切到其他的虚拟工作台去敲命令。
+
 Assuming you have a X window server in which it never goes wrong, you probably
 don't ever need virtual consoles, but it's there as a nice fall back feature
 basically. 
+
+假设你有X，并且从不出问题，那你基本上是不会用到虚拟工作台的。
 
 Just remember though, if you accidently, for whatever reason, switch
 away from your X window server, because you hit Ctrl-ALt and say, F3. Just
 remember you can get back by hitting Ctrl-Alt-F7, or sometimes F6 or F8,
 it depends on your Linux distribution.
+
+当你不小心从图形界面切到了其他的虚拟工作台，不要看着黑白屏哭泣，只要敲Alt-Ctrl-F7就回来了。
 
 #SLIDE 15(14:15-16:20)
 The Last thing to say about terminal here is where you will find the character
@@ -342,19 +356,29 @@ example, if I open /dev, I will see a directory called pts, which stands for
 "pseduo-terminal slaves", and in this directory, I find all of these
 pseduo-terminal slaves that are currently being used. 
 
+最后要说的就是所谓的终端设备文件到底在哪。当热各个平台上会有差异，仅就Ubuntu来说，我们可以在/dev下看到一个叫pts/的目录（drectory），pts
+就是pseduo-terminal
+slave，在这个目录里可以找到所有正在使用的pseduo-terminal slave 文件。
+
 And then in the /dev/ directory itself you will find a file called tty, this
 is a special kind of special file. It does not represent a character device,
 when a program opens the /dev/tty file, what you get back is a file descriptor for the so called
 controlling terminal. That is terminal that is associated with their process,
 which is a concept we will talk about later on, but the point here is that
 when you open this file, there is some special magic going on, where what you get form
-file descriptors depends upon which process is opening he file.
+file descriptors depends upon which process is opening the file.
+
+还可以看到tty这个文件，它是一种特殊文件。它并不代表一个字符设备，打开/dev/tty你得到的是controlling terminal 的文件描述符。究竟什么是controlling terminal以后我们会给出说明。
+
 
 And finally also in /dev/ you will see a number of files starting with tty and
 then a number. These are character device files representing the virtual
 consoles. And again remember virtual consoles are Linux specific feature. But
 in any case if say, you open and write to /dev/tty1, what you are doing is you
 are writing to the terminal of the first virtual console. 
+
+同样也在/dev/里，你会看到一些以tty开头后面跟一个数字的文件。这些是代表虚拟工作台（virtual
+console)的字符设备文件。提醒一下，虚拟工作台是Linux特有的功能。如果向/dev/tty1里写东西，那么实质上是在向第一虚拟工作台写东西。
 
 I believe actually these virtual console are numbered starting from 1 rather than
 zero. If you wonder what tty stand for, Let's see historical mechanism, back
@@ -364,11 +388,15 @@ communication line, you have 2 devices, on either end. You type on one end and t
 characters printed out on the other end. So there are actually predecessors to
 hardware terminals. 
 
+我印象中好像虚拟工作台的命名是从1开始，而非0。如果你想知道tty是什么意思，那就要回首五六十年代，那时有一种设备叫做远程打印机（teltype
+machine)。就是在一根通信线两端连两个设备，从其中任意一台设备上打字，都可以在另一端看到输出。它们是硬件终端的前身。
+
 And for whatever reason that is the name of the creators
 of Linux went with, even though it didn't really make sense at that time, it certainly
 doesn't make sense as a given name 40 years later, but that's what we are stock
 with, when people talk about ttys, they are talking about terminals.
 
+也不知道为什么，Linux也沿用了这个名字，tty可是40年前的古董了。不管怎么说，只要有人提起tty，你知道他们在说终端就行了。
 # QUIZ
 
 Q: What is terminal? console? tty?  Are they the same thing?
