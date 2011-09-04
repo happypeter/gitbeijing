@@ -262,9 +262,16 @@ sends window content to a X Window Server to display on screen as graphical
 window, and it also receives textual input from the keyboard and also perhaps
 mouse clicks from the X Window Server.
 
+现在回来继续谈terminal（终端）。终端仿真器（terminal
+emulator）会把要显示的内容发送给X Window
+Server，然后我们就可以在图形界面下看到一个终端仿真器窗口。我们可以往里面输入文本（个别时候终端仿真器也能接受一些鼠标事件），并由X
+Window Server 发送回终端仿真器。
+
 The question now is how do we get other programs to read and write from the
 terminal emulator as if it just like a regular terminal, and actual terminal
 character device file. 
+
+那现在的问题是，普通程序如何像从终端（终端设备文件）读数据一样，从终端仿真器里来读数据呢。
 
 #SLIDE 13(11:15-12:25)
 The way this is achieved is with another mechanism introduced in Unix systems
@@ -274,17 +281,26 @@ imitating the terminal, it reads and writes from the master, and the program
 that actually wishes to use the fake terminal, reads and writes from the
 slave.
 
+这就要引入Unix的另外一个机制叫做pseduo-terminal device
+file，这种文件通常都是成对出现，一主（master)，一从（slave）。终端仿真器会从master中做读写；而普通程序会从slave中做读写。
+
 So for example, I open up my terminal emulator in X windows, and then I click
 the window, and, say, start to type something. That text data I type is sent
 from the X window server to the terminal emulator which then writes it to the
 master pseduo-terminal character device file. The operating system then copies
 that data over to the associated slave to be read by a process. 
 
+例如，我们打开一个终端仿真器窗口然后开始输入文本。那么这些文本就由X Wondow
+Server 发送给终端仿真器，仿真器会把数据写到pseduo-terminal device file的master里, 操作系统会把数据从master拷贝到slave，供其他进程使用。
+
 So be clear that pseduo-terminals are in a sense of fiction, they represents
 terminal devices which don't actually exist. And in fact, it is the
 responsible of the terminal emulator, when it start, to ask the operating system to
 allocate a new pseduo-terminal just for its purposes. You generally want
 each terminal to have its own unique pseduo˜-terminal master-slave pair.
+
+注意，pseduo-terminal
+是一种有虚构意味的东西，它代表一种根本就不存在的设备文件。事实上，一般是当一个终端仿真器启动时，会专门为自己创建一对（master-slave）pseduo-terminal 设备文件。
 
 #SLIDE 14(12:25-14:15)
 In the context of Linux, you will hear talk about a feature called Virtual
