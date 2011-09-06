@@ -79,6 +79,57 @@ is not made specially convenient, because python is mainly about writing code
 to run directly in the python interpreter, not to run as separate processes.
 Whereas in shell, mainly what is about is running other  programs. 
 
-#SLIDE 3(04:40-
-So the difference of purpose  is what explain the reason  behind the syntax
+#SLIDE 3(04:40-05:00)
+So this difference of purpose is what explain the reason  behind the syntax
 for the basic kind of the command what I call the process command.
+
+A process command is written by specifying the name of the program, and then
+after one or more spaces,
+we will put  a list of arguments. And the arguments as we will see are not separated
+by commas, they are just separated by spaces. 
+#SLIDE 4(05:00-05:26)
+So for example a process command might
+read ls -la bin. And what this is is first the program name ls and followed by
+two arguments the first -ld , the second bin.what is going on with these
+arguments we are talking about in a moment, but looking first at the program name
+if this is the name of some program, some  executable file somewhere on the
+system how does the shell know were to find it? 
+
+#SLIDE 5(05:26-
+Well actually there are
+there different cases. When you see a program name with no slashes in it, then
+the shell will search executable file of that name in one of the directories
+listed in what is called the PATH, the path is simply a environment variable
+in the shell process. 
+
+So for example , this is what the path variable looks like in the shell on my system. It
+has a list of directories separated by colons. First /usr/sbin then
+/usr/local/bin/ then /usr/sbin/and /usr/bi/ and /sbin and /bin/.
+
+These are
+the directories in the my path. So in my shell when I run the command foo,the
+shell will first look for a executable  called foo in each one of the directory,
+starting with the one listed first, going left to right. And it goes to the first match it
+finds. Assuming it did not find any match then the shell reports a error,
+saying
+there is no such program called foo.  So that's the first case when I do not
+have any of the /es in the
+name of the program. 
+
+when the name starts with a / then the shell interprets this as a absolute
+path to a executable
+file. So in this case /bin/foo, the shell will look for that file and if there
+is not that program of that name the shell reports a error saying hey there is
+no such program as /bin/foo
+
+The last possibility is that there is / in the name but not at the start. This is then
+interpreted by the shell as a relative path name, so it  will look for that path relative
+from the process working directory, the current working directory of the shell
+itself. And this is one reason why the shell will display the current
+working directory. Because it is something you often need to know. So for
+example assuming the process' working directory is currently in my home
+directory /home/brian/ this will look for the file /home/brian/bin/foo and of
+course if there is no such executable file then the shell will give you a
+error message.
+
+One thing that almost always..
