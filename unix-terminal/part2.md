@@ -95,7 +95,7 @@ arguments we are talking about in a moment, but looking first at the program nam
 if this is the name of some program, some  executable file somewhere on the
 system how does the shell know were to find it? 
 
-#SLIDE 5(05:26-
+#SLIDE 5(05:26-10:42)
 Well actually there are
 there different cases. When you see a program name with no slashes in it, then
 the shell will search executable file of that name in one of the directories
@@ -132,4 +132,57 @@ directory /home/brian/ this will look for the file /home/brian/bin/foo and of
 course if there is no such executable file then the shell will give you a
 error message.
 
-One thing that almost always..
+One thing that almost always tricks newbies is that when they type say foo, to
+look for foo in the current directory rather than just in the directories of
+the PATH but this is not the case. As just explained, the shell only looks at
+the current working directory when there is a / somewhere in the middle of the
+name.  The trick than is run foo in the current directory is not to write just
+foo, but to write ./foo 
+
+What is going on here is that in a Unix system, every directories always
+contains an entry called dot which refers to that directory itself. This is a
+special entry that is added to every directory that we create. So when we
+write ./foo, that is a relative path, that is  want just foo.  It is just in
+this case will trick the shell to looking in the process working directory
+before looking at the path. 
+
+
+We mentioned in Unix directories also always contain a directory called ..
+which resolves to the containing directory.  So for example a path that reads
+/home/brian/.. that actually resolves to the same things as /home. Like the
+dot entry the .. entry is sometimes useful when we write relative path names. 
+
+In any case getting back to our example process command that begins ls,
+you can see the program name here has no /es in it. So the shell is going to
+look at it in the path. The motivation behind the path mechanism is
+that there are a number of programs that in the system that we want the
+convenience to be able to run without having to switch to the directories or
+having to write out their full path names. So we place these programs in a
+number of
+standard directories , like /bin or /sbin/ or alternatively we add
+the directory in which the program is contained to our path, that way we can execute them
+without having to write out their full name. 
+
+In this case. ls is a standard Unix program, sometimes called the list program,
+because what is does is to list the contents of a directory it prints out
+on your terminal, prints out the contents of some directory. And on most Unix
+systems ls is going to found is the /bin directory, cause /bin is a
+standard directory for general programs, general common programs. 
+
+The /sbin
+directory is  so named because it is for programs with superuser
+privileges, hence s, and so you place in there the programs which do things that
+have to do with system administration, generally. 
+
+As for the other directories in the path, the /usr directories, we will
+talk more about the standard directories layout in  Unix system in a
+supplementary unit. 
+
+
+In any case that explains how a shell locates a program, well what about these
+arguments? And how exactly does shell then executes the program, well anytime
+in Unix, you have a program executing another program, what is going to
+involve is first a fork system call and then a child process that gets created
+invokes the exact to actually load the program and run it. 
+
+#SLIDE 6(10:42-
