@@ -2,6 +2,10 @@
 layout: post
 ---
 
+```console
+gcc
+```
+
 ~~~console
 gcc hello.c
 ~~~
