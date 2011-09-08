@@ -183,6 +183,10 @@ In any case that explains how a shell locates a program, well what about these
 arguments? And how exactly does shell then executes the program, well anytime
 in Unix, you have a program executing another program, what is going to
 involve is first a fork system call and then a child process that gets created
-invokes the exact to actually load the program and run it. 
+invokes the exec to actually load the program and run it. 
 
 #SLIDE 6(10:42-
+So first off the shell invokes the fork system call, and after the fork the
+parent process involves the wait system call to wait for the child process to
+complete. The child process meanwhile, that has to call the exec to actually
+run the ls program, because until calls the exec 
