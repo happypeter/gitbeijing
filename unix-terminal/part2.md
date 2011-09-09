@@ -1,4 +1,4 @@
-#SLIDE 1(00:00-02:12)
+#SLIDE (00:00-02:12)
 You should be absolutely clear at this point that a terminal is just a dumb
 device for displaying text characters on the screen, and for sending text
 characters from the keyboard to a program that wishes to read them.  Without
@@ -38,7 +38,7 @@ Again bash shell is pretty much just the a extension of the original B shell.
 I do not believe there is actually anything that they changed about the
 original shell, they just added more features. 
 
-#SLIDE 2(02:12-04:40)
+#SLIDE (02:12-04:40)
 So say I boot up my Ubuntu system and the X window server then starts and
 finally my whole graphical desktop there is loaded and ready to go. If I then
 open a terminal program I will get this terminal emulator window, and in it is
@@ -79,7 +79,7 @@ is not made specially convenient, because python is mainly about writing code
 to run directly in the python interpreter, not to run as separate processes.
 Whereas in shell, mainly what is about is running other  programs. 
 
-#SLIDE 3(04:40-05:00)
+#SLIDE (04:40-05:00)
 So this difference of purpose is what explain the reason  behind the syntax
 for the basic kind of the command what I call the process command.
 
@@ -87,7 +87,7 @@ A process command is written by specifying the name of the program, and then
 after one or more spaces,
 we will put  a list of arguments. And the arguments as we will see are not separated
 by commas, they are just separated by spaces. 
-#SLIDE 4(05:00-05:26)
+#SLIDE (05:00-05:26)
 So for example a process command might
 read ls -la bin. And what this is is first the program name ls and followed by
 two arguments the first -ld , the second bin.what is going on with these
@@ -95,7 +95,7 @@ arguments we are talking about in a moment, but looking first at the program nam
 if this is the name of some program, some  executable file somewhere on the
 system how does the shell know were to find it? 
 
-#SLIDE 5(05:26-10:42)
+#SLIDE (05:26-10:42)
 Well actually there are
 there different cases. When you see a program name with no slashes in it, then
 the shell will search executable file of that name in one of the directories
@@ -185,17 +185,16 @@ in Unix, you have a program executing another program, what is going to
 involve is first a fork system call and then a child process that gets created
 invokes the exec to actually load the program and run it. 
 
-#SLIDE 6(10:42-
+#SLIDE (10:42-11:28)
 So first off the shell invokes the fork system call, and after the fork the
 parent process invokes the wait system call to wait for the child process to
 complete. The child process meanwhile, that has to call exec to actually run the ls program, 
 because until calls exec that forked out child, remember, is just a continuation of the
 shell, it is running the shell code until it actually calls exec.
 
-
-
 And in this exec all, one of the arguments if of course the path to the ls executable file, but then also there is another argument to exec whereby we can pass in what are called the program arguments in this case its two strings the first  reading -la, the second a string reading bin. 
 
+#SLIDE (11:28-12:40)
 We have previously discussed program arguments, so again looking at our model
 of the memory layout of the process what the exec system call does is to copy
 the program arguments to somewhere in the heap of the  process and then in
@@ -210,7 +209,10 @@ to it.
 So now when create a executable to run on the Unix system, we are expected
 to observe the convention that the stack frame is going to contain the address
 of arguments some where on heap and also a count of the number of the
-arguments. So for example when the python interpreter runs on Unix, one of the
+arguments.
+
+#SLIDE (12:40-13:06)
+So for example when the python interpreter runs on Unix, one of the
 first things it does is looks for a address the argument count on the stack,
 and then go and find the arguments, and puts them into a python list, and the
 way you can actually access these arguments in a python program in first you import
@@ -220,7 +222,11 @@ expressed as python strings.
 
 Well this is the case that arguments could be pretty much any kind of dedi you
 want, text data binary data whatever we conventionally just think  them as
-Ascii strings. So when we invoke ls with two arguments, the first argument is
+Ascii strings. 
+
+
+#SLIDE (13:06-14:15)
+So when we invoke ls with two arguments, the first argument is
 a Ascii string reading -la, the second was a Ascii string reading bin.
 
 Finally last to say about program arguments is that what they mean is entirely
@@ -238,7 +244,7 @@ called flags. So -la here is a flag to the ls program, specifying some option.
 But again that is just a convention, so really you have to just break down and
 read the manual for any program you wish to use on the command line. 
 
-#SLIDE (14:15-
+#SLIDE (14:15-15:11)
 In bash syntax certain characters are given special meaning and eventually
 will numerate all these special of all these special meanings. In some contexts,
 you will want to disable the special meaning so that a special character, that
@@ -256,7 +262,7 @@ quote marks signifies simply itself.
 Similarly you can use double quote marks to quote characters except they do not
 quote any enclosed dollar signs and backslashes, marks & and @
 
-#SLIDE (15:11-
+#SLIDE (15:11-end)
 To understand how you might use quoting, consider the ls command we saw
 previously.
 
