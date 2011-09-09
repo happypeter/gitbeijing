@@ -189,4 +189,39 @@ invokes the exec to actually load the program and run it.
 So first off the shell invokes the fork system call, and after the fork the
 parent process involves the wait system call to wait for the child process to
 complete. The child process meanwhile, that has to call the exec to actually
+
+
 run the ls program, because until calls the exec 
+
+
+
+in this exec all, one of the arguments if of ourse file, but then also thhere is another argument to exec whereby passing called the program arguments in this case its two strings the first is reaind -ls, the second a string reading bin. 
+
+we have previsously discussed program arguments, so again looking at pur model of the memeory layout of the porcess what the exec ssytem call does is copy the program argumnet s to somewhere in the heap of the  process and then in first stack frame it places the address pointing to these arguments heap, and also on stack exac places the count of  arguments.
+you might think you should leave a indicator of the arguments but you does not have to, because these arguments always terminated by a nol byte, so as long as a program gets a address pointing to the start of the arguments, and count of how amy they are, the program can correctly read all of the argumnets passed to it. 
+
+So now we ehn create a executable to run on the Unix system, we are execpted to oberve th econvention that the stack frame ids goin go contain the address of arguments some where on heap and also a count of the number of the arguments. So for exemple when the python interpreter runs on Unix, one of the first things it does is looks for a address the argument count on the stack, and then go and find the arguments, and put s thenm on a python list, and the way you can actually these arguments in a python program in first you imort these sys module, and in the sys module a member called .argv, v here stands for vectory, meaning essentially list. sys.argv is the list of arguments here expressed as python strings.
+
+whell this is the case arguments  could be pretty much of dedi you want, text data by any data whatever we can eventually thing them as Ascii strings. So when we involke ls with tow arguments, the first argument is a Ascii string reading -la, the second was a Ascii string reading bin.
+
+Finally last thign about program arguments is that what they mean is entirely up to the program to which we pass them. In this perticular case, ls interpertes -la as a option of how to display the contentof the directory, and the second argument here bin is  intereted as the bane of the dirctory which contents we willl to list. Nothing baout the shell have to govern this, it si entirely up to the ls conmmanda itself, interpretes these grgmtns. So I have to actually go t ad read the mannual and ls peofram.
+
+As you see most command and programs on Unix follow na number of convention in which how to a=pass argunets to them for example the ususal convention is that grgunets beginning with a - are specify some other kind of optioj . Ususally called flags. So -la here is a flag to the ls program, specifying some option. But again that is just a convention, so really you have to just brea sown ans reasd the manual for any progrram you wish to use on the commandline. 
+
+In bash sytax ceartain characters are given specail meaning and eventually will num all these special of all these specail meanings. In some contexts, you will want ot disable the special meaning so that a special character, that does not simplify the specail meaninga. For this puopose, we do what we called quoting. 
+
+First off the quote a siggal character, you simply        preceed it with a  sigal back slash,and that character come backslash for special characterdoe not make the specail character itself. With out any specail meaning.
+
+alternatively you can use a pair of singal quote marks, which will quote all the character encose to them, so effectively every character betwwen single quote marks signifies simply itself. 
+
+Similiarly yo can usedouble quote marks to quote characrers execpte the do not colse any enclosed dollar sgins and backslashes, marks astrick and . understand you nught use calls the ls command previously.
+
+In the top esample here, when we preed the space with a backslash, we are removing the special meaning that spaces normally have, which is to separate arguments, so effectively what is will do is envokin  the ls program , but we are olnly passing one argumwwnt, a string that reads  -ls bin.
+
+In the second example here what we enclose the arguents in a pair of signal code, that back slash now no longer has specail meaning, so this is invoking the ls program with a single arguments that reads -la / bin
+
+in the third example here, the back slash is now proceeding a new line character, a newline of its normal significance, which i is to denote the end of the command. So effectively what we have done is actaually  the command from one line tinto two. So you actually see this trick a lot in shelll scripts, you will see lines that is split from on line to multiple lines, by simply ending alll of hem with a back slash 
+
+In the fourth example, backs slash is preceeding the $ sign, so the dollar sign which is noramlly character is now been quoted, for no special significance, The backslash and dollar sign together signify a single dollar sign character which is not given special by the shell and simply pass as the argumnet to foo. 
+
+This ihis last example howerevr, within double quote marks, inside double quote marks, the dollar sign is one of the special execptions, on eof the special characters contains special meaning, made a chacre here.
