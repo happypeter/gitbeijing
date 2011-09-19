@@ -10,4 +10,10 @@ we should know that because the command list is delimited by {}, we can then
 actually spread the command-list on to multiple lines, so we don't have to
 write the function all in one line, we can write the same function like so. 
 
-And because the spaces ... and the spaces are ignored.
+And because the spaces are furnel and basically are ignored, we can indent how we
+like  we will probably indent like this. 
+
+Once we've defined the function we can invoke it like any other command. You
+start the command with the name of that command, and in this case it is the
+name of the function. The question then arises, what happens with name
+collisions
