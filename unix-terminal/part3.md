@@ -29,4 +29,54 @@ useful, because maybe you do not want to read the data right then, you want to
 preserve it in a file, and read it later, or something along these lines.
 
 Whatever your purpose, we can redirect to stdin and/or stdout with any
-command. In the shell using special character, the < and > . 
+command in the shell using special character, the < and > . If in a command
+you see an unquoted < , that < should be followed by a file path, and what
+this tells shell to do is to redirect stdin by closing FD0 and then
+immediately after opening specified file for reading. Effectively that file
+assumes FD0 and the inheriting program is ... it reads from the stdin with
+assumption that it is whatever file it suppose to be.
+
+Likewise an unquoted > should be followed by a file path, and this tells the
+shell when it executes the command to first close FD1(stdout) and immediately
+then open the specified file for writing, so that it assumes FD1. Now those
+redirections can actually be specified pretty much anywhere in the command.
+You can put them even before the name of the command though that will be odd
+thing to do. I personally prefer to put them after all the arguments, I find
+it misleading and confusing if you place them anywhere else, because it seems
+to apply they are somehow a kind of argument when they are not. These are not
+arguments to the program, they are special trick the shell does before even
+launches the program. 
+
+So here for example we invoke the command foo and it has two arguments, first
+a string, reading bar. And another string reading 35 and the command includes
+redirection both for stdin and stdout. The order you write them does not
+matter, but here I place the redirection stdin first, so this is redirecting
+stdin to a file called note.txt, and it is redirecting stdout to the file
+/dev/null, which we call a special file, when you write to it, the data you
+write just get discarded.
+
+This should explain now why stdin and stdout are separate FD. Because with
+just one FD, both read and write from, then we could not redirect them
+independently, by having separate FD, we can redirect them independently.
+
+Redirection in Unix makes it possible another trick called piping. When in the
+shell we separate two commands with the pipe character, which is usually found
+on the same key as your \ key. It is easy to mistake for lower case L, but it
+is nor it's a separate character, just a vertical bar. The shell with run
+these two commands in parallel stdout to the file /dev/null, which we call a
+special file, when you write to it, the data you write just get discarded.
+
+This should explain now why stdin and stdout are separate FD. Because with
+just one FD, both read and write from, then we could not redirect them
+independently, by having separate FD, we can redirect them independently.
+
+Redirection in Unix makes it possible another trick called piping. When in the
+shell we separate two commands with the pipe character, which is usually found
+on the same key as your \ key. It is easy to mistake for lower case L, but it
+is nor it's a separate character, just a vertical bar. The shell with run
+these two commands in parallel. It will run the same time and it will redirect
+the stdout of the first command, which in turn is read as stdin by the 2nd
+command. 
+
+The reason we have to invoke a pipe is because processes ca not read and write
+like files, processes simply can not do that, so we put a pipe in the middle.
