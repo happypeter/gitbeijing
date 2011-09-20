@@ -75,3 +75,24 @@ stdin by the 2nd command.
 
 The reason we have to invoke a pipe is because processes can not read and write from each other 
 like files, processes simply can not do that, so we have to put a pipe in the middle.
+
+Looking at exactly what happens here, first the shell creates a pipe to
+connect to processes and then the shell fork itself actually twice and then
+the parent, the original shell process waits for both of those children to
+complete, and then in one of the child processes, it redirects its stdout to the
+pipe, the newly created pipe before that executes the first command. Meanwhile
+the other child process redirect its stdin to the pipe before it executes the
+2nd command. So again, these two commands execute in parallel, they are
+separate processes and the original shell process wait the to terminate before
+it continues its business.
+
+When we  pipe command, we are not limited to piping just two commands
+together, we can pipe 3 or more. In the case of three commands, you then put
+something like this, where the first command writes stdout to a pipe and then
+the pipe is read as stdin by the 2nd command which in turn writes stdout to a
+2nd pipe which is read as stdin by the third command. So here when we have 3 commands connected by two pipes that actually
+represents 2 pipe files, again be clear that, all these commands connected by
+pipes are run in tandem,  they run in parallel. And the shell waits all to
+finish before it continues. 
+
+So moving forward, we need to be clear on aaaaa
