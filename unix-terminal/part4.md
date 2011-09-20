@@ -88,4 +88,47 @@ but for one change, so here we write /usr/local/.../bash/ and then in curly
 braces, comma separated old and new. What we end up with are two separate
 arguments, both the same except for the last component of the path.
 
-Another kind expansion is called tilde expansion.
+Another kind expansion is called tilde expansion, I mentioned in passing, the
+tilde in the shell is used as short hand for your home directory. So what
+actually happens is when the shell see a tilde in a argument to a command, it
+expands that tilde into whatever you home directory path is. So on my system
+for example, my home directory is /home/brain, so tilde will expand to
+/home/brain. 
+
+If I were to write a argument ~/foo, again the shell will expand that tilde
+into /home/brain, so it end up with /home/brain/foo.
+
+The shell also has a powerful feature called command substitution. The idea
+here is that a command is invoked and whatever the command writes to stdout,
+that data get inserted where the command substitution is placed. And there two
+syntaxes for this, the first encloses the command with a pair of parentheses
+preceded by a $, the second encloses the command in back ticks, back tick is
+the character on the same key as tilde on American keyboards.
+
+So for example if I write $(echo foo), the echo command here writes foo to
+stdout, so the text is what get inserted in place of this command
+substitution, the output get substituted in place of the command. And
+alternatively we can get the same effect by writing the same thing expect
+enclosing command in back ticks, the downside of the back tick form, is
+because you use same character as start delimiter and end delimiter. That
+means you can not nest command substitutions in the syntax. Any time you wish
+to nest command substitutions, you have to use $() syntax.
+
+So here for example, we are attempting nested command substitutions, and the
+top example we are properly using $() syntax, so what actually happens here is
+first the interior substitution command runs echo bar, so first bar is
+substituted in place of that command substitution, and the outer command
+substitution is performed invoking echo with the arguments foo and bar, so foo
+bar is inserted in place of that command substitution.
+
+When we try this with back ticks, we don't get the same effect, because what's
+really going on here is that the first command substitution runs from the
+first back tick character to the second one, the second back tick proceeding
+the second echo, and then at the end of the line we have another pair of back
+ticks, indicating a command substitution with no command inside, which
+effectively just return a null string.
+
+In fact this means the second echo is not really a command, it is just
+argument text, so what happens here is the first command substitution is the
+command echo with the arguments foo, so the text foo get substituted in its
+place, leaving us with 
