@@ -49,4 +49,43 @@ exit status of the last command executed within the function. With the
 built-in return function however, we can explicitly return a value from a
 function and also cause execution to leave a function early. So it is just
 like in python or javascript, a return statement may be encountered before the
-very end of the function.
+very end of the function. But when encountered, a return casue the execution to leave
+the function. 
+
+This is a example function does nothing except invoke return built-in to
+explicitly return the value 3. Notice in the last line however we are using
+special variable expansion $?, which expands to the exit status of the
+previously executed command. So here we invoke foo, and that return the value
+3, so in the next line expansion $?, expands to a value 3.
+
+So far we've discussed variable expansion, but there are a number of other
+kinds of expansion, including what is called brace expansion. A argument that
+uses brace expansion contains a pair of curly braces, not preceded by a $,
+because if the $ were there, it will be a variable expansion, not a brace
+expansion. Inside of these curly braces, you have a comma separated list, and
+before the braces you optionally could have preamble and afterwards
+postscript.
+
+So consider this example, say we will use argument, reads foo{apple, banana}bar, what this expands into is fooapplebar foobananabar.
+So what happens in the brace expansion is that each item separated by commas
+in the curly braces, that gets surrounded by the preamble and postscript, and
+the values produced by this expansion are separated by spaces. So the second
+example here, as the comma separated list 35, 14, hi with a postscript bar and
+notice has no preamble. So implicitly the preamble is just a empty string, so
+what we end up with 3 items: 35bar 14bar hibar. 
+
+Now those are just simple example of brace expansion. There are a few other
+things you can do which I won't get into. 
+
+But the question is when would this ever be useful?
+
+And the answer is with some commands, you end up writing a string of
+arguments, overall very similar, but for small differences. And so with brace
+expansion we can express that in a more convenient way. 
+
+Like for example say two arguments are file paths, that are exactly the same,
+but for one change, so here we write /usr/local/.../bash/ and then in curly
+braces, comma separated old and new. What we end up with are two separate
+arguments, both the same except for the last component of the path.
+
+Another kind expansion is called tilde expansion.
