@@ -95,4 +95,30 @@ represents 2 pipe files, again be clear that, all these commands connected by
 pipes are run in tandem,  they run in parallel. And the shell waits all to
 finish before it continues. 
 
-So moving forward, we need to be clear on aaaaa
+So moving forward, we need to be clear on terminology. What in the shell we
+call pipeline refers to either a single process executed on its own or it
+refers to multiple commands separated by the pipe character and therefore
+executed in tandem, connected by pipes. What we call a command list is one or
+more pipelines separated and terminated by ; && || or \n
+
+So most commonly when we type commands interactively in the shell, we
+terminate each pipeline by simply Enter, that insert a newline character and
+the shell executes the pipeline. We can also write multiple pipelines, which
+mean to be executed one after another by writing them all out separated by ;
+before hitting Enter.
+
+Here for example we have two pipelines, first consisting of just a command ls
+and the second consisting of just a command cat, cat is a standard Unix
+command which in this casr will print out the content of note.txt file to
+stdout. But in this case what happens here is the shell will execute this
+first pipeline first, wait for it finish and then executed the 2nd pipeline.
+So ls will run and complete first before the shell executes cat. So the
+important thing is to distinguish between ; and |. 
+
+Here when write foo bat fizz buzz separated by ; that executes all these
+commands in sequence on before another. If though we will separate them all
+with pipes, that is not only connect together with pipe it also runs in
+tandem. If we change the middle pipe here to a ; now this is two separate
+pipelines. foo and bar runs first, when it completes it runs fizz and buzz.
+
+bbbb
