@@ -39,7 +39,13 @@ the function, we get the first argument value with the syntax $1, and the
 value of the second argument with $2, the 3rd $3, and so forth. So here this
 function foo, its body consists of 2 commands, first cd with a argument of $2,
 that is the value of 2nd argument passed to foo, and the 2nd command here ls, has a single argument which
-is the value of the  1st argument to the function. So in the next line when we
+ifoo echo bar, so the lession here again is when you do wish to nest command
+substitutions, do not use back ticks, that will end up producing result you
+probably do not intend.
+
+
+Another useful kind of substitution is called arithmetic substitution. In
+arithmetic substitution  $(())s the value of the  1st argument to the function. So in the next line when we
 invoke this function, the first argument /bin, and the second is /home. So
 what this function will do is first change the current working directory to
 /home, and then list the contents of the /bin directory.
@@ -131,4 +137,19 @@ effectively just return a null string.
 In fact this means the second echo is not really a command, it is just
 argument text, so what happens here is the first command substitution is the
 command echo with the arguments foo, so the text foo get substituted in its
-place, leaving us with 
+place, leaving us with foo echo bar, so the lesson here again is when you do
+wish to nest command substitutions, do not use back ticks, that will end up
+producing result you probably do not intend.
+
+
+Another useful kind of substitution is called arithmetic substitution. A 
+arithmetic substitution is written with $(()) in which we place a arithmetic
+expression which gets evaluated, and the result of that evaluation is what get
+substituted as the text. 
+
+So in the first example here, the arithmetic substitution has the expression
+3+5, the shell will evaluates that and return the text 8. In the second
+example with the expression first as 3+5 together, getting us 8 and that gets multiplied by two
+getting us 16, so the text returned is 16. 
+
+Very handily we can do variable substitutions inside arithmetic substitutions.
