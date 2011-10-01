@@ -153,3 +153,14 @@ example with the expression first as 3+5 together, getting us 8 and that gets mu
 getting us 16, so the text returned is 16. 
 
 Very handily we can do variable substitutions inside arithmetic substitutions.
+So here for example, we assign the value 7 to the variable foo, and then in
+the subsequent arithmetic substitution, we can expnad the variable too get its
+current value, which is then here added to 3, result in the text 10.
+
+One more kind expansion is called filename expansion. If in a argument you see
+this special characters `*` or `?`, or if you see both. That argument is
+expanded into the matching file or directory names, where the `*`s get to
+match a run of zero or more characters, while the `?` is used to match a
+single character, so for example, if I write as a argument `foo*bar`the shell
+will look at in its CWD for matches, and any file or directory which matches
+that pattern gets included
