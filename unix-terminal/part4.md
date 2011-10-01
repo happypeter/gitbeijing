@@ -154,7 +154,7 @@ getting us 16, so the text returned is 16.
 
 Very handily we can do variable substitutions inside arithmetic substitutions.
 So here for example, we assign the value 7 to the variable foo, and then in
-the subsequent arithmetic substitution, we can expnad the variable too get its
+the subsequent arithmetic substitution, we can expand the variable too get its
 current value, which is then here added to 3, result in the text 10.
 
 One more kind expansion is called filename expansion. If in a argument you see
@@ -163,4 +163,47 @@ expanded into the matching file or directory names, where the `*`s get to
 match a run of zero or more characters, while the `?` is used to match a
 single character, so for example, if I write as a argument `foo*bar`the shell
 will look at in its CWD for matches, and any file or directory which matches
-that pattern gets included
+that pattern gets included in this expansion. So imagine say, we have a file
+called foo3bar well, that matches, or foosdfsdfbar that also matches, because the
+`*` will match any number of characters. And lastly foobar will match because
+the `*` will match the absence of any character.
+
+In the same directory, however if you write foo?bar, that will only match
+against foo3bar, because foosdfsdfbar that is multiple characters in between
+the foo and bar, and foobar will not match, because there has to be 1
+character to match ?. You can not have the absence of any character.
+
+As last example illustrates, the `*` does not have to go in the middle of
+text, it can also goes in the front or the end. So here `foo*` will match all
+the same things as `foo*bar`, except that will also match fooak. It
+effectively matches anything that begins with foo.
+
+So again in all of the examples the shell is searching for filenames
+directory names in the CWD. But if you were to precede the argument with a /,
+then the shell will try to match the argument against Absolute path.
+
+So that has covered most if not all of the mechanisms of the expansion and
+substitution of the shell offers. I allied some features that are potentially
+useful, are really quite ugly in details, so kind of headache to think about.
+
+One last thing though that can be useful to know is the order in which the
+shell will perform the expansions and substitutions. The general order is it
+first does brace expansions, then it will do tilde expansions, and third it will
+do the same level of precedence: variable expansions, arithmetic expansions,
+and command substitutions. So really what that means is that it matters which
+inside which , which is the most interior because just like expressions, they
+are valued inside out.  And then lastly, other stuff, when the shell do file
+expansions. So keep this order in mind can help you understand command makes
+complicated use of these substitutions. 
+
+Lastly there is a question of will the shell do expansion and substitutions
+upon the result of my expansions and substitutions. So the question is then,
+does the shell do file expansion on the result of variable expansion. Also you
+will find there are quite complicated rules about certain context in which
+expansions and substitutions are not performed, like they otherwise normally
+are. To be perfectly honest, I am not totally clear with all those rules
+myself, and because of all these complications of expansions and
+substitutions, that I consider the shell is a really ugly language. 
+
+In any case, if you wish to read on these stuff, the place to look is the gnu
+bash manual,
