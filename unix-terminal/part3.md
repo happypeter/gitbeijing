@@ -165,4 +165,87 @@ case so the fizz command here will run and if it runs something other than 0,
 then the buzz command will return, otherwise fizz does return 0, buzz will not
 run. 
 
-So the && and || are the two ways you can utilize return codes
+So the && and || are the two ways you can utilize return codes. As we will see
+mainly in the supplement,, there are other ways to use ES.
+
+So far I've only discussed of what I call process commands, commands which are
+actually executable programs. There is another kind of programs however called
+built-in command, which is a command implemented in the shell itself. So when
+we execute a built-in command, that just runs code in the shell itself, there
+is no spawned off process. As we will get into though, there is what we call a
+subshell, which is essentially a fork of a process, and in some cases, you may
+end up running a built-in command that runs not in the main shell process, but
+possibly in the fork of the shell. Also, while the built-in commands do run in
+the shell, they still do allowed for redirection and piping. When the built-in
+command is redirected, the shell does not actually redirect its stdin and
+stdout, but just for the fake of one built-in command it will arrange things
+to get the same end result. Basically, what happens is that every built-in
+command is given a duplicate of the stdin and stdout FD, and if you redirect
+a command for built-in that duplicate for that built-in command is redirected,
+so it does not affect the other commands, just that one command. How exactly
+this is done is of course a implementation detail of the shell, which you do
+not need to concern yourself with.
+
+In any case, bash has about 70 different built-in commands. And the first one
+we will discuss is the help command. The help command simply prints out to
+stdout the info on how to use the built-in command, including the help command
+itself, so if at the shell you type help and hit enter, you get a list of all
+built-in commands, and if you want more detail on one of these commands, you
+simply type help name-of-the-command and Enter. Then the help command will
+print out detailed info of whatever command you specify. 
+
+Be clear that the help command only give info on the shell's built-ins, it
+does not give any info on regular Unix utilities like say the ls program. If
+you want to see doc for standard Unix utilities, like ls, there is a standard
+Unix utility for that purpose, this is called man, as manual, short for
+manual. We will talk about how to use man in the supplement.
+
+Another built-in command is cd, which is short for change directory, and what
+it does is it sets the CWD(or the process working dir) of the shell process
+itself. And so it should be apparent why this is a built-in command, not just
+a standard Unix utility, why it is not a separate program. Because separate
+processes can not modify the shell's CWD, only the shell process itself can do
+that. This is a important thing to keep in mind, because in some context as I
+mentioned, built-in commands run not in shell itself, but in a subshell, that is
+a fork of the shell, so you want to make sure you want to change the CWD of
+your main shell, you want to make sure, that runs in that shell process, not
+in a subshell. If you run a cd command in a subshell, that will be modifying
+the CWD of the fork, of the subshell, not of the shell from which it spawned.
+
+In any case, here is a example of using cd command, say here is my prompt. I
+am user brain, login in on the system ubuntu with the CWD of /home/brain, so
+if I enter the command cd /bin, then that is changing my CWD to /bin. And you
+can see the change of the directory in the next prompt. If I then enter the
+command cd /, that is changing my CWD to the root dir, the /. So the next
+prompt we get, displays the CWD as /. 
+
+A important thing to keep in mind is that when we fork a process in Unix, the
+fork, the child inherits the CWD from the parent. So any command we run from
+the shell inherits the CWD of the shell itself. And this is significant,
+because my commands will use of the CWD, as a default argument for a file
+path, when no file path argument is given. Like for example the ls command, if
+we don't give a program argument specifying a dir whose context we wish to
+list. Then the ls command assumes we wish to list the content of CWD. So in
+fact if you run ls with no arguments at all, then whatever print out is the
+contents of the CWD of your shell.
+
+The built-in command echo, simply prints out its arguments to stdout. So here
+for example, we have echo foo 2348, then that simply prints out to stdout the text
+foo 2348. Now of course this may not seem useful, at the command prompt,
+because why we want to shell just give us back exactly what we just typed. But
+one way this is useful is that in various way we have not yet discussed, the
+shell, when we use certain special syntax in the arguments processes the
+arguments such that what I just sent to the command is different from what you
+literally type. For example the $ especially denotes the syntax for what is
+called variable expansion. The shell again is basically a interpretor, it is
+effectively a programming language, and like any programming language, we have
+the ability to assign value to variables. The syntax for this is simply to
+write the name of the variable you wish to create or modify. Followed
+immediately with a =, and then everything that follows the = is considered the
+value being assigned to that name. Effectively all text that follows the equal
+sign is a string, and that string is assigned to the variable. If we then wish
+to use the value of the variable, we can not just refer the variable by name,
+because if you just write the name, that name as a text would be the argument,
+not the value hold in the variable. 
+
+So to actually use the value of a variable, 
