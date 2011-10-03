@@ -299,4 +299,42 @@ matching EV called foo, with the current value of shell variable. In the next
 line then, we assign a new value to the shell variable, this variable is
 marked as a EV, so that matching EV is updated with this new value. 
 
-As 
+As have been seen, the shell really is just a kind of programming language,
+and so we need control flow constructs, and for that purpose then we have the  
+built-in commands if and while. In general, these both work like their counter
+parts in languages like python and javascript, but their precise syntax is a
+bit eccentric own to the command based nature of the shell syntax. 
+
+So looking at the if command for example, the word if itself is a built-in
+command of the shell, but unlike the commands we've seen, so far where the
+arguments are basically just a series of string, the if expects as its
+arguments first a command list, followed by the word then, followed by another
+command list, followed by the word fi, which is if spelt backwards. 
+
+And the while command has the same format, except the terminators are the
+words do and done. I guess it was decided no one wants the type elihw. Frankly
+I find the idea of using command name reverse as terminator quite silly, they
+should have gone with done for all terminators, though I personally have gone
+with end as terminator for if and while. 
+
+Also, I should remind you here, the last command in the command list must be
+terminated, either with ; or a \n. So as you see I am written here where if
+and while are both treat as single line commands. These command list must all
+be terminated by ; if they are going to be on the same line. They can just be
+separated by space from then do fi and done. 
+
+In any case, what is going on with those commands is the first command list is
+condition and second command is the body that executes. So the condition
+command list is executed, and if its ES equal to 0, that is considered true.
+And anything other then 0 is considered false. Be clear this is actually
+backwards from javascript and python, where 0 is considered false, and all
+other numeric values are considered true. Oh, I also remind you that the ES of
+command list is the ES of the last executed command. So if a command list does
+in fact consists of multiple commands, that is the last executed command whose
+ES is used as the condition. 
+
+Last thing to mention here is that though I do show these two commands written
+out as single lines, in practice you usually if and while commands written out
+on multiple lines, just like you expect to see in javascript or python.
+Because these commands  are only terminated by fi and done you can use newline
+to separate these commands in command list.
