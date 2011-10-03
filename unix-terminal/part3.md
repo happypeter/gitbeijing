@@ -248,4 +248,55 @@ to use the value of the variable, we can not just refer the variable by name,
 because if you just write the name, that name as a text would be the argument,
 not the value hold in the variable. 
 
-So to actually use the value of a variable, 
+So to actually use the value of a variable, in a argument to a command, we use
+the $ then follow that with the name of the variable. And depended on the
+context, you sometimes need enclose to distinguish the name you are expanding
+from the text around it.
+
+So here for example, we are assigning the value 4 to a variable named foo, and
+be clear that though its a number 4, the value being assigned here is a string
+consisting of the character 4. And then if we invoke the echo command with a
+argument of $foo, well, $foo gets expanded or replaced we could say by the
+value of the variable, which is text simply consisting of a single character
+the digit 4.
+
+So what the echo command will actually print to stdout, is just a digit 4, not
+$ not foo, that gets replaced with the value. In the next line we are going to
+invoke a echo command, but now the argument is the expansion of foo followed
+by a letter d, and this time we have to use this form with {}, otherwise the
+shell will think we are trying to expand the variable named food, not foo. So
+actually will get expand into nothing. It is actually possible to expand a
+variable that does not exist, just expand to a empty string. 
+
+So the next two lines should be evident, what's going on should be simply
+assigning the string hello to a variable named bar, and then the next line we
+are echoing out content of variable bar. So hello gets printed to stdout. 
+
+You may recall earlier I mentioned the difference between single quotes and
+double quotes. When we use single quotes in the shell, what gets quoted is the
+text verbatim with no exceptions, double quotes in contrast make a few
+exceptions, including the $ use for variable expansion. So here when we echo
+$foo and enclosed in "", the expansion is performed, so it prints 4 to stdout,
+which if we enclose the same in '', then what gets echoed is the verbatim text
+$foo.
+
+A variable in the shell can be mark as a environment variable(EV), which
+effectively means the shell creates a matching EV, and then when you
+subsequently assign new values to your variable the matching EV is given the
+same value. This can be useful because when we fork our shell, or launch our
+program from our shell, we may want these forks  and other programs to inherit
+certain EV. For example the python interpretor expects to inherit a EV called
+`python_path`, which is a list of directories the python interpretor then uses
+to look for modules. So before we language the python interpretor for the
+shell, we want to make sure the shell itself has a EV `python_path` with a
+appropriate value.
+
+Now by default when you create a shell variable, it is not a EV. We have to
+mark it as such, with a built-in command export. So for example we create a
+variable foo, assign the value 8, and then in the next line the export command
+is then marking the variable foo as a EV. So it actually creates here a
+matching EV called foo, with the current value of shell variable. In the next
+line then, we assign a new value to the shell variable, this variable is
+marked as a EV, so that matching EV is updated with this new value. 
+
+As 
