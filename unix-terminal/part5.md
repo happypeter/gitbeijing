@@ -99,4 +99,55 @@ calls which we did not mention in previous unit for setting a process's
 membership in a job, and a job's membership in a session. We won't go into the
 details because they are system calls that are used pretty much by shells, so
 unless you are going to write your own shell, you will never have to deal with
-them. But the concept here 
+them. But the concept here of how the processes get organized into jobs and
+sessions is relevant if you are going to use the shell. 
+
+The usual arrangement is that when you open a terminal window, and inside the
+terminal window you have a shell running that shell represents the start of a
+new session and that session starts out with one job containing job one shell
+process. When the shell then runs a pipeline in the foreground, the processes
+of that pipeline run as the members of the existing job, the same job as the
+shell. Any time though the shell creates a subshell, that subshell runs as a
+new separate job. So say if you run a pipeline in the background, that creates
+a sub shell, and all processes of that pipeline and that sub shell run in a
+new separate job. Now associated with a session is what are called controlling
+terminal, this would be the terminal which the original shell process is using
+as stdin and stdout. At any moment in time, only one job in a session is
+running in the foreground,  all other jobs are marked running in the  background.
+Whereas precesses in the foreground job can freely read and write the controlling
+terminal. Processes running in a background job gets sent the signal SIGTTIN,
+when they attempt to read controlling terminal. So with the feature called job
+control that modern Unix have, processes running in the so called background
+are actually prevented from reading from stdin of the terminal. The other
+special thing about the foreground job, is that when the user at the terminal
+types Ctrl-z, this sends the signal SIGTSP, which means terminal stop, the
+signal is sent to all the processes in the foreground job and default behavior
+when a process receives SIGTSP is to suspend execution. What Ctrl-z also does
+is sent the signal SIGCANT, as a continue to processes in this background job,
+therefore resuming them if they have been suspended, and that background job
+is also then moved into the foreground. So quite simply Ctrl-z will suspend
+foreground job and move another background job into the foreground.
+
+Usually when the user hit Ctrl-z in the terminal, the want to suspend whatever
+jobs running and get back to their shell. So normally the background process that
+gets resumed is the one that gets shell in it.
+
+To manages the jobs running in the session of our shell, we have 3 built-in
+commands. First jobs, which will list all the current jobs, and the job
+numbers which are numbers assigned to uniquely identify each job. Then we have
+the bg command, as background, which will, normally it does is moves the jobs
+in the background, but what it really does is effectively resumes any jobs
+that suspended, because that sends the signal SIGCANT to all the processes in
+a background job you specify by number. This is most typically useful,
+because, say, we invoke a command and then it takes too long, we want to get
+back our shell, so we hit Ctrl-z, that suspends whatever program was running,
+that puts it into a background job. But it suspended, we want it and resume
+it, so we write bg and its job number so it can continue on in the background,
+while we get to work on the shell.
+
+Lastly, we have the command fg as in foreground, whose name correctly imply it
+moves a job from background to the foreground, and in the process we also
+sent SIGCANT to all the processes of that job. 
+
+So with Ctrl-z and these commands you can control the jobs running in your
+session.
