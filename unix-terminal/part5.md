@@ -145,9 +145,57 @@ that puts it into a background job. But it suspended, we want it and resume
 it, so we write bg and its job number so it can continue on in the background,
 while we get to work on the shell.
 
-Lastly, we have the command fg as in foreground, whose name correctly imply it
+Lastly, we have the command fg as in foreground, whose name correctly implies it
 moves a job from background to the foreground, and in the process we also
 sent SIGCANT to all the processes of that job. 
 
 So with Ctrl-z and these commands you can control the jobs running in your
 session.
+
+The very last time we will talk about in this unit are shell scripts. A shell
+script is a file of shell commands using the bash syntax, and the idea that we can
+execute this file, just like we can say, execute a file in javascript or a
+file of python code. So assume we've written such a file, a file consists of
+shell commands, observing all the shell syntax. If we wish to execute this
+file, we can do so with a built in command source. The source command is
+invoked with the name of the file as a argument, and what it will do is read
+to that file and executes that commands in the current shell. So what we get
+from  this is the same effect as we read to the file, and manually enter the
+command line each command one by one.
+
+So for example, what actually happens when we start up a new shell on a new
+terminal window is bash will invoke the commands in a file in your home
+directory called .bashrc. rc here stands for run commands. The idea of the
+.bashrc is it's a place we can put any sort of customization we want for our
+shell, and because this file is run every time we start a new file, we do not
+have to manually enter the command each time, to get the shell the way we want
+it. Like say very typically in a .bashrc, you will see lines giving values to
+certain environment variables. 
+
+In any case it is important to understand the shell script the .bashrc file is
+run with source command, such then all the commands are run in the shell
+itself, not some sub shell thereof. 
+
+Now some times we do not want a shell script to affect the current shell. We
+want it to run instead in a sub shell, to do this we can simply invoke the
+bash interpreter as a program and pass it as argument the name of our shell
+file. The bash interpreter in most unixes will be found in the path /bin/bash
+so here we are starting bash, and telling it to run the file foo.sh in the
+current working directory, be clear that shell scripts do not have to end in
+.sh, but this is a common convention. 
+
+To make invoking the script more convenient, we can use a bit of Unix magic
+called shebang. If we start the first line of our script file will # followed
+by ! followed by the abs path to a program, usually a interpreter, in this
+case the bash interpreter /bin/bash. But if we are writing a python script, we
+can write /bin/python, for writing perl, /bin/perl, and so forth.
+
+But in any case, what the special line does it to allow us to invoke our
+script file which is a text file as if it were a binary executable. It turns
+out the exec() system call does not have to be passed a binary executable, if
+you pass a text file begins with these two special characters, these ascii
+characters, exec() will then execute the program specified by the file path,
+in this case /bin/bash, and then pass the script file as a argument to that
+program. 
+
+So if we put the shebang line
