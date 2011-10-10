@@ -198,4 +198,38 @@ characters, exec() will then execute the program specified by the file path,
 in this case /bin/bash, and then pass the script file as a argument to that
 program. 
 
-So if we put the shebang line
+So if we put the shebang line at the top of our file foo.sh, we can then
+invoke the script as if it ere like a executable. We can write ./foo.sh, and
+that tells the shell  to execute a file in the current Working directory
+called goo.sh. Now actually there is one last detail here If we are going to
+be executing a script file as if it is a executable, then Unix requires we
+have execute permission on this file. To give the file execute permission, we
+use the chmod program, which is a standard Unix utility, note it is not
+coincidently has the same name as the system call, which set permission on
+files. And here when we pass a argument u+x, that tells chmod turn on execute
+permission for the user that owns this file foo.sh.
+
+So have been done that, assuming we are running the shell with the same user
+account as the owner of foo.sh file. We can run the command ./foo.sh to run
+the script and again remember in this case, we are running the script in a
+subshell, not the current shell.
+
+So that is everything we are going to cover in this Unit about bash, but what
+I did not cover?
+
+well, I only talked a handful of built-ins whereas in total
+there are about 70 of them, Nor did I mention many of the standard Unix utility
+programs, we mentioned ls, but that's pretty much it. There are over 100
+utilities, a few of which does use very commonly, we only talked one or two.
+So if you want to use the shell, you definitely going to want to learn to use
+more of the Unix utilities, and also you are going to want to learn a handful
+more of the built-ins. 
+
+And aside from the two major areas, there is a handful of other features which
+I did not discuss, like for example, it is possible to have values which are
+not string, but are actually arrays. And there are other features like alias
+and also what is called the history mechanism, and also when I talked about
+substitutions and expansions, I ignore some more complicated forms. Those are
+what we consider rather advanced use of the shell, and you can probably get by
+for years without using them, but they are features you may eventually wish to
+look into.
