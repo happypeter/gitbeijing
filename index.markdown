@@ -15,8 +15,7 @@ everybody will be interested and join the conversation.
 We have a 
 <i><a href="http://github.com/happypeter/GitBeijing/wiki">group wiki</a></i>
 for people to post their random ideas and questions. And feel free to 
-join us at <i><a
-href="http://beijinglug.org/index.php?option=com_groupjive&action=gj.core.groups.showgroup&groupid=31&Itemid=134">GitBeijing group page at BLUG website</a></i>.
+join us at <i><a href="http://beijinglug.org/index.php?option=com_groupjive&action=gj.core.groups.showgroup&groupid=31&Itemid=134">GitBeijing group page at BLUG website</a></i>.
 
 <p><br /><b>Blog:</b></p>
   <ul class="posts">
