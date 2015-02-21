@@ -1,13 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
-<html xmlns= "http://www.w3.org/1999/xhtml">
-<head>
-
-<link rel="stylesheet" type="text/css" href="css/gitbeijing.css" />
-<link rel="icon" type="image/png" href="./images/logo.png" />
-<title>GitBeijing</title>
-</head>
-<body>
-
-{{ content }}
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div id="wrapper">
+      {% include header.html %}
+      <section class="content clearfix">
+        {{ content }}
+        {% include contributors.html %}
+      </section>
+      {% include footer.html %}
+    </div>
+  </body>
 </html>
