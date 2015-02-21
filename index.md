@@ -6,13 +6,13 @@ title: git
   <div class='wrapper-inside clearfix'>
     <div class='top-large'>
       <div class='book-title'>
-        Git 和 Github
+        Git 北京
       </div>
       <div class='book-author'>
         <a href="https://github.com/happypeter">happypeter</a> 发起翻译
       </div>
       <p class='book-description'>
-        每当打开浏览器就会用到 http 协议，网站开发者怎能不会 http？ 本书将为你阐明这套协议的骨干精髓，程序员必备枕边小书。
+        本书带你使用 git 和 github 来进行代码版本控制和分享以及项目协作。
       </p>
       <a href="http://www.gotealeaf.com/books/http" class="read-btn">英文版</a>
       <a href="http://happypeter.github.io/tealeaf-http#chinese" class="read-btn">中文版</a>
@@ -22,7 +22,7 @@ title: git
   </div>
 </section>
 <div class="divider">
-  <a href="https://github.com/happypeter/tealeaf-http">GitHub 书稿仓库，欢迎参与翻译！</a>
+  <a href="https://github.com/happypeter/gitbeijing">GitHub 书稿仓库，欢迎参与翻译！</a>
 </div>
 <div class="reviewers">
   <div class="name-card">
