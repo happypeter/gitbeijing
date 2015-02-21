@@ -1,15 +1,14 @@
 ---
 layout: default
-title: http
+title: git
 ---
 <section class='book'>
   <div class='wrapper-inside clearfix'>
     <div class='top-large'>
       <div class='book-title'>
-        HTTP 下午茶
+        Git 和 Github
       </div>
       <div class='book-author'>
-        <a href="http://www.gotealeaf.com/">茶叶学院</a> 原著，
         <a href="https://github.com/happypeter">happypeter</a> 发起翻译
       </div>
       <p class='book-description'>
