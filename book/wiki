@@ -13,6 +13,7 @@
 
     - merge vs rebase
       - 这个要细讲，不然 git pull --rebase 就理解不了
+      - conflict 的情况肯定要 cover
 
     - http://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server
       - 这个确实是我自己每天都用得到，但是也可以不讲
@@ -39,6 +40,13 @@
 - http://gitref.org/
   - 首页的 how to think like a git 很实用
 
+- peepcode-git.pdf
+  - stash/tag 这些都是局部小技巧，可不讲
+
+- gittalk 2008
+  - https://www.youtube.com/watch?v=nPzJESC-fag
+  - http://s3.amazonaws.com/chacon/git-talk.pdf
+
 - gitbeijing 的立足点
   - progit 对于初学者过于庞大深入且全面，一下子难以把握关键
   - gitbeijing 要把握最常见应用情景
@@ -52,3 +60,5 @@
     - 不能太略，不懂 git 基本实用，也没法用起 github
     - 这是一本给 web 开发新手的书，从整个应用图景把握各个知识点的轻重
       - 让大家花20%的时间掌握80%最常用的操作
+  - 内容无所谓，关键是看起来要赏心悦目：http://s3.amazonaws.com/chacon/git-talk.pdf
+  - 3d book： https://gist.github.com/happypeter/594db9d9e7d8dba50234
