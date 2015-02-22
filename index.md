@@ -6,7 +6,7 @@ title: git
   <div class='wrapper-inside clearfix'>
     <div class='top-large'>
       <div class='book-title'>
-        Git 北京
+        搬进 Github
       </div>
       <div class='book-author'>
         <a href="https://github.com/happypeter">happypeter</a> 著
