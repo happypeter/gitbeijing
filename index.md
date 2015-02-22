@@ -9,16 +9,15 @@ title: git
         Git 北京
       </div>
       <div class='book-author'>
-        <a href="https://github.com/happypeter">happypeter</a> 发起翻译
+        <a href="https://github.com/happypeter">happypeter</a> 著
       </div>
       <p class='book-description'>
         本书带你使用 git 和 github 来进行代码版本控制和分享以及项目协作。
       </p>
-      <a href="http://www.gotealeaf.com/books/http" class="read-btn">英文版</a>
-      <a href="http://happypeter.github.io/tealeaf-http#chinese" class="read-btn">中文版</a>
+      <a href="http://happypeter.github.io/gitbeijing#read" class="read-btn">网页版</a>
       <a href="https://selfstore.io/products/266" class="read-btn">购买电子书</a>
     </div>
-    <img alt="Http" class="book-image" src="images/http.png"/>
+    <img alt="git" class="book-image" src="images/stepin_github_3d.jpg"/>
   </div>
 </section>
 <div class="divider">
@@ -37,7 +36,7 @@ title: git
   </div>
 </div>
 <div class="contents-wrapper">
-  <div class="table-of-contents" id="chinese">
+  <div class="table-of-contents" id="read">
     <p class="part">背景知识</p>
     <table class="index-table">
       <tbody>
