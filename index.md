@@ -25,13 +25,13 @@ title: git
 </div>
 <div class="reviewers">
   <div class="name-card">
-    <img src="images/kevin.png" alt="kevin">
+    <img src="https://avatars1.githubusercontent.com/u/72467?v=3&s=460" alt="kevin">
     <div class="text">
       <div class="name">
-       Kevin Wang
+       happypeter
       </div>
-      <div class="job-title"><a href="http://www.gotealeaf.com/">茶叶学院联合创始人</a></div>
-      感谢 @happypeter 和 Ruby China 社区的中文翻译工作， 希望能对学习 web 开发的新手有所帮助。
+      <div class="job-title"><a href="http://www.happycasts.net/">本书作者，happycasts.net 作者</a></div>
+      git 和 github 曾经根本性的改变了我的职业规划。
     </div>
   </div>
 </div>
