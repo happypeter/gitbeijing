@@ -13,6 +13,24 @@ title: 简介
 用 xxx.html 来做实例比较好
  -->
 
+ - gitbeijing 的立足点
+  - progit 对于初学者过于庞大深入且全面，一下子难以把握关键
+  - gitbeijing 要把握最常见应用情景
+  - 让大家快速上手用上 github，因为这才是兴趣点
+  - 我的观众都是没有用过 svn 的，不用跟大家闲扯 checkout 和一个 clone 的区别
+  - 所以过于深入的知识点，尽量用白话带过，但是最重要的三五个点可能比 progit 讲得还有仔细
+  - progit 是脱离实际情景讲的，gitbeijing 操作基于实际的 web 开发工作流，基于 github
+  - 这次一定不是只有实际操作的，一定要有图示，文字中以图示原理为主，视频中先原理后操作
+  - 要讲的是 github 但是是针对完全没有 git 基础的人讲，所以 git 要讲到什么程度呢？
+    - 不必太深，因为不是讲 git 的专著
+    - 不能太略，不懂 git 基本实用，也没法用起 github
+    - 这是一本给 web 开发新手的书，从整个应用图景把握各个知识点的轻重
+      - 让大家花20%的时间掌握80%最常用的操作
+  - 内容无所谓，关键是看起来要赏心悦目：http://s3.amazonaws.com/chacon/git-talk.pdf
+  - 3d book： https://gist.github.com/happypeter/594db9d9e7d8dba50234
+  - 可以以一个类似实际的小项目为例子，一步步的展示清楚各个功能到底能够对于项目开发起到怎样的帮助
+    - 先本地，后连 github
+
 ### 基本概念介绍
 代码仓库 repository 就是一个文件夹。
 
