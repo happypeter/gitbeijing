@@ -47,6 +47,19 @@
   - https://www.youtube.com/watch?v=nPzJESC-fag
   - http://s3.amazonaws.com/chacon/git-talk.pdf
 
+- how github use github to build github
+  - https://www.youtube.com/watch?v=qyz3jkOBbQY
+  - 12:44 有对 PR 的精炼解释，很白话
+    master -> branch -> pr -> master
+    17:00 一个 PR 的整个生命流程，用一个实例演示，再好不过了，比直接抽象聊好一千倍
+    - 要有 snapshot 有 markdown 的 code ...
+  - zach 的观点很喜欢：软件行业有各种开发方式，敏捷，瀑布，BDD，TDD，非常复杂，但是重要的时你找到一种自己喜欢的方式，github 就是这种方式。
+  - 整个的异步工作流程，如此的重要，但是对于新人只是空话
+  - 但是可以提一下，zachholman.com 很值得一看
+  - 也谈到了 branch model 这些问题，所以 holman 可以在最后作为 next step 推荐给大家，真的是很重要
+  - github 的流程应该是大家应该下一步学的，因为 github 的流程是企业中应用的流程中最简单的，跟个人开发流程没有什么大的差别
+  - 整个流程中体现了对开发者的尊重，真正像一个创作者一样对待他们，而不是当打杂的。
+
 - gitbeijing 的立足点
   - progit 对于初学者过于庞大深入且全面，一下子难以把握关键
   - gitbeijing 要把握最常见应用情景
@@ -62,3 +75,5 @@
       - 让大家花20%的时间掌握80%最常用的操作
   - 内容无所谓，关键是看起来要赏心悦目：http://s3.amazonaws.com/chacon/git-talk.pdf
   - 3d book： https://gist.github.com/happypeter/594db9d9e7d8dba50234
+  - 可以以一个类似实际的小项目为例子，一步步的展示清楚各个功能到底能够对于项目开发起到怎样的帮助
+    - 先本地，后连 github

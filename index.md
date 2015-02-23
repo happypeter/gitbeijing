@@ -37,7 +37,7 @@ title: git
 </div>
 <div class="contents-wrapper">
   <div class="table-of-contents" id="read">
-    <p class="part">背景知识</p>
+    <p class="part">git</p>
     <table class="index-table">
       <tbody>
         <tr class="chapter-wrap">
@@ -64,15 +64,21 @@ title: git
             <a href="book/background/4_preparations.html">准备工作</a>
           </td>
         </tr>
+        <tr class="chapter-wrap even">
+          <td class="chapter-index">5</td>
+          <td class="chapter-title">
+            <a href="book/5_hello.html">hello</a>
+          </td>
+        </tr>
       </tbody>
     </table>
-    <p class="part">http</p>
+    <p class="part">github</p>
     <table class="index-table">
       <tbody>
         <tr class="chapter-wrap">
-          <td class="chapter-index">1</td>
+          <td class="chapter-index">6</td>
           <td class="chapter-title">
-            <a href="book/http/1_making_requests.html">发送请求</a>
+            <a href="book/6_world.html">world</a>
           </td>
         </tr>
         <tr class="chapter-wrap even">
