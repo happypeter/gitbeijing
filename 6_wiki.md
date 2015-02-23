@@ -45,8 +45,6 @@ title: 结语与期望
 - http://gitref.org/
   - 首页的 how to think like a git 很实用
 
-- peepcode-git.pdf
-  - stash/tag 这些都是局部小技巧，可不讲
 
 - gittalk 2008
   - https://www.youtube.com/watch?v=nPzJESC-fag
@@ -70,9 +68,5 @@ title: 结语与期望
   - github pages 的基本过程，用纯 html 的形式演示一下
   - 总之就是一个视频的空间，内容要选最基础的
 
-- 使用 web 界面直接操作 github
-  - 没有命令行，不会 git 就不能用 github 吗?
-  - web 界面可以放在讲 git 之前讲
-  - 可以通过 web 的美观界面，让大家对仓库，历史，版本，patch ， commit ... 先有一个基本的概念
-  - 为引出 git 的本地操作打下基础。
+
 

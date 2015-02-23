@@ -2,10 +2,16 @@
 layout: book
 title: 简介
 ---
+书名？《git 北京》还是 《搬进 github》？
 
 ### 我和 git 的罗曼史
 
 git 和 github 两个词初学者经常搞不清谁是谁？Git 是 ...
+
+“I’m an egotistical bastard, and I name all my projects after myself.
+First Linux, now git.” – Linus
+
+Git is a stupid content tracker
 
 我应该是 2008 年开始用 git 的，那时候 github.com 还没有诞生。为何那么早呢？因为我研究生时候的研究方向是 Linux 内核，对 Linus 有着无比的崇拜，后来听说他写了 Git 这个软件，就去网上搜了他在 google 讲 git 的演讲视频，应该是听了几十遍。
 
@@ -16,11 +22,26 @@ git 和 github 两个词初学者经常搞不清谁是谁？Git 是 ...
 
 没有使用过任何版本控制工具，包括 git ，的朋友快速上手使用 github.com 。
 
+本书内容不包括：git 的底层数据结构和运行原理
 
 还是老思路，教会人家怎么用这个东西，进一步的理论学习和高级技巧学习不是我要操心的，有其他的书呢
 
 
 点评基本 git 入门书。progit 对于初学者过于庞大深入且全面，一下子难以把握关键
+ - peepcode-git.pdf
+   - 跟 progit 内容有重合的部分，作者也是 schcon 但是仍然值得一翻，有很多深入的内容
+ - http://gitref.org/
+   - 是一些最最常用的功能的速查手册，质量极高
+ - progit
+   - 这个是必看的圣经了，但是作为对初学者友好而言，我的书更好
+
+ - http://www.worldhello.net/gotgithub/
+   - 中文资源
+
+ - help.github.com
+   - 我的书中很多部分就是梳理一下看这个的思路
+
+ - http://git-scm.com/doc/ext 有更多资源
 
 
   - 所以过于深入的知识点，尽量用白话带过，但是最重要的三五个点可能比 progit 讲得还有仔细
