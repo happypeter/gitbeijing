@@ -31,7 +31,7 @@ title: git
        happypeter
       </div>
       <div class="job-title"><a href="http://www.happycasts.net/">本书作者，happycasts.net 作者</a></div>
-      git 和 github 曾经根本性的改变了我的职业规划。
+      挥汗写下本书，致敬<b>北京 Linux 用户组</b>的那些曾经帮助过我的朋友们。
     </div>
   </div>
 </div>
