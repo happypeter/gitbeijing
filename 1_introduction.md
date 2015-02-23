@@ -2,7 +2,6 @@
 layout: book
 title: 简介
 ---
-书名？《git 北京》还是 《搬进 github》？
 
 ### 我和 git 的罗曼史
 

@@ -6,7 +6,7 @@ title: git
   <div class='wrapper-inside clearfix'>
     <div class='top-large'>
       <div class='book-title'>
-        搬进 Github
+        Git 北京
       </div>
       <div class='book-author'>
         <a href="https://github.com/happypeter">happypeter</a> 著
@@ -31,7 +31,7 @@ title: git
        happypeter
       </div>
       <div class="job-title"><a href="http://www.happycasts.net/">本书作者，happycasts.net 作者</a></div>
-      挥汗写下本书，致敬<b>北京 Linux 用户组</b>的那些曾经帮助过我的朋友们。[点击查看](./history.html)为何起了个这么傻的名字 Git Beijing
+      挥汗写下本书，致敬<b>北京 Linux 用户组</b>的那些曾经帮助过我的朋友们。[点击查看](./histroy.html)为何起了个这么傻的名字 Git Beijing
     </div>
   </div>
 </div>
