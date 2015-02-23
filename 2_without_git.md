@@ -3,6 +3,9 @@ layout: book
 title: Github Without Git
 ---
 
+
+![](images/02-signup.png)
+
 - 使用 web 界面直接操作 github
   - 没有命令行，不会 git 就不能用 github 吗?
   - web 界面可以放在讲 git 之前讲
