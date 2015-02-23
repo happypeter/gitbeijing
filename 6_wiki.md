@@ -1,6 +1,6 @@
 ---
 layout: book
-title: 结语与期望
+title: wiki
 ---
 
 - Progit http://git-scm.com/book/zh/v1
@@ -44,7 +44,6 @@ title: 结语与期望
 
 - http://gitref.org/
   - 首页的 how to think like a git 很实用
-
 
 - gittalk 2008
   - https://www.youtube.com/watch?v=nPzJESC-fag
