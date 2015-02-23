@@ -3,6 +3,8 @@ layout: book
 title: Github Without Git
 ---
 
+# 不会 git 也可以用 Github 
+
 没有命令行，不会用 git 就不能用 github 吗? NO! github 的网页界面就已经能实现很多强大的功能了，来一起看一看。
 
 ### 一切好故事都从注册开始
