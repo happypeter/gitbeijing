@@ -12,6 +12,8 @@ First Linux, now git.” – Linus
 
 Git is a stupid content tracker
 
+参考 <http://git-scm.com/video/what-is-git> 。
+
 我应该是 2008 年开始用 git 的，那时候 github.com 还没有诞生。为何那么早呢？因为我研究生时候的研究方向是 Linux 内核，对 Linus 有着无比的崇拜，后来听说他写了 Git 这个软件，就去网上搜了他在 google 讲 git 的演讲视频，应该是听了几十遍。
 
 后来有了 github.com 我就搬进了 github.com。这个是个 life changing 的决定，在 github 我又认识了 ruby 社区，喜欢！所以放弃 c 和 c++ 而转学 ruby on rails 
