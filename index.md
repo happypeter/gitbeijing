@@ -21,7 +21,7 @@ title: git
   </div>
 </section>
 <div class="divider">
-  <a href="https://github.com/happypeter/gitbeijing">GitHub 书稿仓库，欢迎参与翻译！</a>
+  <a href="https://github.com/happypeter/gitbeijing">点击进入 GitHub 书稿仓库</a>
 </div>
 <div class="reviewers">
   <div class="name-card">
