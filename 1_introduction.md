@@ -2,6 +2,16 @@
 layout: book
 title: 简介
 ---
+
+### 我和 git 的罗曼史
+我应该是 2008 年开始用 git 的，那时候 github.com 还没有诞生。为何那么早呢？因为我研究生时候的研究方向是 Linux 内核，对 Linus 有着无比的崇拜，后来听说他写了 Git 这个软件，就去网上搜了他在 google 讲 git 的演讲视频，应该是听了几十遍。
+
+后来有了 github.com 我就搬进了 github.com。这个是个 life changing 的决定，在 github 我又认识了 ruby 社区，喜欢！所以放弃 c 和 c++ 而转学 ruby on rails 
+一直到今天。真是幸运！
+
+### 本书内容
+
+没有使用过任何版本控制工具，包括 git ，的朋友使用 github.com 。
 <!-- 这本书可以直接就切入 github
 
 因为最基础的 github 使用是只需要浏览器的，这样就可以浏览下载代码并且可以发简单的 PR 了
