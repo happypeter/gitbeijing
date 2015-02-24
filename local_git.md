@@ -7,7 +7,8 @@ title: git 本地操作
 
 本节就讲
   - 如何初始化项目， git init
-  - 如何添加内容，git add file / rm file
+  - 如何添加内容，git add file / rm file /mv file  == git add -A
+    - git add -p 挺好玩的
   - git commit
     - 写 message 的时候配置一下 EDITOR=vim
     - -v 参数的功能 gfmac 中也有，所以也要引出来
