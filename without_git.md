@@ -3,6 +3,8 @@ layout: book
 title: Github Without Git
 ---
 
+
+
 - github-init http://happycasts.net/episodes/7
   - ssh key 和其他一些内容本级中就不解释了，后面用到 git push 的时候，push 失败了再引入会更好
   - 命令行操作也要尽量避免
@@ -35,3 +37,5 @@ title: Github Without Git
 网页界面这里也能给别人的项目进行贡献，这个是通过 Pull Request 来实现的，这个后面要细聊，这里先过了。
 
 更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
+
+这样 https://help.github.com 这里的四步走的前两步就都介绍了，下面两步会在后面的视频中介绍。
