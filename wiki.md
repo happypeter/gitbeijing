@@ -4,10 +4,13 @@ title: wiki
 ---
 
 - 课程内容 big roadmap
+  - 凡是涉及 index staging area 等需要了解底层结构才能理解的操作一律不讲，或者放到一期 happycasts 中
   - 先用 github 的网页，展示清楚 git 版本控制的基本概念，commit，patch，
+    - 对应 github 上的一个关键术语和图标的含义，要努力介绍一下，不然是直接影响使用的
   - 然后图示一下版本控制的基本原理
   - 这样在本地安装 githubformac 执行纯本地机器上的版本控制
     - 完全按照 gfmac 的使用思路，来对应各个命令行命令，配以图示
+  - 瞄准 gfmac，这上面有的功能就将，没有的就先不讲。
 - happycasts.net
   - idev talk http://happycasts.net/episodes/60
     - 有很详细的图解，值得参考
@@ -24,6 +27,16 @@ title: wiki
     - gitbeijing 中应该尽少的讲解这些命令，教大家多用 tig githubformac 这些工具
     - 命令还是很多，参数也有很多，所以还是以 githubformac 的各项功能为直观演示，演示完了，直接上图示，图示中配上命令就好了
       - 就像 idev talk 中那样的
+   - pull-rebase http://happycasts.net/episodes/10
+     - 这个是开发中随时都会出现的内容，所以肯定要讲
+     - git pull --rebase 解决 rejected 的问题
+  - git add http://happycasts.net/episodes/33
+    - git reset/diff 这几期都没法给初学者看，就是讲得太深了
+    - gitbeijing 中保证不讲这么深入，会给大家带来挫败感的
+    - 后面如果讲到这些特别深入的内容也是因为一个实际需求，用户躲不掉了，自然花多少时间也都愿意了
+      - 到那个时候，从浅到深一股脑都讲出来就行了，理论上讲全面，不然用户也听不懂
+      - 但是 gitbeijing 中要极力避免这么难理解的操作，真正用到了，也不能往深处讲
+
 - Progit http://git-scm.com/book/zh/v1
   - 很多地方讲得还是比较深，我弄本简单的小书
   - staging area 这个还是要图示给大家，太重要了
@@ -84,10 +97,6 @@ title: wiki
   - github 的流程应该是大家应该下一步学的，因为 github 的流程是企业中应用的流程中最简单的，跟个人开发流程没有什么大的差别
   - 整个流程中体现了对开发者的尊重，真正像一个创作者一样对待他们，而不是当打杂的。
 
-- github pages
-  - jekyll 本身肯定不讲了，http://happycasts.net/episodes/6 应该更新啦
-  - github pages 的基本过程，用纯 html 的形式演示一下
-  - 总之就是一个视频的空间，内容要选最基础的
 
 
 
