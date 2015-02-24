@@ -3,6 +3,11 @@ layout: book
 title: Github Without Git
 ---
 
+- github-init http://happycasts.net/episodes/7
+  - ssh key 和其他一些内容本级中就不解释了，后面用到 git push 的时候，push 失败了再引入会更好
+  - 命令行操作也要尽量避免
+
+
 # 不会 git 也可以用 Github 
 
 没有命令行，不会用 git 就不能用 github 吗? NO! github 的网页界面就已经能实现很多强大的功能了，来一起看一看。

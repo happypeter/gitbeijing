@@ -2,6 +2,19 @@
 layout: book
 title: git 本地操作
 ---
+<!-- http://happycasts.net/episodes/4 git-init 参考完毕 -->
+
+
+本节就讲
+  - 如何初始化项目， git init
+  - 如何添加内容，git add file / rm file
+  - git commit
+    - 写 message 的时候配置一下 EDITOR=vim
+    - -v 参数的功能 gfmac 中也有，所以也要引出来
+    - alias ci 也要有，因为这个都是实际的流程
+  - 如何查看修改历史 git log
+  - 就是这些，用 githubformac 演示，然后图示原理，然后给出对应的命令
+  - 回滚等其他内容后面再讲
 
 # git 本地操作
 

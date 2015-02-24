@@ -3,6 +3,27 @@ layout: book
 title: wiki
 ---
 
+- 课程内容 big roadmap
+  - 先用 github 的网页，展示清楚 git 版本控制的基本概念，commit，patch，
+  - 然后图示一下版本控制的基本原理
+  - 这样在本地安装 githubformac 执行纯本地机器上的版本控制
+    - 完全按照 gfmac 的使用思路，来对应各个命令行命令，配以图示
+- happycasts.net
+  - idev talk http://happycasts.net/episodes/60
+    - 有很详细的图解，值得参考
+  - http://happycasts.net/tag/git
+    - 所有的内容都有参考价值
+    - 基础的，核心的内容都放到 gitbeijing 中，拓宽性的知识点都单独录 happycasts
+  - github-init http://happycasts.net/episodes/7
+    - 添加协作者
+    - 添加 ssh key
+    - 如何删除项目，用户，等这些常用操作
+    - 这个视频的内容就是这些了，没有必要再重看了
+  - git-init http://happycasts.net/episodes/4
+    - git 命令行的基本操作 add commit log -p
+    - gitbeijing 中应该尽少的讲解这些命令，教大家多用 tig githubformac 这些工具
+    - 命令还是很多，参数也有很多，所以还是以 githubformac 的各项功能为直观演示，演示完了，直接上图示，图示中配上命令就好了
+      - 就像 idev talk 中那样的
 - Progit http://git-scm.com/book/zh/v1
   - 很多地方讲得还是比较深，我弄本简单的小书
   - staging area 这个还是要图示给大家，太重要了
