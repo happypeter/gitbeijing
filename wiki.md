@@ -18,6 +18,7 @@ title: wiki
 
     - merge vs rebase
       - 这个要细讲，不然 git pull --rebase 就理解不了
+      - rebase 之后，好像我是在 jessica 的工作的基础之上继续开展的我的修改，而不是并行工作的
       - conflict 的情况肯定要 cover
 
     - http://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server

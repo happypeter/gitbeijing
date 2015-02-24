@@ -22,7 +22,9 @@ title: Github Without Git
 
 ### 编辑项目
 
-每次项目修改后，点击 "commit" 就可以生成一个新的版本。每次修改的内容叫做一个 patch，
+每次项目修改后，点击 "commit" 就可以生成一个新的版本。commit 这个词有时候当动词就是”记录当前的版本“，当名词时候可以粗略的认为它就代表一个版本。每个 commit 都有一个 commit 号，可以用来定位每个版本，例如 <https://github.com/happycasts/happycasts.github.com/commit/2727fd13f6> 。
+
+每次修改的内容叫做一个 patch，
 后面再聊 git 本地操作的时候，会涉及到相同的这些概念。
 
 网页界面这里也能给别人的项目进行贡献，这个是通过 Pull Request 来实现的，这个后面要细聊，这里先过了。

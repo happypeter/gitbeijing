@@ -3,6 +3,8 @@ layout: book
 title: 简介
 ---
 
+# 简介
+
 ### 我和 git 的罗曼史
 
 git 和 github 两个词初学者经常搞不清谁是谁？Git 是 ...
@@ -10,9 +12,18 @@ git 和 github 两个词初学者经常搞不清谁是谁？Git 是 ...
 “I’m an egotistical bastard, and I name all my projects after myself.
 First Linux, now git.” – Linus
 
-Git is a stupid content tracker
+Git is a 
+- stupid content tracker
+- directory content management system
+- tree histroy store system
+- a toolkit 
 
-参考 <http://git-scm.com/video/what-is-git> 。
+Git 是一个很傻瓜式的文件夹内容跟踪管理系统，版本历史存储系统，git 有很多子命令的命令行工具箱。
+
+Global Information Tracker
+
+
+
 
 我应该是 2008 年开始用 git 的，那时候 github.com 还没有诞生。为何那么早呢？因为我研究生时候的研究方向是 Linux 内核，对 Linus 有着无比的崇拜，后来听说他写了 Git 这个软件，就去网上搜了他在 google 讲 git 的演讲视频，应该是听了几十遍。
 
@@ -26,6 +37,9 @@ Git is a stupid content tracker
 本书内容不包括：git 的底层数据结构和运行原理
 
 还是老思路，教会人家怎么用这个东西，进一步的理论学习和高级技巧学习不是我要操心的，有其他的书呢
+
+这本书将会是我要写的唯一一本 git 书，任何我自己知识体系中最核心的点都会在书中给出特定的章节，稍微外围一点的知识点会在书中给出参考资料链接。
+未来可能会增加章节，所以每一个页面没有给出序号，例如 http://happypeter.github.io/gitbeijing/introduction.html ，防止破坏已有链接。 章节的顺序在 toc 中体现。
 
 
 点评基本 git 入门书。progit 对于初学者过于庞大深入且全面，一下子难以把握关键
