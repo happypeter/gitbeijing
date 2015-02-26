@@ -6,6 +6,7 @@ title: git 本地操作
 
 
 本节就讲
+  - 安装
   - 如何初始化项目， git init
   - 如何添加内容，git add file / rm file /mv file  == git add -A
     - git add -p 挺好玩的
@@ -15,6 +16,8 @@ title: git 本地操作
     - alias ci 也要有，因为这个都是实际的流程
   - 如何查看修改历史 git log
   - 就是这些，用 githubformac 演示，然后图示原理，然后给出对应的命令
+  - 有一个比较中肯的说法：如果你不想成为 git 的高级用户，可以尽量多用 GUI 工具，不碰命令行
+    - 因为 GUI 工具中很多操作都确实方便，直白
   - 回滚等其他内容后面再讲
 
 # git 本地操作

@@ -5,6 +5,8 @@ title: 简介
 
 # 简介
 
+这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。
+
 ### 我和 git 的罗曼史
 
 git 和 github 两个词初学者经常搞不清谁是谁？Git 是 ...
@@ -23,6 +25,11 @@ Git 是一个很傻瓜式的文件夹内容跟踪管理系统，版本历史存�
 Global Information Tracker
 
 
+Github 的核心诱人点是：
+- Social Coding
+- 为啥能迅速风靡...
+- 无限的代码可以参考，无限的项目可以参与，无数的高手可以求救
+- 当然还是要鼓吹一下 github 不然人家为啥要看 gitbeijing
 
 
 我应该是 2008 年开始用 git 的，那时候 github.com 还没有诞生。为何那么早呢？因为我研究生时候的研究方向是 Linux 内核，对 Linus 有着无比的崇拜，后来听说他写了 Git 这个软件，就去网上搜了他在 google 讲 git 的演讲视频，应该是听了几十遍。

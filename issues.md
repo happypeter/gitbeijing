@@ -3,6 +3,21 @@ layout: book
 title: Github issues
 ---
 
+http://www.worldhello.net/gotgithub/04-work-with-others/050-issue.html#issue
+
+
+Issue 的中文意思就要比较重要的事，比如自己发现了一个 Bug，或者有一个新功能的想法，以及任何需要跟团队公开讨论的事情都可以来提一个 issue 。
+对于开源项目，外人也开参与进来发评论和创建新 issue 。这个比传统的项目管理软件，把 bug report，feature request，discussion 都分开来方便多了，
+如果你在一个大一点的传统企业工作过，就知道有多少时间会浪费在学习这些狗屁流程上。而在 github 这里，简约带来效率。
+
+
+### 讨论中添加 patch
+
+### 
+
+- 自动指向其他 issue
+- markdown 支持
+
 how github use github to build github
 
 http://happycasts.net/episodes/47

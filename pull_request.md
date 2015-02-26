@@ -3,7 +3,12 @@ layout: book
 title: Pull Request 拉取请求
 ---
 
+如果是自己人，可以考虑直接加这个人做 collabrator 这样这个人就可以直接向项目中 push 代码了，就不用 PR 了。
+
 先将 be_social.md 再讲这个
+
+说说宏观思路。我现在有一个项目，你想来贡献一些补丁进来，如果咱俩跟本就不认识，你直接给我来信，说 Peter 你把我加成项目的 collabrator 吧？那结果可想而知。
+但是如果，你不写信，而是先把要改的东西改好，patch 给我发过来，这样我作为项目维护者必然觉得你这个人很靠谱，愿意跟你讨论，而且很有可能会把你的 patch 融合到项目中的。这个基本上就是 github 上最为常见的，用 PR 的形式来贡献代码。
 
 https://help.github.com 第三步
 
@@ -14,4 +19,7 @@ https://help.github.com 第三步
 
 - http://happycasts.net/episodes/37
   - 实际 fork 的流程
+
+- 要不要提一下代码冲突的问题
+  - 也可以到 merge 和 rebase 相应的章节中展示一下代码冲突发生后如何处理
 
