@@ -3,6 +3,12 @@ layout: book
 title: Pull Request 拉取请求
 ---
 
+https://guides.github.com/activities/forking/
+
+https://guides.github.com/activities/hello-world/
+
+https://guides.github.com/introduction/flow/
+
 如果是自己人，可以考虑直接加这个人做 collabrator 这样这个人就可以直接向项目中 push 代码了，就不用 PR 了。
 
 现在在浏览器中，新建删除编辑文件都很方便，而且可以新建 branch 可以说 web 界面对于 Pull Request 的支持已经是很严肃了。

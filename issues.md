@@ -3,6 +3,10 @@ layout: book
 title: Github issues
 ---
 
+https://guides.github.com/features/mastering-markdown
+
+https://guides.github.com/features/issues/
+
 
 github 官方称自己是 ` best way to build and ship software` 可见 github 提供的可不仅仅是代码托管。
 

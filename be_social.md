@@ -5,6 +5,7 @@ title: 社交化编程
 
 https://help.github.com 第四部
 
+https://guides.github.com/activities/socialize/
 
 Social Coding 社交化编程，很有意思。
 

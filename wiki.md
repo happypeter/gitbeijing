@@ -22,6 +22,9 @@ title: wiki
       - git blame 很有意思
       - 回到过去
 
+- http://rogerdudler.github.io/git-guide/index.zh.html  git - 简明指南
+- http://gitreal.codeschool.com/levels/1
+- http://gitimmersion.com/lab_01.html
 
 - 课程内容 big roadmap
   - 说话

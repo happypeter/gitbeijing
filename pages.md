@@ -5,6 +5,8 @@ title: Github Pages
 
 只讲一集。
 
+https://guides.github.com/features/pages
+
 - github pages
   - jekyll 本身肯定不讲了，http://happycasts.net/episodes/6 应该更新啦
   - github pages 的基本过程，用纯 html 的形式演示一下

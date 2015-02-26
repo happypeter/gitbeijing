@@ -26,6 +26,13 @@ title: Github Without Git
 
 一个项目其实就是一个文件夹，里面放着所有的项目文件，可以是代码，也可以是任意的文档。但是在 github 这里，就有一个新名称了，叫 ”仓库“ ( repo )，一个仓库就是一个用 git 进行了版本控制的项目。
 
+<!-- 官方给的仓库的解释在这里 https://help.github.com/articles/first-launch/ -->
+<!-- commit 的解释：Think of a commit as a snapshot of your project – code, files, everything — at a particular point in time.
+https://help.github.com/articles/making-changes/
+The word "commit" is often used by git in the same places other revision control systems use the words "revision" or "version".
+https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html
+ -->
+
 点一下页面左上角的图标，就可以到达 dashboard ，日常所有的操作都在这里做。比如左侧可以看到相关项目的最近更新，右侧是我自己的项目列表。现在我要创建一个项目，也就是点一下这个按钮。
 
 ![](images/without_git/newrepo.png)
@@ -48,9 +55,11 @@ github 的页面编辑器是经过特殊强化的，用起来非常舒服。可�
 后面再聊 git 本地操作的时候，会涉及到相同的这些概念。
 
 
+
 ### 总结
 github 的功能还有很多，本节中只是介绍了最为核心的版本控制功能的一部分，后面对其他重要的功能还会有详细的介绍。
 
+github 对 UI 的简约是有极为苛刻的要求的，所以很多功能是隐藏的， [参考](http://zachholman.com/talk/git-github-secrets/) 。
 网页界面这里也能给别人的项目进行贡献，这个是通过 Pull Request 来实现的，这个后面要细聊，这里先过了。
 
 更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
