@@ -5,6 +5,9 @@ title: Pull Request 拉取请求
 
 如果是自己人，可以考虑直接加这个人做 collabrator 这样这个人就可以直接向项目中 push 代码了，就不用 PR 了。
 
+现在在浏览器中，新建删除编辑文件都很方便，而且可以新建 branch 可以说 web 界面对于 Pull Request 的支持已经是很严肃了。
+[参考](https://github.com/blog/1557-github-flow-in-the-browser) 。
+
 先将 be_social.md 再讲这个
 
 说说宏观思路。我现在有一个项目，你想来贡献一些补丁进来，如果咱俩跟本就不认识，你直接给我来信，说 Peter 你把我加成项目的 collabrator 吧？那结果可想而知。

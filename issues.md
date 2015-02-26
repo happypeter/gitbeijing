@@ -3,6 +3,9 @@ layout: book
 title: Github issues
 ---
 
+
+github 官方称自己是 ` best way to build and ship software` 可见 github 提供的可不仅仅是代码托管。
+
 http://www.worldhello.net/gotgithub/04-work-with-others/050-issue.html#issue
 
 

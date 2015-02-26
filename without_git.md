@@ -30,12 +30,19 @@ title: Github Without Git
 
 ![](images/without_git/newrepo.png)
 
+勾选 “initailze project with a REAME” 然后创建这个项目。
 
 ### 编辑项目
 
 每次项目修改后，点击 "commit" 就可以生成一个新的版本。commit 这个词有时候当动词就是”记录当前的版本“，当名词时候可以粗略的认为它就代表一个版本。每个 commit 都有一个 commit 号，可以用来定位每个版本，例如 <https://github.com/happycasts/happycasts.github.com/commit/2727fd13f6> 。
 
+
+删除文件 [参考这里](https://github.com/blog/1545-deleting-files-on-github) 。
 一个版本就是当前代码状态的一个快照。
+
+
+
+github 的页面编辑器是经过特殊强化的，用起来非常舒服。可以进入全屏模式，编辑后还可以用 preview mode 查看一下修改内容。
 
 每次修改的内容叫做一个 patch，
 后面再聊 git 本地操作的时候，会涉及到相同的这些概念。
@@ -48,4 +55,4 @@ github 的功能还有很多，本节中只是介绍了最为核心的版本控�
 
 更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
 
-这样 https://help.github.com 这里的四步走的前两步就都介绍了，下面两步会在后面的视频中介绍。
+如何在浏览器中使用 github 的说明，<https://github.com/blog/1557-github-flow-in-the-browser>
