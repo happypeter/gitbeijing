@@ -4,6 +4,37 @@ title: git 本地操作
 ---
 <!-- http://happycasts.net/episodes/4 git-init 参考完毕 -->
 
+本课来把，前面在 github 上实现的那些版本控制操作在本地重新来一遍。
+
+git 是分布式的版本管理工具，
+
+图
+
+不像 svn/cvs 那些是中心式的工具。
+
+图
+
+
+本地一样是可以存放所以版本历史的，也一样可以通过 git 命令行工具，或者是图形化的客户端工具来操作这些历史。
+git 本身其实就是一套命令行工具库，
+
+图 一百多个命令
+
+
+但是常用的也就那么几十个，并且如果你不想成为 git 的高级用户，可以尽量多用 GUI 工具，不碰命令行。因为 GUI 工具中很多操作都确实方便，直白
+
+
+Git is a 
+- stupid content tracker
+- directory content management system
+- tree histroy store system
+- a toolkit 
+Git 是一个很傻瓜式的文件夹内容跟踪管理系统，版本历史存储系统，git 有很多子命令的命令行工具箱。
+
+
+- 用 githubformac 应该是直接可以 push 的
+  - https://help.github.com/articles/generating-ssh-keys/#platform-mac
+  - >Forget the terminal. Download our native app instead.
 
 本节就讲
   - 安装
@@ -16,9 +47,7 @@ title: git 本地操作
     - alias ci 也要有，因为这个都是实际的流程
   - 如何查看修改历史 git log
   - 就是这些，用 githubformac 演示，然后图示原理，然后给出对应的命令
-  - 有一个比较中肯的说法：如果你不想成为 git 的高级用户，可以尽量多用 GUI 工具，不碰命令行
-    - 因为 GUI 工具中很多操作都确实方便，直白
-  - 回滚等其他内容后面再讲
+  - 
 
 # git 本地操作
 
@@ -38,3 +67,7 @@ title: git 本地操作
 GUI 图形界面的工具当然会更美观一些，种类有很多，如果用 Mac 系统，可以安装 github for mac 
 
 确实美观，可否每操作一下 GUI 就给出对应的命令行操作？以及图示，比如 sync 的意思是 push，但是 push 什么到什么地方，这个可以用 slide 展示一下
+
+### 总结
+
+这里只是最基本的版本控制操作，历史回滚等其他内容后面再讲。

@@ -9,20 +9,13 @@ title: 简介
 
 ### 我和 git 的罗曼史
 
-git 和 github 两个词初学者经常搞不清谁是谁？Git 是 ...
+git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻x。关于软件为何以 git 命令，git 的作者 Linus Torvalds 曾经这样调侃：
 
-“I’m an egotistical bastard, and I name all my projects after myself.
+> “I’m an egotistical bastard, and I name all my projects after myself.
 First Linux, now git.” – Linus
 
-Git is a 
-- stupid content tracker
-- directory content management system
-- tree histroy store system
-- a toolkit 
+不过，也有人认为 Git 是 Global Information Tracker 的缩写形式，我认为这个说法非常能说明 git 的用途，就是对一个文件夹中的所有数据信息做跟踪，通过记录版本的形式来对内容的变化做记录。
 
-Git 是一个很傻瓜式的文件夹内容跟踪管理系统，版本历史存储系统，git 有很多子命令的命令行工具箱。
-
-Global Information Tracker
 
 
 Github 的核心诱人点是：
@@ -75,22 +68,5 @@ Github 的核心诱人点是：
     - 这是一本给 web 开发新手的书，从整个应用图景把握各个知识点的轻重
       - 让大家花20%的时间掌握80%最常用的操作
   - 内容无所谓，关键是看起来要赏心悦目：http://s3.amazonaws.com/chacon/git-talk.pdf
-  - 3d book： https://gist.github.com/happypeter/594db9d9e7d8dba50234
   - 可以以一个类似实际的小项目为例子，一步步的展示清楚各个功能到底能够对于项目开发起到怎样的帮助
     - 先本地，后连 github
-
-### 基本概念介绍
-代码仓库 repository 就是一个文件夹。
-
-<!-- 术语会有一些，我要用大白话介绍给大家 -->
-
-### Why Git
-
-版本控制工具挺多，为啥非要用 git?
-- 不要给大家上术语，类似于”分布式“，我的目标观众都是一些根本没有用过版本控制的 newb ，要到就是能最快最舒服的把 git 用起来，高深的东西不要瞎扯。
-
-- 最后一个原因，就是 github 了
-  - 不会 git 就用不了 github，不用 github 开发者就成了孤军了
-  - FOSS 改变世界，github 改变了工程开展的过程
-
-同样的，github.com 比其他的类似网站有啥不可替代性？
