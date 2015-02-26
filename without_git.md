@@ -3,18 +3,9 @@ layout: book
 title: Github Without Git
 ---
 
-本课介绍在网页上使用 github 来进行项目的版本控制。幻灯片中要展示清楚版本控制这个概念：什么是项目仓库 repo，版本 commit，什么是 patch，对应的这些概念在 github 网页上当然也能看得非常清楚。
-
-# 不会 git 也可以用 Github 
-
-没有命令行，不会用 git 就不能用 github 吗? NO! github 的网页界面就已经能实现很多强大的功能了，来一起看一看。
-
-
-Github 的核心诱人点是：
-- Social Coding
-- 为啥能迅速风靡...
-- 无限的代码可以参考，无限的项目可以参与，无数的高手可以求救
-- 当然还是要鼓吹一下 github 不然人家为啥要看 gitbeijing
+<!-- 本课介绍在网页上使用 github 来进行项目的版本控制。幻灯片中要展示清楚版本控制这个概念：什么是项目仓库 repo，版本 commit，什么是 patch，对应的这些概念在 github 网页上当然也能看得非常清楚。
+ -->
+没有命令行不会用 git ，就不能用 github 吗? NO! Github 的网站上就已经能实现很多强大的功能了，来一起看一看。
 
 ### 故事从注册开始
 
