@@ -1,7 +1,7 @@
 # Site settings
 host: 0.0.0.0
 # comment the line on local development env
-baseurl: "/tealeaf-http/"
+baseurl: "/gitbeijing/"
 
 # for support GFM, fenced_code_blocks
 markdown: redcarpet
