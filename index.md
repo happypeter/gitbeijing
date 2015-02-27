@@ -14,8 +14,8 @@ title: git
       <p class='book-description'>
         本书带你使用 git 和 github 来进行代码版本控制和分享以及项目协作。
       </p>
-      <a href="http://happypeter.github.io/gitbeijing#read" class="read-btn">网页版</a>
-      <a href="https://selfstore.io/products/266" class="read-btn">购买电子书</a>
+      <a href="http://happypeter.github.io/gitbeijing#read" class="read-btn">Work In Progress</a>
+      <a href="https://selfstore.io/products/266" class="read-btn">本书完成度30%</a>
     </div>
     <img alt="git" class="book-image" src="images/cover_3d.jpg"/>
   </div>
