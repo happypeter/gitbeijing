@@ -55,19 +55,29 @@ title: Github Without Git
 现在就来编辑一下。点击上面图中，项目名 “coco” 右侧的加号，进入下面界面。
 
 
-来新建一个文件叫 love.md，标号1。随便填写一下内容，标号2
 
 ![](images/without_git/add_new_file.png)
 
+来新建一个文件叫 love.md，标号1。填写文件内容，标号2。下面 commit new file 部分填写的是“再版留言”，说明一下为什么要做这次修改。标号3处填写一个一行的留言，如果要详细描述可以到标号4处，也可以不填。
+最后，点击 Commit new file 按钮，一个新版本就做好了。
 
+自动跳转回项目页面之后，会发现原来 "1 commit" 的地方，现在已经变成了下图所示的 "2 commits"
 
 ![](images/without_git/2_commits.png)
+
+"2 commits" 这里是个链接，点进入就进入了项目历史的页面。
 
 
 每个 commit 都有一个 commit 号，可以用来定位每个版本，例如 <https://github.com/happycasts/happycasts.github.com/commit/2727fd13f6> 。
 
-删除文件 [参考这里](https://github.com/blog/1545-deleting-files-on-github) 。
-一个版本就是当前代码状态的一个快照。
+
+
+![](images/without_git/histroy_view.png)
+
+
+
+![](images/without_git/4w_commit.png)
+
 
 github 的页面编辑器是经过特殊强化的，用起来非常舒服。可以进入全屏模式，编辑后还可以用 preview mode 查看一下修改内容。
 
