@@ -2,9 +2,10 @@
 layout: book
 title: git 本地操作
 ---
-<!-- http://happycasts.net/episodes/4 git-init 参考完毕 -->
 
 本课来把，前面在 github 上实现的那些版本控制操作在本地重新来一遍。
+
+虽然我平时主要是用命令行，但是我觉得初学者如果用一下 [Github for Mac](https://mac.github.com/index.html) 来掌握 git 的本地操作也是很好的，简单而直观。
 
 git 是分布式的版本管理工具，
 
@@ -13,7 +14,6 @@ git 是分布式的版本管理工具，
 不像 svn/cvs 那些是中心式的工具。
 
 图
-
 
 本地一样是可以存放所以版本历史的，也一样可以通过 git 命令行工具，或者是图形化的客户端工具来操作这些历史。
 git 本身其实就是一套命令行工具库，
@@ -31,6 +31,12 @@ Git is a
 - a toolkit 
 Git 是一个很傻瓜式的文件夹内容跟踪管理系统，版本历史存储系统，git 有很多子命令的命令行工具箱。
 
+
+    - git 的术语
+      - 先要初始化 git 项目，就是创建 .git 目录，所有的再版信息都往里面存
+      - commit -- 运行 git commit 就对代码状态的做一个快照，存到版本仓库之中了
+      - working tree -- 这个如果没有必要可以不说
+      - git blame 很有意思
 
 - 用 githubformac 应该是直接可以 push 的
   - https://help.github.com/articles/generating-ssh-keys/#platform-mac
