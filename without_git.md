@@ -41,26 +41,38 @@ title: Github Without Git
 
 ![](images/without_git/new_project.png)
 
-注意这次要勾选 “iInitialize this repository with a README” ，然后创建这个项目。也会看到 Create Repository 按钮的上方还有两个选择框，
+因为咱们没有付钱注意这次要勾选 “iInitialize this repository with a README” ，然后创建这个项目。也会看到 Create Repository 按钮的上方还有两个选择框，
 一个是关于 .gitignore 的，后面会专门讲到，另一个是关于 LICENSE 的，任意选一个自己喜欢开源授权协议的就行，我比较喜欢 MIT License 。这两项如果选择了就是在项目中又多了两个文本文件，一个是 .gitignore 文件，另一个是 LICENSE 文件，都不选就可以。
 
 ### 编辑项目
 
-每次项目修改后，点击 "commit" 就可以生成一个新的版本。commit 这个词有时候当动词就是”记录当前的版本“，当名词时候可以认为它就[代表一个版本](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html
-) 。每个 commit 都有一个 commit 号，可以用来定位每个版本，例如 <https://github.com/happycasts/happycasts.github.com/commit/2727fd13f6> 。
+创建项目完成后，就会跳转到 <https://github.com/happypeter/coco> 这个页面。这里的几乎每一个可以点按的地方都会涉及到一个新概念，不用着急，后面咱们都会介绍到。这里先来瞄准一个最为重要的，叫 commit，如图中所指：
 
+![](images/without_git/show_commit.png)
+
+每次项目修改后，点击 "commit" 就可以生成一个新的版本。commit 这个词有时候当动词就是”记录当前的版本“，当名词时候就是[一个版本](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html) 。
+
+现在就来编辑一下。点击上面图中，项目名 “coco” 右侧的加号，进入下面界面。
+
+
+来新建一个文件叫 love.md，标号1。随便填写一下内容，标号2
+
+![](images/without_git/add_new_file.png)
+
+
+
+![](images/without_git/2_commits.png)
+
+
+每个 commit 都有一个 commit 号，可以用来定位每个版本，例如 <https://github.com/happycasts/happycasts.github.com/commit/2727fd13f6> 。
 
 删除文件 [参考这里](https://github.com/blog/1545-deleting-files-on-github) 。
 一个版本就是当前代码状态的一个快照。
-
-
 
 github 的页面编辑器是经过特殊强化的，用起来非常舒服。可以进入全屏模式，编辑后还可以用 preview mode 查看一下修改内容。
 
 每次修改的内容叫做一个 patch，
 后面再聊 git 本地操作的时候，会涉及到相同的这些概念。
-
-
 
 ### 总结
 github 的功能还有很多，本节中只是介绍了最为核心的版本控制功能的一部分，后面对其他重要的功能还会有详细的介绍。
