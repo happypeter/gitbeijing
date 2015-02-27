@@ -68,7 +68,7 @@ title: Github Without Git
 
 "2 commits" 这里是个链接，点进入就进入了项目历史的页面。
 
-![](images/without_git/histroy_view.png)
+![](images/without_git/history_view.png)
 
 现在看到历史上有两个版本，点开上面的一个版本，或者说一个 commit，就可以看到一个 commit 所包含的信息了。
 
