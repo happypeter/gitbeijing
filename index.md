@@ -12,7 +12,7 @@ title: git
         <a href="https://github.com/happypeter">happypeter</a> 著
       </div>
       <p class='book-description'>
-        本书带你使用 git 和 github 来进行代码版本控制和分享以及项目协作。
+        这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。
       </p>
       <a href="http://happypeter.github.io/gitbeijing#read" class="read-btn">Work In Progress</a>
       <a href="https://selfstore.io/products/266" class="read-btn">本书完成度30%</a>
