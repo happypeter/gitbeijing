@@ -34,7 +34,7 @@ title: Github Without Git
 
 比如左侧，图标“1”处，可以看到相关项目的最近更新，右侧，图标“2”处，是我自己的项目列表。现在我要创建一个项目，也就是点“3”处这个按钮。
 
-![](images/without_git/github_dashboar.png)
+![](images/without_git/github_dashboard.png)
 
 勾选 “initailze project with a REAME” 然后创建这个项目。
 
