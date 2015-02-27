@@ -9,7 +9,7 @@ title: git
         Git 北京
       </div>
       <div class='book-author'>
-        <a href="https://github.com/happypeter">happypeter</a> 著
+        <a href="https://github.com/happypeter">happypeter</a>
       </div>
       <p class='book-description'>
         这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。
@@ -21,7 +21,7 @@ title: git
   </div>
 </section>
 <div class="divider">
-  <a href="https://github.com/happypeter/gitbeijing">点击进入 GitHub 书稿仓库</a>
+  <a href="https://github.com/happypeter/gitbeijing">进入 GitHub 书稿仓库</a>
 </div>
 <div class="reviewers">
   <div class="name-card">
@@ -31,7 +31,7 @@ title: git
        happypeter
       </div>
       <div class="job-title"><a href="http://www.happycasts.net/">本书作者，happycasts.net 作者</a></div>
-      挥汗写下本书，致敬<b>北京 Linux 用户组</b>的那些曾经帮助过我的朋友们。[点击查看](./histroy.html)为何起了个这么傻的书名。目前本书还正在写，进度 30% 。
+      挥汗写下本书，致敬<b>北京 Linux 用户组</b>的那些曾经帮助过我的朋友们。[点击查看](./histroy.html)为何起了个这么傻的书名。
     </div>
   </div>
 </div>
