@@ -17,6 +17,7 @@ First Linux, now git.” – Linus
 不过，也有人认为 Git 是 Global Information Tracker 的缩写形式，我认为这个说法非常能说明 git 的用途，就是对一个文件夹中的所有数据信息做跟踪，通过记录版本的形式来对内容的变化做记录。
 
 
+![github](./images/introduction/github_cat.jpg)
 
 Github 的核心诱人点是：
 - Social Coding
