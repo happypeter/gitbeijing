@@ -59,7 +59,8 @@ title: Github Without Git
 ![](images/without_git/add_new_file.png)
 
 来新建一个文件叫 love.md，标号1。填写文件内容，标号2。下面 commit new file 部分填写的是“再版留言”，说明一下为什么要做这次修改。标号3处填写一个一行的留言，如果要详细描述可以到标号4处，也可以不填。
-最后，点击 Commit new file 按钮，一个新版本就做好了。
+最后，点击 Commit new file 按钮，一个新版本就做好了。顺便提一下，github 的页面编辑器是经过特殊强化的，用起来非常舒服。可以进入全屏模式，编辑后还可以用 preview mode 查看一下修改内容。
+
 
 自动跳转回项目页面之后，会发现原来 "1 commit" 的地方，现在已经变成了下图所示的 "2 commits"
 
@@ -67,22 +68,27 @@ title: Github Without Git
 
 "2 commits" 这里是个链接，点进入就进入了项目历史的页面。
 
-
-每个 commit 都有一个 commit 号，可以用来定位每个版本，例如 <https://github.com/happycasts/happycasts.github.com/commit/2727fd13f6> 。
-
-
-
 ![](images/without_git/histroy_view.png)
 
-
+现在看到历史上有两个版本，点开上面的一个版本，或者说一个 commit，就可以看到一个 commit 所包含的信息了。
 
 ![](images/without_git/4w_commit.png)
 
 
-github 的页面编辑器是经过特殊强化的，用起来非常舒服。可以进入全屏模式，编辑后还可以用 preview mode 查看一下修改内容。
+最重要的是 `版本号` 或者叫 commit id 。每个 commit 都有一个，是一个40位的16进制数，可以用来定位每个版本。
 
-每次修改的内容叫做一个 patch，
-后面再聊 git 本地操作的时候，会涉及到相同的这些概念。
+核心的内容就是这4个 `w` 了：
+
+- Who 谁
+- When 什么时间
+- What 做了哪些修改内容，每次修改的内容叫做一个 patch，代码补丁，这个是后面经常会用到的概念。
+- Why 为什么要改，就是刚才我自己写的”再版留言“，同一个项目中可能有多个开发者在工作，所以这个留言对于项目沟通非常重要
+
+后面再聊 git 本地操作的时候，会涉及到相同的这些元素。
+
+
+
+
 
 ### 总结
 github 的功能还有很多，本节中只是介绍了最为核心的版本控制功能的一部分，后面对其他重要的功能还会有详细的介绍。
