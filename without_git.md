@@ -1,10 +1,7 @@
 ---
 layout: book
-title: Github Without Git
+title: 不会用 git 也能用 github
 ---
-
-<!-- 本课介绍在网页上使用 github 来进行项目的版本控制。幻灯片中要展示清楚版本控制这个概念：什么是项目仓库 repo，版本 commit，什么是 patch，对应的这些概念在 github 网页上当然也能看得非常清楚。
- -->
 
 不会用 git ，就不能用 github 吗? NO! Github 的网站上通过网页操作就已经能实现很多强大的功能了，来一起看一看。
 

@@ -3,8 +3,6 @@ layout: book
 title: 简介
 ---
 
-# 简介
-
 这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。
 
 ### 我和 git 的罗曼史
