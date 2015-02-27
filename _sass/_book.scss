@@ -313,10 +313,11 @@ p.part {
     margin: 0 auto;
     width: 1000px;
   }
-  .center {
-    font-size: 18px;
-    width: 500px;
+  .logo {
     margin: 50px auto 100px;
+    img {
+      margin: 0 auto;
+    }
   }
 }
 .name-card.contributor {
