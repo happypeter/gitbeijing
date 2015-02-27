@@ -1,6 +1,6 @@
 ---
 layout: book
-title: 不会用 git 也能用 github
+title: 浏览器中使用 github
 ---
 
 不会用 git ，就不能用 github 吗? NO! Github 的网站上通过网页操作就已经能实现很多强大的功能了，来一起看一看。
