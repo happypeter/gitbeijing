@@ -36,6 +36,11 @@ title: Github Without Git
 
 ![](images/without_git/github_dashboard.png)
 
+
+这就到达了，这个新建项目的页面：
+
+![](images/without_git/new_project.png)
+
 勾选 “initailze project with a REAME” 然后创建这个项目。
 
 ### 编辑项目
