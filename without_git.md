@@ -5,6 +5,7 @@ title: Github Without Git
 
 <!-- 本课介绍在网页上使用 github 来进行项目的版本控制。幻灯片中要展示清楚版本控制这个概念：什么是项目仓库 repo，版本 commit，什么是 patch，对应的这些概念在 github 网页上当然也能看得非常清楚。
  -->
+
 不会用 git ，就不能用 github 吗? NO! Github 的网站上通过网页操作就已经能实现很多强大的功能了，来一起看一看。
 
 ### 故事从注册开始
@@ -26,14 +27,13 @@ title: Github Without Git
 
 一个项目其实就是一个文件夹，里面放着所有的项目文件，可以是代码，也可以是任意的文档。但是在 github 这里，就有一个新名称了，叫 ”仓库“ ( repo )，一个仓库就是一个用 git 进行了版本控制的项目。
 
-<!-- 官方给的仓库的解释在这里 https://help.github.com/articles/first-launch/ -->
-<!-- commit 的解释：Think of a commit as a snapshot of your project – code, files, everything — at a particular point in time.
-https://help.github.com/articles/making-changes/
-The word "commit" is often used by git in the same places other revision control systems use the words "revision" or "version".
-https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html
- -->
+点一下页面左上角的图标，就可以到达 dashboard ，控制面板，这个词本来的意思是汽车上的仪表板，日常所有的操作都在这里做。
 
-点一下页面左上角的图标，就可以到达 dashboard ，日常所有的操作都在这里做。比如左侧可以看到相关项目的最近更新，右侧是我自己的项目列表。现在我要创建一个项目，也就是点一下这个按钮。
+![](images/without_git/dashboard.png)
+
+
+
+比如左侧可以看到相关项目的最近更新，右侧是我自己的项目列表。现在我要创建一个项目，也就是点一下这个按钮。
 
 ![](images/without_git/newrepo.png)
 
@@ -41,7 +41,8 @@ https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html
 
 ### 编辑项目
 
-每次项目修改后，点击 "commit" 就可以生成一个新的版本。commit 这个词有时候当动词就是”记录当前的版本“，当名词时候可以粗略的认为它就代表一个版本。每个 commit 都有一个 commit 号，可以用来定位每个版本，例如 <https://github.com/happycasts/happycasts.github.com/commit/2727fd13f6> 。
+每次项目修改后，点击 "commit" 就可以生成一个新的版本。commit 这个词有时候当动词就是”记录当前的版本“，当名词时候可以认为它就[代表一个版本](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html
+) 。每个 commit 都有一个 commit 号，可以用来定位每个版本，例如 <https://github.com/happycasts/happycasts.github.com/commit/2727fd13f6> 。
 
 
 删除文件 [参考这里](https://github.com/blog/1545-deleting-files-on-github) 。
