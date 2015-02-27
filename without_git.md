@@ -74,7 +74,7 @@ title: Github Without Git
 
 ![](images/without_git/4w_commit.png)
 
-最重要的是 `版本号` 或者叫 commit id 。每个 commit 都有一个，是一个40位的16进制数，可以用来定位每个版本。
+最重要的是 `版本号` 或者叫 commit id 。每个 commit 都有一个，是一个40位16进制数，可以用来定位每个版本。
 
 核心的内容就是这4个 `w` 了：
 
