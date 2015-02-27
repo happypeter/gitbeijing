@@ -21,6 +21,10 @@ git 本身其实就是一套命令行工具库，
 图 一百多个命令
 
 
+
+
+![](images/local_git/heart_git.png)
+
 但是常用的也就那么几十个，并且如果你不想成为 git 的高级用户，可以尽量多用 GUI 工具，不碰命令行。因为 GUI 工具中很多操作都确实方便，直白
 
 
@@ -29,6 +33,7 @@ Git is a
 - directory content management system
 - tree histroy store system
 - a toolkit 
+
 Git 是一个很傻瓜式的文件夹内容跟踪管理系统，版本历史存储系统，git 有很多子命令的命令行工具箱。
 
 

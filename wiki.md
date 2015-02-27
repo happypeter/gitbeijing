@@ -2,6 +2,8 @@
 layout: book
 title: wiki
 ---
+- 还是觉得在开头的地方应该专门说说学了 git 能干啥？
+  - 不知道怎么说，看看人家其他的书上怎么聊的
 
 - http://rogerdudler.github.io/git-guide/index.zh.html  git - 简明指南
 - http://gitreal.codeschool.com/levels/1
