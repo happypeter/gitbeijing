@@ -74,7 +74,6 @@ title: Github Without Git
 
 ![](images/without_git/4w_commit.png)
 
-
 最重要的是 `版本号` 或者叫 commit id 。每个 commit 都有一个，是一个40位的16进制数，可以用来定位每个版本。
 
 核心的内容就是这4个 `w` 了：
@@ -88,14 +87,5 @@ title: Github Without Git
 
 
 
-
-
 ### 总结
 github 的功能还有很多，本节中只是介绍了最为核心的版本控制功能的一部分，后面对其他重要的功能还会有详细的介绍。
-
-github 对 UI 的简约是有极为苛刻的要求的，所以很多功能是隐藏的， [参考](http://zachholman.com/talk/git-github-secrets/) 。
-网页界面这里也能给别人的项目进行贡献，这个是通过 Pull Request 来实现的，这个后面要细聊，这里先过了。
-
-更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
-
-如何在浏览器中使用 github 的说明，<https://github.com/blog/1557-github-flow-in-the-browser>
