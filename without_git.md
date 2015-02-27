@@ -41,7 +41,8 @@ title: Github Without Git
 
 ![](images/without_git/new_project.png)
 
-勾选 “initailze project with a REAME” 然后创建这个项目。
+注意这次要勾选 “iInitialize this repository with a README” ，然后创建这个项目。也会看到 Create Repository 按钮的上方还有两个选择框，
+一个是关于 .gitignore 的，后面会专门讲到，另一个是关于 LICENSE 的，任意选一个自己喜欢开源授权协议的就行，我比较喜欢 MIT License 。这两项如果选择了就是在项目中又多了两个文本文件，一个是 .gitignore 文件，另一个是 LICENSE 文件，都不选就可以。
 
 ### 编辑项目
 
