@@ -26,7 +26,7 @@ git 是分布式的版本管理工具，意思是每一个 git 控制的项目�
 
 ![](images/local_git/git_commands.png)
 
-好消息是，最长用的只不过是其中很小的一部分。
+好消息是，最长用的只不过是其中很小的一部分。git 的其他概括是：一个傻瓜式的内容管理系统，一个文件夹历史存储系统，这些都是很准确的说法。
 
 Peter 平时主要是用命令行，但是我觉得初学者如果用一下图形化的客户端工具 [Github for Mac](https://mac.github.com/index.html) ，来掌握 git 的基本操作也是很好的，简单而直观。图形化工具中之提供常见操作，真正灵活使用 git 还是要用命令行的。如果你对命令行使用还不熟悉可以看看我以前录的[这门课程](http://happypeter.github.io/LGCB/) 。
 
@@ -35,7 +35,7 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 
 第一步，新建一个仓库。先用客户端来做。
 
-![](images/local_git/git_commands.png)
+![](images/local_git/mac_create.png)
 
 点击上图箭头所指的 `+` 号，选择 create 这一项。填写项目名，这里就叫 GUI 吧，然后选择项目存放位置，然后 Create Repository 那个按钮点一下，仓库就创建好了。这个操作似曾相识，是吧，只不过这次是在本地机器上创建的。仔细研究一下这一步干了什么，打开命令行，执行
 
@@ -59,15 +59,22 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 
 用 `ls -a` 查看一下，跟前面一样，心脏也有了。
 
-第二步，
+第二步，编辑项目。这个就用自己最喜欢的编辑器，我用 sublime，打开 GUI 和 CLI 两个项目，创建两个 README 文件吧，里面随便写点内容就行。这个就不演示了，如果这个都不会，你也就没必要看这本 git 书了。
+
+第三步，commit。也就是真正生成一个版本了，这个就关键了。
+
+先用客户端来做。GUI 项目中有了 README 文件后，到项目的 changes 一项下面，就可以看到：
+
+![](images/local_git/mac_change.png)
 
 
 
-Git is a 
-- stupid content tracker
-- directory content management system
-- tree histroy store system
-- a toolkit 
+
+
+所以总结起来，从一个 commit 到下一个 commit，也就是从历史上的一个节点到下一个节点，要经历的操作是下面四步：
+
+![](images/local_git/c2c.png)
+
 
 Git 是一个很傻瓜式的文件夹内容跟踪管理系统，版本历史存储系统，git 有很多子命令的命令行工具箱。
 
