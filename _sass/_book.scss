@@ -195,7 +195,7 @@ a {
 }
 .book-wrapper img {
   display: block;
-  width: 700px;
+  max-width: 700px;
   margin: 20px auto;
 }
 .book-wrapper img[alt="certificates"] {
