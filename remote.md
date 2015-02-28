@@ -33,35 +33,10 @@ title: 当 git 牵手 github
 
 由于这个命令非常重要，所以来详细解释一下，这里执行的命令是 git-push 可以通过 `man git-push` 来查看这个命令的手册，里面也能找到 `-u` 参数的意义。简单来说，`push` 就是要把本地数据”推送“到 github 服务器上。`origin` 就是地址的代号，`master` 是分支的名字。一个仓库是可以有多个分支的，后面会有专门的内容讲解分支。分支的意义明确之前 `-u` 参数不太好理解，暂时就记住，这个参数的作用是在本地仓库的当前分支，其实就是本地的 master 分支，和服务器的仓库，也就是 origin 对应的仓库，的 master 分支之间建议一种绑定关系，因为实际项目中本地和远端都有多个分支，没有绑定关系，那么未来向远端 push 数据，或者从远端 pull 数据的时候就乱套了。`-u` 参数只需要在首次 push 的时候添加一次就可以了。后续执行相同的推送数据操作，只需要 `git push` 不加参数就可以了。
 
-好了，现在再到 <https://github.com/happypeter/CLI> 刷新一下页面，就看到数据已经上传成功了。
+但是这里会报错：
 
-客户端中的操作更为方便，前提是已经用自己的 github 账号在客户端登录了。
+    Public Key
 
-![](images/remote/mac_push.png)
-
-操作就是上图这些步骤。首先，点击1处的 publish ，然后填写项目名和描述，注意3处不要勾选 keep this code private，实际上如果不是付费用户也根本没有这个权限。最后点击 Push Repository 按钮就行了。这样到 github.com 自己的 dashboard，看一下右下方的仓库列表
-
-![](images/remote/repo_list.png)
-
-可以看到 GUI 这个项目已经在表的最顶端了。实际中常用的一个小贴士，列表的排列顺序是安更新时间由近到远排列的。
-
-
-
-- 添加 remote
-Remote
-
-This is the version of something that is hosted on a server, most likely GitHub.com. It can be connected to local clones so that changes can be synced.
-
-https://help.github.com/articles/github-glossary/
-
-https://guides.github.com/introduction/getting-your-project-on-github/
-
-https://guides.github.com/activities/hello-world/
-
-
-Upstream
-
-When talking about a branch or a fork, the primary branch on the original repository is often referred to as the "upstream", since that is the main place that other changes will come in from. The branch/fork you are working on is then called the "downstream".
 
 
 SSH Key
@@ -76,12 +51,28 @@ SSH keys are a way to identify yourself to an online server, using an encrypted 
     - 注意拷贝的时候最后千万不要多一个空格或者回车
 
 
-  git remote add origin xxxx
 
-这几个参数的意思要给大家说清楚
+好了，现在再到 <https://github.com/happypeter/CLI> 刷新一下页面，就看到数据已经上传成功了。
+
+### 客户端中做 push
+
+客户端中的操作更为方便，前提是已经用自己的 github 账号在客户端登录了。这样就不需要用前面的 ssh key 的形式达成互信了。
+
+![](images/remote/mac_push.png)
+
+操作就是上图这些步骤。首先，点击1处的 publish ，然后填写项目名和描述，注意3处不要勾选 keep this code private，实际上如果不是付费用户也根本没有这个权限。最后点击 Push Repository 按钮就行了。这样到 github.com 自己的 dashboard，看一下右下方的仓库列表
+
+![](images/remote/repo_list.png)
+
+可以看到 GUI 这个项目已经在表的最顶端了。实际中常用的一个小贴士，列表的排列顺序是安更新时间由近到远排列的。
+
+总之，用客户端操作，很多细节都被掩盖了，实际应用中这可能是双刃剑。
 
 
-- 用 githubformac 应该是直接可以 push 的
-  - https://help.github.com/articles/generating-ssh-keys/#platform-mac
-  - >Forget the terminal. Download our native app instead.
-  - https://help.github.com/articles/how-can-i-push-or-pull/
+https://guides.github.com/introduction/getting-your-project-on-github/
+
+https://guides.github.com/activities/hello-world/
+
+Upstream
+
+When talking about a branch or a fork, the primary branch on the original repository is often referred to as the "upstream", since that is the main place that other changes will come in from. The branch/fork you are working on is then called the "downstream".
