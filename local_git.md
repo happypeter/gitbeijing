@@ -92,12 +92,34 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 
 ![](images/local_git/c2c.png)
 
-所以再分别到 GUI 和 CLI 两个项目中重复一下上面的四步。这样到客户端的 history 一项下面，就可以看到历史线上已经有两个 commit 了，点开任意一个都可以看到4个w。
+所以再分别到 GUI 和 CLI 两个项目中重复一下上面的四步。这样到客户端的 history 一项下面，就可以看到历史线上已经有两个 commit 了，点开任意一个都可以看到4个w。版本号没有例外的都是40位，但是真正要用的时候取前几位就行，只要跟其他 commit 区分开就行，图中给出了前7位，已经是非常安全了。即使在一个超大型项目，历史成千上万，版本号冲突的概率也比被雷劈中两次要低很多了。
 
 ![](images/local_git/local_4w.png)
 
 
 ### Peter 的实际命令行工作流
+
+很多年前就听软件业的老人们说：刚刚够用是王道。多年来，我越来越觉得这句话有道理。所以如果你的版本控制需求很简单，那么请继续使用客户端工具。但是这里我要给出我自己实际的命令行操作步骤。
+
+做修改后，查看修改的文件就用
+
+    git st
+
+`st` 是 status 的别名，是我在我的 ~/.gitconfig 中设置的，我的 .gitconfig 文件内容如下
+
+{% highlight gitconfig %}
+[user]
+  name = Peter Wang
+  email = happypeter1983@gmail.com
+[core]
+  editor = vim
+[alias]
+  ci = commit -a -v
+  st = status
+  br = branch
+  throw = reset --hard HEAD
+  throwh = reset --hard HEAD^
+{% endhighlight %}
 
   - git commit
     - 写 message 的时候配置一下 EDITOR=vim
