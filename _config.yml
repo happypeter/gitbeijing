@@ -1,9 +1,0 @@
-# Site settings
-host: 0.0.0.0
-# comment the line on local development env
-baseurl: "/gitbeijing/"
-
-# for support GFM, fenced_code_blocks
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
