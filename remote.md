@@ -20,10 +20,10 @@ title: 当 git 牵手 github
 
 这一步就是添加了仓库地址到本地的 .git 目录里面，具体来说就是 .git/config 文件中又多了这门几行
 
-```
-[remote "origin"]
-    url = git@github.com:happypeter/CLI.git
-```
+
+    [remote "origin"]
+        url = git@github.com:happypeter/CLI.git
+
 
 这里 `origin` 是这个地址的代号，因为未来可能添加多个远端地址。
 
