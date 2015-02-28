@@ -113,7 +113,7 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 
 `st` 是 status 的别名，是我在我的 ~/.gitconfig 文件中设置的，我的 .gitconfig 文件内容如下
 
-{% highlight gitconfig %}
+```gitconfig
 [user]
   name = Peter Wang
   email = happypeter1983@gmail.com
@@ -125,7 +125,7 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
   br = branch
   throw = reset --hard HEAD
   throwh = reset --hard HEAD^
-{% endhighlight %}
+```
 
 修改的内容，其实包括下面几种情况：
 - 增加新文件，应该用 git add filename 进行跟踪
