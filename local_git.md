@@ -68,55 +68,45 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 ![](images/local_git/mac_change.png)
 
 
+这里就说细点吧，毕竟咱们是专业的码字人员。首先图中1和2两处可以看到目前项目修改了什么内容。这个在命令行中怎么看呢
+    
+    cd CLI/
+    git status
 
+可以看到哪些文件被修改了。同时命令行中报出的信息说
 
+    nothing added to commit but untracked files present (use "git add" to track)
+
+也就是说 README 这个文件没有被 git 跟踪。执行
+
+    git add README
+
+这一句就是通知 git，哪些修改内容需要被做到下一个版本之中去。想象一下如果修改多个文件，可以有选择的来把一部分内容做到下一个 commit 中去。这个相当于上面客户端图里面的勾选 README 这一步。接下来就可以到图示中3和4的地方填写再版留言并且执行 commit 来作出版本了。同样的，这个用命令行怎么做呢
+
+    cd CLI/
+    git commit -m "add README"
+
+可以看到命令行其实就跟说话一样，`git` 啊，你把当前添加的内容给 `commit` 了吧，`-m` 就是 message 的缩写呗，这个后面的就是再版留言啊。好这样一个 commit 就做完了。过程中选择哪些内容需要做到下一个版本中，哪些不需要的这个操作在 github 网页上是实现不了的。
 
 所以总结起来，从一个 commit 到下一个 commit，也就是从历史上的一个节点到下一个节点，要经历的操作是下面四步：
 
 ![](images/local_git/c2c.png)
 
+所以再分别到 GUI 和 CLI 两个项目中重复一下上面的四步。这样到客户端的 history 一项下面，就可以看到历史线上已经有两个 commit 了，点开任意一个都可以看到4个w。
 
-Git 是一个很傻瓜式的文件夹内容跟踪管理系统，版本历史存储系统，git 有很多子命令的命令行工具箱。
+![](images/local_git/local_4w.png)
 
 
-    - git 的术语
-      - 先要初始化 git 项目，就是创建 .git 目录，所有的再版信息都往里面存
-      - commit -- 运行 git commit 就对代码状态的做一个快照，存到版本仓库之中了
-      - working tree -- 这个如果没有必要可以不说
-      - git blame 很有意思
+### Peter 的实际命令行工作流
 
-- 用 githubformac 应该是直接可以 push 的
-  - https://help.github.com/articles/generating-ssh-keys/#platform-mac
-  - >Forget the terminal. Download our native app instead.
-
-本节就讲
-  - 安装
-  - 如何初始化项目， git init
-  - 如何添加内容，git add file / rm file /mv file  == git add -A
-    - git add -p 挺好玩的
   - git commit
     - 写 message 的时候配置一下 EDITOR=vim
     - -v 参数的功能 gfmac 中也有，所以也要引出来
     - alias ci 也要有，因为这个都是实际的流程
-  - 如何查看修改历史 git log
-  - 就是这些，用 githubformac 演示，然后图示原理，然后给出对应的命令
-  - 
-
-
-### 安装 git 和 基本使用
-
 
 查看版本信息
 
     git log -p
-
-### github for mac
-
-除了可以敲 git 的各种命令来获取版本信息，也可以通过前端工具来比较容易且更加美观的展现出版本信息。如果是在命令行界面，可以安装 tig 。
-
-GUI 图形界面的工具当然会更美观一些，种类有很多，如果用 Mac 系统，可以安装 github for mac 
-
-确实美观，可否每操作一下 GUI 就给出对应的命令行操作？以及图示，比如 sync 的意思是 push，但是 push 什么到什么地方，这个可以用 slide 展示一下
 
 ### 总结
 
