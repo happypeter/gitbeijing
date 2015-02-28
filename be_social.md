@@ -3,7 +3,7 @@ layout: book
 title: 社交化编程
 ---
 
-https://help.github.com 第四部
+https://help.github.com 第四部分
 
 https://guides.github.com/activities/socialize/
 
