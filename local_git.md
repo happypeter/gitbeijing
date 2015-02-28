@@ -96,6 +96,12 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 
 ![](images/local_git/local_4w.png)
 
+那在命令行中如何查看历史信息呢？可以用
+
+    cd CLI/
+    git log -p
+
+这样所有的版本和各种里面的4w就都出来了。但是问题是不够美观，所以实际中我会安装一个命令行中的前端工具叫 [tig](https://github.com/jonas/tig) 来进行查看。
 
 ### Peter 的实际命令行工作流
 
@@ -105,7 +111,7 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 
     git st
 
-`st` 是 status 的别名，是我在我的 ~/.gitconfig 中设置的，我的 .gitconfig 文件内容如下
+`st` 是 status 的别名，是我在我的 ~/.gitconfig 文件中设置的，我的 .gitconfig 文件内容如下
 
 {% highlight gitconfig %}
 [user]
@@ -121,14 +127,23 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
   throwh = reset --hard HEAD^
 {% endhighlight %}
 
-  - git commit
-    - 写 message 的时候配置一下 EDITOR=vim
-    - -v 参数的功能 gfmac 中也有，所以也要引出来
-    - alias ci 也要有，因为这个都是实际的流程
+修改的内容，其实包括下面几种情况：
+- 增加新文件，应该用 git add filename 进行跟踪
+- 删除新文件，用 git rm filename
+- 移动或重命名文件，用 git mv 命令
 
-查看版本信息
+但是我的实际操作是这样，如果有了上面这几种情况，那就运行
 
-    git log -p
+    git add -A
+
+来跟踪所有修改。可以通过 `man git-add` 来查看 `-A` 参数的意义。
+
+但是，如果只是对已经跟踪的文件里面的内容进行了修改，那就运行 `git commit -a ...` 这样的命令就可以了，`-a` 参数会添加修改到下一个版本中的。
+但是命令很长，所以我在 .gitconfig 中设置了别名 `ci` ，同时注意下面的 `editor = vim` 的设置。这样每次我执行
+
+    git ci
+
+就可以用 vim 编辑器打开一个页面，在这里可以敲 `i` 进入 vim 的插入模式来添加再版留言。同时注意 `ci` 别名中还有 `-v` 参数，有了它，那在我这个 vim 打开的页面下方，就可以看到这次的 patch 了。在最后要做 commit 之前的这一秒看一下要有哪些内容会做到版本中，实际中是非常能够减少误操作的。
 
 ### 总结
 
