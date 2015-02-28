@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div id="wrapper">
+      {% include header.html %}
+      <section class="content clearfix">
+        {{ content }}
+        {% include contributors.html %}
+      </section>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
