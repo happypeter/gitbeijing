@@ -3,8 +3,15 @@ layout: book
 title: 分支
 ---
 
-- 默认仓库创建的时候就是一个分支
-- 一个分支相当于一跟竹子，一节节的往上长。每个版本就是一节。
+不介绍分支 branch 的概念，下面的操作是没办法介绍了。
+
+默认仓库创建的时候就是一个分支，名字叫 master，但是用户可以自己创建其他的分支的。
+
+
+想象一下历史线上又很多节，每一节就是一次再版，好像一根竹子。 一个分支相当于一跟竹子，一节节的往上长。每个版本就是一节。
+
+
+![](images/branch/bamboo.jpeg)
 
 
 - http://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
