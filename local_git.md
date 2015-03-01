@@ -8,15 +8,22 @@ title: git 本地操作
 
 ### Git 是分布式的
 
-分布式，英文叫做 Distributed 。这个是个能够改变世界的概念，远的就不扯了，说说在版本控制这里，分布式和集中式（英文叫 Centralized）的区别。
+分布式，英文叫做 Distributed 。这个是个能够改变世界的概念，下面这张图是 Linus 在 google 讲 git 的时候的幻灯片，聊了一下集中式的问题
+
+![](images/local_git/linus_distribution.png)
+
+远的就不扯了，说说在版本控制这里，分布式和集中式（英文叫 Centralized）的区别。
+
 
 git 是分布式的版本管理工具，意思是每一个 git 控制的项目仓库中都保留整个项目的历史，各个仓库是对等关系。
 
-图 分布式
+![](images/local_git/distributed.png)
+
 
 不像 svn/cvs 那些是中心式的工具。只有服务器上的项目才有整个历史，每个开发者本地都只是最新的版本。
 
-图 集中式
+![](images/local_git/centralized.png)
+
 
 分布式的架构优势是非常明显的，比如大部分的操作都不需要联网，速度会比集中式的快几个数量级。这个分布式的图，麻烦你一定要记在脑子里，这样后面很多 git 的特性就都可以理解了。
 

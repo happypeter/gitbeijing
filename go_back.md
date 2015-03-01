@@ -14,3 +14,5 @@ git checkout commit-id 这些操作最适合配图来讲，可以是 keynote 图
   - reset --hard HEAD^
 
   - - throwh 就是砍去一节竹子。
+
+  - 对于没有跟踪的文件和文件夹，要 clean -f http://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning#_git_stashing

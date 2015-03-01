@@ -9,21 +9,7 @@ title: wiki
 - http://gitreal.codeschool.com/levels/1
 - http://gitimmersion.com/lab_01.html
 
-- 课程内容 big roadmap
-  - 用最少的篇幅，让新手翻过使用 git 基本使用和理解基本原理这道墙，为后续高级知识的学习打下坚实的基础。
-  - 动手带理论
-    - 而不是理论带动手
-    - 理出一套清晰的动手的线，分割成由浅入深的各个点
-      - 理论即使重讲漏讲不讲都可以
-      - 动手的过程要给大家列清楚
-  - 凡是涉及 index staging area 等需要了解底层结构才能理解的操作一律不讲，或者放到一期 happycasts 中
-  - git ls-files 这种命令就不要提了，提了也记不住，还是要给大家上最常用的功能，同时把功夫下在如何让大家透彻理解这些功能上
-  - 先用 github 的网页，展示清楚 git 版本控制的基本概念，commit，patch，
-    - 对应 github 上的一个关键术语和图标的含义，要努力介绍一下，不然是直接影响使用的
-  - 然后图示一下版本控制的基本原理
-  - 这样在本地安装 githubformac 执行纯本地机器上的版本控制
-    - 完全按照 gfmac 的使用思路，来对应各个命令行命令，配以图示
-  - 瞄准 gfmac，这上面有的功能就将，没有的就先不讲。
+
 - happycasts.net
   - idev talk http://happycasts.net/episodes/60
     - 有很详细的图解，值得参考
