@@ -93,6 +93,16 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
     cd CLI/
     git commit -m "add README"
 
+这里会报错，说没有设置 name 和 email 信息，好解决，就是运行下面两条命令：
+
+    git config --global user.name "Peter Wang"
+    git config --global user.email "happypeter1983@gmail.com"
+
+    
+相当于自己手写这些内容到 ~/.gitconfig 文件中
+
+    xxx
+
 可以看到命令行其实就跟说话一样，`git` 啊，你把当前添加的内容给 `commit` 了吧，`-m` 就是 message 的缩写呗，这个后面的就是再版留言啊。好这样一个 commit 就做完了。过程中选择哪些内容需要做到下一个版本中，哪些不需要的这个操作在 github 网页上是实现不了的。
 
 所以总结起来，从一个 commit 到下一个 commit，也就是从历史上的一个节点到下一个节点，要经历的操作是下面四步：

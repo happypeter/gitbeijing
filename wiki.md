@@ -2,14 +2,6 @@
 layout: book
 title: wiki
 ---
-- 还是觉得在开头的地方应该专门说说学了 git 能干啥？
-  - 不知道怎么说，看看人家其他的书上怎么聊的
-
-- http://rogerdudler.github.io/git-guide/index.zh.html  git - 简明指南
-- http://gitreal.codeschool.com/levels/1
-- http://gitimmersion.com/lab_01.html
-
-
 - happycasts.net
   - idev talk http://happycasts.net/episodes/60
     - 有很详细的图解，值得参考
@@ -18,14 +10,7 @@ title: wiki
     - 基础的，核心的内容都放到 gitbeijing 中，拓宽性的知识点都单独录 happycasts
   - github-init http://happycasts.net/episodes/7
     - 添加协作者
-    - 添加 ssh key
     - 如何删除项目，用户，等这些常用操作
-    - 这个视频的内容就是这些了，没有必要再重看了
-  - git-init http://happycasts.net/episodes/4
-    - git 命令行的基本操作 add commit log -p
-    - gitbeijing 中应该尽少的讲解这些命令，教大家多用 tig githubformac 这些工具
-    - 命令还是很多，参数也有很多，所以还是以 githubformac 的各项功能为直观演示，演示完了，直接上图示，图示中配上命令就好了
-      - 就像 idev talk 中那样的
    - pull-rebase http://happycasts.net/episodes/10
      - 这个是开发中随时都会出现的内容，所以肯定要讲
      - git pull --rebase 解决 rejected 的问题
@@ -45,8 +30,6 @@ title: wiki
       - 比如 gh-pages 分支，可以用来放页面
       - 比如 ... 反正我就是学英语的思路，就整最常用的
 
-    - 3.5 远程分支
-      - 这个肯定要讲
 
     - merge vs rebase
       - 这个要细讲，不然 git pull --rebase 就理解不了
@@ -74,10 +57,6 @@ title: wiki
 
     - 全书都扫了一遍，跟我要用的思路完全不一样
 
-
-- http://gitref.org/
-  - 首页的 how to think like a git 很实用
-
 - gittalk 2008
   - https://www.youtube.com/watch?v=nPzJESC-fag
   - http://s3.amazonaws.com/chacon/git-talk.pdf
@@ -90,11 +69,6 @@ title: wiki
     - 要有 snapshot 有 markdown 的 code ...
   - zach 的观点很喜欢：软件行业有各种开发方式，敏捷，瀑布，BDD，TDD，非常复杂，但是重要的时你找到一种自己喜欢的方式，github 就是这种方式。
   - 整个的异步工作流程，如此的重要，但是对于新人只是空话
-  - 但是可以提一下，zachholman.com 很值得一看
   - 也谈到了 branch model 这些问题，所以 holman 可以在最后作为 next step 推荐给大家，真的是很重要
   - github 的流程应该是大家应该下一步学的，因为 github 的流程是企业中应用的流程中最简单的，跟个人开发流程没有什么大的差别
-  - 整个流程中体现了对开发者的尊重，真正像一个创作者一样对待他们，而不是当打杂的。
-
-
-
-
+  

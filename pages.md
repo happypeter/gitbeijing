@@ -14,3 +14,7 @@ https://guides.github.com/features/pages
 
   http://happycasts.net/episodes/6
   http://happycasts.net/episodes/36
+
+
+  ### 总结
+  上面就是 github pages 的基本操作，其实 github pages 后台还有 jekyll 框架的支持，所以还是很灵活和方便的，但是 jekyll 本身的应用跟 git 没有什么关系。所以不是本书中要介绍了，我录了一个 happycasts 视频，有空你可以看看。

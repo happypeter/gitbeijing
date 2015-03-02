@@ -25,7 +25,10 @@ title: 分支
     git checkout -b idea
 
 就创建了一个名字叫 idea 的指针。到 Github for Mac 客户端里看一下，发现确实多了一个分支。
-这样达成的效果如下图：
+
+![](images/branch/mac_show_branch.png)
+
+上图箭头中的小对号表示当前已经切换到了 idea 这个分支之上。 达成的效果如下图：
 
 ![](images/branch/new_branch.png)
 
@@ -42,6 +45,11 @@ title: 分支
     git checkout master
 
 这样，HEAD 指针就又指向了 master 。
+
+删除分支就要
+
+   git branch -D idea
+
 
 ### 实际操作演示
 

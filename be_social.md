@@ -18,4 +18,10 @@ Social Coding 社交化编程，很有意思。
 但是交友的最高形式是给人家的开源项目贡献代码，这个是通过 PR 来实现的。https://help.github.com 第三部
 
 
+
+
 http://happycasts.net/episodes/58 network 可以提一下
+
+### 贡献是参与的最高形式
+
+可以写代码也可以写文档

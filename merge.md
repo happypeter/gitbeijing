@@ -4,6 +4,11 @@ title: merge
 ---
 
 
+### 远程分支
+同样都叫 master 分支，但是本地的 master 和 远程的 master 也是两个分支
+
+Progit 3.5
+
 - fast-forward
   - http://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 
