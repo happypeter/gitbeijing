@@ -28,7 +28,7 @@ title: 分支
 
 ![](images/branch/mac_show_branch.png)
 
-上图箭头中的小对号表示当前已经切换到了 idea 这个分支之上。 达成的效果如下图：
+上图箭头中的小对号表示当前已经切换到了 idea 这个分支之上，那 idea 就叫做当前分支。 达成的效果如下图：
 
 ![](images/branch/new_branch.png)
 
@@ -45,20 +45,42 @@ title: 分支
     git checkout master
 
 这样，HEAD 指针就又指向了 master 。
+<!-- stash 的报错情况很不好描述，用到得又不是挺多，所以偷懒不讲了 -->
 
 删除分支就要
 
    git branch -D idea
 
+注意，被删除的分支不能是当前分支。
 
 ### 实际操作演示
 
-现在来设计一个网页，开新的分支来开发新的功能：改变背景色和添加 logo，切换分支可以看到页面的变化，merge 分支可以得到所有的功能。但是 merge 放到下一课来讲。
+前面把道理都说了，下面动手来做一下。新建一个仓库
 
-working tree 会随着每次的切换而变化 ~/html_demo
+    mkdir cool
+    cd cool
+    git init
+
+然后创建一个文件叫 index.html 里面写一行内容：
+
+    AAA
+
+保存这个文件，然后做出 master 上的第一个版本
+
+    git ci 
+
+然后输入版本留言 "first commit" 。接下来切换到一个 idea 分支上开展一个新想法
+
+    git checkoout -b idea
+
+把 index.html 中的内容改为
+
+    AAA
+    BBB
+
+再来运行 `git ci` 版本留言为 "new idea"，这样就可以切换到 master 上来 merge 这个新想法的代码了。
 
 <!-- 录视频的时候可以用 scoot schcon 演讲时候用的那个 html 的例子 -->
-
 
 ### 总结
 
