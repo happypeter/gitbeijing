@@ -22,17 +22,8 @@ $ git remote add origin git@github.com:happypeter/CLI.git
 
 这一步就是添加了仓库地址到本地的 .git 目录里面，具体来说就是 .git/config 文件中又多了这门几行
 
-
 {% highlight ini %}
 [remote "origin"]
-    url = git@github.com:happypeter/CLI.git ,
-    url = git@github.com:happypeter/CLI.git
-{% endhighlight %}
-
-
-{% highlight ini %}
-[remote "origin"]
-  url = git@github.com:happypeter/CLI.git
   url = git@github.com:happypeter/CLI.git
 {% endhighlight %}
 
