@@ -25,7 +25,7 @@ $ git remote add origin git@github.com:happypeter/CLI.git
 
 {% highlight ini %}
 [remote "origin"]
-    url = git@github.com:happypeter/CLI.git
+    url = git@github.com:happypeter/CLI.git ,
     url = git@github.com:happypeter/CLI.git
 {% endhighlight %}
 
