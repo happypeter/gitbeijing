@@ -50,8 +50,10 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 
 点击上图箭头所指的 `+` 号，选择 create 这一项。填写项目名，这里就叫 GUI 吧，然后选择项目存放位置，然后 Create Repository 那个按钮点一下，仓库就创建好了。这个操作似曾相识，是吧，只不过这次是在本地机器上创建的。仔细研究一下这一步干了什么，打开命令行，执行
 
-    cd ~/repo_farm/GUI
-    ls -a
+{% highlight console %}
+$ cd ~/repo_farm/GUI
+$ ls -a
+{% endhighlight %}
 
 上面 ls 命令后面加 `-a` 可以显示隐藏文件或者文件夹。可以看到 GUI 文件夹下面什么都没有，只有一个隐藏的文件夹（或者延续 Unix 的传统叫”目录“）叫做 .git 。这个 .git 不要小看，因为未来所有的版本历史都是存放在这个文件夹中。这样说把，一个普通项目文件夹和一个被 git 做版本控制的文件夹，差别就在于有没有这个文件夹。.git 文件夹可以叫做 git 仓库的心脏。
 
@@ -156,20 +158,24 @@ $ git config --global user.email "happypeter1983@gmail.com"
 
 
 修改的内容，其实包括下面几种情况：
-- 增加新文件，应该用 git add filename 进行跟踪
-- 删除新文件，用 git rm filename
-- 移动或重命名文件，用 git mv 命令
+1. 增加新文件，应该用 git add filename 进行跟踪
+2. 删除新文件，用 git rm filename
+3. 移动或重命名文件，用 git mv 命令
 
 但是我的实际操作是这样，如果有了上面这几种情况，那就运行
 
-    git add -A
+{% highlight console %}
+$ git add -A
+{% endhighlight %}
 
 来跟踪所有修改。可以通过 `man git-add` 来查看 `-A` 参数的意义。
 
 但是，如果只是对已经跟踪的文件里面的内容进行了修改，那就运行 `git commit -a ...` 这样的命令就可以了，`-a` 参数会添加修改到下一个版本中的。
 但是命令很长，所以我在 .gitconfig 中设置了别名 `ci` ，同时注意下面的 `editor = vim` 的设置。这样每次我执行
 
-    git ci
+{% highlight console %}
+$ git ci
+{% endhighlight %}
 
 就可以用 vim 编辑器打开一个页面，在这里可以敲 `i` 进入 vim 的插入模式来添加再版留言。同时注意 `ci` 别名中还有 `-v` 参数，有了它，那在我这个 vim 打开的页面下方，就可以看到这次的 patch 了。在最后要做 commit 之前的这一秒看一下要有哪些内容会做到版本中，实际中是非常能够减少误操作的。
 
