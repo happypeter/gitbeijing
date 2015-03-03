@@ -60,13 +60,10 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 
 上面用客户端完成的这个操作叫做仓库的初始化，同样的操作用命令行咱们做呢？为了区分一下，命令行下面创建的这个项目叫 CLI 吧
 
-    cd ~/repo_farm
-    mkdir CLI
-    git init
-
-执行 `git init` 之后，会看到这样的输出
-
-    Initialized empty Git repository in /Users/peter/repo_farm/CLI/.git/
+    $ cd ~/repo_farm
+    $ mkdir CLI
+    $ git init
+    Initialized empty Git repository in /Users/peter/repo_farm/CLI/.git/    
 
 用 `ls -a` 查看一下，跟前面一样，心脏也有了。
 

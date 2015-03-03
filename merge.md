@@ -29,6 +29,8 @@ CONFLICT (content): Merge conflict in index.html
 Automatic merge failed; fix conflicts and then commit the result.
 {% endhighlight %}
 
+上面的 `CONFLICT` 意思是“代码冲突”，如果你在两个分支中改动了同一个地方，并且改的不一致，merge 的时候就会有冲突。
+
 {% highlight ruby %}
 puts "hello"
 {% endhighlight %}
