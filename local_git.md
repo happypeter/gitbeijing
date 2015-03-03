@@ -35,7 +35,11 @@ git 是分布式的版本管理工具，意思是每一个 git 控制的项目�
 
 好消息是，最长用的只不过是其中很小的一部分。git 的其他概括是：一个傻瓜式的内容管理系统，一个文件夹历史存储系统，这些都是很准确的说法。
 
-Peter 平时主要是用命令行，但是我觉得初学者如果用一下图形化的客户端工具 [Github for Mac](https://mac.github.com/index.html) ，来掌握 git 的基本操作也是很好的，简单而直观。图形化工具中之提供常见操作，真正灵活使用 git 还是要用命令行的。如果你对命令行使用还不熟悉可以看看我以前录的[这门课程](http://happypeter.github.io/LGCB/) 。
+Peter 平时主要是用命令行，但是我觉得初学者如果用一下图形化的客户端工具 [Github for Mac](https://mac.github.com/index.html) ，来掌握 git 的基本操作也是很好的，简单而直观。
+
+![](images/local_git/githubformac.jpg)
+
+windows 用户也有类似的客户端可以下载，[Github for Windows](https://windows.github.com/)。图形化工具中只提供常见操作，真正灵活使用 git 还是要用命令行的。如果你对命令行使用还不熟悉可以看看我以前录的[这门课程](http://happypeter.github.io/LGCB/) 。
 
 
 git 本身，也就是命令行中的 git，和 github for mac 客户端的安装都很简单，不说了。要说的是，单独使用二者之一就可以完成下面咱们一起要做的这些操作。不过咱们这样，同样的操作，先用客户端做一遍，然后再用命令行做一遍。这样对比一下，相信会很有意思。同时咱也对比一下前面 github 上操作的那些内容啊，记住，都是一样的。
