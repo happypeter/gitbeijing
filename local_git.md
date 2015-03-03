@@ -80,16 +80,19 @@ Initialized empty Git repository in /Users/peter/repo_farm/CLI/.git/
 
 这里就说细点吧，毕竟咱们是专业的码字人员。首先图中1和2两处可以看到目前项目修改了什么内容。这个在命令行中怎么看呢
     
-    cd CLI/
-    git status
 
-可以看到哪些文件被修改了。同时命令行中报出的信息说
+{% highlight console %}
+$ cd CLI/
+$ git status
+... README ...
+nothing added to commit but untracked files present (use "git add" to track)
+{% endhighlight %}
 
-    nothing added to commit but untracked files present (use "git add" to track)
+输出信息中就可以看到哪些文件被修改了。 同时说 README 这个文件没有被 git 跟踪。执行
 
-也就是说 README 这个文件没有被 git 跟踪。执行
-
-    git add README
+{% highlight console %}
+$ git add README
+{% endhighlight %}
 
 这一句就是通知 git，哪些修改内容需要被做到下一个版本之中去。想象一下如果修改多个文件，可以有选择的来把一部分内容做到下一个 commit 中去。这个相当于上面客户端图里面的勾选 README 这一步。接下来就可以到图示中3和4的地方填写再版留言并且执行 commit 来作出版本了。同样的，这个用命令行怎么做呢
 
