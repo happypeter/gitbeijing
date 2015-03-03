@@ -22,6 +22,12 @@ https://help.github.com/articles/github-glossary/
 
 merge conflicts
 
+{% highlight console %}
+$ git merge iss53
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+{% endhighlight %}
 
 {% highlight ruby %}
 puts "hello"
