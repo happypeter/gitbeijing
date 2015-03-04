@@ -4,26 +4,48 @@ title: 回到过去
 ---
 
 
-既然在 git 仓库中已经记录了各个时间点的版本，那么必然是可以像时光机器一样来回到过去的，这次来看看如果操作，更重要的是说说什么情况下需要执行这些操作。
+既然在 git 仓库中已经记录了各个时间点的版本，那么必然是可以像时光机器一样来回到过去的，这次来看看怎么具体操作，更重要的是说说什么情况下需要执行这些操作。
 
-### throw/throwh
+### 扔掉修改内容
 
 实际的情形往往是这样，为了实现一个功能，我来到项目中，改动了三个文件的五个地方，但是测试之后觉得这个想法不靠谱，想要会到刚才的干净的状态，怎么弄？
 手动改回去肯定是又慢又容易改错，那如果我这个项目用 git 控制了，而且刚才那个干净的状态也做成了 commit 那就很容易操作了。
 
-运行
+比如现在的情况是这样，我进入 GUI 项目，修改了 README 文件，同时添加了一个文件 aaa 和一个文件夹叫做 tmp 。这时候
 
 {% highlight console %}
-git diff
+$ git status
+...
+Changes not staged for commit:
+  ...
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+  modified:   README
+
+Untracked files:
+  ...
+  aaa
+
 {% endhighlight %}
 
-可以看到所有的修改内容。如果想要把单个文件还原，可以用
+可以看到所有的修改内容。如果想要把单个文件还原，可以用上面输出中提升的这个命令
 
 {% highlight console %}
-git checkout filename
+$ git checkout -- filename
 {% endhighlight %}
 
-那如何把所有改动都回滚呢？reset 命令登场。
+
+但是没有跟踪的 aaa 和 tmp/ 这两个如何删除呢？可以用
+
+{% highlight console %}
+$ git clean -df
+{% endhighlight %}
+
+具体 `-df` 参数的意义，参考 `man git-clean` 。
+
+那如果在一个大项目中，修改了很多已经跟踪的文件，用 `git diff` 命令可以看到修改内容，如何把所有改动都一次回滚呢？reset 命令登场。
+
+首先，如果这些修改内容是是改动了工作树，而没有被 commit，可以执行
 
 {% highlight console %}
 $ git reset --hard HEAD
@@ -31,22 +53,7 @@ $ git reset --hard HEAD
 
 `HEAD` 表示最新的那个版本，也就是干净的状态。`reset` 的意思是重置，所以这个命令达成的效果是可以知道了。 但是为什么要加 `--hard` 参数呢？是因为 reset 只负责重置 commit，但是修改内容默认不删除，所以要 `--hard`。更多信息可以 `man git-reset` 看一下。
 
-就可以把项目退回到上一个版本的状态，也就是扔掉了所有的修改。但是对于没有跟踪的文件和文件夹，要 
-
-{% highlight console %}
-$ git clean -f
-{% endhighlight %}
-
-才可以清除。如果有未被跟踪的文件夹，要用
-
-{% highlight console %}
-$ git clean -d
-{% endhighlight %}
-
-<!-- http://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning#_git_stashing -->
-
-
-但是如果我自己刚刚做的一个愚蠢的 patch，但是同时有 commit 了呢？这个也简单
+但是如果我自己刚刚做的愚蠢的改动，同时又 commit 了呢？这个也简单
 
 {% highlight console %}
 $ git reset --hard HEAD^
@@ -56,7 +63,7 @@ $ git reset --hard HEAD^
 
 <!-- http://happycasts.net/episodes/59 08:30 有图解 -->
 
-在我的 .gitconfig 文件中又这样的别名设置
+这样敲命令太麻烦。在我的 .gitconfig 文件中又这样的别名设置
 
 {% highlight ini %}
 [alias]
@@ -101,6 +108,11 @@ $ git checkout (commit_id)
 {% highlight console %}
 $ git checkout  master
 {% endhighlight %}
+
+注意 `master` 不仅仅是主分支的名字，同时它也是指向主分支最新一次 commit 的一个指针。
+
+但是，如果刚才 `checkout (commit_id)` 之后的工作树中作了修改，那么在想回到 master 就会失败，这时候可以用 `git throw` 命令扔掉所有的改动，然后再回来。当然如果想保留修改可以用 [stash](http://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning) 。
+
 
 
 
