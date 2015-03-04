@@ -68,21 +68,22 @@ $ cd ~/repo_farm
 $ mkdir CLI
 $ git init
 Initialized empty Git repository in /Users/peter/repo_farm/CLI/.git/
+$ ls -a
+.      ..     .git
 {% endhighlight %}
 
 用 `ls -a` 查看一下，跟前面一样，心脏也有了。
 
-第二步，编辑项目。这个就用自己最喜欢的编辑器，我用 sublime，打开 GUI 和 CLI 两个项目，创建两个 README 文件吧，里面随便写点内容就行。这个就不演示了，如果这个都不会，你也就没必要看这本 git 书了。
+第二步，编辑项目。这个就用自己最喜欢的编辑器，我用 sublime，打开 GUI 和 CLI 两个项目，分别创建一个 README 文件吧，里面随便写点内容就行。这个就不演示了，如果这个都不会，你也就没必要看这本 git 书了。
 
 第三步，commit。也就是真正生成一个版本了，这个就关键了。
 
-先用客户端来做。GUI 项目中有了 README 文件后，到项目的 changes 一项下面，就可以看到：
+先用客户端来做。GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就可以看到：
 
 ![](images/local_git/mac_change.png)
 
 
-这里就说细点吧，毕竟咱们是专业的码字人员。首先图中1和2两处可以看到目前项目修改了什么内容。这个在命令行中怎么看呢
-    
+首先图中1和2两处可以看到目前项目修改了什么内容。这个在命令行中怎么看呢
 
 {% highlight console %}
 $ cd CLI/
@@ -114,7 +115,11 @@ $ git config --global user.email "happypeter1983@gmail.com"
     
 相当于自己手写这些内容到 ~/.gitconfig 文件中
 
-    xxx
+{% highlight console %}
+[user]
+  name = Peter Wang
+  email = happypeter1983@gmail.com
+{% endhighlight %}
 
 可以看到命令行其实就跟说话一样，`git` 啊，你把当前添加的内容给 `commit` 了吧，`-m` 就是 message 的缩写呗，这个后面的就是再版留言啊。好这样一个 commit 就做完了。过程中选择哪些内容需要做到下一个版本中，哪些不需要的这个操作在 github 网页上是实现不了的。
 
