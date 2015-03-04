@@ -30,7 +30,32 @@ Automatic merge failed; fix conflicts and then commit the result.
 {% endhighlight %}
 
 上面的 `CONFLICT` 意思是“代码冲突”，如果你在两个分支中改动了同一个地方，并且改的不一致，merge 的时候就会有冲突。
+运行 `git status` 就可以看到到底都有哪些文件中发生了冲突
 
-{% highlight ruby %}
-puts "hello"
+{% highlight console %}
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+    both modified:      index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
 {% endhighlight %}
+
+打开存在冲突的文件，看到如下内容
+
+{% highlight text %}
+<<<<<<< HEAD:index.html
+<div id="footer">contact : email.support@github.com</div>
+=======
+<div id="footer">
+ please contact us at support@github.com
+</div>
+>>>>>>> iss53:index.html
+{% endhighlight %}
+
+注意上面的 `HEAD` 是代表当前分支。

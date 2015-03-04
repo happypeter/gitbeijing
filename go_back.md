@@ -13,6 +13,7 @@ git checkout commit-id 这些操作最适合配图来讲，可以是 keynote 图
 
 - revert
 
+  - 不要修改已经发布的 commit，people will hate you
 - throw/throwh
   - reset --hard HEAD^
   - http://happycasts.net/episodes/59 08:30 有图解

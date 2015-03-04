@@ -29,6 +29,10 @@ title: wiki
     - progit 3.4 中介绍的这个工作流当然是分支实用的一种情况，我虽然不讲这个，但是讲分支也一定是从更简单的实用场景出发
       - 比如 gh-pages 分支，可以用来放页面
       - 比如 ... 反正我就是学英语的思路，就整最常用的
+    - 删除远端分支
+      - git push origin --delete tmp
+    - http://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
+      - 非常重要
 
 
     - merge vs rebase

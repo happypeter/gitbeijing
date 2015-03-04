@@ -53,6 +53,7 @@ git 本身，也就是命令行中的 git，和 github for mac 客户端的安�
 {% highlight console %}
 $ cd ~/repo_farm/GUI
 $ ls -a
+.      ..     .git
 {% endhighlight %}
 
 上面 ls 命令后面加 `-a` 可以显示隐藏文件或者文件夹。可以看到 GUI 文件夹下面什么都没有，只有一个隐藏的文件夹（或者延续 Unix 的传统叫”目录“）叫做 .git 。这个 .git 不要小看，因为未来所有的版本历史都是存放在这个文件夹中。这样说把，一个普通项目文件夹和一个被 git 做版本控制的文件夹，差别就在于有没有这个文件夹。.git 文件夹可以叫做 git 仓库的心脏。

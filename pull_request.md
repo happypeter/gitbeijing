@@ -42,3 +42,5 @@ https://help.github.com 第三步
 - 要不要提一下代码冲突的问题
   - 也可以到 merge 和 rebase 相应的章节中展示一下代码冲突发生后如何处理
 
+- 发 pr 之前做一下 git pull --rebase 是很好的
+
