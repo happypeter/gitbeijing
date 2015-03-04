@@ -28,7 +28,7 @@ $ git remote add origin git@github.com:happypeter/CLI.git
 {% endhighlight %}
 
 
-这里 `origin` 是这个地址的代号，因为未来可能添加多个远端地址。
+这里 `origin` 是这个地址的代号，未来可能添加多个远端地址。
 
 添加好之后下一步真正要把数据传输到 github.com 上就要运行
 
@@ -78,10 +78,12 @@ id_rsa 这个文件中保存的是 private key 私钥，这个要严格保密。
 
 首次执行 push 会看到下面的信息
 
-    ☁  CLI [master] git push -u origin master
-    The authenticity of host 'github.com (192.30.252.128)' can't be established.
-    RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
-    Are you sure you want to continue connecting (yes/no)?
+{% highlight console %}
+$ git push -u origin master
+The authenticity of host 'github.com (192.30.252.128)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)?
+{% endhighlight %}
 
 这个直接回答 yes 回车就可以。 这样，再到 <https://github.com/happypeter/CLI> 刷新一下页面，就看到数据已经上传成功了。
 
@@ -102,9 +104,17 @@ id_rsa 这个文件中保存的是 private key 私钥，这个要严格保密。
 
 ### 从服务器下载项目到本地
 
+本地项目需要上传到 github.com 上学会了，那么 github.com 上的项目如何下载到本地呢？比如我自己来到我自己的一个项目的页面 <https://github.com/happypeter/happycasts> 。
+
+![](images/remote/clone_url.png)
+
+
+
+
+
 clone
 
-pulll
+pull
 
 
 ### 总结
