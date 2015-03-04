@@ -24,7 +24,11 @@ git 的变基（ rebase ）操作是非常有用的。首先来用图解的形�
 
 参考 [这个视频](http://happycasts.net/episodes/92) 。
 
+项目开发中由于经常犯错误，所以好的习惯是，每写几行就 commit 一下，这样最新的修改永远就是那么几行，很容易用 git diff 来查看，所以出问题了，非常好定位。小步多 commit 是个好主意。
+
 git rebase -i HEAD~~~
+
+git rebase -i origin/master
 
 rebase
 To reapply a series of changes from a branch to a different base, and reset the head of that branch to the result.
