@@ -104,18 +104,26 @@ Are you sure you want to continue connecting (yes/no)?
 
 ### 从服务器下载项目到本地
 
-本地项目需要上传到 github.com 上学会了，那么 github.com 上的项目如何下载到本地呢？比如我自己来到我自己的一个项目的页面 <https://github.com/happypeter/happycasts> 。
+本地项目需要上传到 github.com 上学会了，那么 github.com 上的项目如何下载到本地呢？比如来到一个项目的页面 <https://github.com/happypeter/happycasts> 。
 
 ![](images/remote/clone_url.png)
 
+如上图这样，得到箭头指向的仓库地址就可以运行
 
+{% highlight console %}
+$ git clone git@github.com:happypeter/happycasts.git
+{% endhighlight %}
 
+来下载项目仓库到本地了。注意最好就用 ssh 协议的这个地址，下面还可以用 https 的，用这个 clone 之后，每次 push 的时候都要求输入用户名和密码，非常讨厌。后面的两个大大的按钮。
+`Clone In Desktop` 是用 Github for Mac 客户端来进行 clone，`Download Zip` 下载项目代码最新版本的压缩包，适合那些根本不用 git 的朋友。
 
+得到项目 clone 之后，如果经过一段时间如果 github.com 上的仓库我做更新，那你可以通过
 
-clone
+{% highlight console %}
+$ git pull
+{% endhighlight %}
 
-pull
-
+来获得最新的版本。
 
 ### 总结
 
