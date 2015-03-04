@@ -61,8 +61,6 @@ $ git reset --hard HEAD^
 
 就是把当前代码重置到 `HEAD` 之前的一个版本的状态。
 
-<!-- http://happycasts.net/episodes/59 08:30 有图解 -->
-
 这样敲命令太麻烦。在我的 .gitconfig 文件中又这样的别名设置
 
 {% highlight ini %}
@@ -73,12 +71,25 @@ $ git reset --hard HEAD^
 
 throwh 就是砍去一节竹子。当然砍去的肯定没用的 patch 。`h` 代表 HEAD，throwh 就是把最新版本给扔了的意思。
 
-如果我在 master 分支上做了一些修改，没用 commit，但是忽然不想要了，那就运行
+如果我在 master 分支上做了一些修改，没有 commit，但是忽然不想要了，那就运行
 
 {% highlight console %}
 $ git throw
 {% endhighlight %}
 
+如果要扔掉最近的一个 commit 就运行
+
+{% highlight console %}
+$ git throwh
+{% endhighlight %}
+
+用图解的形式 throw 和 throw 分别扔掉的是下面的内容：
+
+
+![](images/go_back/throw.png)
+
+
+另，throw/throwh 都是有一定的破坏性的，相当于把历史这根竹子的头部坎掉一截，想要恢复就很难了。
 
 ![](images/go_back/cut_history.png)
 
