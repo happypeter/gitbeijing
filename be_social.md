@@ -9,6 +9,8 @@ https://guides.github.com/activities/socialize/
 
 Social Coding 社交化编程，很有意思。
 
+![](images/be_social/pretty_url.png)
+
 到 github.com/happypeter 能看到我的帅照片和我做过的所有项目代码，这个不震撼吗？其实仔细想想很震撼。
 
 让他人知道你的项目是很重要的。github 是最有说服力的简历。不仅有项目代码，而且上面的讨论和改版历史也可以证明你在这个项目上投入了多大的精力。

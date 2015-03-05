@@ -2,6 +2,11 @@
 layout: book
 title: wiki
 ---
+
+- 袁游
+  - 虽然是脱口而出，每句话都追求一点趣味和人味在里面，也正是因为是聊天式的，所以大家觉得这很正常。
+  - 写书也要这样啊
+  
 - happycasts.net
   - idev talk http://happycasts.net/episodes/60
     - 有很详细的图解，值得参考
