@@ -9,7 +9,7 @@ https://guides.github.com/activities/socialize/
 
 Social Coding 社交化编程，很有意思。
 
-![](images/be_social/pretty_url.png)
+![](images/be_social/pretty_url.jpg)
 
 到 github.com/happypeter 能看到我的帅照片和我做过的所有项目代码，这个不震撼吗？其实仔细想想很震撼。
 
