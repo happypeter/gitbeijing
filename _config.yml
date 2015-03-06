@@ -1,1 +1,4 @@
-baseurl: "/gitbeijing/"
+defaults:
+  -
+    values:
+      layout: "book"

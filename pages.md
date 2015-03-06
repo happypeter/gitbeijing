@@ -1,7 +1,7 @@
 ---
-layout: book
 title: Github Pages
 ---
+
 
 本课介绍用 Github Pages 这种机制来搭建静态网站。
 
@@ -15,6 +15,7 @@ _nice_post_here
 nice_post_here
 
 
+删除了 baseurl 设置，改动了 main.css 的链接，设置了 default 的 layout
 
 
 ### 日常的流程是这样
