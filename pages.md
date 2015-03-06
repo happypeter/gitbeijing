@@ -14,6 +14,11 @@ title: Github Pages
 puts "hello"
 ```
 
+```console
+$ cd CLI/
+$ git commit -m "add README"
+```
+
 _nice_post_here
 
 nice_post_here
