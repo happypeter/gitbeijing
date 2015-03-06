@@ -10,20 +10,10 @@ title: Github Pages
 直接到 github.com 上，创建 username.github.io 这个仓库。 然后添加文件 index.html ，稍后，访问 username.github.io 可以看到页面已经上线了。
 
 
-```ruby
-puts "hello"
-```
-
-```console
-$ cd CLI/
-$ git commit -m "add README"
-```
-
 _nice_post_here
 
 nice_post_here
 
-http://example.com
 
 
 
