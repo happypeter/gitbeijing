@@ -6,7 +6,13 @@ title: wiki
 - 袁游
   - 虽然是脱口而出，每句话都追求一点趣味和人味在里面，也正是因为是聊天式的，所以大家觉得这很正常。
   - 写书也要这样啊
-  
+
+- 深度内容
+  - 不一定深度底层的内容就一定很难，也不一定深度的内容就只能服务高级操作
+  - gitbeijing 中避免高级操作，但不一定避谈深度内容，因为很多深度内容对于理解日常概念非常有帮助
+  - 凡是让人赞叹的精彩内容就是要分享给大家
+  - 例如 scott schcon 20008 gittalk 或者是 linus git talk
+
 - happycasts.net
   - idev talk http://happycasts.net/episodes/60
     - 有很详细的图解，值得参考
@@ -44,6 +50,8 @@ title: wiki
       - 这个要细讲，不然 git pull --rebase 就理解不了
       - rebase 之后，好像我是在 jessica 的工作的基础之上继续开展的我的修改，而不是并行工作的
       - conflict 的情况肯定要 cover
+
+    - https://github.com/blog/1902-svg-viewing-diffing
 
     - http://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server
       - 这个确实是我自己每天都用得到，但是也可以不讲

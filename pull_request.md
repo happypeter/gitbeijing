@@ -3,6 +3,13 @@ layout: book
 title: Pull Request 拉取请求
 ---
 
+Pull Request 是 github 文化的核心。
+
+
+https://github.com/blog/1946-create-pull-requests-with-github-for-mac
+https://github.com/blog/1945-quick-pull-requests
+https://github.com/blog/1905-linking-merged-pull-requests-from-commits
+https://github.com/blog/1943-how-to-write-the-perfect-pull-request
 https://guides.github.com/activities/forking/
 
 https://guides.github.com/activities/hello-world/
