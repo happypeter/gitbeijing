@@ -3,12 +3,20 @@ title: Github Pages
 ---
 
 
-Github Pages 是 github 公司提供的免费的静态网站托管服务，用起来方便而且功能强大。
+Github Pages 是 github 公司提供的免费的静态网站托管服务，用起来方便而且功能强大。在 <https://pages.github.com/> 首页上可以看到很多用 Github Pages 托管的网站，很漂亮。
 
 ![](images/pages/logo.png)
 
 ### 你甚至不用会 git
-直接到 github.com 上，创建 yourusername.github.io 这个仓库。 然后添加文件 index.html ，稍后，访问 username.github.io 可以看到页面已经上线了。
+
+
+到 <https://pages.github.com/> 上，可以看到可以创建的网站有两类，一类是为自己或者是自己的组织创建站点，这个比较简单，就是新建一个仓库，仓库的名字叫做，username.github.io 或者是 orgnizationname.github.io ，注意这里的 username 和 orgnizationname 要严格替换成你自己的用户名或者组织名，不然就会有问题。然后就往仓库里面放内容就行了。第二类是为项目创建网站，这个其实主要步骤都是一样的，只不过网站的存放位置不一样，是在这个项目仓库里，新建一个分支 gh-pages，然后来添加网站内容。
+
+下面咱俩一块动手来建一个项目网站，如下图这样
+
+![](images/pages/project_site.png)
+
+在 <https://pages.github.com/> 选择 `Project Site` 然后下面有两项，一个是用自动生成器自动生成一个漂亮的网站，咱们选另一个方案，自己手写，因为这个方案比较能展示清楚本质。
 
 ### 日常的流程是这样
 
