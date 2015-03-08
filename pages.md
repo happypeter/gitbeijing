@@ -22,6 +22,8 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 本地有一个 git 仓库，github.com 上也有这个仓库。每次在本地用自己喜欢的编辑器做一下修改，commit 并 push，你的修改就上线了。整个过程实现了版本控制，数据备份，同时最最让人心醉的是 push 即是部署，还有比这更方便的吗？
 
+在创建 Github Pages 这个机制的时候，作者 Tom 写过一篇文章，[blogging-like-a-hacke](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) 其中谈到了一些设计要点：
+
 >First, all my writing would be stored in a Git repository. This would ensure that I could try out different ideas and explore a variety of posts all from the comfort of my preferred editor and the command line. I’d be able to publish a post via a simple deploy script or post-commit hook. Complexity would be kept to an absolute minimum, so a static site would be preferable to a dynamic site that required ongoing maintenance. My blog would need to be easily customizable; coming from a graphic design background means I’ll always be tweaking the site’s appearance and layout.
 
 
