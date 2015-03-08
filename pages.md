@@ -78,5 +78,10 @@ gitbeijing.com
 <!--  you will need to create A records that point to 192.30.252.153 and 192.30.252.154 
 https://help.github.com/articles/my-custom-domain-isn-t-working/
  -->
+
+晚上做完上面的操作，第二天早上访问 <gitbeijing.com> 已经可以访问到我的网站了。
+
+但是 <www.gitbejing.com> 还不行，操作不对路。。。
+
 ### 总结
   上面就是 github pages 的基本操作，其实 github pages 后台还有 jekyll 框架的支持，所以还是很灵活和方便的，但是 jekyll 本身的应用跟 git 没有什么关系。所以不是本书中要介绍了，我录了一个 happycasts 视频，有空你可以看看。
