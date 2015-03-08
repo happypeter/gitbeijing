@@ -57,5 +57,24 @@ $ git checkout gh-pages
 
 具体的操作步骤在 [here](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) 。
 
+[Configuring a www subdomain](https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/#configuring-a-www-subdomain)
+
+>We recommend using a custom subdomain instead of an apex domain for your GitHub Pages site.
+
+https://help.github.com/articles/about-custom-domains-for-github-pages-sites/#subdomains
+
+首先在 godaddy.com 上，让 gitbeijing.com 使用 digitalocean 的 domain server : ns1.digitalocean.com
+
+下一步，到 digitalocean 网站上，添加 A Record 指向 192.30.252.153 和 192.30.252.154
+
+最后，当然是要到项目 gh-pages 分支，创建 CNAME 文件，里面的内容是
+
+{% highlight console %}
+gitbeijing.com
+{% endhighlight %}
+
+<!--  you will need to create A records that point to 192.30.252.153 and 192.30.252.154 
+https://help.github.com/articles/my-custom-domain-isn-t-working/
+ -->
 ### 总结
   上面就是 github pages 的基本操作，其实 github pages 后台还有 jekyll 框架的支持，所以还是很灵活和方便的，但是 jekyll 本身的应用跟 git 没有什么关系。所以不是本书中要介绍了，我录了一个 happycasts 视频，有空你可以看看。
