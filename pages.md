@@ -40,6 +40,10 @@ $ git checkout gh-pages
 
 就像 Tom 上面说的，每次我自己看到网站的样式有需要改的地方，很容易就可以改好然后 push 上去就生效了。
 
+好，不管是用网页还是命令行来操作，上面这些还只是展示了，Github Pages 的托管静态页面的功能，但是其实故事并不停在这个地方。
+
+![](images/pages/more_function.png)
+
 ### jekyll
 
 > Over the last month I’ve brought these concepts to fruition and I’m pleased to announce Jekyll. Jekyll is a simple, blog aware, static site generator. 
