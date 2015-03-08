@@ -6,17 +6,9 @@ title: Github Pages
 本课介绍用 Github Pages 这种机制来搭建静态网站。Github Pages 是 github 公司提供的免费的静态网站托管服务，用起来方便而且功能强大。
 
 ### 你甚至不用会 git
-
 直接到 github.com 上，创建 username.github.io 这个仓库。 然后添加文件 index.html ，稍后，访问 username.github.io 可以看到页面已经上线了。
 
-
-_nice_post_here
-
-nice_post_here
-
-
-删除了 baseurl 设置，改动了 main.css 的链接，设置了 default 的 layout
-
+![](images/pages/logo.png)
 
 ### 日常的流程是这样
 
