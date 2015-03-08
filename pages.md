@@ -67,6 +67,8 @@ https://help.github.com/articles/about-custom-domains-for-github-pages-sites/#su
 
 下一步，到 digitalocean 网站上，添加 A Record 指向 192.30.252.153 和 192.30.252.154
 
+![](images/pages/dns.png)
+
 最后，当然是要到项目 gh-pages 分支，创建 CNAME 文件，里面的内容是
 
 {% highlight console %}
