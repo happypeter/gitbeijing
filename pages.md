@@ -3,7 +3,7 @@ title: Github Pages
 ---
 
 
-本课介绍用 Github Pages 这种机制来搭建静态网站。
+本课介绍用 Github Pages 这种机制来搭建静态网站。Github Pages 是 github 公司提供的免费的静态网站托管服务，用起来方便而且功能强大。
 
 ### 你甚至不用会 git
 
@@ -47,6 +47,8 @@ Over the last month I’ve brought these concepts to fruition and I’m pleased 
 ### 自己的域名
 
 http://coldbutsweet.com/
+
+https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
 
   ### 总结
   上面就是 github pages 的基本操作，其实 github pages 后台还有 jekyll 框架的支持，所以还是很灵活和方便的，但是 jekyll 本身的应用跟 git 没有什么关系。所以不是本书中要介绍了，我录了一个 happycasts 视频，有空你可以看看。
