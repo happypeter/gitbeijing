@@ -54,7 +54,9 @@ $ git checkout gh-pages
 
 http://coldbutsweet.com/
 
-https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/
+有一个功能其实很重要就是绑定自己的域名。想想如果有天 github 网站被依法和谐了，那怎么办？如果一开始就是用自己的域名，那就简单了，直接换一台服务器就好了。
 
-  ### 总结
+具体的操作步骤在 [here](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) 。
+
+### 总结
   上面就是 github pages 的基本操作，其实 github pages 后台还有 jekyll 框架的支持，所以还是很灵活和方便的，但是 jekyll 本身的应用跟 git 没有什么关系。所以不是本书中要介绍了，我录了一个 happycasts 视频，有空你可以看看。
