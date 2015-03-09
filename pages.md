@@ -59,9 +59,6 @@ $ git checkout gh-pages
 
 [Configuring a www subdomain](https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/#configuring-a-www-subdomain)
 
->We recommend using a custom subdomain instead of an apex domain for your GitHub Pages site.
-
-https://help.github.com/articles/about-custom-domains-for-github-pages-sites/#subdomains
 
 首先在 godaddy.com 上，让 gitbeijing.com 使用 digitalocean 的 domain server : ns1.digitalocean.com
 
