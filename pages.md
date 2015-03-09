@@ -67,7 +67,14 @@ https://help.github.com/articles/about-custom-domains-for-github-pages-sites/#su
 
 下一步，到 digitalocean 网站上，添加 A Record 指向 192.30.252.153 和 192.30.252.154
 
-![](images/pages/dns.png)
+
+对于 gitbeijing 我是在 digitalocean 网站上最终设置成了这样。
+
+![](images/pages/do_dns.png)
+
+插一句，以前我还设置过一个 coldbutsweet.com 是在万网 net.cn 上设置的，下面是截图
+
+![](images/pages/netcn_dns.png)
 
 最后，当然是要到项目 gh-pages 分支，创建 CNAME 文件，里面的内容是
 
