@@ -1,5 +1,4 @@
 ---
-layout: book
 title: 社交化编程
 ---
 

@@ -1,5 +1,4 @@
 ---
-layout: book
 title: 似水流年
 ---
 

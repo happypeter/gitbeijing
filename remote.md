@@ -1,5 +1,4 @@
 ---
-layout: book
 title: 当 git 牵手 github
 ---
 

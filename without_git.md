@@ -1,5 +1,4 @@
 ---
-layout: book
 title: 浏览器中使用 github
 ---
 

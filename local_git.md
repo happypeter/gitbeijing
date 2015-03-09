@@ -1,5 +1,4 @@
 ---
-layout: book
 title: git 本地操作
 ---
 
