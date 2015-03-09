@@ -21,7 +21,7 @@ First Linux, now git.” – Linus
 
 上面这张图片是 Linus 先生在 google 介绍 git 。这个我下载到自己的手持设备上，听了有100遍。 [可以在这里找到视频](http://git-scm.com/doc/ext) 。
 
-Git 的魅力在于开源，在于人本和务实，2008 年 github 的诞生把这些价值更好的进行了推广。
+Git 的魅力在于开源，在于人本和去中心化，2008 年 github 的诞生把这些价值更好的进行了推广。
 
 ![github](./images/introduction/github_cat.jpg)
 
