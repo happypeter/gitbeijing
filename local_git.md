@@ -114,7 +114,7 @@ $ git config --global user.email "happypeter1983@gmail.com"
     
 相当于自己手写这些内容到 ~/.gitconfig 文件中
 
-{% highlight console %}
+{% highlight ini %}
 [user]
   name = Peter Wang
   email = happypeter1983@gmail.com
