@@ -2,6 +2,10 @@
 title: Github issues
 ---
 
+
+- v2 的 progit 对 github 的讲解是非常详细的，甚至包括了 markdown 在 issue 中怎么写
+  - http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project
+        
 https://guides.github.com/features/mastering-markdown
 
 https://guides.github.com/features/issues/

@@ -2,10 +2,6 @@
 title: wiki
 ---
 
-- 袁游
-  - 虽然是脱口而出，每句话都追求一点趣味和人味在里面，也正是因为是聊天式的，所以大家觉得这很正常。
-  - 写书也要这样啊
-
 - 深度内容
   - 不一定深度底层的内容就一定很难，也不一定深度的内容就只能服务高级操作
   - gitbeijing 中避免高级操作，但不一定避谈深度内容，因为很多深度内容对于理解日常概念非常有帮助
@@ -13,37 +9,18 @@ title: wiki
   - 例如 scott schcon 20008 gittalk 或者是 linus git talk
 
 - happycasts.net
-  - idev talk http://happycasts.net/episodes/60
-    - 有很详细的图解，值得参考
-  - http://happycasts.net/tag/git
-    - 所有的内容都有参考价值
-    - 基础的，核心的内容都放到 gitbeijing 中，拓宽性的知识点都单独录 happycasts
-  - github-init http://happycasts.net/episodes/7
-    - 添加协作者
-    - 如何删除项目，用户，等这些常用操作
-   - pull-rebase http://happycasts.net/episodes/10
-     - 这个是开发中随时都会出现的内容，所以肯定要讲
-     - git pull --rebase 解决 rejected 的问题
   - git add http://happycasts.net/episodes/33
     - git reset/diff 这几期都没法给初学者看，就是讲得太深了
-    - gitbeijing 中保证不讲这么深入，会给大家带来挫败感的
     - 后面如果讲到这些特别深入的内容也是因为一个实际需求，用户躲不掉了，自然花多少时间也都愿意了
       - 到那个时候，从浅到深一股脑都讲出来就行了，理论上讲全面，不然用户也听不懂
       - 但是 gitbeijing 中要极力避免这么难理解的操作，真正用到了，也不能往深处讲
 
 - Progit http://git-scm.com/book/zh/v1
   - staging area 这个还是要图示给大家，太重要了
-  - 分支开发工作流--这个可以不讲，只是一个 master 就能满足日常需求了
-    - 试想，我自己都多长时间没用到分支开发工作流了
-    - 但是，分支的基本概念和使用肯定是要覆盖的
-    - progit 3.4 中介绍的这个工作流当然是分支实用的一种情况，我虽然不讲这个，但是讲分支也一定是从更简单的实用场景出发
-      - 比如 gh-pages 分支，可以用来放页面
-      - 比如 ... 反正我就是学英语的思路，就整最常用的
     - 删除远端分支
       - git push origin --delete tmp
     - http://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
       - 非常重要
-
 
     - merge vs rebase
       - 这个要细讲，不然 git pull --rebase 就理解不了
@@ -60,18 +37,6 @@ title: wiki
       - 如何贡献项目当然是重点
       - 但是我面对的观众是大学生，不是公司
       - progit 这里太专业了，我要讲得都是最基础的 PR 流程
-
-    - github
-      - github 对于开源项目是免费的，但是如果你想拥有私有项目也就是把代码封闭起来，就是要付费订阅了
-      - https 的那个 clone 链接还是有实际用途的，就是给那些没有添加 ssh key 的人
-      - 给出详细的注册步骤的截图演示，不要跳过，说“注册是很简单的”，会被打的
-      - v2 的 progit 对 github 的讲解是非常详细的，甚至包括了 markdown 在 issue 中怎么写
-        - http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project
-
-      - http://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified
-        - reset 必须讲，但是要讲清原理不容易PP
-
-    - 全书都扫了一遍，跟我要用的思路完全不一样
 
 - gittalk 2008
   - https://www.youtube.com/watch?v=nPzJESC-fag

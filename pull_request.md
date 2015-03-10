@@ -5,6 +5,10 @@ title: Pull Request 拉取请求
 Pull Request 是 github 文化的核心。
 
 
+   - pull-rebase http://happycasts.net/episodes/10
+     - 这个是开发中随时都会出现的内容，所以肯定要讲
+     - git pull --rebase 解决 rejected 的问题
+
 https://github.com/blog/1946-create-pull-requests-with-github-for-mac
 https://github.com/blog/1945-quick-pull-requests
 https://github.com/blog/1905-linking-merged-pull-requests-from-commits

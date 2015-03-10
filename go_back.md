@@ -124,6 +124,8 @@ $ git checkout  master
 但是，如果刚才 `checkout (commit_id)` 之后的工作树中作了修改，那么在想回到 master 就会失败，这时候可以用 `git throw` 命令扔掉所有的改动，然后再回来。当然如果想保留修改可以用 [stash](http://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning) 。
 
 
+<!--       - http://git-scm.com/book/en/v2/Git-Tools-Reset-Demystified
+        - reset 必须讲，但是要讲清原理不容易PP -->
 
 
 

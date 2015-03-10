@@ -2,6 +2,8 @@
 layout: default
 title: git
 ---
+{% include toc.html %}
+
 <section class='book'>
   <div class='wrapper-inside clearfix'>
     <div class='top-large'>
@@ -35,4 +37,3 @@ title: git
     </div>
   </div>
 </div>
-{% include toc.html %}
