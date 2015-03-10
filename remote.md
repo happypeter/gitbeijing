@@ -45,6 +45,8 @@ $ git remote add origin git@github.com:happypeter/CLI.git
 
 添加 ssh key 的目的是要在服务器和客户机之间达成互信，谁是服务器？Github.com 谁是客户机？我自己的笔记本。
 
+![](images/remote/ssh_key.png)
+
 到 <https://help.github.com/> 搜一下 ”ssh“ 可以找到 [这篇文档](https://help.github.com/enterprise/2.1/user/articles/generating-ssh-keys/)，里面详细介绍了添加 ssh key 的方法。但是 Peter 自己用的是下面的简化一点的步骤，一样好用哦，我用了6年了。
 
 先把系统上原有的 ssh key 备份或者删除：

@@ -2,6 +2,15 @@
 title: wiki
 ---
 
+- 单兵作战
+  - 这部分还有 git pull --rebase 这个每有讲
+    - 涉及到 remote branch 概念的讲解
+    - 不过这部分也可以放到团队开发中讲
+    - git pull && git push --force 是不是也能解决 rejected 的问题
+
+- 团队协作
+  - git blame 放到这里讲
+  
 - 深度内容
   - 不一定深度底层的内容就一定很难，也不一定深度的内容就只能服务高级操作
   - gitbeijing 中避免高级操作，但不一定避谈深度内容，因为很多深度内容对于理解日常概念非常有帮助
