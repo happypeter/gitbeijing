@@ -50,6 +50,8 @@ $ git checkout gh-pages
 
 > Over the last month I’ve brought these concepts to fruition and I’m pleased to announce Jekyll. Jekyll is a simple, blog aware, static site generator. 
 
+上面这段话是 Tom 在 [blogging-like-a-hacke](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) 中说的。
+
 ### 自己的域名
 
 
