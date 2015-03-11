@@ -51,12 +51,17 @@ $ git remote add origin git@github.com:happypeter/CLI.git
 
 先把系统上原有的 ssh key 备份或者删除：
 
-    cd # 跳转到自己的用户主目录
-    rm -r .ssh
+{% highlight console %}
+$ cd # 跳转到自己的用户主目录
+$ rm -r .ssh
+{% endhighlight %}
+
 
 来生成一对 ssh key
   
-    ssh-keygen
+{% highlight console %}
+$ ssh-keygen
+{% endhighlight %}
 
 回车执行之后会有三个地方停下来问我是否要设置一些信息，全部都回车略过就行。这样就在 ~/.ssh 文件夹下生成了一对 ssh key 。
 id_rsa 这个文件中保存的是 private key 私钥，这个要严格保密。id_rsa.pub 中是 public key，这个是要上传到 github 上的。
@@ -75,7 +80,9 @@ id_rsa 这个文件中保存的是 private key 私钥，这个要严格保密。
 
 好了，执行
 
-    git push -u origin master
+{% highlight console %}
+$ git push -u origin master
+{% endhighlight %}
 
 首次执行 push 会看到下面的信息
 
