@@ -59,7 +59,7 @@ Jeklly 的具体使用本身跟 git 没有直接联系，所以这里就不细�
 3. 代码高亮支持
 4. 可以使用变量
 
-详细内容参考 [jekyll 官网](http://jekyllrb.com/) 。
+详细内容参考 [jekyll 官网](http://jekyllrb.com/) 。 我也录了一期视频，放在我的[好多视频](http://haoduoshipin.com/episodes/113)网站上。
 
 ### 自己的域名
 
