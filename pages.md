@@ -52,6 +52,15 @@ $ git checkout gh-pages
 
 上面这段话是 Tom 在 [blogging-like-a-hacke](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) 中说的。
 
+Jeklly 的具体使用本身跟 git 没有直接联系，所以这里就不细说了。它主要能完成的功能有下面几项：
+
+1. 页面不用 html 来写了，而用更为简单的 markdown 格式来写
+2. 可以使用布局文件和片段文件
+3. 代码高亮支持
+4. 可以使用变量
+
+详细内容参考 [jekyll 官网](http://jekyllrb.com/) 。
+
 ### 自己的域名
 
 
@@ -88,4 +97,4 @@ https://help.github.com/articles/my-custom-domain-isn-t-working/
 晚上做完上面的操作，第二天早上访问 <http://gitbeijing.com> 已经可以访问到我的网站了，如果访问 <http://www.gitbeijing.com> 则可以跳转到 <http://gitbeijing.com> ，效果完美。
 
 ### 总结
-  上面就是 github pages 的基本操作，其实 github pages 后台还有 jekyll 框架的支持，所以还是很灵活和方便的，但是 jekyll 本身的应用跟 git 没有什么关系。所以不是本书中要介绍了，我录了一个 happycasts 视频，有空你可以看看。
+喜欢分享是一个好程序员的标志，我给我的很多初学编程的朋友的建议就是，先学习如何用 Github Pages 搭建自己的个人网站，一来可以锻炼一些基本的网站开发技巧，二来可以建立一个分享的阵地。
