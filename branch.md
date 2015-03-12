@@ -59,7 +59,7 @@ $ git checkout master
 HEAD 永远指向当前分支的最新的版本。
 <!-- stash 的报错情况很不好描述，用到得又不是挺多，所以偷懒不讲了 -->
 
-删除分支就要
+如果 idea 的代码我想要引入 master，那就涉及到合并分支了，后面会作详细介绍。否则，删除分支就要
 
 {% highlight console %}
 $ git branch -D idea
@@ -111,6 +111,8 @@ $ git checkout master
 ### 那 github 呢？
 
 本地创建的分支，如何 push 到 github 上，github 远端仓库（ remote repository ）中已经有的分支如何删除？
+
+那在 github 上如何切换分支呢？
 
 ### 总结
 

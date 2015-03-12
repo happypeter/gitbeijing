@@ -1,10 +1,14 @@
 ---
-title: merge
+title: 合并分支
 ---
+
+合并分支有两种主要形式， merge 和 rebase ，下面结合实际操作，说说这二者的区别。
 
 
 ### 远程分支
 同样都叫 master 分支，但是本地的 master 和 远程的 master 也是两个分支
+
+把远端仓库的 master 和本地 mater 合并，也是两个分支的合并，同时是非常常见的一种情形。
 
 Progit 3.5
 
