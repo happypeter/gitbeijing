@@ -6,6 +6,10 @@ title: 浏览器中使用 github
 
 每个日出后都是全新的一天。今天 Peter 来带你做一件曾经改变我生活的一件事情，就是注册并使用 github.com 。不会用 git ，就不能用 github 吗? NO! Github 的网站上通过网页操作就已经能实现很多强大的功能了，来一起看一看。
 
+>GitHub.com might be the best thing that has happened to software development since the Internet. 
+
+上面这段话来自 [gotealeaf.com](http://www.gotealeaf.com/books/git/read/introduction#whatisgithub) 。
+
 ### 故事从注册开始
 
 来到 <http://github.com> 的首页，就可以看到下面的注册界面：
