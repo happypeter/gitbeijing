@@ -44,6 +44,11 @@ title: 分支
     git checkout master
 
 这样，HEAD 指针就又指向了 master 。
+
+![](images/branch/head.png)
+
+
+HEAD 永远指向当前分支的最新的版本。
 <!-- stash 的报错情况很不好描述，用到得又不是挺多，所以偷懒不讲了 -->
 
 删除分支就要
