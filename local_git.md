@@ -97,7 +97,11 @@ nothing added to commit but untracked files present (use "git add" to track)
 $ git add README
 {% endhighlight %}
 
-这一句就是通知 git，哪些修改内容需要被做到下一个版本之中去。想象一下如果修改多个文件，可以有选择的来把一部分内容做到下一个 commit 中去。这个相当于上面客户端图里面的勾选 README 这一步。接下来就可以到图示中3和4的地方填写再版留言并且执行 commit 来作出版本了。同样的，这个用命令行怎么做呢
+这一句就是通知 git，哪些修改内容需要被做到下一个版本之中去。`git add` 命令会把文件添加到 git 的“暂存区”（ staging area ），所谓的“被跟踪”（ tracked ）就是添加到了暂存区。
+
+想象一下如果修改多个文件，可以有选择的来把一部分内容做到下一个 commit 中去。这个相当于上面客户端图里面的勾选 README 这一步。如果对已经跟踪的文件做了修改，可以通过 `git diff` 命令来查看这些改动。
+
+接下来就可以到图示中3和4的地方填写再版留言并且执行 commit 来作出版本了。同样的，这个用命令行怎么做呢
 
 {% highlight console %}
 $ cd CLI/
@@ -111,7 +115,6 @@ $ git config --global user.name "Peter Wang"
 $ git config --global user.email "happypeter1983@gmail.com"
 {% endhighlight %}
 
-    
 相当于自己手写这些内容到 ~/.gitconfig 文件中
 
 {% highlight ini %}
@@ -173,7 +176,7 @@ $ git config --global user.email "happypeter1983@gmail.com"
 $ git add -A
 {% endhighlight %}
 
-来跟踪所有修改。可以通过 `man git-add` 来查看 `-A` 参数的意义。
+来跟踪所有修改。可以通过 `man git-add` 来查看 `-A` 参数的意义。但是如果项目中有一些文件就是我根本不想跟踪版本，更不想 push 到 github.com 上让被人看到的，这样就可以来把这些文件放到 .gitignore 文件中。例如在一个典型的 Rails 项目中，会有类似这样的 [.gitignore](https://github.com/happypeter/happycasts/blob/master/.gitignore) 。
 
 但是，如果只是对已经跟踪的文件里面的内容进行了修改，那就运行 `git commit -a ...` 这样的命令就可以了，`-a` 参数会添加修改到下一个版本中的。
 但是命令很长，所以我在 .gitconfig 中设置了别名 `ci` ，同时注意下面的 `editor = vim` 的设置。这样每次我执行

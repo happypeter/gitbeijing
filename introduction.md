@@ -30,6 +30,10 @@ Git 和 Github 改变了我的职业，直到今天6年过去了，依然感觉�
 
 ### git 和 github 如何改变生活
 
+>Programming is not just code and computers. It's about people. It is decision making, information sharing, and the tools and mental models we use to solve problems and iterate on the solutions.
+
+来自 [gotealeaf.com](http://www.gotealeaf.com/books/git/read/introduction#gettingstarted) 。
+
 学了 git 会发财吗？会！
 
 - 备份

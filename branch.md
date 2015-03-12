@@ -2,10 +2,9 @@
 title: 分支
 ---
 
-今天的主角是分支，因为不介绍分支 branch 的概念，下面的操作是没办法介绍了。
+今天的主角是分支，因为不介绍分支 branch 的概念，下面的操作是没办法介绍了。今天来介绍如何创建新分支，并在分支间进行切换。
 
-
-### 什么是分支。
+### 什么是分支？
 默认仓库创建的时候就是一个分支，名字叫 master，但是用户可以自己创建其他的分支的。
 
 ![](images/branch/branch_master.png)
@@ -16,12 +15,18 @@ title: 分支
 
 ![](images/branch/bamboo.jpeg)
 
+所以，虽然本质上每次新创建一个 git 的分支，其实就是创建了一个新的包含分支名字的指针。但是从用户的角度来看，每一个分支就相当于一根独立的竹子了。非常巧妙。而在很多传统版本控制工具那里，每次你开一个新分支，就会真的把当前整个项目拷贝一份出来，会很慢。
+
 ### 创建新分支
+
+比如我在 master 分支上正在干活，但是忽然有个新想法要试一下，这个时候我就可以开一个新分支了，新分支上做任何修改都不会影响到 master 分支。
 
 跟 master 一样，新创建的分支也只是一个指针。比如运行
 
-    cd GUI
-    git checkout -b idea
+{% highlight console %}
+$ cd GUI
+$ git checkout -b idea
+{% endhighlight %}
 
 就创建了一个名字叫 idea 的指针。到 Github for Mac 客户端里看一下，发现确实多了一个分支。
 
@@ -33,7 +38,9 @@ title: 分支
 
 这时候如果运行
 
-    git branch
+{% highlight console %}
+$ git branch
+{% endhighlight %}
 
 就会看到当前分支已经是 idea 了。因为 idea 和 master 都指向相同的地方，所以此刻，这两个分支是相同的。有意思的是，如果新建分支上面继续做开发，新添加一个 commit，就是下面这样的情况
 
@@ -41,23 +48,27 @@ title: 分支
 
 注意这个时候 master 分支是没有动的。要想切换回 master 分支
 
-    git checkout master
+{% highlight console %}
+$ git checkout master
+{% endhighlight %}
 
 这样，HEAD 指针就又指向了 master 。
 
 ![](images/branch/head.png)
-
 
 HEAD 永远指向当前分支的最新的版本。
 <!-- stash 的报错情况很不好描述，用到得又不是挺多，所以偷懒不讲了 -->
 
 删除分支就要
 
-   git branch -D idea
+{% highlight console %}
+$ git branch -D idea
+{% endhighlight %}
 
 注意，被删除的分支不能是当前分支。
 
 ### 实际操作演示
+<!-- 这部分应该跟前面的图示融入到一起，不然自己出现太干瘪了 -->
 
 前面把道理都说了，下面动手来做一下。新建一个仓库
 
@@ -86,6 +97,21 @@ HEAD 永远指向当前分支的最新的版本。
 
 <!-- 录视频的时候可以用 scoot schcon 演讲时候用的那个 html 的例子 -->
 
+### Stashing and Cleaning
+
+如果在 idea 上的修改没有 commit，这时候想切换回 master
+
+{% highlight console %}
+$ git checkout master
+{% endhighlight %}
+
+就会 ...
+
+
+### 那 github 呢？
+
+本地创建的分支，如何 push 到 github 上，github 远端仓库（ remote repository ）中已经有的分支如何删除？
+
 ### 总结
 
-只开测试分支，调好代码 commit 了之后，如果不把代码搞到 master 分支上是没有太大意义的，这就涉及到分支合并的问题了，这个是 git 最大最强的一块功能，后面再介绍。
+只开测试分支，调好代码 commit 了之后，如果不把代码搞到 master 分支上是没有太大意义的，这就涉及到分支合并的问题了，这个是 git 最大最强的一块功能，后面再介绍。关于 branch 分支原理的深度解剖，可以参考 [Pro Git 的对应章节](http://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) 。
