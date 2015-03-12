@@ -27,13 +27,20 @@ $ git remote add origin git@github.com:happypeter/CLI.git
 {% endhighlight %}
 
 
-这里 `origin` 是这个地址的代号，未来可能添加多个远端地址。
+这里 `origin` 是这个地址的别名（ alias ），未来可能添加多个远端地址。例如可以运行
+
+{% highlight console %}
+$ gir remote add billie66 git@github.com:billie66/CLI.git
+{% endhighlight %}
+
+这样就可以添加别名为 billie66 的另外一个远端地址了。
 
 添加好之后下一步真正要把数据传输到 github.com 上就要运行
 
     git push -u origin master
 
-由于这个命令非常重要，所以来详细解释一下，这里执行的命令是 git-push 可以通过 `man git-push` 来查看这个命令的手册，里面也能找到 `-u` 参数的意义。简单来说，`push` 就是要把本地数据”推送“到 github 服务器上。`origin` 就是地址的代号，`master` 是分支的名字。一个仓库是可以有多个分支的，后面会有专门的内容讲解分支。分支的意义明确之前 `-u` 参数不太好理解，暂时就记住，这个参数的作用是在本地仓库的当前分支，其实就是本地的 master 分支，和服务器的仓库，也就是 origin 对应的仓库，的 master 分支之间建议一种绑定关系，因为实际项目中本地和远端都有多个分支，没有绑定关系，那么未来向远端 push 数据，或者从远端 pull 数据的时候就乱套了。`-u` 参数只需要在首次 push 的时候添加一次就可以了。后续执行相同的推送数据操作，只需要 `git push` 不加参数就可以了。
+由于这个命令非常重要，所以来详细解释一下，这里执行的命令是 git-push 可以通过 `man git-push` 来查看这个命令的手册，里面也能找到 `-u` 参数的意义。简单来说，`push` 就是要把本地数据”推送“到 github 服务器上。`origin` 就是地址的代号，`master` 是分支的名字。一个仓库是可以有多个分支的，后面会有专门的内容讲解分支。分支的意义明确之前 `-u` 参数不太好理解，暂时就记住，这个参数的作用是在本地仓库的当前分支，其实就是本地的 master 分支，和服务器的仓库，也就是 origin 对应的仓库，的 master 分支之间建议一种跟踪（ tracking ）关系，因为实际项目中本地和远端都有多个分支，没有这种跟踪关系，那么未来向远端 push 数据，或者从远端 pull 数据的时候就要每次都指明具体的分支名，比较麻烦。`-u` 参数只需要在首次 push 的时候添加一次就可以了。`-u` 是 `--set-upstream` 的简写形式，执行完上面的操作之后，远端仓库的 master 分支，就被设置为本地 master 分支的上游（ upstream ）分支，也叫跟踪（ tracking ）分支。
+后续执行相同的推送数据操作，只需要 `git push` 不加参数就可以了。
 
 理论上就是这样了，但是实际执行，会报错：
 
@@ -125,13 +132,19 @@ $ git clone git@github.com:happypeter/happycasts.git
 来下载项目仓库到本地了。注意最好就用 ssh 协议的这个地址，下面还可以用 https 的，用这个 clone 之后，每次 push 的时候都要求输入用户名和密码，非常讨厌。后面的两个大大的按钮。
 `Clone In Desktop` 是用 Github for Mac 客户端来进行 clone，`Download Zip` 下载项目代码最新版本的压缩包，适合那些根本不用 git 的朋友。
 
-得到项目 clone 之后，如果经过一段时间如果 github.com 上的仓库我做更新，那你可以通过
+得到项目 clone 之后，如果经过一段时间如果 github.com 上的仓库你的队友做了更新，或者是你自己在 github 的网页上进行了编辑和 commit 。那你可以通过
 
 {% highlight console %}
 $ git pull
 {% endhighlight %}
 
-来获得最新的版本。
+来获得最新的版本。但是如果你自己的本地也做了新的 commit，那么推荐的方式是使用
+
+{% highlight console %}
+$ git pull --rebase
+{% endhighlight %}
+
+这个也是咱们在 Github For Mac 中点击 sync 按钮所执行的命令。具体什么是 `rebase`，以及这样做有什么好处，后面讲合并分支的时候会有说明。
 
 ### 总结
 

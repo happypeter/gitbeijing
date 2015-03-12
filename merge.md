@@ -6,7 +6,15 @@ title: 合并分支
 
 
 ### 远程分支
+
+
+
 同样都叫 master 分支，但是本地的 master 和 远程的 master 也是两个分支
+
+<!-- 如果操作中绕不开了，就给大家引入 tracking branch 的概念 -->
+
+
+运行 `git pull` 的时候如果自己本地也有修改，那么最好是用 `git pull --rebase`，这个在 git 牵手 github 那一章已经提到了，这里解释一下原因。
 
 把远端仓库的 master 和本地 mater 合并，也是两个分支的合并，同时是非常常见的一种情形。
 
