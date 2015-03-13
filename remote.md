@@ -132,6 +132,10 @@ $ git clone git@github.com:happypeter/happycasts.git
 来下载项目仓库到本地了。注意最好就用 ssh 协议的这个地址，下面还可以用 https 的，用这个 clone 之后，每次 push 的时候都要求输入用户名和密码，非常讨厌。后面的两个大大的按钮。
 `Clone In Desktop` 是用 Github for Mac 客户端来进行 clone，`Download Zip` 下载项目代码最新版本的压缩包，适合那些根本不用 git 的朋友。
 
+
+![](images/remote/clone_push.png)
+
+
 得到项目 clone 之后，如果经过一段时间如果 github.com 上的仓库你的队友做了更新，或者是你自己在 github 的网页上进行了编辑和 commit 。那你可以通过
 
 {% highlight console %}
