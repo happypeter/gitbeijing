@@ -7,6 +7,26 @@ Pull Request 是 github 文化的核心。
 
 ![](images/pull_request/pr_flow.png)
 
+
+
+这样 billie66 就会看到 happypeter 发的 Pull Request，然后决定是否要把 happypeter 写的代码 merge 进自己的仓库。
+
+
+下面来实际操作一下，对应上面图示的过程，比如现在我想要贡献 TLCL 这个项目，同时假设我 happypeter 不是这个项目的 collabrator 。
+
+我可以来到项目的页面上，点击 fork 按钮。
+
+
+fork 结束之后就可以看到在我的用户名下，多了 TLCL 这个项目。所以我可以来 clone 这个项目了。
+
+这样我可以修改然后 commit 然后把这个 commit push 到我自己的那个 fork 上了。
+
+
+这样如果 billie66 merge 了 happypeter 的 pull request 最终版本历史就如下图所示
+
+
+一个 pull request 发出之后，如果大家查看之后认为我的代码还需要调整，这样，我可以继续向同一个 PR 上面 push 代码的，所以在 github 的这个 PR 的页面，就形成一条非常清晰的讨论主线。
+
 <!-- 没有实际操作，空扯是很难让同学们满意一天的，所以下面的内容应该融入到其他章节中去 -->
 
 https://help.github.com 第四部分

@@ -164,6 +164,7 @@ $ git config --global user.email "happypeter1983@gmail.com"
   throwh = reset --hard HEAD^
 {% endhighlight %}
 
+注：如果你想拥有跟我一样的设置，可以直接把上面的内容拷贝到你自己的 ~/.gitconfig 文件之中，把 `name` 和 `email` 两项用编辑器改一下。这样就跟敲一堆的 `git config --global xxx` 是等价的。
 
 修改的内容，其实包括下面几种情况：
 1. 增加新文件，应该用 git add filename 进行跟踪

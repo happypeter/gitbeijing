@@ -16,6 +16,10 @@ title: 合并分支
 
 运行 `git pull` 的时候如果自己本地也有修改，那么最好是用 `git pull --rebase`，这个在 git 牵手 github 那一章已经提到了，这里解释一下原因。
 
+{% highlight console %}
+$ git config --global pull.rebase true
+{% endhighlight %}
+
 把远端仓库的 master 和本地 mater 合并，也是两个分支的合并，同时是非常常见的一种情形。
 
 Progit 3.5
