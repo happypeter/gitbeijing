@@ -4,6 +4,9 @@ title: Pull Request 拉取请求
 
 Pull Request 是 github 文化的核心。
 
+
+![](images/pull_request/pr_flow.png)
+
 <!-- 没有实际操作，空扯是很难让同学们满意一天的，所以下面的内容应该融入到其他章节中去 -->
 
 https://help.github.com 第四部分
