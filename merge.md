@@ -22,6 +22,10 @@ $ git config --global pull.rebase true
 
 把远端仓库的 master 和本地 mater 合并，也是两个分支的合并，同时是非常常见的一种情形。
 
+如果不小心用 git pull 下了远端的内容，也没有关系，可以使用 `git push --force` 来进行 push 
+
+https://octicons.github.com/ 上面还有专门一个 icon 叫 force-push 。
+
 Progit 3.5
 
 - fast-forward
