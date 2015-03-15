@@ -6,7 +6,7 @@ title: 简介
 
 ### 我和 git 的罗曼史
 
-git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻x。关于软件为何以 git 命令，git 的作者 Linus Torvalds 曾经这样调侃：
+git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻x。关于软件为何以 git 命令，它的作者 Linus Torvalds 曾经这样调侃：
 
 > “I’m an egotistical bastard, and I name all my projects after myself.
 First Linux, now git.” – Linus
