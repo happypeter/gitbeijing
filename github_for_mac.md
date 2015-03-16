@@ -76,7 +76,7 @@ GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就
 
 
 ### 回滚历史
-
+会
 
 
 ### 连接 Github
