@@ -2,7 +2,7 @@
 title: Github For Mac 客户端
 ---
 
-没有安装 git 并不妨碍我使用 github 的基本功能，同样，即使我不能联网，没有 github 账户，也可以在本地进行 git 的版本控制操作。
+没有安装 git 并不妨碍我使用 github 的基本功能，同样，即使我不联网，也可以在本地进行 git 的版本控制操作。
 本课来把前面在 github 上实现的那些版本控制操作在本地重新来一遍。会有很多新的秘密浮出水面。虽然是本地操作，依然不需要自己安装 git，今天的主角是 Github 公司制作的客户端，我下面用 Mac 版的演示，但是 Windows 客户端，[Github for Windows](https://windows.github.com/)，的操作也是类似的。
 
 ### 登录
