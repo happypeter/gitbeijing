@@ -76,12 +76,16 @@ GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就
 
 最重要的要互通有无的内容当然是版本了，git 功能虽然多，但是说白了就是来回折腾 commit 。要不怎么叫版本控制工具呢？
 
-但是通气的前提是有能通气的桥梁。 对于从 github 上 clone 下来的我自己的项目，默认的通气通道是通的。这个是符合我们的直觉的。下面说说对于咱们自己在本地新建的项目，如何把它放到 github.com 上呢？
+对于从 github 上 clone 下来的我自己的项目，默认的通气通道是通的，这个是符合我们的直觉的。下面说说对于咱们自己在本地新建的项目，如何把它放到 github.com 上呢？
 
 来关注客户端界面的右上角，对于从 github.com 上 clone 下来的项目这里是 `sync`，但是对于 github.com 上没有对应远端仓库的本地仓库，这里就是一个 `Publish` 按钮。点一下，填写项目名，对，项目名可以跟本地项目不一样，然后添加一个项目描述，猛戳 `Push Repository` 按钮。你的项目就发布到 github.com 上了。链接也很优美，就是 github.com/username/project 可以把链接分享给朋友，让邀请他们一起参加你的项目。
 
 
 ![](images/github_for_mac/publish_repo.png)
+
+注意标号2的框里面支出我可以把项目发布为私有项目，这个只对付费用户开放。Publish 项目成功后，到 github.com 自己的 dashboard，看一下右下方的仓库列表
+
+![](images/github_for_mac/repo_list.png)
 
 
 ### 同步版本历史
@@ -101,7 +105,6 @@ GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就
 到客户端里面 commit 了。再动命令行中用 tig 打开就看到了这是一次标准的 merge 不是 rebase。
 试着 push 一下，成功了。
 -->
-
 
 ### 总结
 

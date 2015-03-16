@@ -104,14 +104,7 @@ Are you sure you want to continue connecting (yes/no)?
 
 ### 用客户端上传项目
 
-客户端中的操作更为方便，前提是已经用自己的 github 账号在客户端登录了。这样就不需要用前面的 ssh key 的形式达成互信了。
-
-![](images/remote/mac_push.png)
-
-操作就是上图这些步骤。首先，点击1处的 publish ，然后填写项目名和描述，注意3处不要勾选 keep this code private，实际上如果不是付费用户也根本没有这个权限。最后点击 Push Repository 按钮就行了。这样到 github.com 自己的 dashboard，看一下右下方的仓库列表
-
-![](images/remote/repo_list.png)
-
+操作就是上图这些步骤。首先，点击1处的 publish ，然后填写项目名和描述，注意3处不要勾选 keep this code private，实际上如果不是付费用户也根本没有这个权限。最后点击 Push Repository 按钮就行了。
 可以看到 GUI 这个项目已经在表的最顶端了。实际中常用的一个小贴士，列表的排列顺序是安更新时间由近到远排列的。
 
 总之，用客户端操作，很多细节都被掩盖了，实际应用中这可能是双刃剑。
