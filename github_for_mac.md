@@ -31,7 +31,13 @@ title: Github For Mac 客户端
 
 第二种，就是选择 create 这一项。顾名思义就是自己新建了。填写项目名，这里就叫 GUI 吧，然后选择项目存放位置，然后 Create Repository 那个按钮点一下，仓库就创建好了。这个操作似曾相识，是吧，只不过这次是在本地机器上创建的。
 
-第三项，就是从 Github.com 上往本地 clone 。前面我已经用自己的 github 账号登陆的客户端了，所这里就会自动导入 github 上我自己的，或者是一些跟我相关的项目进来，选中一个，在本地找一个位置存放起来就好了。
+第三项，就是从 Github.com 上往本地 clone 。前面我已经用自己的 github 账号登陆的客户端了，所这里就会自动导入 github 上我自己的，或者是一些跟我相关的项目进来，选中一个，在本地找一个位置存放起来就好了。这里先存疑一个问题，那就是能不能 clone 别人的仓库呢，其实是可以的。后面会有非常详细的内容讨论如何为他人的项目贡献代码。
+
+<!-- 找了一下 github for mac 不能直接 clone，那就应该是先 fork 后 clone 吧？https://help.github.com/articles/working-with-repositories/ -->
+
+
+
+
 
 
 补充一句。要删除一个仓库，就到左侧列表的项目名字上，右击，然后点 `Remove` 就行了。也可以看到 `Open in Atom`，[Atom](https://atom.io/) 是 github 公司开发的开源免费的代码编辑器。
@@ -113,6 +119,8 @@ GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就
 稍微梳理一下，本地和远端，也就是我自己的笔记本跟 github 服务器上两个对应仓库的沟通方式就是下面这张图
 
 ![](images/github_for_mac/sync.png)
+
+
 
 
 好，今天只是最基本的版本控制操作，分支操作等其他内容后面再讲。更多内容参考[官方帮助](https://mac.github.com/help.html) 。
