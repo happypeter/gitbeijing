@@ -75,6 +75,10 @@ GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就
 ![](images/github_for_mac/short_id.png)
 
 
+### 回滚历史
+
+
+
 ### 连接 Github
 
 一般情况下，我的每一个项目都是一式两份，一份是一个本地仓库，一份放到 github.com 上，通常叫“远端仓库”，remote repository。这不仅仅能让我感觉到有备份了，晚上可以睡好觉了，同时这两个备份直接也是通气的。下面说说怎么通气？通什么气？
