@@ -82,7 +82,14 @@ GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就
 
 如果你觉得上面的操作都太傻瓜化了，没有挑战性。恭喜你，还有更复杂的情况。那就是：如果我本地做过版本，但是没有同步到远端。于此同时我自己或是我的队友又在远端仓库做过另外的新 commit 了。这时候会怎样呢？这个就可能会有点让新人挠头了，涉及到分支以及分支合并的概念，这个后面咱们讲完分支之后再聊。暂时给你的建议是，如果你是懒人，不想花更多的时间在 Git 本身，那就可以暂时尽量避免这种情况。
 
-<!-- 刚刚测试了一个，没有 conflicts 的话，就是 git pull rebase 如果有冲突，就会生成一个 merge commit 了，这样之后 git pull 应该就 push 不上去了，sync 按钮此时执行的应该是 git push force -->
+
+<!-- 刚刚测试了一个，没有 conflicts 的话，就是 git pull rebase 如果有冲突，就会生成一个 merge commit 了，这样之后 git pull 应该就 push 不上去了，sync 按钮此时执行的应该是 git push force 
+
+一旦本地和远端有冲突，那一点同步。客户端会报”有 conflicts"，这时候到 changes 标签下，直接就有一个 open in external editor 按钮，一点 sublime 就开了，非常方便。
+
+手动解决冲突之后，sublime 中保存。
+
+-->
 
 ### 总结
 
