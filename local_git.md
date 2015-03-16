@@ -1,9 +1,8 @@
 ---
+layout: book
 title: git 本地操作
 ---
 
-没有安装 git 并不妨碍我使用 github 的基本功能，同样，即使我不能联网，没有 github 账户，也可以在本地进行 git 的版本控制操作。
-本课来把前面在 github 上实现的那些版本控制操作在本地重新来一遍。会有很多新的秘密浮出水面。
 
 ### Git 是分布式的
 
@@ -34,20 +33,10 @@ git 是分布式的版本管理工具，意思是每一个 git 控制的项目�
 
 好消息是，最长用的只不过是其中很小的一部分。git 的其他概括是：一个傻瓜式的内容管理系统，一个文件夹历史存储系统，这些都是很准确的说法。
 
-Peter 平时主要是用命令行，但是我觉得初学者如果用一下图形化的客户端工具 [Github for Mac](https://mac.github.com/index.html) ，来掌握 git 的基本操作也是很好的，简单而直观。
-
-![](images/local_git/githubformac.jpg)
-
-windows 用户也有类似的客户端可以下载，[Github for Windows](https://windows.github.com/)。图形化工具中只提供常见操作，真正灵活使用 git 还是要用命令行的。如果你对命令行使用还不熟悉可以看看我以前录的[这门课程](http://happypeter.github.io/LGCB/) 。
+图形化工具中只提供常见操作，真正灵活使用 git 还是要用命令行的。如果你对命令行使用还不熟悉可以看看我以前录的[这门课程](http://happypeter.github.io/LGCB/) 。
 
 
-git 本身，也就是命令行中的 git，和 github for mac 客户端的安装都很简单，不说了。要说的是，单独使用二者之一就可以完成下面咱们一起要做的这些操作。不过咱们这样，同样的操作，先用客户端做一遍，然后再用命令行做一遍。这样对比一下，相信会很有意思。同时咱也对比一下前面 github 上操作的那些内容啊，记住，都是一样的。
-
-第一步，新建一个仓库。先用客户端来做。
-
-![](images/local_git/mac_create.png)
-
-点击上图箭头所指的 `+` 号，选择 create 这一项。填写项目名，这里就叫 GUI 吧，然后选择项目存放位置，然后 Create Repository 那个按钮点一下，仓库就创建好了。这个操作似曾相识，是吧，只不过这次是在本地机器上创建的。仔细研究一下这一步干了什么，打开命令行，执行
+第一步，新建一个仓库，打开命令行，执行
 
 {% highlight console %}
 $ cd ~/repo_farm/GUI
@@ -60,29 +49,11 @@ $ ls -a
 ![](images/local_git/heart_git.png)
 
 
-上面用客户端完成的这个操作叫做仓库的初始化，同样的操作用命令行咱们做呢？为了区分一下，命令行下面创建的这个项目叫 CLI 吧
-
-{% highlight console %}
-$ cd ~/repo_farm
-$ mkdir CLI
-$ git init
-Initialized empty Git repository in /Users/peter/repo_farm/CLI/.git/
-$ ls -a
-.      ..     .git
-{% endhighlight %}
-
-用 `ls -a` 查看一下，跟前面一样，心脏也有了。
-
-第二步，编辑项目。这个就用自己最喜欢的编辑器，我用 sublime，打开 GUI 和 CLI 两个项目，分别创建一个 README 文件吧，里面随便写点内容就行。这个就不演示了，如果这个都不会，你也就没必要看这本 git 书了。
+第二步，编辑项目。使用 sublime，或者任何你自己最喜欢的编辑器，对项目做出一些修改。
 
 第三步，commit。也就是真正生成一个版本了，这个就关键了。
 
-先用客户端来做。GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就可以看到：
-
-![](images/local_git/mac_change.png)
-
-
-首先图中1和2两处可以看到目前项目修改了什么内容。这个在命令行中怎么看呢
+这个在命令行中怎么看呢
 
 {% highlight console %}
 $ cd CLI/
@@ -90,6 +61,7 @@ $ git status
 ... README ...
 nothing added to commit but untracked files present (use "git add" to track)
 {% endhighlight %}
+用自己最喜欢的编辑器，我用 sublime，打开 GUI 这个项目，创建一个 README 文件吧，里面随便写点内容就行。这个就不演示了，如果这个都不会，你也就没必要看这本 git 书了。
 
 输出信息中就可以看到哪些文件被修改了。 同时说 README 这个文件没有被 git 跟踪。执行
 
@@ -125,20 +97,14 @@ $ git config --global user.email "happypeter1983@gmail.com"
 
 可以看到命令行其实就跟说话一样，`git` 啊，你把当前添加的内容给 `commit` 了吧，`-m` 就是 message 的缩写呗，这个后面的就是再版留言啊。好这样一个 commit 就做完了。过程中选择哪些内容需要做到下一个版本中，哪些不需要的这个操作在 github 网页上是实现不了的。
 
-所以总结起来，从一个 commit 到下一个 commit，也就是从历史上的一个节点到下一个节点，要经历的操作是下面四步：
-
-![](images/local_git/c2c.png)
-
-所以再分别到 GUI 和 CLI 两个项目中重复一下上面的四步。这样到客户端的 history 一项下面，就可以看到历史线上已经有两个 commit 了，点开任意一个都可以看到4个w。版本号没有例外的都是40位，但是真正要用的时候取前几位就行，只要跟其他 commit 区分开就行，图中给出了前7位，已经是非常安全了。即使在一个超大型项目，历史成千上万，版本号冲突的概率也比被雷劈中两次要低很多了。
-
-![](images/local_git/local_4w.png)
-
 那在命令行中如何查看历史信息呢？可以用
 
     cd CLI/
     git log -p
 
 这样所有的版本和各种里面的4w就都出来了。但是问题是不够美观，所以实际中我会安装一个命令行中的前端工具叫 [tig](https://github.com/jonas/tig) 来进行查看。
+
+
 
 ### Peter 的实际命令行工作流
 
@@ -188,6 +154,3 @@ $ git ci
 
 就可以用 vim 编辑器打开一个页面，在这里可以敲 `i` 进入 vim 的插入模式来添加再版留言。同时注意 `ci` 别名中还有 `-v` 参数，有了它，那在我这个 vim 打开的页面下方，就可以看到这次的 patch 了。在最后要做 commit 之前的这一秒看一下要有哪些内容会做到版本中，实际中是非常能够减少误操作的。
 
-### 总结
-
-这里只是最基本的版本控制操作，历史回滚等其他内容后面再讲。

@@ -4,6 +4,9 @@ title: 浏览器中使用 github
 
 <!-- 还要多截图，很好看：http://happypeter.github.io/gitbeijing/without_git.html -->
 
+
+尽管 git 的深度用户比较多的是用 Unix 命令行来操作 git 的，Peter 本人也是这样。但是如果你还没有来得及学会使用命令行，那也不用担心，Gitbeijing 的第一部分带你使用 Github 网页和图形化的客户端来操作 Git 和 Github 。这样，几天下来就可以学会使用 Git 的大部分实用操作了。并且也会为后面学习使用命令行操作 Git 打下概念理解的基础。
+
 每个日出后都是全新的一天。今天 Peter 来带你做一件曾经改变我生活的一件事情，就是注册并使用 github.com 。不会用 git ，就不能用 github 吗? NO! Github 的网站上通过网页操作就已经能实现很多强大的功能了，来一起看一看。
 
 >GitHub.com might be the best thing that has happened to software development since the Internet. 
@@ -77,6 +80,12 @@ title: 浏览器中使用 github
 ![](images/without_git/4w_commit.png)
 
 最重要的是 `版本号` 或者叫 commit id 。每个 commit 都有一个，是一个40位16进制数，可以用来定位每个版本。注意一下地址栏中 url 的格式，以后只要是拿到了一个 commit 的 id 就可以查看这次的修改的详细内容了。
+
+<!-- 
+
+这里可以给一个图，很多版本工具是 v1->v2->v3 这样网上走，git 这里是 12323->a2312->ba3b4 这样走版本号  
+
+ -->
 
 核心的内容就是这4个 `w` 了：
 
