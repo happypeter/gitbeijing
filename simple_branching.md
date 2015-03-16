@@ -1,8 +1,15 @@
 ---
-title: 分支
+title: 简单分支操作
 ---
 
 今天的主角是分支，因为不介绍分支 branch 的概念，下面的操作是没办法介绍了。今天来介绍如何创建新分支，并在分支间进行切换。
+
+<!-- https://help.github.com/articles/why-did-my-changes-disappear-when-switching-branches/ -->
+
+https://help.github.com/articles/branching-out/
+
+https://help.github.com/articles/merging-branches/
+
 
 ### 什么是分支？
 默认仓库创建的时候就是一个分支，名字叫 master，但是用户可以自己创建其他的分支的。
