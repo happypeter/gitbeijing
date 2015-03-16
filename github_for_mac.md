@@ -79,6 +79,7 @@ GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就
 对于从 github 上 clone 下来的项目，默认的通气通道是通的。
 
 
+
 ### 总结
 
 这里只是最基本的版本控制操作，分支操作等其他内容后面再讲。更多内容参考[官方帮助](https://mac.github.com/help.html) 。
