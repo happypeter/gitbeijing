@@ -57,7 +57,7 @@ title: 浏览器中使用 github
 
 ![](images/without_git/show_commit.png)
 
-每次项目修改后，点击 "commit" 就可以生成一个新的版本。commit 这个词有时候当动词就是”记录当前的版本“，当名词时候就是[一个版本](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html) 。
+每次项目修改后，点击 "commit" 就可以生成一个新的版本。 版本，在 git 这里叫 commit 。commit 英文的基本意思是执行某个重要的事情，例如 commit suicide，自我了断。但是在 git 这里，做动词讲的时候就是“保存版本”，当名词讲就是版本。
 
 现在就来编辑一下。点击上面图中，项目名 “coco” 右侧的加号，进入下面界面。
 
@@ -95,6 +95,14 @@ title: 浏览器中使用 github
 - Why 为什么要改，就是刚才我自己写的”再版留言“，同一个项目中可能有多个开发者在工作，所以这个留言对于项目沟通非常重要
 
 后面再聊 git 本地操作的时候，会涉及到相同的这些元素。
+
+### 一条历史线
+
+所有版本（ commit ) 组成了一条历史线。那么这条线是怎么串起来的呢？
+
+![](images/without_git/histroy_line.png)
+
+<!-- 介绍 parent 的概念，给出有 40 位哈希值的一条历史线的图 -->
 
 ### 总结
 github 的功能还有很多，本节中只是介绍了最为核心的版本控制功能的一部分，后面对其他重要的功能还会有详细的介绍。
