@@ -4,6 +4,8 @@ title: 合并分支
 
 合并分支有两种主要形式， merge 和 rebase ，下面结合实际操作，说说这二者的区别。
 
+<!-- https://help.github.com/articles/merging-branches/ -->
+
 
 ### 远程分支
 

@@ -5,6 +5,9 @@ title: Pull Request 拉取请求
 Pull Request 是 github 文化的核心。
 
 
+<!-- https://guides.github.com/introduction/flow/index.html -->
+
+
 ![](images/pull_request/pr_flow.png)
 
 

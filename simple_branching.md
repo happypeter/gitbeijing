@@ -2,22 +2,16 @@
 title: 简单分支操作
 ---
 
-今天的主角是分支，因为不介绍分支 branch 的概念，下面的操作是没办法介绍了。今天来介绍如何创建新分支，并在分支间进行切换。
+今天的主角是分支，因为不介绍分支 branch 的概念，下面的操作是没办法介绍了。介绍如何创建新分支，并在分支间进行切换。
 
-<!-- https://help.github.com/articles/why-did-my-changes-disappear-when-switching-branches/ -->
-
-https://help.github.com/articles/branching-out/
-
-https://help.github.com/articles/merging-branches/
-
+<!-- https://help.github.com/articles/branching-out/ -->
 
 
 ### 什么是分支？
 
 <!-- head 的概念就先别提了  master 是指针也不用讲，就说新分支是原来分支的一个拷贝就够用了 -->
 
-默认仓库创建的时候就是一个分支，名字叫 master，但是用户可以自己创建其他的分支的。
-
+默认仓库创建的时候就是一个分支，名字叫 master，前面咱们一直看到的多个版本组成的一条历史线，就是 master 分支。但是一个仓库内，用户可以自己创建其他的分支，可以都多条历史线。
 
 说说 master 这个名字，一般中文叫“主分支”，其实从技术底层来讲它跟其他我们自己要创建的分支没有区别。只不过它是天生默认分支。实际工程项目中，一般会在 master 分支上存放稳定代码。就像 github 和其他很多公司[倡导](https://guides.github.com/introduction/flow/index.html)的 
 
@@ -47,12 +41,15 @@ https://help.github.com/articles/merging-branches/
 
 ![](images/simple_branching/mac_show_branch.png)
 
-上图箭头中的小对号表示当前已经切换到了 idea 这个分支之上，那 idea 就叫做当前分支。 达成的效果如下图：
+上图箭头中的小对号表示当前已经切换到了 idea 这个分支之上，那 idea 就叫做当前分支。 
 
-![](images/simple_branching/new_branch.png)
+默认情况下这个 idea 分支只是存在于本地，如果想在远端仓库上发布这个分支，就点一下 publish 按钮
+
+图
 
 
 ### 切换分支
+到 branches 标签下，相中哪个分支了，双击一下就切换过去了。时间长了你会觉得这个也不够快，还是纯键盘操作快。敲 Cmd-B 可以打开分支切换框，输入名字回车，就切换成功了。
 
 如果你在 idea 分支上有了修改但是还没有来得及 commit，这时候如果切换分支，那么 git 会替你保存这部分修改，也就是在切换到的分支上是看不到这部分修改的。但是不要担心，只要你切换会老分支，修改又回来了。
 

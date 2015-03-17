@@ -42,7 +42,13 @@ $ git checkout -b idea
 $ git branch
 {% endhighlight %}
 
-就会看到当前分支已经是 idea 了。因为 idea 和 master 都指向相同的地方，所以此刻，这两个分支是相同的。有意思的是，如果新建分支上面继续做开发，新添加一个 commit，就是下面这样的情况
+就会看到当前分支已经是 idea 了。因为 idea 和 master 都指向相同的地方，所以此刻，这两个分支是相同的。
+
+
+![](images/branch/new_branch.png)
+
+
+有意思的是，如果新建分支上面继续做开发，新添加一个 commit，就是下面这样的情况
 
 ![](images/branch/new_branch_commit.png)
 
