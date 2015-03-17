@@ -6,14 +6,26 @@ title: 合并分支
 
 <!-- https://help.github.com/articles/merging-branches/ -->
 
-
 <!-- 先讨论两个本地分支合并，再聊本地和远端分支的合并，同时都用 merge 和 rebase 两种方式 -->
+
+
 
 ### 两种合并方式
 
+
+fast-forward 是一种常见形式。如果 idea 分支上有新的修改，但是 master 分支上在此期间没有新的版本，这样就简单了，合并分支就是把 idea 上的这些新版本都直接搬到 master 分支上就行。其实底层也就是，突突突，把 master 这个指针沿着 idea 分支上一直“快进”到头。
+
+![](images/tmp/default.png)
+
+
 一种叫 merge 一种叫 rebase 。这部分我先图示一下这二者的区别。后面的几部分是实际使用。
 
+### 两个本地分支合并
+
+
+
 ### 远程分支
+
 
 merge commit 有个特点，就是它是有多于一个 parent 的。
 
@@ -52,29 +64,8 @@ https://help.github.com/articles/github-glossary/
 
 ### 代码冲突 conflicts
 
-{% highlight console %}
-$ git merge iss53
-Auto-merging index.html
-CONFLICT (content): Merge conflict in index.html
-Automatic merge failed; fix conflicts and then commit the result.
-{% endhighlight %}
-
-上面的 `CONFLICT` 意思是“代码冲突”，如果你在两个分支中改动了同一个地方，并且改的不一致，merge 的时候就会有冲突。
+不管是用 merge 还是 rebase，都可能会出现“代码冲突”，如果你在两个分支中改动了同一个地方，并且改的不一致，合并的时候就会有冲突。
 运行 `git status` 就可以看到到底都有哪些文件中发生了冲突
-
-{% highlight console %}
-$ git status
-On branch master
-You have unmerged paths.
-  (fix conflicts and run "git commit")
-
-Unmerged paths:
-  (use "git add <file>..." to mark resolution)
-
-    both modified:      index.html
-
-no changes added to commit (use "git add" and/or "git commit -a")
-{% endhighlight %}
 
 打开存在冲突的文件，看到如下内容
 
