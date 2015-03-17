@@ -6,6 +6,7 @@ title: 合并分支
 
 <!-- https://help.github.com/articles/merging-branches/ -->
 
+merge commit 有个特点，就是它是有多于一个 parent 的。
 
 ### 远程分支
 
