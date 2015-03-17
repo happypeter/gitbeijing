@@ -33,6 +33,9 @@ title: Github For Mac 客户端
 
 第三项，就是从 Github.com 上往本地 clone 。前面我已经用自己的 github 账号登陆的客户端了，所这里就会自动导入 github 上我自己的，或者是一些跟我相关的项目进来，选中一个，在本地找一个位置存放起来就好了。这里先存疑一个问题，那就是能不能 clone 别人的仓库呢，其实是可以的。后面会有非常详细的内容讨论如何为他人的项目贡献代码。
 
+
+![](images/github_for_mac/clone.png)
+
 <!-- 找了一下 github for mac 不能直接 clone，那就应该是先 fork 后 clone 吧？https://help.github.com/articles/working-with-repositories/ -->
 
 
@@ -51,8 +54,6 @@ GUI 项目中有了 README 文件后，到项目的 `changes` 一项下面，就
 ![](images/github_for_mac/mac_change.png)
 
 首先图中1和2两处可以看到目前项目修改了什么内容。同时可以看到1处是可以勾选的，也就是如果我一次修改了多个文件，可以只吧其中的一部分文件勾选上，添加到下一个版本之中。更为细致的，你可以到右侧的显示 patch 的区域，选择一部分内容添加到下个版本中。点击行号，变蓝的内容就被选中了。
-
-
 
 
 3处要填写的时版本留言，英文叫 commit message 。简要说说为啥要做这次修改，给队友一个交代。下面的大框框里可以写详细的留言，可以不写。最后点击 `Commit to master` 按钮，一个版本就保存好了。master 是默认分支的名字，后面讲分支的时候会细聊。
