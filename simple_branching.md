@@ -51,30 +51,6 @@ https://help.github.com/articles/merging-branches/
 
 ![](images/simple_branching/new_branch.png)
 
-就会看到当前分支已经是 idea 了。因为 idea 和 master 都指向相同的地方，所以此刻，这两个分支是相同的。有意思的是，如果新建分支上面继续做开发，新添加一个 commit，就是下面这样的情况
-
-![](images/branch/new_branch_commit.png)
-
-注意这个时候 master 分支是没有动的。要想切换回 master 分支
-
-{% highlight console %}
-$ git checkout master
-{% endhighlight %}
-
-这样，HEAD 指针就又指向了 master 。
-
-![](images/branch/head.png)
-
-HEAD 永远指向当前分支的最新的版本。
-<!-- stash 的报错情况很不好描述，用到得又不是挺多，所以偷懒不讲了 -->
-
-如果 idea 的代码我想要引入 master，那就涉及到合并分支了，后面会作详细介绍。否则，删除分支就要
-
-{% highlight console %}
-$ git branch -D idea
-{% endhighlight %}
-
-注意，被删除的分支不能是当前分支。
 
 ### 切换分支
 

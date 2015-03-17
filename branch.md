@@ -21,9 +21,6 @@ https://help.github.com/articles/merging-branches/
 
 其实 master 就只是一个指针，但是 git 怎么通过一个指针就确定一个分支的呢？这个就要说到上图中的 parent 这个概念，因为一个 commit 有它 parent，也就是能找到他的上次 commit，这样只要把 master 指向最新的一个 commit 这个分支就能确定了。另外默认还会创建一个挺看重挺傻的指针叫做 HEAD，它指向 master 本身。稍后咱们一起创建一个新的分支，就知道 HEAD 其实妙不可言。
 
-想象一下历史线上又很多节，每一节就是一次再版，好像一根竹子。 一个分支相当于一跟竹子，一节节的往上长。每个版本就是一节。
-
-![](images/branch/bamboo.jpeg)
 
 所以，虽然本质上每次新创建一个 git 的分支，其实就是创建了一个新的包含分支名字的指针。但是从用户的角度来看，每一个分支就相当于一根独立的竹子了。非常巧妙。而在很多传统版本控制工具那里，每次你开一个新分支，就会真的把当前整个项目拷贝一份出来，会很慢。
 
@@ -38,14 +35,7 @@ $ cd GUI
 $ git checkout -b idea
 {% endhighlight %}
 
-就创建了一个名字叫 idea 的指针。到 Github for Mac 客户端里看一下，发现确实多了一个分支。
-
-![](images/branch/mac_show_branch.png)
-
-上图箭头中的小对号表示当前已经切换到了 idea 这个分支之上，那 idea 就叫做当前分支。 达成的效果如下图：
-
-![](images/branch/new_branch.png)
-
+就创建了一个名字叫 idea 的指针。
 这时候如果运行
 
 {% highlight console %}
@@ -127,13 +117,6 @@ $ git checkout master
 {% endhighlight %}
 
 就会 ...
-
-
-### 那 github 呢？
-
-本地创建的分支，如何 push 到 github 上，github 远端仓库（ remote repository ）中已经有的分支如何删除？
-
-那在 github 上如何切换分支呢？
 
 ### 总结
 
