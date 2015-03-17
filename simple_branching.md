@@ -22,7 +22,14 @@ title: 简单分支操作
 
 意思就是 master 分支上的代码，应该是比较成熟的，随时可以放到产品服务器上跑的代码。这样，如果想开发一个新功能，可以新开分支。 想象一下历史线上又很多节，一个分支相当于一跟竹子，一节节的往上长。每个版本就是一节。
 
-![](images/branch/bamboo.jpeg)
+![](images/simple_branching/bamboo.jpeg)
+
+
+但是实际上 master 本身只是一个指针，指向 master 分支上最新的一个版本。
+
+
+![](images/simple_branching/master_branch.jpeg)
+
 
 ### 创建新分支
 
