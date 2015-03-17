@@ -17,7 +17,11 @@ https://help.github.com/articles/merging-branches/
 
 ![](images/branch/branch_master.png)
 
-说说 master 这个名字，一般中文叫主分支
+说说 master 这个名字，一般中文叫“主分支”，其实从技术底层来讲它跟其他我们自己要创建的分支没有区别。只不过它是天生默认分支。实际工程项目中，一般会在 master 分支上存放稳定代码。就像 github 和其他很多公司倡导的 
+
+> Master is alwasy deployable.
+
+意思就是 master 分支上的代码，就是产品服务器上正在跑的代码。所以如果想开发一个新功能，可以自己新开一个分支。具体怎么操作先放放，先把分支的基本原理说一下。
 
 其实 master 就只是一个指针，但是 git 怎么通过一个指针就确定一个分支的呢？这个就要说到上图中的 parent 这个概念，因为一个 commit 有它 parent，也就是能找到他的上次 commit，这样只要把 master 指向最新的一个 commit 这个分支就能确定了。另外默认还会创建一个挺看重挺傻的指针叫做 HEAD，它指向 master 本身。稍后咱们一起创建一个新的分支，就知道 HEAD 其实妙不可言。
 
@@ -81,60 +85,23 @@ $ git branch -D idea
 
 如果你在 idea 分支上有了修改但是还没有来得及 commit，这时候如果切换分支，那么 git 会替你保存这部分修改，也就是在切换到的分支上是看不到这部分修改的。但是不要担心，只要你切换会老分支，修改又回来了。
 
+注意，每次切换分支，项目代码，术语叫 Working Tree 是会随着变化的，在 Sublime 中看看就知道了。
+
 <!-- https://help.github.com/articles/why-did-my-changes-disappear-when-switching-branches/ -->
 
+在远端仓库，也就是 github.com 上如何切换默认分支呢？到 settings->branch 这一项修改就可以了。
 
 ### 删除分支
 
-Github For Mac 客户端中的行为是这样，你想删除一个分支，那么这个分支如果已经 `Publish` 了，也就是已经存在于 github.com 上了，那么远端分支也一样会被删除。但是如果远端分支恰好是默认分支，那么删除就会失败。
-
-### 实际操作演示
-<!-- 这部分应该跟前面的图示融入到一起，不然自己出现太干瘪了 -->
-
-前面把道理都说了，下面动手来做一下。新建一个仓库
-
-    mkdir cool
-    cd cool
-    git init
-
-然后创建一个文件叫 index.html 里面写一行内容：
-
-    AAA
-
-保存这个文件，然后做出 master 上的第一个版本
-
-    git ci 
-
-然后输入版本留言 "first commit" 。接下来切换到一个 idea 分支上开展一个新想法
-
-    git checkoout -b idea
-
-把 index.html 中的内容改为
-
-    AAA
-    BBB
-
-再来运行 `git ci` 版本留言为 "new idea"，这样就可以切换到 master 上来 merge 这个新想法的代码了。
-
-<!-- 录视频的时候可以用 scoot schcon 演讲时候用的那个 html 的例子 -->
-
-### Stashing and Cleaning
-
-如果在 idea 上的修改没有 commit，这时候想切换回 master
-
-{% highlight console %}
-$ git checkout master
-{% endhighlight %}
-
-就会 ...
+首先当前分支是不能删除的。什么意思？到客户端的 `Branches` 标签下，左侧有对勾的就是当前分支，打开右侧小箭头的下拉菜单，可以看到 `delete` 这一项是禁用的。想删除它，就先要切换到其他分支，例如 `master` 。再去删除成功了，同时 github.com 上的远端仓库上 tmp 分支也同时被删除了。
 
 
-### 那 github 呢？
+再来新建一个 idea 分支，并且把它 publish 到 github.com 。在客户端把分支切换到 idea，现在试图去删除 master 。点开 master 分支的小箭头，发现 `delete` 一项可以点，所以点一下，但是报错了：“"master" is the repository's default branch and cannot be deleted.` 所以现在就要到 github.com 上修改默认分支。就像上一步介绍的那样。
 
-本地创建的分支，如何 push 到 github 上，github 远端仓库（ remote repository ）中已经有的分支如何删除？
+如果只想删除远端分支，保留本地分支，可以使用 `Unpublish` 这个选项。
 
-那在 github 上如何切换分支呢？
+<!-- 如果本地分支有没有 commit 的修改，能 delete 分支吗？ -->
 
 ### 总结
 
-只开测试分支，调好代码 commit 了之后，如果不把代码搞到 master 分支上是没有太大意义的，这就涉及到分支合并的问题了，这个是 git 最大最强的一块功能，后面再介绍。关于 branch 分支原理的深度解剖，可以参考 [Pro Git 的对应章节](http://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) 。
+只开测试分支，调好代码 commit 了之后，如果不把代码搞到 master 分支上是没有太大意义的，这就涉及到分支合并的问题了，这个是 git 最大最强的一块功能，后面再介绍。
