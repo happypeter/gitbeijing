@@ -53,6 +53,9 @@ title: 简单分支操作
 
 ![](images/simple_branching/new_branch_commit.png)
 
+
+所以现在 master 分支包含两个版本 C1 和 C2，idea 分支包含三个版本 C1，C2，C3 。
+
 默认情况下这个 idea 分支只是存在于本地，如果想在远端仓库上发布这个分支，就点一下 publish 按钮
 
 图
