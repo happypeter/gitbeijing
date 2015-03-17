@@ -13,17 +13,17 @@ https://help.github.com/articles/merging-branches/
 
 
 ### 什么是分支？
+
+<!-- head 的概念就先别提了  master 是指针也不用讲，就说新分支是原来分支的一个拷贝就够用了 -->
+
 默认仓库创建的时候就是一个分支，名字叫 master，但是用户可以自己创建其他的分支的。
 
-![](images/branch/branch_master.png)
 
-说说 master 这个名字，一般中文叫“主分支”，其实从技术底层来讲它跟其他我们自己要创建的分支没有区别。只不过它是天生默认分支。实际工程项目中，一般会在 master 分支上存放稳定代码。就像 github 和其他很多公司倡导的 
+说说 master 这个名字，一般中文叫“主分支”，其实从技术底层来讲它跟其他我们自己要创建的分支没有区别。只不过它是天生默认分支。实际工程项目中，一般会在 master 分支上存放稳定代码。就像 github 和其他很多公司[倡导](https://guides.github.com/introduction/flow/index.html)的 
 
-> Master is alwasy deployable.
+> Master is always deployable.
 
-意思就是 master 分支上的代码，就是产品服务器上正在跑的代码。所以如果想开发一个新功能，可以自己新开一个分支。具体怎么操作先放放，先把分支的基本原理说一下。
-
-其实 master 就只是一个指针，但是 git 怎么通过一个指针就确定一个分支的呢？这个就要说到上图中的 parent 这个概念，因为一个 commit 有它 parent，也就是能找到他的上次 commit，这样只要把 master 指向最新的一个 commit 这个分支就能确定了。另外默认还会创建一个挺看重挺傻的指针叫做 HEAD，它指向 master 本身。稍后咱们一起创建一个新的分支，就知道 HEAD 其实妙不可言。
+意思就是 master 分支上的代码，就是产品服务器上正在跑的代码。如果想开发一个新功能，可以自己新开一个分支。具体怎么操作先放放，先把分支的基本原理说一下。
 
 想象一下历史线上又很多节，每一节就是一次再版，好像一根竹子。 一个分支相当于一跟竹子，一节节的往上长。每个版本就是一节。
 
@@ -33,28 +33,23 @@ https://help.github.com/articles/merging-branches/
 
 ### 创建新分支
 
-比如我在 master 分支上正在干活，但是忽然有个新想法要试一下，这个时候我就可以开一个新分支了，新分支上做任何修改都不会影响到 master 分支。
+比如我在 master 分支上正在干活，但是忽然有个新想法要试一下，这个时候我就可以开一个新分支了，到客户端的 `Branches` 这一项
 
-跟 master 一样，新创建的分支也只是一个指针。比如运行
+图
 
-{% highlight console %}
-$ cd GUI
-$ git checkout -b idea
-{% endhighlight %}
+
+`Create a new branch off master` 就是来创建一个 `idea` 分支，这个分支从使用的角度就是 master 分支的一个拷贝，拥有跟 master 分支一样的当前项目代码，以及所有改版历史。其实在底层这个的实现是非常巧妙的，并不是通过直接拷贝 master 实现的，后面讨论命令行使用的时候，在对分支的底层原理做[深度介绍](branch.html)。 
+
+新分支上做任何修改都不会影响到 master 分支。
+
 
 就创建了一个名字叫 idea 的指针。到 Github for Mac 客户端里看一下，发现确实多了一个分支。
 
-![](images/branch/mac_show_branch.png)
+![](images/simple_branching/mac_show_branch.png)
 
 上图箭头中的小对号表示当前已经切换到了 idea 这个分支之上，那 idea 就叫做当前分支。 达成的效果如下图：
 
-![](images/branch/new_branch.png)
-
-这时候如果运行
-
-{% highlight console %}
-$ git branch
-{% endhighlight %}
+![](images/simple_branching/new_branch.png)
 
 就会看到当前分支已经是 idea 了。因为 idea 和 master 都指向相同的地方，所以此刻，这两个分支是相同的。有意思的是，如果新建分支上面继续做开发，新添加一个 commit，就是下面这样的情况
 
