@@ -28,7 +28,7 @@ title: 简单分支操作
 但是实际上 master 本身只是一个指针，指向 master 分支上最新的一个版本。
 
 
-![](images/simple_branching/master_branch.jpeg)
+![](images/simple_branching/master_branch.png)
 
 
 ### 创建新分支
@@ -38,7 +38,10 @@ title: 简单分支操作
 图
 
 
-`Create a new branch off master` 就是来创建一个 `idea` 分支，这个分支从使用的角度就是 master 分支的一个拷贝，拥有跟 master 分支一样的当前项目代码，以及所有改版历史。其实在底层这个的实现是非常巧妙的，并不是通过直接拷贝 master 实现的，后面讨论命令行使用的时候，再对分支的底层原理做[深度介绍](branch.html)。 
+`Create a new branch off master` 就是来创建一个 `idea` 分支，这个分支从使用的角度就是 master 分支的一个拷贝，拥有跟 master 分支一样的当前项目代码，以及所有改版历史。其实在底层这个的实现是非常巧妙的，就是又创建一个新的 idea 分支，同时跟 master 指向同一个版本。所以根本不用拷贝历史线。
+
+![](images/simple_branching/new_branch.png)
+
 
 
 就创建了一个名字叫 idea 的指针。到 Github for Mac 客户端里看一下，发现确实多了一个分支。
