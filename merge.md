@@ -6,11 +6,19 @@ title: 合并分支
 
 <!-- https://help.github.com/articles/merging-branches/ -->
 
-merge commit 有个特点，就是它是有多于一个 parent 的。
+
+<!-- 先讨论两个本地分支合并，再聊本地和远端分支的合并，同时都用 merge 和 rebase 两种方式 -->
+
+### 两种合并方式
+
+一种叫 merge 一种叫 rebase 。这部分我先图示一下这二者的区别。后面的几部分是实际使用。
 
 ### 远程分支
 
+merge commit 有个特点，就是它是有多于一个 parent 的。
 
+
+![](images/tmp/default.png)
 
 同样都叫 master 分支，但是本地的 master 和 远程的 master 也是两个分支
 
@@ -42,7 +50,7 @@ Merging takes the changes from one branch (in the same repository or from a fork
 
 https://help.github.com/articles/github-glossary/
 
-merge conflicts
+### 代码冲突 conflicts
 
 {% highlight console %}
 $ git merge iss53
