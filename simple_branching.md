@@ -43,12 +43,15 @@ title: 简单分支操作
 ![](images/simple_branching/new_branch.png)
 
 
-
 就创建了一个名字叫 idea 的指针。到 Github for Mac 客户端里看一下，发现确实多了一个分支。
 
 ![](images/simple_branching/mac_show_branch.png)
 
 上图箭头中的小对号表示当前已经切换到了 idea 这个分支之上，那 idea 就叫做当前分支。 
+
+如果现在我对项目做一下修改，然后 commit 了。那么移动的只是 idea 指针，master 不变。就成了这样：
+
+![](images/simple_branching/new_branch_commit.png)
 
 默认情况下这个 idea 分支只是存在于本地，如果想在远端仓库上发布这个分支，就点一下 publish 按钮
 
