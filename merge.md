@@ -49,11 +49,7 @@ merge 完之后， master 分支指针指向了 merge Commit，也就自动拥�
 
 来具体操作一下。在 idea 分支上，改动 README 文件中的一行，比如改成 `AAA`，commit 了，然后切换到 master 分支上，把这一行的内容改为 `BBB` ，也一样做 commit。这样再到客户端，打开 merge view 把 idea 分支 merge 到 master 之中，操作不会直接成功，而是会看到下面的代码冲突界面。
 
-
-
 ![](images/merge/conflicts_view.png)
-
-
 
 点击上图中的 `Open In External Editor` 按钮，就可以在 sublime 中打开存在冲突的文件，看到如下内容
 

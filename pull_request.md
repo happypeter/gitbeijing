@@ -3,6 +3,8 @@ title: Pull Request 拉取请求
 ---
 
 
+前几天还都是自己唱独角戏。但是尽管如此也可以看出 git 带来的便利了。但是 git 更大的威力在于协作。
+
 
 Pull Request
 
@@ -39,10 +41,6 @@ fork 结束之后就可以看到在我的用户名下，多了 TLCL 这个项目
 
 
 一个 pull request 发出之后，如果大家查看之后认为我的代码还需要调整，这样，我可以继续向同一个 PR 上面 push 代码的，所以在 github 的这个 PR 的页面，就形成一条非常清晰的讨论主线。
-
-<!-- 没有实际操作，空扯是很难让同学们满意一天的，所以下面的内容应该融入到其他章节中去 -->
-
-
 
 
 一个 pull request 完成之后，随着时间的推移上游的仓库中会有新的 commit 进来，所以我自己的这个 fork 就需要更新了。我自己通常的做法是不更新，直接删除掉，未来需要再贡献的时候重新 fork 一份。但是如果你对这个项目发 Pull Request 比较频繁，还是学会更新 fork 更为方便一些，这个可以参考 [codeschool 的这个视频](http://campus.codeschool.com/courses/mastering-github/level/1/section/4/video/1) 。
