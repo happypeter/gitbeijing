@@ -6,7 +6,7 @@ title: wiki
   - 这部分还有 git pull --rebase 这个每有讲
     - 涉及到 remote branch 概念的讲解
     - 不过这部分也可以放到团队开发中讲
-    - git pull && git push --force 是不是也能解决 rejected 的问题
+    - git pull && git push 是不是也能解决 rejected 的问题？Yes
 
 - 团队协作
   - git blame 放到这里讲
@@ -23,11 +23,6 @@ title: wiki
       - git push origin --delete tmp
     - http://git-scm.com/book/en/v2/Git-Branching-Remote-Branches
       - 非常重要
-
-    - merge vs rebase
-      - 这个要细讲，不然 git pull --rebase 就理解不了
-      - rebase 之后，好像我是在 jessica 的工作的基础之上继续开展的我的修改，而不是并行工作的
-      - conflict 的情况肯定要 cover
 
     - https://github.com/blog/1902-svg-viewing-diffing
 
