@@ -76,13 +76,16 @@ AAA
 
 -->
 
-但是其实分支合并的方法并不是只有一种 merge ，还有另一个方法叫 rebase 。下面介绍何时会用 rebase 的形式来合并分支。
+但是其实分支合并的方法并不是只有一种 merge ，还有另一个方法叫 rebase 。
 
 ### 合并远端分支
 
 现在我本地仓库叫 coco，github.com 上托管了这个仓库。那么自然就有本地一个 master 分支，和远端一个 master 分支，这两个分支虽然名字都叫 master，但是毕竟也是两个分支，也存在分支合并的问题。
 
-
 比如我同事对 github.com 上的 master 做了一个他自己的 commit，如果此时我到客户端，点 sync 按钮执行同步，这样这个 commit 就会直接被拉（ pull ）到我本地，这个是前面提过的。现在考虑这种情况，在我没有 sync 之前，我自己在本地也做了一个 commit，也就是本地的 master 和远端 master 出现了并行开发的情况，这种情况是非常常见的。这个时候我执行同步，会发生什么呢？
 
+来操作一下。我自己到 github.com 上面，打开 coco 项目，添加一个文件进来，叫 remote。然后到本地也添加一个文件叫 local，做一个 commit 。这样我执行 sync，跟本地两个分支合并是一样的，也会生成一个 Merge Commit。到 github.com 上的历史线看一下，也有这次 Merge Commit 。
 
+<!-- sync 按钮执行的时 git pull 和 git push 并没有进行 rebase -->
+
+<!-- 合并远端分支的时候，是不是用户会感觉非常自然呢？如果是，就没有必要给大家灌概念了，画蛇添足 -->
