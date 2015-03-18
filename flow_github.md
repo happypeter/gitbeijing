@@ -18,6 +18,13 @@ title: 团队合作流程
 
 ### 这个流程可以在网页上完成
 
+<!-- 
+如何在网页上直接 edit 并发出 PR
+https://github.com/blog/1945-quick-pull-requests
+
+这个方法是最简单的实现 github flow 的操作流程
+ -->
+
 <!-- https://guides.github.com/activities/hello-world/ -->
 
 
@@ -36,17 +43,14 @@ https://help.github.com/articles/github-glossary/
 一个 pull request 发出之后，如果大家查看之后认为我的代码还需要调整，这样，我可以继续向同一个 PR 上面 push 代码的，所以在 github 的这个 PR 的页面，就形成一条非常清晰的讨论主线。
 
 
-### 贡献是参与的最高形式
+每一个 PR 都是开发历史上的一次小事件，很长事件过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码。所以是项目发展的珍贵资料。
 
-https://github.com/blog/1946-create-pull-requests-with-github-for-mac
-https://github.com/blog/1945-quick-pull-requests
-https://github.com/blog/1905-linking-merged-pull-requests-from-commits
-https://github.com/blog/1943-how-to-write-the-perfect-pull-request
 
+### 客户端中发 PR
+
+尽管网页中发 PR 很方便，但大部分时候可能要修改的内容比较多，所以还是本地用自己喜欢的编辑器来干活比较快，而且很多代码还要测试一下的。所以大部分时候还是会在本地写代码，写完了之后，可以用[客户端来发 PR](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)。
 
 现在在浏览器中，新建删除编辑文件都很方便，而且可以新建 branch 可以说 web 界面对于 Pull Request 的支持已经是很严肃了。
 [参考](https://github.com/blog/1557-github-flow-in-the-browser) 。
 
 更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
-
-如何在浏览器中使用 github 的说明，<https://github.com/blog/1557-github-flow-in-the-browser>
