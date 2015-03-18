@@ -35,6 +35,11 @@ title: wiki
       - 但是我面对的观众是大学生，不是公司
       - progit 这里太专业了，我要讲得都是最基础的 PR 流程
 
+- 图形界面操作没有 fast-forward 的情况，到命令行部分再介绍吧
+  Progit 3.5
+    - fast-forward
+      - http://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+      - fast-forward 的意思应该是沿着 idea 分支把 master 指针快进到头
 - gittalk 2008
   - https://www.youtube.com/watch?v=nPzJESC-fag
   - http://s3.amazonaws.com/chacon/git-talk.pdf

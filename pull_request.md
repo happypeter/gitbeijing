@@ -2,6 +2,16 @@
 title: Pull Request 拉取请求
 ---
 
+
+
+Pull Request
+
+Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository's collaborators. Like issues, pull requests each have their own discussion forum. See Using Pull Requests.
+
+https://help.github.com/articles/github-glossary/
+
+
+
 Pull Request 是 github 文化的核心。
 
 

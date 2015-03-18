@@ -21,11 +21,11 @@ title: 合并分支
 这个是前面已经见过的情形了。那如何让 idea 的代码并入 master 呢？需要 merge 一下。到客户端的 Branches 一项下，点击 `Merge View`
 
 
-![](images/merge/default.png)
+![](images/merge/merge_view.png)
 
 现在我想要把 idea 分支 merge 进 master 分支，注意图中的箭头方向。把鼠标移动到 master 分支的最左侧部分，知道鼠标变成了小手，拖拽 master 分支到右侧空框框里，idea 拖到左侧。
 
-![](images/merge/default.png)
+![](images/merge/ready_to_merge.png)
 
 然后点 `Merge Branches` 按钮。就合并成功了，master 中拥有了 idea 中的所有代码。底层历史变成了这样
 
@@ -36,24 +36,50 @@ title: 合并分支
 
 merge 完之后， master 分支指针指向了 merge Commit，也就自动拥有了 idea 分支上的 `c3` 这个版本了。idea 分支一般这会儿就可以删除了。
 
+
+
+### 并行分支合并
+
+实际中经常有这样的情况，我正在 idea 分支上开发一个比较大的功能。但是这个时候突然发现了一个紧急的问题需要修复，所以我会直接到 master 分支上，修改做一个 commit，来解决这个紧急的问题。然后会来继续到 idea 上开发。
+
+
+### 代码冲突 conflicts
+
+并行开发是常见的事情，如果我和我同事在两个分支上做并行的开发，有的时候会两个人改动了同一个地方，这个时候就会出现代码冲突。
+
+不管是用 merge 还是 rebase，都可能会出现“代码冲突”，如果你在两个分支中改动了同一个地方，并且改的不一致，合并的时候就会有冲突。
+运行 `git status` 就可以看到到底都有哪些文件中发生了冲突
+
+也有时候有这种情况，你和你同事同时发现了代码的一个问题，他先按照自己的想法改了一下，然后做出 commit，推送到了 github.com 之上。于此同时你本地也对同一个地方做了修改，但是改的内容不同。这个时候，远端 master 和本地 master 对于同一处代码各执一词，那 git 是没有办法解决这个问题的，只能靠人来解决，要人工解决代码冲突（ conflicts ）。
+
+打开存在冲突的文件，看到如下内容
+
+{% highlight text %}
+<<<<<<< HEAD:index.html
+<div id="footer">contact : email.support@github.com</div>
+=======
+<div id="footer">
+ please contact us at support@github.com
+</div>
+>>>>>>> iss53:index.html
+{% endhighlight %}
+
+注意上面的 `HEAD` 是代表你自己的当前分支。
+
+
 <!-- 
 
 使用 客户端 会 merge no-ff 不存在 fast-forward  的情况，这个跟 github.com 网站上是一样的。
 
-fast-forward 是一种常见形式。如果 idea 分支上有新的修改，但是 master 分支上在此期间没有新的版本，这样就简单了，合并分支就是把 idea 上的这些新版本都直接搬到 master 分支上就行。其实底层也就是，突突突，把 master 这个指针沿着 idea 分支上一直“快进”到头。 -->
+-->
 
-![](images/tmp/default.png)
 
 
 一种叫 merge 一种叫 rebase 。这部分我先图示一下这二者的区别。后面的几部分是实际使用。
 
-### 两个本地分支合并
+### 合并远端分支
 
-
-### 远程分支
-
-
-merge commit 有个特点，就是它是有多于一个 parent 的。
+涉及到一个操作，就是拽回远端仓库的修改。
 
 sync 按钮执行的操作相当于
 
@@ -74,42 +100,12 @@ $ git pull --rebase
 $ git config --global pull.rebase true
 {% endhighlight %}
 
+
+
 把远端仓库的 master 和本地 mater 合并，也是两个分支的合并，同时是非常常见的一种情形。
 
 如果不小心用 git pull 下了远端的内容，也没有关系，可以使用 `git push --force` 来进行 push 
 
 https://octicons.github.com/ 上面还有专门一个 icon 叫 force-push 。
 
-Progit 3.5
 
-- fast-forward
-  - http://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
-
-https://help.github.com/articles/merging-branches/
-
-Merge
-
-Merging takes the changes from one branch (in the same repository or from a fork), and applies them into another. This often happens as a Pull Request (which can be thought of as a request to merge), or via the command line. A merge can be done automatically via a Pull Request via the GitHub.com web interface if there are no conflicting changes, or can always be done via the command line. See Merging a pull request.
-
-https://help.github.com/articles/github-glossary/
-
-### 代码冲突 conflicts
-
-不管是用 merge 还是 rebase，都可能会出现“代码冲突”，如果你在两个分支中改动了同一个地方，并且改的不一致，合并的时候就会有冲突。
-运行 `git status` 就可以看到到底都有哪些文件中发生了冲突
-
-也有时候有这种情况，你和你同事同时发现了代码的一个问题，他先按照自己的想法改了一下，然后做出 commit，推送到了 github.com 之上。于此同时你本地也对同一个地方做了修改，但是改的内容不同。这个时候，远端 master 和本地 master 对于同一处代码各执一词，那 git 是没有办法解决这个问题的，只能靠人来解决，要人工解决代码冲突（ conflicts ）。
-
-打开存在冲突的文件，看到如下内容
-
-{% highlight text %}
-<<<<<<< HEAD:index.html
-<div id="footer">contact : email.support@github.com</div>
-=======
-<div id="footer">
- please contact us at support@github.com
-</div>
->>>>>>> iss53:index.html
-{% endhighlight %}
-
-注意上面的 `HEAD` 是代表你自己的当前分支。
