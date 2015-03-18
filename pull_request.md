@@ -6,6 +6,18 @@ title: Pull Request 拉取请求
 前几天还都是自己唱独角戏。但是尽管如此也可以看出 git 带来的便利了。但是 git 更大的威力在于协作。
 <!-- 写到目前，读者还只能感受到 git 带来的麻烦，感受不到 git 带来的便利，所以单兵作战的部分还要给大家梳理一下，用了 git 到底有哪些好处，不然，如果我不是跟团队开发，那么是否就没有必要学 git 了 -->
 
+
+用 git 和他人协作开发项目有多种形式。就像 Progit 书中[列出的]。今天来聊 [github 公司的流程](https://guides.github.com/introduction/flow/index.html)。就是同一个仓库中，大家都有写权限的流程。
+
+### 给队友添加写权限
+
+用 collaborator 
+
+
+### 
+
+
+
 Pull Request
 
 Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository's collaborators. Like issues, pull requests each have their own discussion forum. See Using Pull Requests.
@@ -17,7 +29,7 @@ https://help.github.com/articles/github-glossary/
 Pull Request 是 github 文化的核心。
 
 
-<!-- https://guides.github.com/introduction/flow/index.html -->
+<!-- -->
 
 
 ![](images/pull_request/pr_flow.png)
