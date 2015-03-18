@@ -3,9 +3,14 @@ title: 贡献开源项目的流程
 ---
 
 
+Github 是个 Social Coding 的平台，Social Coding 社交化编程，很有意思。
+<!-- https://guides.github.com/activities/contributing-to-open-source/ -->
+
 跟自己团队的项目不同，网上的开源项目参与者众多。如果你一上去就跟项目拥有着说，Hey，你给我加个写权限吧 ...
 
 ![](images/flow_fork/flow.png)
+
+
 
 
 <!-- happycasts 60 详细图解了 fork 的流程 -->
@@ -35,21 +40,10 @@ fork 结束之后就可以看到在我的用户名下，多了 TLCL 这个项目
 $ git remote add upstream git@github.com:billie66/TLCL.git 
 {% endhighlight %} 
 
-https://help.github.com 第四部分
 
-https://guides.github.com/activities/socialize/
-
-Social Coding 社交化编程，很有意思。
-
-![](images/be_social/pretty_url.jpg)
-
-到 github.com/happypeter 能看到我的帅照片和我做过的所有项目代码，每一个人都是独立的人格，是一个独立的创作者。
-
-让他人知道你的项目是很重要的。github 是最有说服力的简历。不仅有项目代码，而且上面的讨论和改版历史也可以证明你在这个项目上投入了多大的精力。
 
 更好的，你可以参与到其他人的代码之中。参与讨论就是到 github issues ，但是如果要贡献代码就要用到  Pull Request，这两个功能后面都会有专门的章节来介绍。
 
-但是交友的最高形式是给人家的开源项目贡献代码，这个是通过 PR 来实现的。https://help.github.com 第三部
 
 
 http://happycasts.net/episodes/58 network 可以提一下
@@ -78,7 +72,6 @@ https://guides.github.com/introduction/flow/
 现在在浏览器中，新建删除编辑文件都很方便，而且可以新建 branch 可以说 web 界面对于 Pull Request 的支持已经是很严肃了。
 [参考](https://github.com/blog/1557-github-flow-in-the-browser) 。
 
-先将 be_social.md 再讲这个
 
 
 
