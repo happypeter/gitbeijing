@@ -68,7 +68,7 @@ AAA
 {% endhighlight %}
 
 
-注意上面的 `HEAD` 是代表当前分支，此刻对应我的情形就是 master 。所以 `=====` 就是两个冲突代码块的分解线了。上面的代码就是 master 分支上的，下面的代码是 idea 分支的。解决冲突就是把上面的三行“冲突表示符”都删掉，然后修改代码，比如保留 `AAA` 删除 `BBB`，或者反之，或者把两者都删除，改为 `AABB` 。然后在回到客户端，点击 2 处的 `` 
+注意上面的 `HEAD` 是代表当前分支，此刻对应我的情形就是 master 。所以 `=====` 就是两个冲突代码块的分解线了。上面的代码就是 master 分支上的，下面的代码是 idea 分支的。解决冲突就是把上面的三行“冲突表示符”都删掉，然后修改代码，比如保留 `AAA` 删除 `BBB`，或者反之，或者把两者都删除，改为 `AABB` 。然后在回到客户端，点击 2 处的 `Commit to Master` 。 这样，这次分支合并就完成了，也一样是通过 merge 这种方式，所以也会生成一个 Merge Commit 。
 
 <!-- 
 
@@ -76,43 +76,13 @@ AAA
 
 -->
 
-
-
-一种叫 merge 一种叫 rebase 。这部分我先图示一下这二者的区别。后面的几部分是实际使用。
+但是其实分支合并的方法并不是只有一种 merge ，还有另一个方法叫 rebase 。下面介绍何时会用 rebase 的形式来合并分支。
 
 ### 合并远端分支
 
-也有时候有这种情况，我和同事同时发现了代码的一个问题，他先按照自己的想法改了一下，然后做出 commit，推送到了 github.com 之上。于此同时你本地也对同一个地方做了修改，但是改的内容不同。这个时候，远端 master 和本地 master 也同样是两个并行开发的分支，当我要把远端的修改同步到我本地的时候，也一样是两个分支的合并，也一样可能出现代码冲突。解决冲突的方法和本地两个分支合并的情况没有任何区别，这里不再重复。
-
-但是同步远端分支的时候，分支合并的方式却不再是基本的 merge。对，分支合并的方式并不唯一。
-
-涉及到一个操作，就是拽回远端仓库的修改。
-
-sync 按钮执行的操作相当于
-
-{% highlight console %}
-$ git pull --rebase
-{% endhighlight %}
-
-![](images/tmp/default.png)
-
-同样都叫 master 分支，但是本地的 master 和 远程的 master 也是两个分支
-
-<!-- 如果操作中绕不开了，就给大家引入 tracking branch 的概念 -->
+现在我本地仓库叫 coco，github.com 上托管了这个仓库。那么自然就有本地一个 master 分支，和远端一个 master 分支，这两个分支虽然名字都叫 master，但是毕竟也是两个分支，也存在分支合并的问题。
 
 
-运行 `git pull` 的时候如果自己本地也有修改，那么最好是用 `git pull --rebase`，这个在 git 牵手 github 那一章已经提到了，这里解释一下原因。
-
-{% highlight console %}
-$ git config --global pull.rebase true
-{% endhighlight %}
-
-
-
-把远端仓库的 master 和本地 mater 合并，也是两个分支的合并，同时是非常常见的一种情形。
-
-如果不小心用 git pull 下了远端的内容，也没有关系，可以使用 `git push --force` 来进行 push 
-
-https://octicons.github.com/ 上面还有专门一个 icon 叫 force-push 。
+比如我同事对 github.com 上的 master 做了一个他自己的 commit，如果此时我到客户端，点 sync 按钮执行同步，这样这个 commit 就会直接被拉（ pull ）到我本地，这个是前面提过的。现在考虑这种情况，在我没有 sync 之前，我自己在本地也做了一个 commit，也就是本地的 master 和远端 master 出现了并行开发的情况，这种情况是非常常见的。这个时候我执行同步，会发生什么呢？
 
 
