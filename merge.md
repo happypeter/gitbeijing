@@ -58,6 +58,15 @@ merge 完之后， master 分支指针指向了 merge Commit，也就自动拥�
 点击上图中的 `Open In External Editor` 按钮，就可以在 sublime 中打开存在冲突的文件，看到如下内容
 
 
+{% highlight text %}
+test project for gitbeijing book
+<<<<<<< HEAD
+BBB
+=======
+AAA
+>>>>>>> idea
+{% endhighlight %}
+
 
 注意上面的 `HEAD` 是代表当前分支，此刻对应我的情形就是 master 。所以 `=====` 就是两个冲突代码块的分解线了。上面的代码就是 master 分支上的，下面的代码是 idea 分支的。
 
