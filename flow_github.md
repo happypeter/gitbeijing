@@ -1,5 +1,5 @@
 ---
-title: Pull Request 拉取请求
+title: 团队合作流程
 ---
 
 
@@ -7,7 +7,9 @@ title: Pull Request 拉取请求
 <!-- 写到目前，读者还只能感受到 git 带来的麻烦，感受不到 git 带来的便利，所以单兵作战的部分还要给大家梳理一下，用了 git 到底有哪些好处，不然，如果我不是跟团队开发，那么是否就没有必要学 git 了 -->
 
 
-用 git 和他人协作开发项目有多种形式。就像 Progit 书中[列出的]。今天来聊 [github 公司的流程](https://guides.github.com/introduction/flow/index.html)。就是同一个仓库中，大家都有写权限的流程。
+用 git 和他人协作开发项目有多种形式。就像 Progit 书中[列出的]。今天来聊 [github 公司的流程](https://guides.github.com/introduction/flow/index.html)。就是同一个仓库中，大家都有写权限的流程。这个流程显然是自己的团队，自己的项目。
+
+整个过程的主角是“拉取请求”（ Pull Request ），后面简称 PR 吧。
 
 ### 给队友添加写权限
 
@@ -18,21 +20,15 @@ title: Pull Request 拉取请求
 
 
 
-Pull Request
+<!--  PR 定义
+
+- 可以让队友审核你的代码
+- 可以讨论，跟一个 issue 一样
 
 Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository's collaborators. Like issues, pull requests each have their own discussion forum. See Using Pull Requests.
 
 https://help.github.com/articles/github-glossary/
-
-
-
-Pull Request 是 github 文化的核心。
-
-
-<!-- -->
-
-
-![](images/pull_request/pr_flow.png)
+ -->
 
 
 
