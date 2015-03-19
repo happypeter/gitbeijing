@@ -47,6 +47,8 @@ title: 团队合作流程
 
 ### 网页上发 PR
 
+<!-- 先说最正常的流程，然后再  quick-pull-request -->
+Billie 做好了修改之后，就会给我发 PR ，其实发 PR 的目的主要就是为了讨论一下。跟一般的讨论不同的地方在于整个讨论过程是围绕着实打实的代码。
 <!-- 
 如何在网页上直接 edit 并发出 PR
 https://github.com/blog/1945-quick-pull-requests
