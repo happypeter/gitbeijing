@@ -3,7 +3,7 @@ title: 团队合作流程
 ---
 
 
-前几天还都是自己唱独角戏。但是尽管如此也可以看出 git 带来的便利了。但是 git 更大的威力在于协作。
+前几天还都是一个开发者唱独角戏。但是尽管如此也可以看出 git 带来的便利了。但是 git 更大的威力在于协作。
 
 聊了这门多天的 github，有必要稍微停下来，再想想究竟什么是 github 。没错，前面的使用中也看到了，github 是 github 的托管平台，让我们的项目可以方便的备份同步和做版本控制。但是其实也许比这个还要重要的是，github 是一个大家一起协作做项目的平台。
 
@@ -21,6 +21,12 @@ title: 团队合作流程
 ![](images/flow_github/better_together.png)
 
 
+所以说，Github 最核心的点，是要实现一套软件开发的协作流程。这个流程叫做[github Flow](https://guides.github.com/introduction/flow/index.html) ，而要了解一个流程，没有什么比跑一个最简单的实际例子更好的方式了，官方给出的[Hello World](https://guides.github.com/activities/hello-world/)就是服务于这个目的，不过这个 Hello World 用的是纯粹的网页来实现整个流程。咱们今天用网页配合 Github For Mac 客户端来完成这个流程。
+
+<!-- 
+官方的 hello world 就是把 Github Flow 用网页上的工具走了一遍，没什么，解释的很少
+
+后面还会有网页配合命令行来完成同样的流程 -->
 
 
 
@@ -30,7 +36,6 @@ title: 团队合作流程
 - check happycasts git workflow for more
  -->
 
-前面的所有技巧，都为今天咱们一起使用这套 Github Flow ，Github 公司推荐的团队合作流程，打基础。实际情况是这样，git 本身是非常灵活的，可以在 git 的基本功能之上实现各种不同的工作流程。Github.com 就是按照自己特有的一套工作流程为思路建立起的网站，整个这套流程的核心就是“拉取请求”（ Pull Request ），后面简称 PR 吧。
 
 用 git 和他人协作开发项目有多种形式。就像 Progit 书中[列出的]。今天来聊 [github 公司的流程](https://guides.github.com/introduction/flow/index.html)。就是同一个仓库中，大家都有写权限的流程。这个流程显然是自己的团队，自己的项目。
 
@@ -55,7 +60,7 @@ title: 团队合作流程
 ![](images/flow_github/merge_in.png)
 
 
-这些图都是我从[官方的 Github Flow 页面](https://guides.github.com/introduction/flow/index.html) 摘下来的，我们还整个的翻译了这个页面，放在了[这里](http://gitbeijing.com/flow) 。流程的细节你可以到这个页面上去看。下面主要跑一个实际例子。
+这些图都是我从[官方的 Github Flow 页面](https://guides.github.com/introduction/flow/index.html) 摘下来的，我们还整个的翻译了这个页面，放在了[这里](http://gitbeijing.com/flow) 。流程的细节你可以到这个页面上去看。下面主要跑一个实际例子。从上面的图中也能看出来，PR 在整个流程中起着核心位置。
 
 <!-- http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project 的例子就挺好 -->
 
@@ -67,37 +72,23 @@ title: 团队合作流程
 
 ### 网页上发 PR
 
-<!-- 先说最正常的流程，然后再  quick-pull-request -->
+<!-- 先说最正常的流程，然后再告诉大家，如果你只是改一个文件中的一个小地方，完全可以使用  https://github.com/blog/1945-quick-pull-requests
+
+说实话，即使是老手，你让我切换到命令行，再跑一遍整个的这个发 PR 的流程，我也会觉得挺麻烦挺分心的。
+-->
 Billie 做好了修改之后，就会给我发 PR ，其实发 PR 的目的主要就是为了讨论一下。跟一般的讨论不同的地方在于整个讨论过程是围绕着实打实的代码。
-<!-- 
-如何在网页上直接 edit 并发出 PR
-https://github.com/blog/1945-quick-pull-requests
-
-这个方法是最简单的实现 github flow 的操作流程
- -->
-
-<!-- https://guides.github.com/activities/hello-world/ -->
 
 
 
-<!--  PR 定义
-
-- 可以让队友审核你的代码
-- 可以讨论，跟一个 issue 一样
-
-Pull requests are proposed changes to a repository submitted by a user and accepted or rejected by a repository's collaborators. Like issues, pull requests each have their own discussion forum. See Using Pull Requests.
-
-https://help.github.com/articles/github-glossary/
- -->
-
-
-一个 pull request 发出之后，如果大家查看之后认为我的代码还需要调整，这样，我可以继续向同一个 PR 上面 push 代码的，所以在 github 的这个 PR 的页面，就形成一条非常清晰的讨论主线。
+好，上面咱们也看到了什么是 PR 了，其实发 PR 的目的就是引发讨论。 一个 pull request 发出之后，如果大家查看之后认为我的代码还需要调整，这样，我可以继续向同一个 PR 上面 push 代码的，所以在 github 的这个 PR 的页面，就形成一条非常清晰的讨论主线。
 
 
 每一个 PR 都是开发历史上的一次小事件，很长事件过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码。所以是项目发展的珍贵资料。
 
 
 ### 客户端中发 PR
+
+<!-- 注意，不要为了照顾全面而让用户在本文中看到两套操作方式，只细聊一套，走一条线就行了，其他的方式稍微一提就行 -->
 
 尽管网页中发 PR 很方便，但大部分时候可能要修改的内容比较多，所以还是本地用自己喜欢的编辑器来干活比较快，而且很多代码还要测试一下的。所以大部分时候还是会在本地写代码，写完了之后，可以用[客户端来发 PR](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)。
 
