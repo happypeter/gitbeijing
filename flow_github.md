@@ -35,7 +35,9 @@ title: 团队合作流程
 ![](images/flow_github/merge_in.png)
 
 
-这些图都是我从[官方的 Github Flow 页面](https://guides.github.com/introduction/flow/index.html) 摘下来的，我们还整个的翻译了这个页面，放在了[这里](http://gitbeijing.com/flow) 。
+这些图都是我从[官方的 Github Flow 页面](https://guides.github.com/introduction/flow/index.html) 摘下来的，我们还整个的翻译了这个页面，放在了[这里](http://gitbeijing.com/flow) 。流程的细节你可以到这个页面上去看。下面主要跑一个实际例子。
+
+<!-- http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project 的例子就挺好 -->
 
 ### 给队友添加写权限
 
