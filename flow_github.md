@@ -12,8 +12,6 @@ title: 团队合作流程
 
 前面的所有技巧，都为今天咱们一起使用这套 Github Flow ，Github 公司推荐的团队合作流程，打基础。
 
-![](images/flow_github/mac.gif)
-
 用 git 和他人协作开发项目有多种形式。就像 Progit 书中[列出的]。今天来聊 [github 公司的流程](https://guides.github.com/introduction/flow/index.html)。就是同一个仓库中，大家都有写权限的流程。这个流程显然是自己的团队，自己的项目。
 
 整个过程的主角是“拉取请求”（ Pull Request ），后面简称 PR 吧。
