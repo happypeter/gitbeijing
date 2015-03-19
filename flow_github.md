@@ -4,6 +4,26 @@ title: 团队合作流程
 
 
 前几天还都是自己唱独角戏。但是尽管如此也可以看出 git 带来的便利了。但是 git 更大的威力在于协作。
+
+聊了这门多天的 github，有必要稍微停下来，再想想究竟什么是 github 。没错，前面的使用中也看到了，github 是 github 的托管平台，让我们的项目可以方便的备份同步和做版本控制。但是其实也许比这个还要重要的是，github 是一个大家一起协作做项目的平台。
+
+就像 github 的创始人 Chris 在演讲中提到的。
+
+>It's not about git
+
+在 How Github Use Github To Build Github 的演讲中，Zach Holman 说，
+
+>多年来我一直在寻找什么样的方式做软件才是正确的方式，现在我想我找到了，github 就是这种方式。
+
+
+究竟 Github 是什么的问题从它的标语中也可以看出，早期是“Git Hosting No Longer Pain In The Ass"，可见最早 Github 的目标确实是想成为一个好的代码托管平台。但是现在首页的标语却是
+
+![](images/flow_github/better_together.png)
+
+
+
+
+
 <!-- 写到目前，读者还只能感受到 git 带来的麻烦，感受不到 git 带来的便利，所以单兵作战的部分还要给大家梳理一下，用了 git 到底有哪些好处，不然，如果我不是跟团队开发，那么是否就没有必要学 git 了
 - 代码回滚，这样就写错了就不怕了
 - 开心分支开发，master 上的代码不会被影响，这样就不用 file-v1.md file-peter.md file-billie.md 这些弱智的备份方法了
