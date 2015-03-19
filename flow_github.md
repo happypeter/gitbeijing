@@ -34,6 +34,9 @@ title: 团队合作流程
 把话题分支的内容合并到 master 。
 ![](images/flow_github/merge_in.png)
 
+
+这些图都是我从[官方的 Github Flow 页面](https://guides.github.com/introduction/flow/index.html) 摘下来的，我们还整个的翻译了这个页面，放在了[这里](http://gitbeijing.com/flow) 。
+
 ### 给队友添加写权限
 
 用 collaborator 
