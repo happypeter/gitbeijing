@@ -2,6 +2,7 @@
 title: 贡献开源项目的流程
 ---
 
+Github 是目前世界上最大的开源项目的托管交流平台。贡献开源项目的流程也是 Github 全力支持的，其实也一样是 Github Flow。
 
 Github 是个 Social Coding 的平台，Social Coding 社交化编程，很有意思。
 <!-- https://guides.github.com/activities/contributing-to-open-source/ -->

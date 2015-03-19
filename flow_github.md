@@ -10,18 +10,37 @@ title: 团队合作流程
 - check happycasts git workflow for more
  -->
 
-前面的所有技巧，都为今天咱们一起使用这套 Github Flow ，Github 公司推荐的团队合作流程，打基础。
+前面的所有技巧，都为今天咱们一起使用这套 Github Flow ，Github 公司推荐的团队合作流程，打基础。实际情况是这样，git 本身是非常灵活的，可以在 git 的基本功能之上实现各种不同的工作流程。Github.com 就是按照自己特有的一套工作流程为思路建立起的网站，整个这套流程的核心就是“拉取请求”（ Pull Request ），后面简称 PR 吧。
 
 用 git 和他人协作开发项目有多种形式。就像 Progit 书中[列出的]。今天来聊 [github 公司的流程](https://guides.github.com/introduction/flow/index.html)。就是同一个仓库中，大家都有写权限的流程。这个流程显然是自己的团队，自己的项目。
 
-整个过程的主角是“拉取请求”（ Pull Request ），后面简称 PR 吧。
+
+### 什么是 Github Flow ？
+
+创建新的话题分支。
+
+![](images/flow_github/new_branch.png)
+
+不断实现功能，做成一个个新版本。
+
+![](images/flow_github/make_changes.png)
+
+发起 PR 。
+![](images/flow_github/open_pr.png)
+
+大家讨论。
+![](images/flow_github/discuss.png)
+
+把话题分支的内容合并到 master 。
+![](images/flow_github/merge_in.png)
 
 ### 给队友添加写权限
 
 用 collaborator 
 
+添加完 collaborator 之后，我的队友也有对这个仓库的写权限了。
 
-### 这个流程可以在网页上完成
+### 网页上发 PR
 
 <!-- 
 如何在网页上直接 edit 并发出 PR
