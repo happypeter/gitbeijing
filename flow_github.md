@@ -135,8 +135,13 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 
 如果我只是改一个文件中的一个小地方，完全可以使用 github 网页功能提供的[快速 PR](https://github.com/blog/1945-quick-pull-requests)这种方法。来演示一下。
 
+网页界面中，找到我要修改的文件，点击 `edit`
 
-![](images/flow_github/quick_pr.png)
+![](images/flow_github/quick_pr_view.png)
+
+然后在下面的界面中，可以直接填写一个 Topic 分支名，创建这个分支，并 commit 到这个分支上发 PR 了
+
+![](images/flow_github/quick_pr_view.png)
 
 
 说实话，即使是老手，你让我切换到编辑器和客户端，再跑一遍整个的这个发 PR 的流程，我也会觉得挺麻烦挺分心的。快速 PR 方法真的是非常方便。
