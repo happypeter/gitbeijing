@@ -2,12 +2,15 @@
 title: 贡献开源项目的流程
 ---
 
-Github 是目前世界上最大的开源项目的托管交流平台。贡献开源项目的流程也是 Github 全力支持的，其实也一样是 Github Flow。
+Github 是目前世界上最大的开源项目的托管交流平台。[贡献开源项目](https://guides.github.com/activities/contributing-to-open-source/)的流程也是 Github 全力支持的，也一样是 Github Flow。不过在团队内部，大家都是有写权限的。但是网上的开源项目参与者众多。如果你一上去就跟项目拥有着说，Hey，你给我加个写权限吧，别逗了，人家也不认识你，怎么可能呢？
 
-Github 是个 Social Coding 的平台，Social Coding 社交化编程，很有意思。
-<!-- https://guides.github.com/activities/contributing-to-open-source/ -->
 
-跟自己团队的项目不同，网上的开源项目参与者众多。如果你一上去就跟项目拥有着说，Hey，你给我加个写权限吧 ...
+### Fork
+
+所以第一步是 Fork 这个项目。
+
+
+
 
 ![](images/flow_fork/flow.png)
 
