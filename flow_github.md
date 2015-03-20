@@ -3,7 +3,7 @@ title: 团队合作流程
 ---
 
 
-前几天还都是一个开发者唱独角戏。但是尽管如此也可以看出 git 带来的便利了。但是 git 更大的威力在于协作。
+前几天还都是一个开发者唱独角戏。但是尽管如此也可以看出 git 带来的便利了，比如代码写错了可以回滚，新功能开发可以开新分支等等。但是 git 更大的威力在于协作。
 
 聊了这门多天的 github，有必要稍微停下来，再想想究竟什么是 github 。没错，前面的使用中也看到了，github 是 github 的托管平台，让我们的项目可以方便的备份同步和做版本控制。但是其实也许比这个还要重要的是，github 是一个大家一起协作做项目的平台。
 
@@ -21,23 +21,10 @@ title: 团队合作流程
 ![](images/flow_github/better_together.png)
 
 
-所以说，Github 最核心的点，是要实现一套软件开发的协作流程。这个流程叫做[github Flow](https://guides.github.com/introduction/flow/index.html) ，而要了解一个流程，没有什么比跑一个最简单的实际例子更好的方式了，官方给出的[Hello World](https://guides.github.com/activities/hello-world/)就是服务于这个目的，不过这个 Hello World 用的是纯粹的网页来实现整个流程。咱们今天用网页配合 Github For Mac 客户端来完成这个流程。
-
-<!-- 
-官方的 hello world 就是把 Github Flow 用网页上的工具走了一遍，没什么，解释的很少
-
-后面还会有网页配合命令行来完成同样的流程 -->
+所以说，Github 最核心的点，是要实现一套软件开发的协作流程。Git 是一个分布式的版本控制工具，所以可以在它的基础上实现各种工作流程。Github 多年来总结出来一套自己的团队协作流程，简单而且强大，叫做[github Flow](https://guides.github.com/introduction/flow/index.html) 。
 
 
-
-<!-- 写到目前，读者还只能感受到 git 带来的麻烦，感受不到 git 带来的便利，所以单兵作战的部分还要给大家梳理一下，用了 git 到底有哪些好处，不然，如果我不是跟团队开发，那么是否就没有必要学 git 了
-- 代码回滚，这样就写错了就不怕了
-- 开心分支开发，master 上的代码不会被影响，这样就不用 file-v1.md file-peter.md file-billie.md 这些弱智的备份方法了
-- check happycasts git workflow for more
- -->
-
-
-用 git 和他人协作开发项目有多种形式。就像 Progit 书中[列出的]。今天来聊 [github 公司的流程](https://guides.github.com/introduction/flow/index.html)。就是同一个仓库中，大家都有写权限的流程。这个流程显然是自己的团队，自己的项目。
+要了解一个流程，没有什么比跑一个最简单的实际例子更好的方式了，官方给出的[Hello World](https://guides.github.com/activities/hello-world/)就是服务于这个目的，不过这个 Hello World 用的是纯粹的网页来实现整个流程。咱们今天用网页配合 Github For Mac 客户端来完成这个流程。
 
 
 ### 什么是 Github Flow ？
@@ -60,18 +47,26 @@ title: 团队合作流程
 ![](images/flow_github/merge_in.png)
 
 
-这些图都是我从[官方的 Github Flow 页面](https://guides.github.com/introduction/flow/index.html) 摘下来的，我们还整个的翻译了这个页面，放在了[这里](http://gitbeijing.com/flow) 。流程的细节你可以到这个页面上去看。下面主要跑一个实际例子。从上面的图中也能看出来，PR 在整个流程中起着核心位置。
+这些图都是我从[官方的 Github Flow 指南](https://guides.github.com/introduction/flow/index.html) 摘下来的，我和 [@billie66](http://github.com/billie66) 还整个的翻译了这个指南，放在了[这里](http://gitbeijing.com/flow) 。流程的细节你可以到这个页面上去看。下面主要跑一个实际例子。
 
 <!-- http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project 的例子就挺好 -->
 
 ### 给队友添加写权限
 
-用 collaborator 
+现在我和 @billi66 要合作开发一个新项目。于是我就来创建这个项目，过程在[浏览器中使用 Github](github_in_browser.html)中已经介绍过了。下面就继续在 coco 这个项目上做演示。
 
-添加完 collaborator 之后，我的队友也有对这个仓库的写权限了。
+现在我要把 @billi66 添加进来，让她也具有项目的各种操作权限，最终要的当然是修改的权限了。如何来做呢？把她添加成项目的 collaborator 就行了。 coco 本身是一个 Private Repo ，但是对于开源项目也是一样可以添加 collaborator 的。
+
+<!-- 未来跟 scoot 一样，用一个开源的项目放在那里，大家看看，挺好 -->
+
+
+首先，到项目的 Settings 页面
+
+![](images/flow_github/find_settings.png)
 
 ### 网页上发 PR
 
+从上面的图中也能看出来，PR 在整个流程中起着核心位置。
 <!-- 先说最正常的流程，然后再告诉大家，如果你只是改一个文件中的一个小地方，完全可以使用  https://github.com/blog/1945-quick-pull-requests
 
 说实话，即使是老手，你让我切换到命令行，再跑一遍整个的这个发 PR 的流程，我也会觉得挺麻烦挺分心的。
@@ -88,7 +83,7 @@ Billie 做好了修改之后，就会给我发 PR ，其实发 PR 的目的主�
 
 ### 客户端中发 PR
 
-<!-- 注意，不要为了照顾全面而让用户在本文中看到两套操作方式，只细聊一套，走一条线就行了，其他的方式稍微一提就行 -->
+<!-- 注意，不要为了照顾全面而让用户在本文中看到两套操作方式，只细聊一套，走一条线就行了，其他的方式稍微一提就行6ju -->
 
 尽管网页中发 PR 很方便，但大部分时候可能要修改的内容比较多，所以还是本地用自己喜欢的编辑器来干活比较快，而且很多代码还要测试一下的。所以大部分时候还是会在本地写代码，写完了之后，可以用[客户端来发 PR](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)。
 
