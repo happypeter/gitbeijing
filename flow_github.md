@@ -126,8 +126,6 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 ![](images/flow_github/delete_branch.png)
 
 
-
-
 每一个 PR 都是开发历史上的一次小事件，很长事件过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码。所以是项目发展的珍贵资料。
 
 
@@ -145,4 +143,4 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 
 
 ### 总结
-更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
+Github Flow 在本地的相关操作也可以用命令行来实现，会有更多的技巧可以使用，另外即使在网页上，PR 整个流程中也有很多很方便功能咱们还没有介绍到。更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
