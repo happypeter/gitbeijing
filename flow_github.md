@@ -83,16 +83,20 @@ title: 团队合作流程
 
 ![](images/flow_github/two_commits.png)
 
-
+这样我认为功能实现了，就可以发 PR 了。
 
 ### 发 Pull Request
 
-PR 在整个流程中起着核心位置。
-
-其实发 PR 的目的就是引发讨论，跟一般的讨论不同的地方在于整个讨论过程是围绕着实打实的代码。
+PR 在整个流程中起着核心位置。其实发 PR 的目的就是引发讨论，跟一般的讨论不同的地方在于整个讨论过程是围绕着实打实的代码。
 
 
 
+![](images/flow_github/compare_btn.png)
+
+
+![](images/flow_github/pr_main_view.png)
+
+![](images/flow_github/pr_content.png)
 
 <!-- 先说最正常的流程，然后再告诉大家，如果你只是改一个文件中的一个小地方，完全可以使用  https://github.com/blog/1945-quick-pull-requests
 
