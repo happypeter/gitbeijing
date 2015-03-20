@@ -122,6 +122,10 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 
 ![](images/flow_github/billie_comment.png)
 
+看到之后我觉得有道理，代码需要调整，那我现在是不是要撤销这 PR 重新发呢？不用。我只需要继续在 describe-project 分支上改代码然后再同步上来。
+
+![](images/flow_github/more_code.png)
+
 好，上面咱们也看到了什么是 PR 了， 一个 pull request 发出之后，如果大家查看之后认为我的代码还需要调整，这样，我可以继续向同一个 PR 上面 push 代码的，所以在 github 的这个 PR 的页面，就形成一条非常清晰的讨论主线。
 
 
