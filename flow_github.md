@@ -72,9 +72,11 @@ title: 团队合作流程
 
 ### Pull Request
 
-从上面的图中也能看出来，PR 在整个流程中起着核心位置。
+PR 在整个流程中起着核心位置。
 
 现在我和 @billie66 都对 coco 项目有写权限，对于非常有把握的代码，可以直接在本地开发然后 sync 到 master 分支上面。但是如果是比较重要的功能，还是要发 PR 的，其实发 PR 的目的就是引发讨论，跟一般的讨论不同的地方在于整个讨论过程是围绕着实打实的代码。
+
+尽管所有的流程操作都可以在[浏览器中完成](https://github.com/blog/1557-github-flow-in-the-browser)。但是更为常见的情形是我和 @billie 会把代码 clone 到本地开进行新功能的开发，因为这样可以使用自己的编辑器以及测试工具。
 
 
 
@@ -99,13 +101,7 @@ PR 的讨论过程也算是代码审核。可以是队友之间的互相审核�
 每一个 PR 都是开发历史上的一次小事件，很长事件过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码。所以是项目发展的珍贵资料。
 
 
-### 客户端中发 PR
+实际上，[客户端中也可以发 PR](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)，达成的效果跟网页中发是一样的。
 
-<!-- 注意，不要为了照顾全面而让用户在本文中看到两套操作方式，只细聊一套，走一条线就行了，其他的方式稍微一提就行6ju -->
-
-尽管网页中发 PR 很方便，但大部分时候可能要修改的内容比较多，所以还是本地用自己喜欢的编辑器来干活比较快，而且很多代码还要测试一下的。所以大部分时候还是会在本地写代码，写完了之后，可以用[客户端来发 PR](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)。
-
-现在在浏览器中，新建删除编辑文件都很方便，而且可以新建 branch 可以说 web 界面对于 Pull Request 的支持已经是很严肃了。
-[参考](https://github.com/blog/1557-github-flow-in-the-browser) 。
-
+### 总结
 更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
