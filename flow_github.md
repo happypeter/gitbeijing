@@ -90,11 +90,15 @@ title: 团队合作流程
 PR 在整个流程中起着核心位置。其实发 PR 的目的就是引发讨论，跟一般的讨论不同的地方在于整个讨论过程是围绕着实打实的代码。
 
 
+先到仓库页面，找到发 PR 的大绿按钮
 
 ![](images/flow_github/compare_btn.png)
 
+注意要进行对比的是哪两个分支，下面我要填写一些内容，说说我的 PR 的好处
 
 ![](images/flow_github/pr_main_view.png)
+
+在下方还可以看到这次 PR 的具体对比出来的代码内容
 
 ![](images/flow_github/pr_content.png)
 
