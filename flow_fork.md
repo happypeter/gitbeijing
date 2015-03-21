@@ -35,15 +35,8 @@ fork 结束之后就可以看到在我的用户名下，多了 TLCL 这个项目
 这样如果 billie66 merge 了 happypeter 的 pull request 最终版本历史就如下图所示
 
 
-一个 pull request 发出之后，如果大家查看之后认为我的代码还需要调整，这样，我可以继续向同一个 PR 上面 push 代码的，所以在 github 的这个 PR 的页面，就形成一条非常清晰的讨论主线。
-
 
 一个 pull request 完成之后，随着时间的推移上游的仓库中会有新的 commit 进来，所以我自己的这个 fork 就需要更新了。我自己通常的做法是不更新，直接删除掉，未来需要再贡献的时候重新 fork 一份。但是如果你对这个项目发 Pull Request 比较频繁，还是学会更新 fork 更为方便一些，这个可以参考 [codeschool 的这个视频](http://campus.codeschool.com/courses/mastering-github/level/1/section/4/video/1) 。
-
-{% highlight console %}
-$ git remote add upstream git@github.com:billie66/TLCL.git 
-{% endhighlight %} 
-
 
 
 更好的，你可以参与到其他人的代码之中。参与讨论就是到 github issues ，但是如果要贡献代码就要用到  Pull Request，这两个功能后面都会有专门的章节来介绍。
@@ -51,6 +44,12 @@ $ git remote add upstream git@github.com:billie66/TLCL.git
 
 
 http://happycasts.net/episodes/58 network 可以提一下
+
+
+### 基于 fork 的快速 PR
+前面介绍过[快速 PR]()了，不过是基于一个我自己有写权限的项目。那对于人家的开源项目，我根本就不能修改，能不用在网页上直接发开速 PR 呢？幸运的是，答案是肯定的。
+
+现在我来的 @bille66 的这个项目，打开一个我想要编辑的文件，注意，现在打开的不是我自己那个 fork 。
 
 ### 贡献是参与的最高形式
 
