@@ -9,6 +9,7 @@ title: wiki
 
 - 团队协作
   - git blame 放到这里讲
+  - http://haacked.com/archive/2014/07/28/github-flow-aliases/
 
 - 深度内容
   - 不一定深度底层的内容就一定很难，也不一定深度的内容就只能服务高级操作
