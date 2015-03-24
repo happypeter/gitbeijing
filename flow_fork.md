@@ -2,22 +2,41 @@
 title: 贡献开源项目的流程
 ---
 
-Github 是目前世界上最大的开源项目的托管交流平台。[贡献开源项目](https://guides.github.com/activities/contributing-to-open-source/)的流程也是 Github 全力支持的，也一样是 Github Flow。不过在团队内部，大家都是有写权限的。但是网上的开源项目参与者众多。如果你一上去就跟项目拥有着说，Hey，你给我加个写权限吧，别逗了，人家也不认识你，怎么可能呢？
+Github 是目前世界上最大的开源项目的托管交流平台。[贡献开源项目](https://guides.github.com/activities/contributing-to-open-source/)的流程也是 Github 全力支持的，也一样是遵循 Github Flow，虽然跟前面团队合作流程会有一点差别。在团队内部，大家都是有写权限的。但是网上的开源项目参与者众多。如果你一上去就跟项目的拥有者说，Hey，你给我加个写权限吧，别逗了，人家也不认识你，怎么可能呢？
 
 
 ### Fork
 
-所以第一步是 Fork 这个项目。
-
-
-
+所以第一步是 Fork 这个项目。所谓我 fork 别人的一个项目，就是指做一个把这个项目做一个拷贝，放到我自己的账户下。
 
 ![](images/flow_fork/flow.png)
 
+现根据上面的图说说基本思路。第一步，先 fork，这样我就有了 happypeter/TLCL 这个项目了，那既然是我自己的项目，我就可以把它 clone 到我本地，做修改，然后推送到 github 上的我自己的那个 fork 之中。这样上游的仓库，也就是 billie66 名下的仓库，就可以跟我自己 fork 的这个仓库来进行对比，发出 Pull Request 了。
+
+下面来实际操作。
+
+来到 TLCL 的项目主页，也就是 <https://github.com/billie66/TLCL> 。点右上角的 fork 按钮。
+
+![](images/flow_fork/fork.png)
+
+这样，我自己的名下就多了一个 TLCL 项目，这个项目就叫做原有项目的一个 fork 。
+
+![](images/flow_fork/my_fork.png)
+
+到这里 fork 这一步就结束了。那对于 happypeter/TLCL 这个仓库，我当然有修改的权限了，可以在网页上修改直接发 PR。也可以 clone 到我本地客户端中，在本地作修改。下面就可以点右下角的 `Clone In Desktop` 按钮，来把项目 clone 到本地了。
+
+![](images/flow_fork/cloning.png)
+
+### 做修改
 
 
 
-<!-- happycasts 60 详细图解了 fork 的流程 -->
+
+
+
+
+
+### 代码审核
 
 这样 billie66 就会看到 happypeter 发的 Pull Request，然后决定是否要把 happypeter 写的代码 merge 进自己的仓库。
 
@@ -27,7 +46,6 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 我可以来到项目的页面上，点击 fork 按钮。
 
 
-fork 结束之后就可以看到在我的用户名下，多了 TLCL 这个项目。所以我可以来 clone 这个项目了。
 
 这样我可以修改然后 commit 然后把这个 commit push 到我自己的那个 fork 上了。
 
