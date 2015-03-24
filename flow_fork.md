@@ -60,24 +60,25 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 这样，我这次贡献代码的工作就结束了。TLCL 的版本历史中会永远留下 happypeter 的名字。同时我发的这个 PR 关掉之后，也可以在 billie66/TLCL 的 Pull Requests 一项下面被永久保存，所以我可以放心的删除我自己的那个 fork 了。
 
+<!-- 也有时候 merge 按钮是黑的，因为有 confilcts 这个后面可以考虑讲讲 -->
+
 ### 后续工作
 
 删除一个 fork ，跟删除一个我自己的项目仓库是一样的。
 
+![](images/flow_fork/delete_repo.png)
 
-如上图，点开 settings ...
+如上图，点开 settings 然后进入 Danger Zone 找 `Delete This Repository` 就可以了。当然如果会频繁的贡献同一个项目，自己名下长期保留一个 fork 也是可以的，但是这时候就要保证这个 fork 和上游仓库的同步，也是挺麻烦的。所以对于初学者，删掉，过些日子如果又想贡献，再 fork 一次不迟。
 
-一个 pull request 完成之后，随着时间的推移上游的仓库中会有新的 commit 进来，所以我自己的这个 fork 就需要更新了。我自己通常的做法是不更新，直接删除掉，未来需要再贡献的时候重新 fork 一份。但是如果你对这个项目发 Pull Request 比较频繁，还是学会更新 fork 更为方便一些，这个可以参考 [codeschool 的这个视频](http://campus.codeschool.com/courses/mastering-github/level/1/section/4/video/1) 。
+对于项目维护者，如果想随时了解自己的项目都有哪些人正在 fork 和修改，可以看一下项目的 `Network`，如下图：
 
-
-http://happycasts.net/episodes/58 network 可以提一下
-
+![](images/flow_fork/network.png)
 
 ### 基于 fork 的快速 PR
 
-前面介绍过[快速 PR]()了，不过是基于一个我自己有写权限的项目。那对于人家的开源项目，我根本就不能修改，能不用在网页上直接发开速 PR 呢？幸运的是，答案是肯定的。
+前面介绍过[快速 PR]((https://github.com/blog/1945-quick-pull-requests))了，不过那个流程是基于一个我自己有写权限的项目。那对于人家的开源项目，我根本就不能修改，能不用在网页上直接发开速 PR 呢？幸运的是，答案是肯定的。而且过程是超级的简单和直观。
 
-现在我来的 @bille66 的这个项目，打开一个我想要编辑的文件，注意，现在打开的不是我自己那个 fork 。
+现在我来的 bille66/TLCL 的这个项目，不做 fork，而是直接打开一个我想要编辑的文件。这个时候，github 会自动帮我 fork 一个 happypeter/TLCL 然后把我所做的改动 commit 到我自己的 fork 中。然后直接进入发 PR 的界面，操作就和前面的过程一样了。
 
 
 
