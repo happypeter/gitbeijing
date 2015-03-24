@@ -2,6 +2,8 @@
 title: Github issues
 ---
 
+how github use github to build github
+
 - 快速引用
   - https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md
 

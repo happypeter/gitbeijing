@@ -11,12 +11,12 @@ title: 团队合作流程
 
 >It's not about git
 
-在 How Github Use Github To Build Github 的演讲中，Zach Holman 说，
+在 [How Github Use Github To Build Github](https://www.youtube.com/watch?v=qyz3jkOBbQY) 的演讲中，Zach Holman 说，
 
 >多年来我一直在寻找什么样的方式做软件才是正确的方式，现在我想我找到了，github 就是这种方式。
 
 
-究竟 Github 是什么的问题从它的标语中也可以看出，早期是“Git Hosting No Longer Pain In The Ass"，可见最早 Github 的目标确实是想成为一个好的代码托管平台。但是现在首页的标语却是
+这里说的方式，主要就是开发的流程，任何人合作的方式。究竟 Github 是什么的问题从它的标语中也可以看出，早期是“Git Hosting No Longer Pain In The Ass"，可见最早 Github 的目标确实是想成为一个好的代码托管平台。但是现在首页的标语却是
 
 ![](images/github_flow/better_together.png)
 
@@ -87,7 +87,7 @@ title: 团队合作流程
 
 ### 发 Pull Request
 
-PR 在整个流程中起着核心位置。其实发 PR 的目的就是引发讨论，跟一般的讨论不同的地方在于整个讨论过程是围绕着实打实的代码。
+PR 在整个流程中起着核心位置。其实 PR 的目的就是讨论，跟一般的讨论不同的地方在于整个讨论过程是围绕着实打实的代码。
 
 
 先到仓库页面，找到发 PR 的大绿按钮
@@ -126,7 +126,7 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 ![](images/github_flow/delete_branch.png)
 
 
-每一个 PR 都是开发历史上的一次小事件，很长事件过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码。所以是项目发展的珍贵资料。
+每一个 PR 都是开发历史上的一次小事件，很长事件过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码。所以是项目发展的珍贵资料。从这个角度来说，即使一个 PR 没有被 merge 进 master ，那它里面的代码和讨论的内容也会是非常有意义的尝试，也可能在未来会有很大的参考价值。
 
 
 ### 快速 PR
@@ -149,11 +149,3 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 
 ### 总结
 Github Flow 在本地的相关操作也可以用命令行来实现，会有更多的技巧可以使用，另外即使在网页上，PR 整个流程中也有很多很方便功能咱们还没有介绍到。更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
-
-<!-- - how github use github to build github
-  - https://www.youtube.com/watch?v=qyz3jkOBbQY
-  - 12:44 有对 PR 的精炼解释，很白话
-    master -> branch -> pr -> master
-    17:00 一个 PR 的整个生命流程，用一个实例演示，再好不过了，比直接抽象聊好一千倍
-    - 要有 snapshot 有 markdown 的 code ...
-  - zach 的观点很喜欢：软件行业有各种开发方式，敏捷，瀑布，BDD，TDD，非常复杂，但是重要的时你找到一种自己喜欢的方式，github 就是这种方式。 -->
