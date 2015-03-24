@@ -47,16 +47,11 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 ![](images/fork_flow/new_pr_view.png)
 
-注意上面1处，要选对是哪两个分支进行对比，左侧是上游分支，也就是“目的地”分支，右侧是我自己的分支，上面有修改的内容。有时候 github 能猜对拿哪两个分支做对比，有时候就要自己手动选择一下。分支要是选得不对那么2处对比出来的代码肯定也会有问题的，所以还是比较容易看出来的。下面就可以点3处的大按钮来发 PR 了。
-
-![](images/fork_flow/pr_msg.png)
-
-上面的界面中填入一些留言，点 `Create pull request` 按钮。这样在 billie66/TLCL 下面，注意不是 happypeter/TLCL 下面，就会多一个 PR 了。 
+注意上面1处，要选对是哪两个分支进行对比，左侧是上游分支，也就是“目的地”分支，右侧是我自己的分支，上面有修改的内容。有时候 github 能猜对拿哪两个分支做对比，有时候就要自己手动选择一下。分支要是选得不对那么2处对比出来的代码肯定也会有问题的，所以还是比较容易看出来的。下面就可以点3处的大按钮来发 PR 了。之后，在 billie66/TLCL 下面，注意不是 happypeter/TLCL 下面，就会看到这个 PR 。 
 
 ![](images/fork_flow/final_pr.png)
 
-
-这样 billie66 就会看到 happypeter 发的 Pull Request，就可以来跟我讨论。如果决定要把我的代码 merge 进自己的仓库，点一下 `Merge Pull Request` 按钮就可以了。
+当项目拥有者 billie66，或者是项目的协作者（ collaborator ） 看到 Pull Request，就可以来跟我讨论。如果决定要把我的代码 merge 进自己的仓库，点一下 `Merge Pull Request` 按钮就可以了。
 
 这样，我这次贡献代码的工作就结束了。TLCL 的版本历史中会永远留下 happypeter 的名字。同时我发的这个 PR 关掉之后，也可以在 billie66/TLCL 的 Pull Requests 一项下面被永久保存，所以我可以放心的删除我自己的那个 fork 了。
 
@@ -68,9 +63,9 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 ![](images/fork_flow/delete_repo.png)
 
-如上图，点开 settings 然后进入 Danger Zone 找 `Delete This Repository` 就可以了。当然如果会频繁的贡献同一个项目，自己名下长期保留一个 fork 也是可以的，但是这时候就要保证这个 fork 和上游仓库的同步，也是挺麻烦的。所以对于初学者，删掉，过些日子如果又想贡献，再 fork 一次不迟。
+如上图，点开 settings 然后进入 Danger Zone 找 `Delete This Repository` 就可以来删除 happypeter/TLCL。当然如果会频繁的贡献同一个项目，自己名下长期保留一个 fork 也是可以的，但是这时候就要保证这个 fork 和上游仓库的同步，也是挺麻烦的。所以对于初学者，删掉，过些日子如果又想贡献，再 fork 一次不迟。
 
-对于项目维护者，如果想随时了解自己的项目都有哪些人正在 fork 和修改，可以看一下项目的 `Network`，如下图：
+对于项目维护者，如果想随时了解自己的项目都有哪些人正在自己的 fork 进行修改，可以看一下项目的 `Network`，如下图：
 
 ![](images/fork_flow/network.png)
 
@@ -78,9 +73,7 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 前面介绍过[快速 PR]((https://github.com/blog/1945-quick-pull-requests))了，不过那个流程是基于一个我自己有写权限的项目。那对于人家的开源项目，我根本就不能修改，能不用在网页上直接发开速 PR 呢？幸运的是，答案是肯定的。而且过程是超级的简单和直观。
 
-现在我来的 bille66/TLCL 的这个项目，不做 fork，而是直接打开一个我想要编辑的文件。这个时候，github 会自动帮我 fork 一个 happypeter/TLCL 然后把我所做的改动 commit 到我自己的 fork 中。然后直接进入发 PR 的界面，操作就和前面的过程一样了。
-
-
+做法就是，我来到 bille66/TLCL 的这个项目，不做 fork，而是直接打开一个我想要编辑的文件，修改，然后做 commit。这个时候，github 会自动帮我 fork 一个 happypeter/TLCL 出来，把我所做的改动 commit 到我自己的这个 fork 中。这之后，就直接进入发 PR 的界面，操作就和前面的过程一样了。
 
 <!--  - http://happycasts.net/episodes/60
   - 图示整个过程 
@@ -88,3 +81,7 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 更简单，更美观是我未来的一个方向了
 
   -->
+
+### 总结
+
+贡献开源项目，过程中可以跟老手讨论，所以是个学习编程的好方法。
