@@ -16,12 +16,12 @@ title: git
         这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。
       </p>
       <a href="http://happypeter.github.io/gitbeijing#read" class="read-btn">Work In Progress</a>
-      <a href="https://selfstore.io/products/266" class="read-btn">本书完成度50%</a>
+      <a href="https://selfstore.io/products/266" class="read-btn">本书完成度0%</a>
     </div>
     <img alt="git" class="book-image" src="images/cover_3d.jpg"/>
-    {% include toc.html %}
   </div>
 </section>
+{% include toc.html %}
 <div class="divider">
   <a href="https://github.com/happypeter/gitbeijing">进入 GitHub 书稿仓库</a>
 </div>
