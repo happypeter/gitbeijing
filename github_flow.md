@@ -149,3 +149,11 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 
 ### 总结
 Github Flow 在本地的相关操作也可以用命令行来实现，会有更多的技巧可以使用，另外即使在网页上，PR 整个流程中也有很多很方便功能咱们还没有介绍到。更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
+
+<!-- - how github use github to build github
+  - https://www.youtube.com/watch?v=qyz3jkOBbQY
+  - 12:44 有对 PR 的精炼解释，很白话
+    master -> branch -> pr -> master
+    17:00 一个 PR 的整个生命流程，用一个实例演示，再好不过了，比直接抽象聊好一千倍
+    - 要有 snapshot 有 markdown 的 code ...
+  - zach 的观点很喜欢：软件行业有各种开发方式，敏捷，瀑布，BDD，TDD，非常复杂，但是重要的时你找到一种自己喜欢的方式，github 就是这种方式。 -->
