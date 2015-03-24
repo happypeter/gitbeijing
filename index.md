@@ -21,7 +21,6 @@ title: git
     <img alt="git" class="book-image" src="images/cover_3d.jpg"/>
   </div>
 </section>
-{% include toc.html %}
 <div class="divider">
   <a href="https://github.com/happypeter/gitbeijing">进入 GitHub 书稿仓库</a>
 </div>
@@ -32,8 +31,10 @@ title: git
       <div class="name">
        happypeter
       </div>
-      <div class="job-title"><a href="http://www.happycasts.net/">本书作者，happycasts.net 作者</a></div>
+      <div class="job-title"><a href="http://haoduoshipin.com">本书作者，haoduoshipin.com 作者</a></div>
       挥汗写下本书，致敬<b>北京 Linux 用户组</b>的那些曾经帮助过我的朋友们。<a href="histroy.html">点击查看</a>为何起了个这么傻的书名。
     </div>
   </div>
 </div>
+{% include toc.html %}
+
