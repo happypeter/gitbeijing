@@ -18,7 +18,7 @@ title: 团队合作流程
 
 究竟 Github 是什么的问题从它的标语中也可以看出，早期是“Git Hosting No Longer Pain In The Ass"，可见最早 Github 的目标确实是想成为一个好的代码托管平台。但是现在首页的标语却是
 
-![](images/flow_github/better_together.png)
+![](images/github_flow/better_together.png)
 
 
 所以说，Github 最核心的点，是要实现一套软件开发的协作流程。Git 是一个分布式的版本控制工具，所以可以在它的基础上实现各种工作流程。Github 多年来总结出来一套自己的团队协作流程，简单而且强大，叫做[github Flow](https://guides.github.com/introduction/flow/index.html) 。
@@ -31,20 +31,20 @@ title: 团队合作流程
 
 创建新的话题分支。
 
-![](images/flow_github/new_branch.png)
+![](images/github_flow/new_branch.png)
 
 不断实现功能，做成一个个新版本。
 
-![](images/flow_github/make_changes.png)
+![](images/github_flow/make_changes.png)
 
 发起 PR 。
-![](images/flow_github/open_pr.png)
+![](images/github_flow/open_pr.png)
 
 大家讨论。
-![](images/flow_github/discuss.png)
+![](images/github_flow/discuss.png)
 
 把话题分支的内容合并到 master 。
-![](images/flow_github/merge_in.png)
+![](images/github_flow/merge_in.png)
 
 
 这些图都是我从[官方的 Github Flow 指南](https://guides.github.com/introduction/flow/index.html) 摘下来的，我和 [@billie66](http://github.com/billie66) 还整个的翻译了这个指南，放在了[这里](http://gitbeijing.com/flow) 。流程的细节你可以到这个页面上去看。下面主要跑一个实际例子。
@@ -62,11 +62,11 @@ title: 团队合作流程
 
 首先到项目页面，点击 Settings 一项，
 
-![](images/flow_github/find_settings.png)
+![](images/github_flow/find_settings.png)
 
 到项目的 Settings 页面，可以看到如下图所示的 collaborator 选项，输入框中输入 `bi` 就可以自动补齐出 `billie66` 了
 
-![](images/flow_github/add_collaborator.png)
+![](images/github_flow/add_collaborator.png)
 
 回车选中，然后点 `Add collaborator` 按钮，这样就完成了。
 
@@ -81,7 +81,7 @@ title: 团队合作流程
 
 这样我做了两个版本，而且都同步到远端仓库了。所以到 describe-project 分支的历史上可以看到多了下面两个新 commit 。
 
-![](images/flow_github/two_commits.png)
+![](images/github_flow/two_commits.png)
 
 这样我认为功能实现了，就可以发 PR 了。
 
@@ -92,15 +92,15 @@ PR 在整个流程中起着核心位置。其实发 PR 的目的就是引发讨�
 
 先到仓库页面，找到发 PR 的大绿按钮
 
-![](images/flow_github/compare_btn.png)
+![](images/github_flow/compare_btn.png)
 
 注意要进行对比的是哪两个分支，下面我要填写一些内容，说说我的 PR 的好处
 
-![](images/flow_github/pr_main_view.png)
+![](images/github_flow/pr_main_view.png)
 
 在下方还可以看到这次 PR 的具体对比出来的代码内容
 
-![](images/flow_github/pr_content.png)
+![](images/github_flow/pr_content.png)
 
 点击 `Create Pull Request` 按钮，这样发 PR 就成功了。@billie66 可以收到通知了。
 
@@ -109,21 +109,21 @@ PR 在整个流程中起着核心位置。其实发 PR 的目的就是引发讨�
 
 ### 讨论审核代码
 
-![](images/flow_github/final_pr.png)
+![](images/github_flow/final_pr.png)
 
 PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟们的代码，可以是队友之间的互相审核。
 
 @billie66 看到这个 PR 之后，就会发表她的意见了。
 
-![](images/flow_github/billie_comment.png)
+![](images/github_flow/billie_comment.png)
 
 看到之后我觉得有道理，代码需要调整，那我现在是不是要撤销这 PR 重新发呢？不用。我只需要继续在 describe-project 分支上改代码然后再同步上来。
 
-![](images/flow_github/more_code.png)
+![](images/github_flow/more_code.png)
 
 上面的图中可以看到，讨论不断继续，会形成一条由评论和代码穿插而成的一条线。最后达成一致，我或者 @billie 都可以点一下上面的大大的 `Merge Pull Request` 的按钮，这样 Topic Branch 上的代码就合并到 master 之上了。接下来 describe-project 这个分支也就可以删掉了。
 
-![](images/flow_github/delete_branch.png)
+![](images/github_flow/delete_branch.png)
 
 
 每一个 PR 都是开发历史上的一次小事件，很长事件过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码。所以是项目发展的珍贵资料。
@@ -137,11 +137,11 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 
 网页界面中，找到我要修改的文件，点击 `edit`
 
-![](images/flow_github/quick_pr_view.png)
+![](images/github_flow/quick_pr_view.png)
 
 然后在下面的界面中，可以直接填写一个 Topic 分支名，创建这个分支，并 commit 到这个分支上发 PR 了
 
-![](images/flow_github/quick_pr_view.png)
+![](images/github_flow/quick_pr_view.png)
 
 
 说实话，即使是老手，你让我切换到编辑器和客户端，再跑一遍整个的这个发 PR 的流程，我也会觉得挺麻烦挺分心的。快速 PR 方法真的是非常方便。

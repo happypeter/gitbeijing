@@ -9,7 +9,7 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 所以第一步是 Fork 这个项目。所谓我 fork 别人的一个项目，就是指做一个把这个项目做一个拷贝，放到我自己的账户下。
 
-![](images/flow_fork/flow.png)
+![](images/fork_flow/flow.png)
 
 现根据上面的图说说基本思路。第一步，先 fork，这样我就有了 happypeter/TLCL 这个项目了，那既然是我自己的项目，我就可以把它 clone 到我本地，做修改，然后推送到 github 上的我自己的那个 fork 之中。这样上游的仓库，也就是 billie66 名下的仓库，就可以跟我自己 fork 的这个仓库来进行对比，发出 Pull Request 了。
 
@@ -17,15 +17,15 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 来到 TLCL 的项目主页，也就是 <https://github.com/billie66/TLCL> 。点右上角的 fork 按钮。
 
-![](images/flow_fork/fork.png)
+![](images/fork_flow/fork.png)
 
 这样，我自己的名下就多了一个 TLCL 项目，这个项目就叫做原有项目的一个 fork 。
 
-![](images/flow_fork/my_fork.png)
+![](images/fork_flow/my_fork.png)
 
 到这里 fork 这一步就结束了。那对于 happypeter/TLCL 这个仓库，我当然有修改的权限了，可以在网页上修改直接发 PR。也可以 clone 到我本地客户端中，在本地作修改。下面就可以点右下角的 `Clone In Desktop` 按钮，来把项目 clone 到本地了。
 
-![](images/flow_fork/cloning.png)
+![](images/fork_flow/cloning.png)
 
 ### 做版本和同步
 
@@ -33,7 +33,7 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 用自己喜欢的编辑器做出修改，做 commit，然后同步到远端的 happypeter/TLCL 中，这些步骤到现在应该是轻车熟路，小菜一碟了。于是到 github.com 可以看到下图的内容
 
-![](images/flow_fork/my_commit.png)
+![](images/fork_flow/my_commit.png)
 
 如上图所示到 happypeter/TLCL 的仓库主页，可以看到最新的我做的版本的留言，点开就可以看到我这次修改的内容了。现在可以来发 PR 了。
 
@@ -41,19 +41,19 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 发 PR 的过程跟前面介绍过的没有本质区别。
 
-![](images/flow_fork/new_pr.png)
+![](images/fork_flow/new_pr.png)
 
 如下图，点一下项目页面右侧的 `Pull Request` 链接，到达的页面中会有一个大大的绿按钮 `New Pull Request`，点一下就看到下面的页面
 
-![](images/flow_fork/new_pr_view.png)
+![](images/fork_flow/new_pr_view.png)
 
 注意上面1处，要选对是哪两个分支进行对比，左侧应该是上游分支，右侧是你自己的分支。有时候 github 能猜对，有时候就要自己手动选择一下分支，分支要是选得不对那么2处对比出来的代码肯定也会有问题的，所以还是比较容易看出来的。下面就可以点2处的大按钮来发 PR 了。
 
-![](images/flow_fork/pr_msg.png)
+![](images/fork_flow/pr_msg.png)
 
 上面的界面中填入一些留言，点 `Create pull request` 按钮。这样在 billie66/TLCL 下面，注意不是 happypeter/TLCL 下面，就会多一个 PR 了。 
 
-![](images/flow_fork/final_pr.png)
+![](images/fork_flow/final_pr.png)
 
 
 这样 billie66 就会看到 happypeter 发的 Pull Request，就可以来跟我讨论。如果决定要把我的代码 merge 进自己的仓库，点一下 `Merge Pull Request` 按钮就可以了。
@@ -66,13 +66,13 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 删除一个 fork ，跟删除一个我自己的项目仓库是一样的。
 
-![](images/flow_fork/delete_repo.png)
+![](images/fork_flow/delete_repo.png)
 
 如上图，点开 settings 然后进入 Danger Zone 找 `Delete This Repository` 就可以了。当然如果会频繁的贡献同一个项目，自己名下长期保留一个 fork 也是可以的，但是这时候就要保证这个 fork 和上游仓库的同步，也是挺麻烦的。所以对于初学者，删掉，过些日子如果又想贡献，再 fork 一次不迟。
 
 对于项目维护者，如果想随时了解自己的项目都有哪些人正在 fork 和修改，可以看一下项目的 `Network`，如下图：
 
-![](images/flow_fork/network.png)
+![](images/fork_flow/network.png)
 
 ### 基于 fork 的快速 PR
 
