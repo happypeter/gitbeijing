@@ -16,7 +16,7 @@ title: git
         这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。
       </p>
       <a href="https://github.com/happypeter/gitbeijing/issues/new" class="read-btn">提意见</a>
-      <a href="https://selfstore.io/products/266" class="read-btn">本书完成度0%</a>
+      <a href="https://selfstore.io/products/266" class="read-btn">本书完成度60%</a>
     </div>
     <img alt="git" class="book-image" src="images/cover_3d.jpg"/>
   </div>
@@ -32,7 +32,7 @@ title: git
        happypeter
       </div>
       <div class="job-title"><a href="http://haoduoshipin.com">本书作者，haoduoshipin.com 作者</a></div>
-      挥汗写下本书，致敬<b>北京 Linux 用户组</b>的那些曾经帮助过我的朋友们。<a href="histroy.html">点击查看</a>为何起了个这么傻的书名。
+      挥汗写下本书，致敬北京 Linux 用户组的那些曾经帮助过我的朋友们。<a href="histroy.html">点击查看</a>为何起了个这么傻的书名。
     </div>
   </div>
 </div>
