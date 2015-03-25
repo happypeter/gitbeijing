@@ -2,11 +2,11 @@
 title: 简介
 ---
 
-这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。你好，我是 Peter，今天是咱们见面的第一天，我想跟你聊的是一些故事和一些关于 git 北京学习安排的一些想法。
+这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。你好，我是 Peter，今天是咱们见面的第一天，我想跟你聊的是一些故事和一些关于 git 北京学习安排的想法。
 
 ### 我和 git 的罗曼史
 
-git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻x。关于软件为何以 git 命令，它的作者 Linus Torvalds 曾经这样调侃：
+git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻x。关于软件为何以 git 命名，它的作者 Linus Torvalds 曾经这样调侃：
 
 > “I’m an egotistical bastard, and I name all my projects after myself.
 First Linux, now git.” – Linus
@@ -32,7 +32,7 @@ Git 和 Github 改变了我的职业发展路线，多年过去了，依然感�
 
 >Programming is not just code and computers. It's about people. It is decision making, information sharing, and the tools and mental models we use to solve problems and iterate on the solutions.
 
-上面这段话来自 [gotealeaf.com](http://www.gotealeaf.com/books/git/read/introduction#gettingstarted) 。学习 Git 和 Github 的使用，其实主要是学习一种新的工作和和他人协作的方式，一种极大区别于传统工业化思想的，轻便灵活，人人平等，创业文化的氛围。
+上面这段话来自 [gotealeaf.com](http://www.gotealeaf.com/books/git/read/introduction#gettingstarted) 。学习 Git 和 Github 的使用，其实主要是学习一种新的协作方式，一种极大区别于传统工业化思想的，轻便灵活，人人平等，创业文化的协作方式。
 
 如果说 google 的出现改变了开发者写代码的方式，那么 Github 的出现也是对软件开发有着革命性的影响。在 Github 上面，你可以找到很多高手，follow 他们，参与他们项目的开发，大量的精品的开源项目可以直接拿来用，重造轮子的时代已经过去了。对于新手，Github 不仅仅是一个学习的地方，也同样是一个展示自己成长的地方。在你的 Github 个人主页上，不仅能看到你所有开源项目的代码，而且能看到你每一天的进展。我自己当时找工作的时候，Github 其实就是我的简历。实际的项目，详细的改版历史中都可以看到心思和汗水，这个要比简历上空洞的写“我精通xxx"要有舒服力的多。
 
