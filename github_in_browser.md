@@ -38,18 +38,16 @@ Github 上操作虽多，但是最核心要素的是项目。
 
 ![](images/github_in_browser/dashboard.png)
 
-
 比如左侧，图标“1”处，可以看到相关项目的最近更新，右侧，图标“2”处，是我自己的项目列表。现在我要创建一个项目，也就是点“3”处这个按钮。
 
 ![](images/github_in_browser/github_dashboard.png)
 
-
-这就到达了，这个新建项目的页面：
+这就到达了新建项目的页面：
 
 ![](images/github_in_browser/new_project.png)
 
-因为咱们没有付钱注意这次要勾选 “iInitialize this repository with a README” ，然后创建这个项目。也会看到 Create Repository 按钮的上方还有两个选择框，
-一个是关于 .gitignore 的，后面会专门讲到，另一个是关于 LICENSE 的，任意选一个自己喜欢开源授权协议的就行，我比较喜欢 MIT License 。这两项如果选择了就是在项目中又多了两个文本文件，一个是 .gitignore 文件，另一个是 LICENSE 文件，都不选就可以。
+注意这次要勾选 “Initialize this repository with a README” ，然后创建这个项目。也会看到 `Create Repository` 按钮的上方还有两个选择框，
+一个是关于 .gitignore 的，后面会专门讲到，另一个是关于 LICENSE 的，选择开源授权协议。这两项如果选择了就是在项目中又多了两个文本文件，一个是 .gitignore 文件，另一个是 LICENSE 文件，暂时都不选就可以，回头需要了可以自己用编辑器新建。
 
 ### 编辑项目
 
