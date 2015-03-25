@@ -95,7 +95,6 @@ Github 上操作虽多，但是最核心要素的是项目。
 
 ![](images/github_in_browser/histroy_line.png)
 
-
 有些版本工具是以 1，2，3... 作为版本号的，但是 git 这里每个版本号都是哈希值，40位十六进制数。
 
 ### 总结
