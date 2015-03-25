@@ -26,6 +26,8 @@ Git 的魅力在于开源，在于人本和去中心化，2008 年 github 的诞
 
 Github 首先是一个公司，<https://github.com> 网站是他们的产品，提供 Git 仓库的托管服务，但是更重要的，它是世界上最大的开源软件分享协作平台。我是2009年开始用 Github 的，那时候我还是 C/C++ 程序员，但是发现太喜欢 Github 公司的文化和他们的那些工具了，而这些人都是来自 Ruby 社区，这些工具都是 Ruby 语言开发的，所以我就逐渐学习了 Ruby，也正是因为 Ruby 我理解了 Web 开发，理解了互联网的开放和自由，所以很快就成了全职的网站开发者。另外一个原因是我在2010年的时候，开始在一家教育机构作 Linux 培训讲师，所以那时候也更有动力利用课余时间做网站，因为网站可以很好的用来分享知识。
 
+![](images/introduction/i_github.jpg)
+
 Git 和 Github 改变了我的职业发展路线，多年过去了，依然感觉当年遇见 Git 是如此的幸运。
 
 ### Git 和 Github 如何改变生活
@@ -34,6 +36,10 @@ Git 和 Github 改变了我的职业发展路线，多年过去了，依然感�
 
 上面这段话来自 [gotealeaf.com](http://www.gotealeaf.com/books/git/read/introduction#gettingstarted) 。学习 Git 和 Github 的使用，其实主要是学习一种新的协作方式，一种极大区别于传统工业化思想的，轻便灵活，人人平等，创业文化的协作方式。
 
+
+>GitHub.com might be the best thing that has happened to software development since the Internet. 
+
+上面这段话也来自 [gotealeaf.com](http://www.gotealeaf.com/books/git/read/introduction#whatisgithub) 。
 如果说 google 的出现改变了开发者写代码的方式，那么 Github 的出现也是对软件开发有着革命性的影响。在 Github 上面，你可以找到很多高手，follow 他们，参与他们项目的开发，大量的精品的开源项目可以直接拿来用，重造轮子的时代已经过去了。对于新手，Github 不仅仅是一个学习的地方，也同样是一个展示自己成长的地方。在你的 Github 个人主页上，不仅能看到你所有开源项目的代码，而且能看到你每一天的进展。我自己当时找工作的时候，Github 其实就是我的简历。实际的项目，详细的改版历史中都可以看到心思和汗水，这个要比简历上空洞的写“我精通xxx"要有说服力。
 
 ### 本书内容

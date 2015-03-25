@@ -5,13 +5,9 @@ title: 浏览器中使用 github
 <!-- 还要多截图，很好看：http://happypeter.github.io/gitbeijing/github_in_browser.html -->
 
 
-尽管 git 的深度用户比较多的是用 Unix 命令行来操作 git 的，Peter 本人也是这样。但是如果你还没有来得及学会使用命令行，那也不用担心，Gitbeijing 的第一部分带你使用 Github 网页和图形化的客户端来操作 Git 和 Github 。这样，几天下来就可以学会使用 Git 的大部分实用操作了。并且也会为后面学习使用命令行操作 Git 打下概念理解的基础。
+尽管 git 的深度用户比较多的是用 Unix 命令行来操作 git 的，Peter 本人也是这样。但是如果你还没有来得及学会使用命令行，那也不用担心，Gitbeijing 的第一部分带你使用 Github 网页和图形化的客户端来操作 Git 和 Github 。这样，几天下来就可以学会使用 Git 的大部分实用操作了。并且也会为后面学习使用命令行操作 Git 打下概念基础。
 
-每个日出后都是全新的一天。今天 Peter 来带你做一件曾经改变我生活的一件事情，就是注册并使用 github.com 。不会用 git ，就不能用 github 吗? NO! Github 的网站上通过网页操作就已经能实现很多强大的功能了，来一起看一看。
-
->GitHub.com might be the best thing that has happened to software development since the Internet. 
-
-上面这段话来自 [gotealeaf.com](http://www.gotealeaf.com/books/git/read/introduction#whatisgithub) 。
+每个日出后都是全新的一天。今天 Peter 来带你做一件曾经改变我生活的一件事情，就是注册并使用 github.com 。不会用 git ，就不能用 github 吗? 不是这样的，Github 的网站上通过网页操作就已经能实现很多强大的功能了，来一起看一看。
 
 ### 故事从注册开始
 
@@ -24,11 +20,10 @@ title: 浏览器中使用 github
 
 ![](images/github_in_browser/help4steps.png)
 
-本课中就是介绍第二步步，其他几步回头另行介绍。稍微看一下，关了就行了。以后可以到 <help.github.com> 看到这些内容。另外还会看到要求我去验证一下邮箱地址，到我的邮箱之中找到验证邮件，点一下里面的链接就可以了。
+今天主要介绍第二步，其他几步回头另行介绍。所以这个四步走，稍微看一下，关了就行了。以后可以到 <help.github.com> 看到这些内容。另外还会看到要求新用户去验证一下邮箱地址的提示，到邮箱之中找到验证邮件，点一下里面的链接就可以了。
 
 最后一步给自己添加一个头像吧，github 是一个真正的交朋友的地方，没有头像怎么行！可以到 Settings->Profile 这里来添加。
 
-![](images/github_in_browser/i_github.jpg)
 
 ### 创建项目仓库
 
