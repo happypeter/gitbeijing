@@ -91,9 +91,7 @@ Github For Mac 客户端的安装跟其他 Mac 下的软件没有区别，很简
 
 ![](images/github_for_mac/publish_repo.png)
 
-注意标号2的框里面支出我可以把项目发布为私有项目，这个只对付费用户开放。Publish 项目成功后，到 github.com 自己的 dashboard，看一下右下方的仓库列表
-
-![](images/github_for_mac/repo_list.png)
+注意在标号2的框里面，我可以把项目发布为私有项目，这个功能只对付费用户开放。
 
 ### 同步版本历史
 
