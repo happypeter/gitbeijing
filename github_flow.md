@@ -9,7 +9,7 @@ title: 团队合作流程
 
 在 [How Github Use Github To Build Github](https://www.youtube.com/watch?v=qyz3jkOBbQY) 的演讲中，Zach Holman 说，
 
->多年来我一直在寻找什么样的方式做软件才是正确的方式，现在我想我找到了，github 就是这种方式。
+>多年来我一直在寻找做软件正确的方式，现在我想我找到了，github 就是这种方式。
 
 
 这里说的方式，主要就是开发的流程，任何人合作的方式。究竟 Github 是什么的问题从它的标语中也可以看出，早期是“Git Hosting No Longer Pain In The Ass"，可见最早 Github 的目标确实是想成为一个好的代码托管平台。但是现在首页的标语却是
