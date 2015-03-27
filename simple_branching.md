@@ -2,7 +2,7 @@
 title: 简单分支操作
 ---
 
-今天的主角是分支，因为不介绍分支（ branch ）的概念，下面的操作是没办法介绍了。可以这样说，Git 最核心的操作对象是 commit 版本，最核心的操作技巧就是分支。
+今天的主角是分支，因为不介绍分支（ branch ）的概念，下面的操作是没办法介绍了。可以这样说，Git 最核心的操作对象是版本（ commit ），最核心的操作技巧就是分支。
 
 <!-- https://help.github.com/articles/branching-out/ -->
 
@@ -10,11 +10,11 @@ title: 简单分支操作
 
 仓库创建后，一旦有了新 commit，默认就会放到一个分支上，名字叫 master。前面咱们一直看到的多个版本组成的一条历史线，就是 master 分支。但是一个仓库内，用户可以自己创建其他的分支，可以有多条历史线。
 
-说说 master 这个名字，一般中文叫“主分支”，其实从技术底层来讲它跟其他我们自己要创建的分支没有区别，只不过它是天生默认分支。实际工程项目中，一般会在 master 分支上存放稳定代码。就像 github 和其他很多公司[倡导](http://scottchacon.com/2011/08/31/github-flow.html)的 
+说说 master 这个名字，一般中文叫“主分支”，其实从技术底层来讲它跟其他我们自己要创建的分支没有区别，只不过它是天生默认分支。实际工程项目中，我们会人为的给它一个重要的使命，会在 master 分支上存放稳定代码。就像 github 公司[倡导](http://scottchacon.com/2011/08/31/github-flow.html)的。
 
 > Anything in the master branch is deployable
 
-意思就是 master 分支上的代码，应该是比较成熟的，随时可以放到产品服务器上跑的代码。这样，如果想开发一个新功能，可以新开分支。 想象一下历史线上又很多节，每个版本就是一节。一个分支相当于一跟竹子，一节节的往上长。
+意思就是 master 分支上的代码是随时可以放到产品服务器上跑的代码。这样，如果想开发一个新功能，可以新开分支。 想象一下历史线上又很多节，每个版本就是一节。一个分支相当于一跟竹子，一节节的往上长。
 
 ![](images/simple_branching/bamboo.jpeg)
 
@@ -27,10 +27,10 @@ title: 简单分支操作
 什么时候需要开一个新分支，这个后面讲各种工作流程的时候会介绍，今天先把基本操作学会。
 到客户端的 `Branches` 这一项
 
-图
+![](images/simple_branching/create.png)
 
-`Create a new branch off master` 就是来创建一个 `idea` 分支，这个分支从使用的角度就是 master 分支的一个拷贝，拥有跟 master 分支一样的当前项目代码，以及所有改版历史。其实在底层这个的实
-现是非常巧妙的，就是又创建一个新的 idea 分支，同时跟 master 指向同一个版本。所以根本不用拷贝历史线。
+点击1处的加号，就会弹出2处的对话框。`Create a new branch off master` 就是来创建一个分支，比如叫 idea，是 master 的一个拷贝。但是，在底层这个的实
+现是非常巧妙的，就是又创建一个新的 idea 指针，跟 master 指向同一个版本，根本没有拷贝历史线。
 
 ![](images/simple_branching/new_branch.png)
 
