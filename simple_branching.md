@@ -8,37 +8,29 @@ title: 简单分支操作
 
 ### 什么是分支？
 
-<!-- head 的概念就先别提了  master 是指针也不用讲，就说新分支是原来分支的一个拷贝就够用了
-
-但是不给出指针的概念，历史线就不能用真图了，那后面 merge 怎么讲？
-
- -->
-
 仓库创建后，一旦有了新 commit，默认就会放到一个分支上，名字叫 master。前面咱们一直看到的多个版本组成的一条历史线，就是 master 分支。但是一个仓库内，用户可以自己创建其他的分支，可以有多条历史线。
 
-说说 master 这个名字，一般中文叫“主分支”，其实从技术底层来讲它跟其他我们自己要创建的分支没有区别，只不过它是天生默认分支。实际工程项目中，一般会在 master 分支上存放稳定代码。就像 github 和其他很多公司[倡导](https://guides.github.com/introduction/flow/index.html)的 
+说说 master 这个名字，一般中文叫“主分支”，其实从技术底层来讲它跟其他我们自己要创建的分支没有区别，只不过它是天生默认分支。实际工程项目中，一般会在 master 分支上存放稳定代码。就像 github 和其他很多公司[倡导](http://scottchacon.com/2011/08/31/github-flow.html)的 
 
-> Master is always deployable.
+> Anything in the master branch is deployable
 
-意思就是 master 分支上的代码，应该是比较成熟的，随时可以放到产品服务器上跑的代码。这样，如果想开发一个新功能，可以新开分支。 想象一下历史线上又很多节，一个分支相当于一跟竹子，一节节的往上长。每个版本就是一节。
+意思就是 master 分支上的代码，应该是比较成熟的，随时可以放到产品服务器上跑的代码。这样，如果想开发一个新功能，可以新开分支。 想象一下历史线上又很多节，每个版本就是一节。一个分支相当于一跟竹子，一节节的往上长。
 
 ![](images/simple_branching/bamboo.jpeg)
 
-
 但是实际上 master 本身只是一个指针，指向 master 分支上最新的一个版本。
-
 
 ![](images/simple_branching/master_branch.png)
 
-
 ### 创建新分支
 
-比如我在 master 分支上正在干活，但是忽然有个新想法要试一下，这个时候我就可以开一个新分支了，到客户端的 `Branches` 这一项
+什么时候需要开一个新分支，这个后面讲各种工作流程的时候会介绍，今天先把基本操作学会。
+到客户端的 `Branches` 这一项
 
 图
 
-
-`Create a new branch off master` 就是来创建一个 `idea` 分支，这个分支从使用的角度就是 master 分支的一个拷贝，拥有跟 master 分支一样的当前项目代码，以及所有改版历史。其实在底层这个的实现是非常巧妙的，就是又创建一个新的 idea 分支，同时跟 master 指向同一个版本。所以根本不用拷贝历史线。
+`Create a new branch off master` 就是来创建一个 `idea` 分支，这个分支从使用的角度就是 master 分支的一个拷贝，拥有跟 master 分支一样的当前项目代码，以及所有改版历史。其实在底层这个的实
+现是非常巧妙的，就是又创建一个新的 idea 分支，同时跟 master 指向同一个版本。所以根本不用拷贝历史线。
 
 ![](images/simple_branching/new_branch.png)
 
