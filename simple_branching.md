@@ -29,54 +29,50 @@ title: 简单分支操作
 
 ![](images/simple_branching/create.png)
 
-点击1处的加号，就会弹出2处的对话框。`Create a new branch off master` 就是来创建一个分支，比如在对话框中填入 ”idea“，就创建了 master 分支的一个拷贝。但是，在底层这个的实
+点击1处的加号，就会弹出2处的对话框。`Create a new branch off master` 就是来创建一个分支，比如在对话框中填入 ”idea“，就创建了 master 分支的一个拷贝，如下图。箭头所指的小对勾表示当前分支已经自动切换到 idea 分支，或者说就是 idea 分支取代了 master 成为了当前分支。
+
+![](images/simple_branching/idea_branch.png)
+
+但是，在底层这个的实
 现是非常巧妙的，就是又创建一个新的 idea 指针，跟 master 指向同一个版本，根本没有拷贝历史线。
 
 ![](images/simple_branching/new_branch.png)
-
-Github for Mac 客户端里看一下，发现确实多了一个分支。
-
-![](images/simple_branching/mac_show_branch.png)
-
-上图箭头中的小对号表示当前已经切换到了 idea 这个分支之上，那 idea 就叫做当前分支。 
 
 如果现在我对项目做一下修改，然后 commit 了。那么移动的只是 idea 指针，master 不变。就成了这样：
 
 ![](images/simple_branching/new_branch_commit.png)
 
-
 所以现在 master 分支包含两个版本 C1 和 C2，idea 分支包含三个版本 C1，C2，C3 。
 
-默认情况下这个 idea 分支只是存在于本地，如果想在远端仓库上发布这个分支，就点一下 publish 按钮
+默认情况下这个 idea 分支只是存在于本地，如果想在远端仓库上发布这个分支，就点一下 idea 分支右侧的 `publish` 按钮。
 
-图
+这样，到远端仓库看一下，点击下图1处，发现果然多了一个 idea 分支，3处的输入框中，不但能搜索已有分支，还能创建新分支，看到了吧，很多操作在本地客户端和 github.com 上都能进行。
 
+![](images/simple_branching/github_idea_branch.png)
 
-这样，到远端仓库看一下，发现果然多了一个 idea 分支
-
-图
 
 ### 切换分支
 到 branches 标签下，相中哪个分支了，双击一下就切换过去了。时间长了你会觉得这个也不够快，还是纯键盘操作快。敲 Cmd-B 可以打开分支切换框，输入名字回车，就切换成功了。
 
-如果你在 idea 分支上有了修改但是还没有来得及 commit，这时候如果切换分支，那么 git 会替你保存这部分修改，也就是在切换到的分支上是看不到这部分修改的。但是不要担心，只要你切换会老分支，修改又回来了。
+如果你在 idea 分支上有了修改但是还没有来得及 commit，这时候如果切换分支，那么 git 会替你保存这部分修改，也就是在切换到的分支上是看不到这部分修改的。但是不要担心，只要你切换回老分支，修改内容又回来了。
 
 注意，每次切换分支，项目代码，术语叫 Working Tree 是会随着变化的，在 Sublime 中看看就知道了。
 
 <!-- https://help.github.com/articles/why-did-my-changes-disappear-when-switching-branches/ -->
 
-在远端仓库，也就是 github.com 上如何切换默认分支呢？到 settings->branch 这一项修改就可以了。
+在远端仓库，也就是 github.com 上如何切换默认分支呢？到 `settings` 下面就更改 `Default branch` 就可以了。
+
+![](images/simple_branching/default_branch.png)
 
 ### 删除分支
 
-首先当前分支是不能删除的。什么意思？到客户端的 `Branches` 标签下，左侧有对勾的就是当前分支，打开右侧小箭头的下拉菜单，可以看到 `delete` 这一项是禁用的。想删除它，就先要切换到其他分支，例如 `master` 。再去删除成功了，同时 github.com 上的远端仓库上 tmp 分支也同时被删除了。
+首先当前分支是不能删除的。什么意思？到客户端的 `Branches` 标签下，左侧有对勾的就是当前分支，打开右侧小箭头的下拉菜单，可以看到 `delete` 这一项是禁用的。想删除它，就先要切换到其他分支，例如 `master` 。这样就可以删除 idea 分支了，如果执行本地删除 github.com 上对应分支也会同时被删除。
 
+在客户端把分支切换到 idea，现在试图去删除 master 。点开 master 分支的小箭头，发现 `delete` 一项可以点，所以点一下，但是报错了：“"master" is the repository's default branch and cannot be deleted.` 要到 github.com 上修改默认分支，就像上一步介绍的那样。
 
-再来新建一个 idea 分支，并且把它 publish 到 github.com 。在客户端把分支切换到 idea，现在试图去删除 master 。点开 master 分支的小箭头，发现 `delete` 一项可以点，所以点一下，但是报错了：“"master" is the repository's default branch and cannot be deleted.` 所以现在就要到 github.com 上修改默认分支。就像上一步介绍的那样。
+如果只想删除远端分支，保留本地分支，可以在客户端中使用每个分支右侧的 `Unpublish` 这个选项。
 
-如果只想删除远端分支，保留本地分支，可以使用 `Unpublish` 这个选项。
-
-<!-- 如果本地分支有没有 commit 的修改，能 delete 分支吗？ -->
+![](images/simple_branching/unpublish.png)
 
 ### 总结
 
