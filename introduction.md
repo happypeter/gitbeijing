@@ -6,12 +6,14 @@ title: 简介
 
 ### 我和 git 的罗曼史
 
-git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻x。关于软件为何以 git 命名，它的作者 Linus Torvalds 曾经这样调侃：
+git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻x。关于软件为何以 git 命名，它的作者 Linus 曾经这样调侃：
 
-> “I’m an egotistical bastard, and I name all my projects after myself.
-First Linux, now git.” – Linus
+>我是个自负的混蛋，所有我的项目都以我自己的名字命名，先有 Linux，现在是 git 。
 
-不过，也有人认为 Git 是 Global Information Tracker 的缩写形式，我认为这个说法非常能说明 git 的用途，就是对一个文件夹中的所有数据信息做跟踪，通过记录版本的形式来对内容的变化做记录。
+<!-- > “I’m an egotistical bastard, and I name all my projects after myself.
+First Linux, now git.” – Linus -->
+
+不过，也有人认为 Git 是 Global Information Tracker（全局信息跟踪器）的缩写形式，我认为这个说法非常能说明 git 的用途，就是对一个文件夹中的所有数据信息做跟踪，通过记录版本的形式来对内容的变化做记录。
 
 你可能也已经知道，Linus 也是 Linux 操作系统之父。那时候我正在北京念书，搞 Linux，所以应该是 2007 年的时候就知道了 git，那时候 github 还没有诞生。
 
