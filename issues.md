@@ -2,6 +2,13 @@
 title: Github issues
 ---
 
+
+<!-- 对于很多英文不好的同学，即使写明的内容也是坑，例如上传图片。我还是细心的介绍一下吧，给出英文的解释 -->
+
+>Attach images by dragging & dropping, selecting them, or pasting from the clipboard.
+
+
+
 how github use github to build github
 
 - 快速引用
