@@ -8,7 +8,6 @@ title: Github issues
 >Attach images by dragging & dropping, selecting them, or pasting from the clipboard.
 
 
-
 how github use github to build github
 
 - 快速引用

@@ -23,3 +23,4 @@ github 对 UI 的简约是有极为苛刻的要求的，所以很多功能是隐
 
 很多细碎的技巧，如果直接插入到具体描述功能的章节中就有些臃肿跑题了，但是这些技巧又同时非常有用，所以可以最后在这里集中提一下。例如 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 最后的那些小技巧。
 
+如果想要为公司大家一个类似于 github 的服务，可以考虑使用 gitlab 。
