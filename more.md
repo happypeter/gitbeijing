@@ -3,6 +3,8 @@ title: 更多 Github 技巧
 ---
 
 
+https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md
+
 
 https://guides.github.com/activities/socialize/
 
