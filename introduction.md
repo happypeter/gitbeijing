@@ -41,7 +41,7 @@ Git 和 Github 改变了我的职业发展路线，多年过去了，依然感�
 
 <!-- >GitHub.com might be the best thing that has happened to software development since the Internet.  -->
 
-> Github 可能是自互联网出现以来出现的最有助于编程开发的事物了。
+> Github 可能是自互联网以来出现的最有助于编程开发的事物了。
 
 上面这段话也来自 [gotealeaf.com](http://www.gotealeaf.com/books/git/read/introduction#whatisgithub) 。
 如果说 google 强大的搜索功能的出现改变了开发者写代码的方式，那么 Github 的出现也是对软件开发有着革命性的影响。在 Github 上面，你可以找到很多高手，follow 他们，参与他们项目的开发，大量的精品的开源项目可以直接拿来用，重造轮子的时代已经过去了。对于新手，Github 不仅仅是一个学习的地方，也同样是一个展示自己成长的地方。在你的 Github 个人主页上，不仅能看到你所有开源项目的代码，而且能看到你每一天的进展。我自己当时找工作的时候，Github 其实就是我的简历。实际的项目，详细的改版历史中都可以看到心思和汗水，这个要比简历上空洞的写“我精通xxx"要有说服力。
