@@ -2,8 +2,6 @@
 title: 浏览器中使用 github
 ---
 
-<!-- 还要多截图，很好看：http://happypeter.github.io/gitbeijing/github_in_browser.html -->
-
 今天 Peter 来带你做一件曾经改变我生活的事情，就是注册并使用 github.com 。不会用 git ，就不能用 github 吗? 不是这样的。Github 的网站上通过网页操作就已经能实现很多强大的版本控制功能了，来一起看一看。
 
 ### 故事从注册开始
