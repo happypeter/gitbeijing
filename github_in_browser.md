@@ -92,7 +92,7 @@ Github 上操作虽多，但是都是围绕一个个的项目展开的。
 
 上面显示了这个 commit 的 id ，但是同时还显示了它之前的一个 commit 的 id，这个就是它的 parent。底层是这样，一个 commit 内部是保存了它的 parent 的版本号的，这样就把它和它的爹连在了一起，爹还有自己的爹，就会形成下图的一条历史线。
 
-![](images/github_in_browser/histroy_line.png)
+![](images/github_in_browser/history_line.png)
 
 有些版本工具是以 1，2，3... 作为版本号的，但是 git 这里每个版本号都是哈希值，40位十六进制数。
 
