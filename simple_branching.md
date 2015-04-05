@@ -12,13 +12,13 @@ title: 简单分支操作
 
 说说 master 这个名字，一般中文叫“主分支”，其实从技术底层来讲它跟其他我们自己要创建的分支没有区别，只不过它是天生默认分支。实际工程项目中，我们会人为的给它一个重要的使命，会在 master 分支上存放稳定代码。就像 github 公司[倡导](http://scottchacon.com/2011/08/31/github-flow.html)的。
 
-> Anything in the master branch is deployable
+> master 分支上的所有代码都应该是可以部署的
 
 意思就是 master 分支上的代码是随时可以放到产品服务器上跑的代码。这样，如果想开发一个新功能，可以新开分支。 想象一下历史线上又很多节，每个版本就是一节。一个分支相当于一跟竹子，一节节的往上长。
 
 ![](images/simple_branching/bamboo.jpeg)
 
-但是实际上 master 本身只是一个指针，指向 master 分支上最新的一个版本。
+但是实际上在底层并不是每个分支都拷贝出自己独立的一条历史线。其实 master 本身只是一个指针，指向 master 分支上最新的一个版本。这样由于每个 commit 都可以顺藤摸瓜找到自己的前一个 commit，那么这条历史线就可以确定了。
 
 ![](images/simple_branching/master_branch.png)
 
