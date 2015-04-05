@@ -33,8 +33,7 @@ title: 简单分支操作
 
 ![](images/simple_branching/idea_branch.png)
 
-但是，在底层这个的实
-现是非常巧妙的，就是又创建一个新的 idea 指针，跟 master 指向同一个版本，根本没有拷贝历史线。
+但是，在底层这个的实现是非常巧妙的，就是又创建一个新的 idea 指针，跟 master 指向同一个版本，根本没有拷贝历史线。
 
 ![](images/simple_branching/new_branch.png)
 
