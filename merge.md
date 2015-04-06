@@ -26,8 +26,7 @@ title: 合并分支
 
 新生成了一个 `C5` ，这是一个“融合版本”（ Merge Commit ）这个版本 挺特殊，里面一般没有修改内容，它的作用主要是吧两个分支连接起来。怎么连接的呢？把 master 的内容 sync 到 github.com 上，然后查看一下这个 merge commit ，会发现它有两个 parent 。
 
-
-merge 之后， master 分支指针指向了 merge commit，也就自动拥有了 idea 分支上的 `c3` 这个版本了。idea 分支一般这会儿就可以删除了。
+merge 之后， master 分支指针指向了 merge commit，也就自动拥有了 idea 分支上的 `C3` 这个版本了。idea 分支一般这会儿就可以删除了。
 
 ### 代码冲突 conflicts
 
@@ -43,7 +42,7 @@ merge 之后， master 分支指针指向了 merge commit，也就自动拥有�
 
 ![](images/merge/conflicts_view.png)
 
-点击上图中的 `Open In External Editor` 按钮，就可以在 sublime 中打开存在冲突的文件，看到如下内容
+点击上图中的 `Open In External Editor` 按钮，就可以在你的编辑器中中打开存在冲突的文件，看到如下内容
 
 
 {% highlight text %}
@@ -56,24 +55,21 @@ AAA
 {% endhighlight %}
 
 
-注意上面的 `HEAD` 是代表当前分支，此刻对应我的情形就是 master 。所以 `=====` 就是两个冲突代码块的分解线了。上面的代码就是 master 分支上的，下面的代码是 idea 分支的。解决冲突就是把上面的三行“冲突表示符”都删掉，然后修改代码，比如保留 `AAA` 删除 `BBB`，或者反之，或者把两者都删除，改为 `AABB` 。然后在回到客户端，点击 2 处的 `Commit to Master` 。 这样，这次分支合并就完成了，也一样是通过 merge 这种方式，所以也会生成一个 Merge Commit 。
+注意上面的 `HEAD` 是代表当前分支，此刻对应我的情形就是 master 。所以 `=====` 就是两个冲突代码块的分解线了。上面的代码就是 master 分支上的，下面的代码是 idea 分支的。解决冲突就是把上面的三行“冲突标示符”都删掉，然后修改代码 。回到客户端，点击 2 处的 `Commit to Master` 。 这样，这次分支合并就完成了，也一样是通过 merge 这种方式，所以也会生成一个 Merge Commit 。
 
-<!-- 
-
-使用 客户端 会 merge no-ff 不存在 fast-forward  的情况，这个跟 github.com 网站上是一样的。
-
--->
-
-但是其实分支合并的方法并不是只有一种 merge ，还有另一个方法叫 rebase 。
+合并分支除了融合（ merge ）还有另外一种形式叫”变基“（ rebase ）这里暂时用不上，先不管。
 
 ### 合并远端分支
 
-现在我本地仓库叫 coco，github.com 上托管了这个仓库。那么自然就有本地一个 master 分支，和远端一个 master 分支，这两个分支虽然名字都叫 master，但是毕竟也是两个分支，也存在分支合并的问题。
+现在我本地仓库叫 coco，github.com 上托管了这个仓库。那么自然就有本地一个 master 分支，和远端一个 master 分支，这两个分支虽然名字都叫 master，但是本质上也是两个分支，也存在分支合并的问题。
 
-比如我同事对 github.com 上的 master 做了一个他自己的 commit，如果此时我到客户端，点 sync 按钮执行同步，这样这个 commit 就会直接被拉（ pull ）到我本地，这个是前面提过的。现在考虑这种情况，在我没有 sync 之前，我自己在本地也做了一个 commit，也就是本地的 master 和远端 master 出现了并行开发的情况，这种情况是非常常见的。这个时候我执行同步，会发生什么呢？
+比如这样，我在 github.com 网页上，修改一下项目，把修改内容 commit 到 master 分支之上。这样，远端的 master 就比我本地的 master 分支多了一个 commit。此时我到客户端，点 sync 按钮执行同步，这样这个 commit 就会直接被拉（ pull ）到我本地，这个是前面提过的。
 
-来操作一下。我自己到 github.com 上面，打开 coco 项目，添加一个文件进来，叫 remote。然后到本地也添加一个文件叫 local，做一个 commit 。这样我执行 sync，跟本地两个分支合并是一样的，也会生成一个 Merge Commit。到 github.com 上的历史线看一下，也有这次 Merge Commit 。
+另外一种情况，在我没有 sync 之前，我自己在本地也做了一个 commit，也就是本地的 master 和远端 master 出现了并行开发的情况，这种情况是非常常见的。这个时候我执行 sync ，会发生什么呢？
+
+来操作一下。我自己到 github.com 上面，打开 coco 项目，添加一个文件进来，叫 remote。然后到本地也添加一个文件叫 local，做一个 commit 。这样我执行 sync，跟本地两个分支合并是一样的，也会生成一个 merge commit，在本地客户端和 github.com 上的历史线可以看到。
 
 <!-- sync 按钮执行的时 git pull 和 git push 并没有进行 rebase -->
 
-<!-- 合并远端分支的时候，是不是用户会感觉非常自然呢？如果是，就没有必要给大家灌概念了，画蛇添足 -->
+### 总结
+前面学会了怎么开分支，今天又学会了怎么合并分支，那分支的基本操作就会了。后面就是在实际开发情形中运用了。
