@@ -10,7 +10,7 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 ![](images/fork_flow/flow.png)
 
-现根据上面的图说说基本思路。第一步，先 fork，这样我就有了 happypeter/TLCL 这个项目了，那既然是我自己的项目，我就可以把它 clone 到我本地，做修改，然后推送到 github 上的我自己的那个 fork 之中。这样我把我自己的 fork 跟上游的仓库，也就是 billie66 名下的仓库来进行对比，就可以发出 Pull Request 了。
+基于 fork 的整个的流程就是上面的图展示的思路。第一步，先 fork，这样我就有了 happypeter/TLCL 这个项目了，那既然是我自己的项目，我就可以把它 clone 到我本地，做修改，然后推送到 github 上的我自己的那个 fork 之中。这样我把我自己的 fork 跟上游的仓库，也就是 billie66 名下的仓库来进行对比，就可以发出 Pull Request 了。
 
 下面来实际操作。
 
@@ -28,7 +28,7 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 ### 做版本和同步
 
-区别于团队合作的 [Github Flow](http://gitbeijing.com/flow/)，这里主要是没有开新分支，而是创建了一个新的 fork。上游仓库 billie66/TLCL 中代码是在 gh-pages 分支上，那现在我在本地修改，新版本放在 happypeter/TLCL 的 gh-pages 上就可以了。
+区别于团队合作的 [Github Flow](http://gitbeijing.com/flow/)，这里主要是没有开新分支，而是创建了一个新的 fork。上游仓库 billie66/TLCL 中代码是在 gh-pages 分支上，那现在我在本地的 gh-pages 修改，新版本同步到在 happypeter/TLCL 的 gh-pages 上就可以了。
 
 本地修改，做 commit，然后同步到远端的 happypeter/TLCL 中，这些步骤到现在应该是轻车熟路，小菜一碟了。于是到 github.com 可以看到下图的内容
 
@@ -72,7 +72,11 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 前面介绍过[快速 PR]((https://github.com/blog/1945-quick-pull-requests))了，不过那个流程是基于一个我自己有写权限的项目。那对于人家的开源项目，我根本就不能修改，能不用在网页上直接发开速 PR 呢？幸运的是，答案是肯定的。而且过程是超级的简单和直观。
 
-做法就是，我来到 bille66/TLCL 的这个项目，不做 fork，而是直接打开一个我想要编辑的文件，修改，然后做 commit。这个时候，github 会自动帮我 fork 一个 happypeter/TLCL 出来，把我所做的改动 commit 到我自己的这个 fork 中。这之后，就直接进入发 PR 的界面，操作就和前面的过程一样了。
+做法就是，我来到 bille66/TLCL 的这个项目，不做 fork，而是直接打开一个我想要编辑的文件，修改，然后做 commit 的时候选择下图中的第二项。
+
+![](images/fork_flow/fork_quick_pr.png)
+
+这样，github 会自动帮我 fork 一个 happypeter/TLCL 出来，把我所做的改动 commit 到我自己的这个 fork 中。这之后，就直接进入发 PR 的界面，操作就和前面的过程一样了。
 
 <!--  - http://happycasts.net/episodes/60
   - 图示整个过程 
