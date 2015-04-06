@@ -5,6 +5,29 @@ title: Github issues
 
 <!-- 对于很多英文不好的同学，即使写明的内容也是坑，例如上传图片。我还是细心的介绍一下吧，给出英文的解释 -->
 
+Markdown 文件语法高亮
+
+例如，可以像下面这样在你的 Markdown 文件里为 Ruby 代码添加语法高亮：
+
+
+    ```ruby
+    require 'tabbit'
+    table = Tabbit.new('Name', 'Email')
+    table.add_row('Tim Green', 'tiimgreen@gmail.com')
+    puts table.to_s
+    ```
+
+效果如下：
+
+{% highlight ruby %}
+require 'tabbit'
+table = Tabbit.new('Name', 'Email')
+table.add_row('Tim Green', 'tiimgreen@gmail.com')
+puts table.to_s
+{% endhighlight %}
+
+
+
 >Attach images by dragging & dropping, selecting them, or pasting from the clipboard.
 
 
