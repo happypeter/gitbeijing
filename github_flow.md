@@ -14,7 +14,7 @@ title: 团队合作流程
 
 ![](images/github_flow/better_together.png)
 
-Github 多年来总结出来一套自己的团队协作流程，简单而且强大，叫做[Github Flow](https://guides.github.com/introduction/flow/index.html) ，网站上的各个功能都围绕着这个流程来开发。另，中文版的 Github Flow 在[这里](http://gitbeijing.com/flow/) 。
+Github 多年来总结出来一套自己的团队协作流程，简单而且强大，叫做 [Github Flow](https://guides.github.com/introduction/flow/index.html) ，网站上的各个功能都围绕着这个流程来开发。另，中文版的 Github Flow 在[这里](http://gitbeijing.com/flow/) 。
 
 要了解一个流程，没有什么比跑一个最简单的实际例子更好的方式了，官方给出的[Hello World](https://guides.github.com/activities/hello-world/)就是服务于这个目的，不过这个 Hello World 用的是纯粹的网页来实现整个流程。咱们今天用网页配合 Github For Mac 客户端来完成这个流程。
 
@@ -22,7 +22,7 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 说白了，就是给一个项目开发新功能要走的几步。
 
-第一步，创建新的话题分支。这个就是为了防止 master 分支上的代码被污染，如下图所示
+第一步，创建新的话题分支。如下图所示
 
 ![](images/github_flow/new_branch.png)
 
@@ -30,7 +30,7 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 ![](images/github_flow/make_changes.png)
 
-第三步，发起”拉取请求“（ Pull Request ）。
+第三步，发起”拉取请求“（ Pull Request ），后面简称 PR 吧。
 
 ![](images/github_flow/open_pr.png)
 
@@ -50,10 +50,7 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 现在我和 @billi66 要合作开发一个新项目。于是我就来创建这个项目，过程在[浏览器中使用 Github](github_in_browser.html)中已经介绍过了。下面就继续在 coco 这个项目上做演示。
 
-现在我要把 @billi66 添加进来，让她也具有项目的各种操作权限，最终要的当然是修改的权限了。如何来做呢？把她添加成项目的 collaborator 就行了。 coco 本身是一个 Private Repo ，但是对于开源项目也是一样可以添加 collaborator 的。
-
-<!-- 未来跟 scoot 一样，用一个开源的项目放在那里，大家看看，挺好 -->
-
+现在我要把 @billi66 添加进来，让她也具有项目的修改权限了。如何来做呢？把她添加成项目的“协作者”（ collaborator ） 就行了。 coco 本身是一个私有仓库 ，但是对于开源项目也是一样可以添加 collaborator 的。
 
 首先到项目页面，点击 Settings 一项，
 
@@ -67,40 +64,38 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 ### 开话题分支并在上面开发
 
-现在我和 @billie66 都对 coco 项目有写权限，对于非常有把握的代码，可以直接在本地 master 开发然后 sync 到远端 master 分支上面。但是如果是比较重要的功能，还是要发单独开 Topic Branch 话题分支，这个是后面发 PR 的前提。
+现在我和 @billie66 都对 coco 项目有写权限，对于非常有把握的代码，可以直接在本地 master 开发然后 sync 到远端 master 分支上面。但是如果是比较重要的功能，还是要发单独开”话题分支“（ Topic Branch ），这个是后面发 PR 的前提。
 
 尽管所有的流程操作都可以在[浏览器中完成](https://github.com/blog/1557-github-flow-in-the-browser)。但是更为常见的情形是我和 @billie 会把代码 clone 到本地开进行新功能的开发，因为这样可以使用自己的编辑器以及测试工具。
 
-现在我要对项目开发一个很大很大的功能，所以就先来开一个分支叫做 describe-project 。名字是越表意清楚越好的，这样队友比较能一眼看出我在干什么。注意开新分支一定要在刚刚更新过的 master 的基础上开。开好之后把这个分支发布到远端，以后这个分支上没实现一点小功能就 publish 到远端，这样的好处是队友可以随时看到我的进展。这部分的操作前面[客户端使用](github_for_mac.html)中都介绍了。
+现在我要对项目开发一个很大很大的功能，所以就先来开一个分支叫做 describe-project 。名字是越表意清楚越好的，这样队友比较能一眼看出我在干什么。注意开新分支一定要在刚刚更新过的 master 的基础上开。开好之后把这个分支发布到远端，以后这个分支上每次实现一点小功能就 publish 到远端，这样的好处是队友可以随时看到我的进展。这部分的操作前面[客户端使用](github_for_mac.html)中都介绍了。
 
 
 这样我做了两个版本，而且都同步到远端仓库了。所以到 describe-project 分支的历史上可以看到多了下面两个新 commit 。
 
 ![](images/github_flow/two_commits.png)
 
-这样我认为功能实现了，就可以发 PR 了。
+功能实现了，可以发 PR 了。
 
 ### 发 Pull Request
 
-PR 在整个流程中起着核心位置。其实 PR 的目的就是讨论，跟一般的讨论不同的地方在于整个讨论过程是围绕着实打实的代码。
-
+PR 在整个 Github Flow 流程中占有核心位置。其实 PR 的目的就是讨论，且整个讨论过程是围绕着实打实的代码。
 
 先到仓库页面，找到发 PR 的大绿按钮
 
 ![](images/github_flow/compare_btn.png)
 
-注意要进行对比的是哪两个分支，下面我要填写一些内容，说说我的 PR 的好处
+注意要进行对比的是哪两个分支，下面图中显示的界面中，看1处，注意一下是拿出哪两个分支来进行对比。2处，我要填写一些内容，解释一下我的修改内容。3处，可以上传图片。
 
 ![](images/github_flow/pr_main_view.png)
 
-在下方还可以看到这次 PR 的具体对比出来的代码内容
+同样在这个页面上，滑动到下方还可以看到这次 PR 的具体对比出来的代码内容
 
 ![](images/github_flow/pr_content.png)
 
-点击 `Create Pull Request` 按钮，这样发 PR 就成功了。@billie66 可以收到通知了。
+点击 `Create Pull Request` 按钮，这样发 PR 就成功了。
 
-
-补充一句。实际上，[客户端中也可以发 PR](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)，达成的效果跟网页中发是一样的。
+补充一句。实际上，[客户端中也可以发 PR](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)，达成的效果跟网页中发是一样的，这里就不演示了。
 
 ### 讨论审核代码
 
@@ -116,19 +111,15 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 
 ![](images/github_flow/more_code.png)
 
-上面的图中可以看到，讨论不断继续，会形成一条由评论和代码穿插而成的一条线。最后达成一致，我或者 @billie 都可以点一下上面的大大的 `Merge Pull Request` 的按钮，这样 Topic Branch 上的代码就合并到 master 之上了。接下来 describe-project 这个分支也就可以删掉了。
+上面的图中可以看到，讨论不断继续，会形成一条由评论和代码穿插而成的一条线。最后达成一致，我或者 @billie 其中之一可以点一下上面的大大的 `Merge Pull Request` （ 融合拉取请求 ）的按钮，这样话题分支上的代码就合并到 master 之上了。接下来 describe-project 这个话题分支也就可以删掉了。
 
 ![](images/github_flow/delete_branch.png)
 
-
 每一个 PR 都是开发历史上的一次小事件，很长事件过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码。所以是项目发展的珍贵资料。从这个角度来说，即使一个 PR 没有被 merge 进 master ，那它里面的代码和讨论的内容也会是非常有意义的尝试，也可能在未来会有很大的参考价值。
-
 
 ### 快速 PR
 
-走一遍 Github Flow 其实方式并不唯一。前面讨论的，在自己的机器上改代码，用客户端作 commit，然后在网页上发 PR 是一种常见的方式。
-
-如果我只是改一个文件中的一个小地方，完全可以使用 github 网页功能提供的[快速 PR](https://github.com/blog/1945-quick-pull-requests)这种方法。来演示一下。
+走一遍 Github Flow 其实方式并不唯一。前面讨论的，在自己的机器上改代码，用客户端作 commit，然后在网页上发 PR 是一种常见的方式。如果我只是改一个文件中的一个小地方，完全可以使用 github 网页功能提供的[快速 PR](https://github.com/blog/1945-quick-pull-requests)这种方法。来演示一下。
 
 网页界面中，找到我要修改的文件，点击 `edit`
 
@@ -143,4 +134,4 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 
 
 ### 总结
-Github Flow 在本地的相关操作也可以用命令行来实现，会有更多的技巧可以使用，另外即使在网页上，PR 整个流程中也有很多很方便功能咱们还没有介绍到。更多内容可以参考 <http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project> 。
+其实，每一个打开的 PR 都很类似于后面我们要讲的 Issue （ 事务卡片 )，比如二者都可以用 Markdown 格式来写评论。这些技巧会在 Issue 相关的那一部分来介绍。
