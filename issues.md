@@ -33,8 +33,9 @@ puts table.to_s
 
 how github use github to build github
 
+
+### 小技巧
 - 快速引用
-  - https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md
 
 - v2 的 progit 对 github 的讲解是非常详细的，甚至包括了 markdown 在 issue 中怎么写
   - http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project
