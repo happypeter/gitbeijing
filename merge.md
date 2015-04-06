@@ -11,7 +11,7 @@ title: 合并分支
 
 ![](images/merge/two_branches.png)
 
-这个是前面已经见过的情形了。那如何让 idea 的代码并入 master 呢？需要 merge 一下。到客户端的 Branches 一项下，点击 `Merge View`
+这个是前面已经见过的情形了。那如何让 idea 的代码并入 master 呢？需要”融合“（ merge ）一下。到客户端的 Branches 一项下，点击 `Merge View`
 
 
 ![](images/merge/merge_view.png)
@@ -24,11 +24,10 @@ title: 合并分支
 
 ![](images/merge/after_merge.png)
 
-新生成了一个 Merge Commit 这个 commit 挺特殊，里面一般没有修改内容，它的作用主要是吧两个分支连接起来。怎么连接的呢？把 master 的内容 sync 到 github.com 上，然后查看一下这个 Merge Commit 会发现它有两个 parent 。
+新生成了一个 `C5` ，这是一个“融合版本”（ Merge Commit ）这个版本 挺特殊，里面一般没有修改内容，它的作用主要是吧两个分支连接起来。怎么连接的呢？把 master 的内容 sync 到 github.com 上，然后查看一下这个 merge commit ，会发现它有两个 parent 。
 
 
-merge 完之后， master 分支指针指向了 merge Commit，也就自动拥有了 idea 分支上的 `c3` 这个版本了。idea 分支一般这会儿就可以删除了。
-
+merge 之后， master 分支指针指向了 merge commit，也就自动拥有了 idea 分支上的 `c3` 这个版本了。idea 分支一般这会儿就可以删除了。
 
 ### 代码冲突 conflicts
 
