@@ -8,6 +8,8 @@ Github 上的每个项目仓库，都有三套基础设置可供使用：一个�
 <!-- 对于很多英文不好的同学，即使写明的内容也是坑，例如上传图片。我还是细心的介绍一下吧，给出英文的解释 -->
 
 ### 基本使用
+比较详细的 Issues 功能介绍，可以参考[官方的 Issue 指南](https://guides.github.com/features/issues/)，今天咱们这里会捡着一些重要的来说。
+
 到项目主页，例如 http://github.com/happypeter/coco 页面上，如何来提一个 Issue 呢？
 
 ![](images/issues/new_issue.png)
@@ -16,8 +18,9 @@ Github 上的每个项目仓库，都有三套基础设置可供使用：一个�
 
 ![](images/issues/issue_form.png)
 
-另外，对于开源项目，任何人都有权利提 Issue 的，有时候我有问题需要跟项目拥有者沟通，就可以提一个 Issue 。
+如上图所示，是一个简单到不能再简单的页面，但是很多时候简单的确意味着更加的灵活和强大。1处添加标题，2处详细描述一下，要加图片？点一下3处的链接就行了。
 
+另外，对于开源项目，任何人都有权利提 Issue 的，有时候我有问题需要跟项目拥有者沟通，就可以提一个 Issue 。
 
 ### 支持 Markdown 语法
 
@@ -50,7 +53,12 @@ Markdown 是一种标记性语法，可以方便的写出格式美观的文档�
 
 还有几个小技巧也非常的能提高工作效率。
 
-- 快速引用
+第一个，快速引用。Issue 这里是没有 reply 按钮的，如果你想回答具体某个问题，可以用鼠标选中那段话，然后，敲 r 。
+这样这段话就自动出现在你的评论框中了。
+
+
+第二个，拉别人进来讨论。如果你在评论框中输入 `@happypeter` 那么不管我是不是你当然项目的参与者，我都会收到通知来进来参加讨论。实际中发现这个用的是非常的多。
+
 
 - v2 的 progit 对 github 的讲解是非常详细的，甚至包括了 markdown 在 issue 中怎么写
   - http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project
@@ -60,14 +68,7 @@ https://guides.github.com/features/mastering-markdown
 https://guides.github.com/features/issues/
 
 
-github 官方称自己是 ` best way to build and ship software` 可见 github 提供的可不仅仅是代码托管。
-
 http://www.worldhello.net/gotgithub/04-work-with-others/050-issue.html#issue
-
-
-Issue 的中文意思就要比较重要的事，比如自己发现了一个 Bug，或者有一个新功能的想法，以及任何需要跟团队公开讨论的事情都可以来提一个 issue 。
-对于开源项目，外人也开参与进来发评论和创建新 issue 。这个比传统的项目管理软件，把 bug report，feature request，discussion 都分开来方便多了，
-如果你在一个大一点的传统企业工作过，就知道有多少时间会浪费在学习这些狗屁流程上。而在 github 这里，简约带来效率。
 
 
 ### 讨论中添加 patch
