@@ -53,27 +53,19 @@ Markdown 是一种标记性语法，可以方便的写出格式美观的文档�
 
 还有几个小技巧也非常的能提高工作效率。
 
+<!-- 视频中我可以通过一个流程把下面的技巧一下子带出来 -->
+
 第一个，快速引用。Issue 这里是没有 reply 按钮的，如果你想回答具体某个问题，可以用鼠标选中那段话，然后，敲 r 。
 这样这段话就自动出现在你的评论框中了。
-
 
 第二个，拉别人进来讨论。如果你在评论框中输入 `@happypeter` 那么不管我是不是你当然项目的参与者，我都会收到通知来进来参加讨论。实际中发现这个用的是非常的多。
 
 
-- v2 的 progit 对 github 的讲解是非常详细的，甚至包括了 markdown 在 issue 中怎么写
-  - http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project
+第三个，用版本留言关闭 Issue。如果有人给我的项目提了个 Bug，在一个编号为20的 Issue （后面简写为 Issue#20） 里。那我写几行代码修复这个 Bug 之后，只要在版本留言里面写 `fix #20` 这样的字样，这个版本同步到 Github 上之后，这个 Issue#20 就自动关闭了。
 
+第四个，如果当前 Issue 是跟 Issue#20 相关的，那我在当前的评论框中写 `#20` 就可以自动链接到 Issue#20 了。
 
-https://guides.github.com/features/issues/
-
-
-http://www.worldhello.net/gotgithub/04-work-with-others/050-issue.html#issue
-
-
-- 讨论中添加 patch
-
-- 自动指向其他 issue
-
+另外，Issue 上也可以添加标签，设置 milestone，并且把任务布置给一个特定的开发者。
 
 ### 总结
 前面咱们用过很多 Pull Request 的功能了，其实一个 PR 和一个 Issue 在很多方面都是一样的，所以 Issue 这里介绍的大部分功能都可以在 PR 讨论中使用。另外，Issue 中一般是放一些临时性的讨论，最终是要被关掉的，如果能够总结出一些精华的内容，可以放到 wiki 中。

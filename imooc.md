@@ -25,16 +25,16 @@ title: imooc 的上线资料
 以下是课程内容资料：
 
 #### 第 1 章 课程介绍
-阐述本课程的覆盖内容，适合观众。[视频](http://pan.baidu.com/s/1ntvEuzZ)
+阐述本课程的覆盖内容，适合观众。
 
 #### 第 2 章 浏览器中使用 Github
-不会用 Git，其实也可以直接使用 Github 来进行基本的版本控制操作的。[视频](http://pan.baidu.com/s/1mgqWIl6)
+不会用 Git，其实也可以直接使用 Github 来进行基本的版本控制操作的。
 
 #### 第 3 章 Github 客户端的使用
-以 Mac 系统的客户端 Github For Mac 为例子来讲解，不过 Windows 系统上也有类似的客户端。[视频](http://pan.baidu.com/s/1kTBX3EZ)
+以 Mac 系统的客户端 Github For Mac 为例子来讲解，不过 Windows 系统上也有类似的客户端。
 
 #### 第 4 章 简单分支操作
-分支操作几乎是所有的 Git 高级操作的基础，本章来学会使用分支。[视频](http://pan.baidu.com/s/1kTMMNpt)
+分支操作几乎是所有的 Git 高级操作的基础，本章来学会使用分支。
 
 #### 第 5 章 分支合并
 分支合并过程其实就是代码融合过程，会涉及到处理代码冲突的问题。
