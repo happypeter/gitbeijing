@@ -5,28 +5,36 @@ title: Github issues
 Github 上的每个项目仓库，都有三套基础设置可供使用：一个是通过 Github Pages 机制建立项目网站，后面会介绍的。另外一个就是每个项目都可以开自己的 wiki ，作为项目的知识库存。第三个就是咱们今天的主角，事务卡片（ Issues ）。很多比较复杂的项目管理软件会把“报 Bug ”，“提新需求”，“其他讨论”，这些项目相关的内容分成不同的板块来进行，在 Github 这里，所有的内容就都作为事务卡片来统一管理了。
 
 
-
 <!-- 对于很多英文不好的同学，即使写明的内容也是坑，例如上传图片。我还是细心的介绍一下吧，给出英文的解释 -->
 
-Markdown 文件语法高亮
+### 支持 Markdown 语法
 
 例如，可以像下面这样在你的 Markdown 文件里为 Ruby 代码添加语法高亮：
 
 
-    ```ruby
-    require 'tabbit'
-    table = Tabbit.new('Name', 'Email')
-    table.add_row('Tim Green', 'tiimgreen@gmail.com')
-    puts table.to_s
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>hello</title>
+    </head>
+    <body>
+      <a href="index.html">HOME</a>
+    </body>
+    </html>
     ```
 
 效果如下：
 
-{% highlight ruby %}
-require 'tabbit'
-table = Tabbit.new('Name', 'Email')
-table.add_row('Tim Green', 'tiimgreen@gmail.com')
-puts table.to_s
+{% highlight html %}
+<html>
+<head>
+  <title>hello</title>
+</head>
+<body>
+  <a href="index.html">HOME</a>
+</body>
+</html>
 {% endhighlight %}
 
 
