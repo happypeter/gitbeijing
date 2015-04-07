@@ -7,7 +7,25 @@ Github 上的每个项目仓库，都有三套基础设置可供使用：一个�
 
 <!-- 对于很多英文不好的同学，即使写明的内容也是坑，例如上传图片。我还是细心的介绍一下吧，给出英文的解释 -->
 
+### 基本使用
+到项目主页，例如 http://github.com/happypeter/coco 页面上，如何来提一个 Issue 呢？
+
+![](images/issues/new_issue.png)
+
+上面图中，点击项目主页右侧的 `Issues` 链接，打开的页面中的大大的绿按钮就是新建 Issue 按钮，点一下就可以看到下图所示的界面
+
+![](images/issues/issue_form.png)
+
+另外，对于开源项目，任何人都有权利提 Issue 的，有时候我有问题需要跟项目拥有者沟通，就可以提一个 Issue 。
+
+
 ### 支持 Markdown 语法
+
+在新建 Issue 的界面上可以看到 `Markdown Supported` （支持 Markdown）的链接，点开，可以看到一篇详细的 Markdown 介绍文档。 
+
+![](images/issues/markdown_help.png)
+
+Markdown 是一种标记性语法，可以方便的写出格式美观的文档。下面来演示一下它的主要几个功能。
 
 例如，可以像下面这样在你的 Markdown 文件里为 Ruby 代码添加语法高亮：
 
@@ -26,26 +44,12 @@ Github 上的每个项目仓库，都有三套基础设置可供使用：一个�
 
 效果如下：
 
-{% highlight html %}
-<html>
-<head>
-  <title>hello</title>
-</head>
-<body>
-  <a href="index.html">HOME</a>
-</body>
-</html>
-{% endhighlight %}
-
-
-
->Attach images by dragging & dropping, selecting them, or pasting from the clipboard.
-
-
-how github use github to build github
-
+![](images/issues/highlighting.png)
 
 ### 小技巧
+
+还有几个小技巧也非常的能提高工作效率。
+
 - 快速引用
 
 - v2 的 progit 对 github 的讲解是非常详细的，甚至包括了 markdown 在 issue 中怎么写
