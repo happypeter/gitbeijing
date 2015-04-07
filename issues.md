@@ -8,7 +8,7 @@ Github 上的每个项目仓库，都有三套基础设置可供使用：一个�
 <!-- 对于很多英文不好的同学，即使写明的内容也是坑，例如上传图片。我还是细心的介绍一下吧，给出英文的解释 -->
 
 ### 基本使用
-比较详细的 Issues 功能介绍，可以参考[官方的 Issue 指南](https://guides.github.com/features/issues/)，今天咱们这里会捡着一些重要的来说。
+比较详细的 Issues 功能介绍，可以参考[官方的 Issue 指南](https://guides.github.com/features/issues/)，今天咱们这里会捡着一些重要的来说。在 [How Github Use Github To Build Github](http://gitbeijing.com/talk/how-github-use-github-to-build-github/) 这个演讲中又 Issues 的使用哲学的一些讨论，都是非常有启发性的。
 
 到项目主页，例如 http://github.com/happypeter/coco 页面上，如何来提一个 Issue 呢？
 
@@ -62,8 +62,7 @@ Markdown 是一种标记性语法，可以方便的写出格式美观的文档�
 
 - v2 的 progit 对 github 的讲解是非常详细的，甚至包括了 markdown 在 issue 中怎么写
   - http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project
-        
-https://guides.github.com/features/mastering-markdown
+
 
 https://guides.github.com/features/issues/
 
@@ -71,17 +70,10 @@ https://guides.github.com/features/issues/
 http://www.worldhello.net/gotgithub/04-work-with-others/050-issue.html#issue
 
 
-### 讨论中添加 patch
-
-### 
+- 讨论中添加 patch
 
 - 自动指向其他 issue
-- markdown 支持
 
-how github use github to build github
 
-http://happycasts.net/episodes/47
-
-A PR == A Issue
-
-Issue 的最终命运是要被关闭的，真正精华的内容可以总结到 wiki 中。
+### 总结
+前面咱们用过很多 Pull Request 的功能了，其实一个 PR 和一个 Issue 在很多方面都是一样的，所以 Issue 这里介绍的大部分功能都可以在 PR 讨论中使用。另外，Issue 中一般是放一些临时性的讨论，最终是要被关掉的，如果能够总结出一些精华的内容，可以放到 wiki 中。
