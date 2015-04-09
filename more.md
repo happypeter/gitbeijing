@@ -2,9 +2,18 @@
 title: 更多 Github 技巧
 ---
 
+《搬进 Github 》到今天就是尾声了，为了便于大家学习，咱们一直都没有碰命令行，所以今天也一样。再来把 Github 上的一些有用的技巧扫荡一下。
 
-https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md
 
+### Github 的秘密机关
+
+Github 的前员工 Zach Holman 有两个重要的演讲，一个叫 Git and GitHub Secrets ，另一叫 More Git and GitHub Secrets 。都可以在[他自己个人网站](http://zachholman.com/talks)上找到。演讲中提到了一些从 github 界面上直接看不到的操作技巧。也就是一些新手可能不需要，但是老手一用就会感觉超级节省时间的操作。内容大家自己去看，我这里只举一个例子。
+
+打开一个项目主页，当然会有很多文件和目录了，如果快速找到一个文件呢？可以敲 `t` 然后在打开的页面中就可以输入文件名进行筛选了，如下图：
+
+![](images/more/search.jpg)
+
+### 社交化
 
 https://guides.github.com/activities/socialize/
 
