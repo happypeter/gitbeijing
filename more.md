@@ -11,7 +11,7 @@ Github 的前员工 Zach Holman 有两个重要的演讲，一个叫 Git and Git
 
 打开一个项目主页，当然会有很多文件和目录了，如果快速找到一个文件呢？可以敲 `t` 然后在打开的页面中就可以输入文件名进行筛选了，如下图：
 
-![](images/more/search.jpg)
+![](images/more/search.png)
 
 ### 社交化
 
