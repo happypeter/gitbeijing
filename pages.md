@@ -33,18 +33,19 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 ![](images/pages/first_page.png)
 
-名字一定要叫 index.html ，里面的内容就随便写了。保存之后，就可以到
+名字一定要叫 index.html ，里面的内容就随便写了。保存之后，过几分钟就可以到 username.github.io/project 这个链接中看到页面了，对于这类的情况就是 http://happypeter.github.io/coco/ 这个链接就是网站的公网 url 了。后面可以继续添加 HTML，CSS 和 JS 进来，丰富网站功能。
 
 
-好，不管是用网页还是命令行来操作，上面这些还只是展示了，Github Pages 的托管静态页面的功能，但是其实故事并不停在这个地方。在 <https://pages.github.com/> 的最低端还可以看到下面三个事情：
+上面这些还只是展示了 Github Pages 的托管静态页面的功能，但是其实故事并不停在这个地方。在 <https://pages.github.com/> 的最低端还可以看到下面三个事情：
 
 ![](images/pages/more_function.png)
 
-下面分别来介绍一下。
+最后一项“指南”大家可以用来参考。下面分别来介绍一下 Jekyll 和绑定自己域名的功能。
 
 ### jekyll
 
 > Jekyll is a simple, blog aware, static site generator.
+> Jekyll 是一个简单的，支持博客结构的，静态网站生成器。
 
 上面这段话是 Tom 在 [blogging-like-a-hacke](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) 中说的。
 
