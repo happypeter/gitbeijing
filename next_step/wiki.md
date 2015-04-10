@@ -2,10 +2,6 @@
 title: wiki
 ---
 
-- 语气不要有狂妄的调调
-  - 细想想，有人说我“装逼”是有原因的
-  - 还是要以卖萌可爱型为主，学成龙
-  
 - 简单为王
   - 注意，不要追求炫酷，其实 git 最大的问题是难度大
   - 只要内容大家能听懂，不太难，那本书就算成功了
@@ -51,5 +47,4 @@ title: wiki
 - gittalk 2008
   - https://www.youtube.com/watch?v=nPzJESC-fag
   - http://s3.amazonaws.com/chacon/git-talk.pdf
-
 
