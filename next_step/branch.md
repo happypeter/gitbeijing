@@ -1,5 +1,5 @@
 ---
-title: 分支
+title: 进阶内容
 ---
 
 
@@ -58,7 +58,7 @@ $ git checkout master
 ![](images/branch/head.png)
 
 HEAD 永远指向当前分支的最新的版本。
-<!-- stash 的报错情况很不好描述，用到得又不是挺多，所以偷懒不讲了 -->
+stash 的报错情况很不好描述，用到得又不是挺多，所以偷懒不讲了
 
 如果 idea 的代码我想要引入 master，那就涉及到合并分支了，后面会作详细介绍。否则，删除分支就要
 
@@ -94,7 +94,7 @@ Github For Mac 客户端中的行为是这样，你想删除一个分支，那�
 
 保存这个文件，然后做出 master 上的第一个版本
 
-    git ci 
+    git ci
 
 然后输入版本留言 "first commit" 。接下来切换到一个 idea 分支上开展一个新想法
 
