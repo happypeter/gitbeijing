@@ -29,11 +29,11 @@ title: 简单分支操作
 
 ![](images/simple_branching/create.png)
 
-点击1处的加号，就会弹出2处的对话框。`Create a new branch off master` 就是来创建一个分支，比如在对话框中填入 ”idea“，就创建了 master 分支的一个拷贝，如下图。箭头所指的小对勾表示当前分支已经自动切换到 idea 分支，或者说就是 idea 分支取代了 master 成为了当前分支。
+点击1处的加号，就会弹出2处的对话框。`Create a new branch off master` 就是来创建一个分支。在对话框中填入 `idea`，创建了 idea 分支的。所谓 `off master` 意思是“基于 master ”分支，所以此刻 idea 分支并不为空，而是拥有和 master 一样的历史。如下图，箭头所指的小对勾表示“当前分支”（ current branch ）已经自动切换到 idea 分支。
 
 ![](images/simple_branching/idea_branch.png)
 
-但是，在底层这个的实现是非常巧妙的，就是又创建一个新的 idea 指针，跟 master 指向同一个版本，根本没有拷贝历史线。
+但是，在底层这个的实现是非常巧妙的，就是又创建一个新的 idea 指针，跟 master 指针指向同一个版本，根本没有拷贝历史线。
 
 ![](images/simple_branching/new_branch.png)
 
@@ -41,7 +41,7 @@ title: 简单分支操作
 
 ![](images/simple_branching/new_branch_commit.png)
 
-所以现在 master 分支包含两个版本 C1 和 C2，idea 分支包含三个版本 C1，C2，C3 。
+现在 master 分支包含两个版本 C1 和 C2，idea 分支包含三个版本 C1，C2，C3 。
 
 默认情况下这个 idea 分支只是存在于本地，如果想在远端仓库上发布这个分支，就点一下 idea 分支右侧的 `Publish` 按钮。
 
