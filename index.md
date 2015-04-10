@@ -18,7 +18,7 @@ title: git
       <a href="https://github.com/happypeter/gitbeijing/issues/new" class="read-btn">提意见</a>
       <a href="https://selfstore.io/products/266" class="read-btn">本书完成度60%</a>
     </div>
-    <img alt="git" class="book-image" src="images/index/cover_3d.jpg"/>
+    <img alt="git" class="book-image" src="images/index/cover_3d_move2github.jpg"/>
   </div>
 </section>
 <div class="divider">
