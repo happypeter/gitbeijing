@@ -80,7 +80,7 @@ Github For Mac 客户端的安装跟其他 Mac 下的软件没有区别，很简
 
 ### 连接 Github
 
-一般情况下，我的每一个项目都是两份，一份是本地仓库（ local repository ），一份放到 github.com 上通常叫远端仓库（ remote repository ）。这不仅仅能让我感觉到有备份，晚上可以睡好觉了，同时这两个备份也是可以互相同步的，要同步的内容最重要的当然是版本了。git 功能虽然多，但是说白了就是来回折腾 commit ，要不怎么叫版本控制工具呢。
+一般情况下，我的每一个项目都是两份，一份是本地仓库（ local repository ），另一份放到 github.com 上，通常叫远端仓库（ remote repository ）。这不仅仅能让我感觉到有备份，晚上可以睡好觉了，同时这两个备份也是可以互相同步的，要同步的内容最重要的当然是版本了。git 功能虽然多，但是说白了就是来回折腾 commit ，要不怎么叫版本控制工具呢。
 
 对于从 github 上 clone 下来的我自己的项目，默认的同步通道是通的，因为本地仓库中已经存放了远端仓库的地址。但是，对于自己在本地新建的项目，需要先把它放到 github.com 上。 在客户端界面的右上角，对于从 github.com 上 clone 下来的项目这里是 `sync`，但是对于 github.com 上没有对应远端仓库的本地仓库，这里就是一个 `Publish` 按钮。点一下，填写项目名，是的，项目名可以跟本地项目不一样，然后添加项目描述，猛戳 `Push Repository` 按钮，项目就发布到 github.com 上了。如果我的用户名是 happypeter，项目名叫 `coco` 。那在 github.com 上链接也很优美，就是 github.com/happypeter/coco ，现在我可以把链接分享给朋友，邀请他们一起参加项目开发。
 
