@@ -40,7 +40,7 @@ Github 上操作虽多，但是都是围绕一个个的项目展开的。
 
 ![](images/github_in_browser/new_project.png)
 
-注意要勾选 `Initialize this repository with a README` ，然后创建这个项目。也会看到 `Create Repository` 按钮的上方还有两个选择框，一个是关于 `.gitignore` 的，后面会专门讲到，另一个是关于 `LICENSE` 的，选择开源授权协议。这两项如果选择了就是在项目中又多了两个文本文件，一个是 .gitignore 文件，另一个是 LICENSE 文件，暂时都不选就可以，回头需要了可以自己用编辑器新建。
+注意要勾选 `Initialize this repository with a README` ，然后创建这个项目。也会看到 `Create Repository` 按钮的上方还有两个选择框，一个是关于 `.gitignore` 的，另一个是关于 `LICENSE` 的。这两项如果选择了就是在项目中又多了两个文本文件，一个是 .gitignore 文件，另一个是 LICENSE 文件，暂时都不选就可以，回头需要了可以自己用编辑器新建。
 
 ### 编辑项目
 
@@ -54,7 +54,7 @@ Github 上操作虽多，但是都是围绕一个个的项目展开的。
 
 ![](images/github_in_browser/add_new_file.png)
 
-来新建一个文件叫 love.md，在标号1处。填写文件内容，标号2处。下面 `Commit new file` 部分填写的是“版本留言”（ commit message ），说明一下为什么要做这次修改，一个以方便是方便跟队友做项目沟通，另一方面如果项目版本多了，自己也可以用这个留言来定位特定的一次修改。标号3处填写一个一行的留言，标号4处可以写详细留言，这一项是可选的。
+来新建一个文件叫 `love.md`，在标号1处。填写文件内容，标号2处。下面 `Commit new file` 部分填写的是“版本留言”（ commit message ），说明一下为什么要做这次修改，一方面是跟队友沟通的一种形式，另一方面如果项目版本多了，自己也可以用这个留言来定位特定的一次修改。标号3处填写一个一行的留言，标号4处可以写详细留言，这一项是可选的。
 最后，点击 `Commit new file` 按钮，一个新版本就做好了。
 
 
