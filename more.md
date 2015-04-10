@@ -25,7 +25,24 @@ Github 上每个人都有一个漂亮的个人主页，链接非常简短，例�
 
 ![](images/more/star.png)
 
-###
+### 人是一切的根本
+
+Github 其实要解决的核心问题是人和人如何相处协作的问题。技术方面都是其次的，所以本书最后，给大家推荐几个需要关注的人。
+
+第一位 Scott Schcon ， Github 的联合创始人，Peter 自己学 Git 的启蒙老师。 Progit 第一版作者。网上 Google 一下，他有很多精致的演讲和教程在网上。
+
+![](images/more/scott.png)
+
+
+第二位 Zach Holman ，Github 的前员工，在他的[个人网站](http://zachholman.com/)上面有对 Github 哲学层面的很多文章和演讲。例如 How Github Wroks 和 Reputation: Kind of a big deal 等等。
+
+![](images/more/zach.png)
+
+
+第三组 Tom 和 Chris，Github 最早的两位创始人，也就是本书的封面人物。他们有大量的演讲在网上，有大量的演讲在网上，充满颠覆性的思维。
+
+![](images/more/tom_chris.png)
+
 ### 总结
 
-如果想要为自己的公司搭建一个类似于 github 的服务，可以考虑使用开源项目 gitlab 。
+如果想要为自己的公司搭建一个类似于 github 的服务，可以考虑使用开源项目 [gitlab](https://github.com/gitlabhq/gitlabhq) 。
