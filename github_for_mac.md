@@ -33,7 +33,7 @@ Github For Mac 客户端的安装跟其他 Mac 下的软件没有区别，很简
 
 ![](images/github_for_mac/clone.png)
 
-要删除一个仓库，就到左侧列表的项目名字上，右击，然后点 `Remove` 就行了。简单说说上面几项，[Atom](https://atom.io/) 是 github 公司开发的开源免费的代码编辑器，`Terminal` 是命令行终端，`Finder` 是文件浏览器。
+要删除一个仓库，就到下图左侧列表的项目名字上，右击，然后点 `Remove` 就行了。简单说说另外几项，[Atom](https://atom.io/) 是 github 公司开发的开源免费的代码编辑器，`Terminal` 是命令行终端，`Finder` 是文件浏览器。
 
 ![](images/github_for_mac/remove_repo.png)
 
