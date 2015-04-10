@@ -25,9 +25,15 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 ![](images/pages/site_branch.png)
 
-
+上图中，点 `master` 按钮，弹出的输入框中输入 `gh-pages` ，注意拼写和大小写都不要写错。然后回车，就可以创建出新分支 gh-pages 了。如下图
 
 ![](images/pages/site_branch_created.png)
+
+上图中看到，现在项目以及切换到了 gh-pages 分支，如大箭头所指。虽然 coco 项目不是开源的，但是我们放到 gh-pages 分支上的内容是会被公开成网页的，这个要注意。点击大圆圈中的加号，来添加第一个文件。
+
+![](images/pages/first_page.png)
+
+名字一定要叫 index.html ，里面的内容就随便写了。保存之后，就可以到
 
 
 好，不管是用网页还是命令行来操作，上面这些还只是展示了，Github Pages 的托管静态页面的功能，但是其实故事并不停在这个地方。在 <https://pages.github.com/> 的最低端还可以看到下面三个事情：
