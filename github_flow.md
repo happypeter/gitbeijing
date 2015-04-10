@@ -4,23 +4,23 @@ title: 团队合作流程
 
 前几天还都是一个开发者唱独角戏。但是尽管如此也可以看出 git 带来的便利了，比如代码写错了可以回滚，为了新功能开发可以开新分支等等。但是 git 和 github 更大的威力在于协作。
 
-聊了这门多天的 github，有必要稍微停下来，再想想究竟什么是 github 。没错，前面的使用中也看到了，github 是 git 仓库的托管平台，让我们的项目仓库可以方便的备份同步。但是其实也许比这个还要重要的是，github 是一个大家一起协作做项目的平台。
+聊了这门多天的 github，有必要稍微停下来，再想想究竟什么是 github 。没错，前面的使用中也看到了，github 是 git 仓库的托管平台，让我们的项目仓库可以方便的备份同步。但是其实也许比这个还要重要的是，github 是一个大家一起协作做项目的平台，是一种开发者的工作方式，引导一种看着不像流程的一种真正健康轻便的开发流程。
 
 在 [How Github Use Github To Build Github](https://www.youtube.com/watch?v=qyz3jkOBbQY) 的演讲中，Zach Holman 说，
 
 >多年来我一直在寻找做软件正确的方式，现在我想我找到了，github 就是这种方式。
 
-这里说的方式，主要就是开发的流程，跟他人合作的方式。究竟 Github 是什么的问题从它的标语中也可以看出
+究竟 Github 是什么的问题从它的标语中也可以看出
 
 ![](images/github_flow/better_together.png)
 
-Github 多年来总结出来一套自己的团队协作流程，简单而且强大，叫做 [Github Flow](https://guides.github.com/introduction/flow/index.html) ，网站上的各个功能都围绕着这个流程来开发。另，中文版的 Github Flow 在[这里](http://gitbeijing.com/flow/) 。
+Github 多年来总结出来一套自己的团队协作流程，简单而且强大，叫做 [Github Flow](https://guides.github.com/introduction/flow/index.html) ，网站上的各个功能都是围绕着这个流程来开发的。另，中文版的 Github Flow 在[这里](http://gitbeijing.com/flow/) 。
 
 要了解一个流程，没有什么比跑一个最简单的实际例子更好的方式了，官方给出的[Hello World](https://guides.github.com/activities/hello-world/)就是服务于这个目的，不过这个 Hello World 用的是纯粹的网页来实现整个流程。咱们今天用网页配合 Github For Mac 客户端来完成这个流程。
 
 ### 什么是 Github Flow ？
 
-说白了，就是给一个项目开发新功能要走的几步。
+说白了，就是给一个项目开发新功能要走的几步。整个过程的核心是“拉取请求” 。
 
 第一步，创建新的话题分支。如下图所示
 
