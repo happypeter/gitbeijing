@@ -59,19 +59,15 @@ Jeklly 的具体使用本身跟 git 没有直接联系，所以这里就不细�
 
 ### 绑定自己的域名
 
-有一个功能其实很重要就是绑定自己的域名。想想如果有天 github 网站被依法和谐了，那怎么办？如果一开始就是用自己的域名，那就简单了，直接换一台服务器就好了。
+有一个功能其实很重要，就是绑定自己的域名。想想如果有天 github 网站被依法和谐了，那怎么办？如果一开始就是用自己的域名，那就简单了，直接换一台服务器就好了。
 
-具体的操作步骤在 [here](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) 。
+绑定域名的具体的操作步骤在[这里](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) 。
 
-[Configuring a www subdomain](https://help.github.com/articles/tips-for-configuring-a-cname-record-with-your-dns-provider/#configuring-a-www-subdomain)
-
-
-首先在 godaddy.com 上，让 gitbeijing.com 使用 digitalocean 的 domain server : ns1.digitalocean.com
-
-下一步，到 digitalocean 网站上，添加 A Record 指向 192.30.252.153 和 192.30.252.154
+DNS 设置的方式并不唯一，但也是大同小异，下面演示一下我自己的操作过程。我的 gitbeijing.com 这个域名是在 godaddy.com 上买的。 首先在 godaddy.com 上，让 gitbeijing.com 使用 digitalocean 的 domain server : ns1.digitalocean.com 。
 
 
-对于 gitbeijing 我是在 digitalocean 网站上最终设置成了这样。
+
+下一步，到 digitalocean 网站上，添加 A Record 指向 192.30.252.153 和 192.30.252.154 也就是设置成下图这样
 
 ![](images/pages/do_dns.png)
 
