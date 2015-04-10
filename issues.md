@@ -2,13 +2,10 @@
 title: Github issues
 ---
 
-Github 上的每个项目仓库，都有三套基础设置可供使用：一个是通过 Github Pages 机制建立项目网站，后面会介绍的。另外一个就是每个项目都可以开自己的 wiki ，作为项目的知识库存。第三个就是咱们今天的主角，事务卡片（ Issues ）。很多比较复杂的项目管理软件会把“报 Bug ”，“提新需求”，“其他讨论”，这些项目相关的内容分成不同的板块来进行，在 Github 这里，所有的内容就都作为事务卡片来统一管理了。
-
-
-<!-- 对于很多英文不好的同学，即使写明的内容也是坑，例如上传图片。我还是细心的介绍一下吧，给出英文的解释 -->
+Github 上的每个项目仓库，都有三套基础设置可供使用：一个是通过 Github Pages 机制建立项目网站，后面会介绍的。另外一个就是每个项目都可以开自己的 wiki ，作为项目的知识库。第三个就是咱们今天的主角，事务卡片（ Issues ）。很多比较复杂的项目管理软件会把“报 Bug ”，“提新需求”，“其他讨论”，这些项目相关的内容分成不同的板块来进行，在 Github 这里，所有的内容就都作为事务卡片来统一管理了。
 
 ### 基本使用
-比较详细的 Issues 功能介绍，可以参考[官方的 Issue 指南](https://guides.github.com/features/issues/)，今天咱们这里会捡着一些重要的来说。在 [How Github Use Github To Build Github](http://gitbeijing.com/talk/how-github-use-github-to-build-github/) 这个演讲中有 Issues 的使用哲学的一些讨论，都是非常有启发性的。
+比较详细的 Issues 功能介绍，可以参考[官方的 Issue 指南](https://guides.github.com/features/issues/)，今天咱们这里会捡着一些重要的来说。在 [How Github Use Github To Build Github](http://gitbeijing.com/talk/how-github-use-github-to-build-github/) 这个演讲中有 Issues 的使用哲学的一些讨论，非常有启发性的。
 
 到项目主页，例如 http://github.com/happypeter/coco 页面上，如何来提一个 Issue 呢？
 
@@ -28,7 +25,7 @@ Github 上的每个项目仓库，都有三套基础设置可供使用：一个�
 
 ![](images/issues/markdown_help.png)
 
-Markdown 是一种标记性语言，通过很简单的标注就可以表示出文本的格式，可以转换成 html。和其他的标注语言例如 html，docbook，xml，latex 不同，markdown 不仅导出后的格式美观，同时也追求原始格式的最大化的可读性。下面来演示一下它的主要几个功能。
+Markdown 是一种标记性语言，通过很简单的标注就可以表示出文本的格式，这样在评论框中写 markdown ，点发布评论按钮就可以转换成美观的 html 来显示了。下面来演示一下它的主要几个功能 。
 
 可以用 `# text` 来把 `text` 变成一级标题，也就是 h1 格式。用 `**text**` 表示粗体。`*text*` 表示斜体。
 
@@ -46,7 +43,7 @@ Markdown 是一种标记性语言，通过很简单的标注就可以表示出�
 * 第三项
 {% endhighlight %}
 
-也可以来插入代码块，同时支持语法高亮。例如，可以像下面这样在你的 Markdown 文件里为 Ruby 代码添加语法高亮：
+也可以来插入代码块，支持语法高亮。例如，可以像下面这样为 Ruby 代码添加语法高亮：
 
 
     ```html
@@ -61,7 +58,7 @@ Markdown 是一种标记性语言，通过很简单的标注就可以表示出�
     </html>
     ```
 
-效果如下：
+发布后显示效果如下：
 
 ![](images/issues/highlighting.png)
 
@@ -79,12 +76,11 @@ Markdown 是一种标记性语言，通过很简单的标注就可以表示出�
 
 第二个，拉别人进来讨论。如果你在评论框中输入 `@happypeter` 那么不管我是不是你当然项目的参与者，我都会收到通知来进来参加讨论。实际中发现这个用的是非常的多。
 
-
-第三个，用版本留言关闭 Issue。如果有人给我的项目提了个 Bug，在一个编号为20的 Issue （后面简写为 Issue#20） 里。那我写几行代码修复这个 Bug 之后，只要在版本留言里面写 `fix #20` 这样的字样，这个版本同步到 Github 上之后，这个 Issue#20 就自动关闭了。
+第三个，用版本留言关闭 Issue。如果有人给我的项目提了个 Bug，在一个编号为20的 Issue （后面简写为 Issue#20） 里。那我写几行代码修复这个 Bug 之后，在客户端作版本时，只要在版本留言里面写 `fix #20` 这样的字样，这个版本同步到 Github 上之后，这个 Issue#20 就自动关闭了。
 
 第四个，如果我在当前 Issue#10 的评论框中写 `#20` 就可以自动链接到 Issue#20 了。同时 Issue#20 那边也会显示出 Issue#10 。这种指向和关联的功能在实用中是非常重要的。
 
 另外，Issue 上也可以添加标签，设置 milestone，并且把任务布置给一个特定的开发者。
 
 ### 总结
-前面咱们用过很多 Pull Request 的功能了，其实一个 PR 和一个 Issue 在很多方面都是一样的，所以 Issue 这里介绍的大部分功能都可以在 PR 讨论中使用。另外，Issue 中一般是放一些临时性的讨论，最终是要被关掉的，如果能够总结出一些精华的内容，可以放到 wiki 中。
+前面咱们用过很多 Pull Request 的功能了，其实一个 PR 和一个 Issue 在很多方面都是一样的，所以 Issue 这里介绍的大部分功能都可以在 PR 讨论中使用。另外，Issue 中一般是放一些临时性的讨论，最终是要被关掉的。如果 Issue 里面有一些精华的内容，可以拷贝出来贴到 wiki 中，方便大家查阅。
