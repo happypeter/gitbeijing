@@ -7,10 +7,9 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 ![](images/pages/logo.png)
 
-### 你甚至不用会 git
+### 基本使用
 
-
-到 <https://pages.github.com/> 上，可以看到可以创建的网站有两类，一类是为自己或者是自己的组织创建站点，这个比较简单，就是新建一个仓库，仓库的名字叫做，username.github.io 或者是 orgnizationname.github.io ，注意这里的 username 和 orgnizationname 要严格替换成你自己的用户名或者组织名，不然就会有问题。然后就往仓库里面放内容就行了。第二类是为项目创建网站，这个其实主要步骤都是一样的，只不过网站的存放位置不一样，是在这个项目仓库里，新建一个分支 gh-pages，然后来添加网站内容。
+到 <https://pages.github.com/> 上，可以看到可以创建的网站有两类，一类是为自己或者是自己的组织创建站点，这个比较简单，就是新建一个仓库，仓库的名字叫做，username.github.io 或者是 orgnizationname.github.io ，注意这里的 username 和 orgnizationname 要严格替换成你自己的用户名或者组织名，大小写也要区分，不然就会有问题。然后就往仓库里面放内容就行了。第二类是为项目创建网站，这个其实主要步骤都是一样的，只不过网站的存放位置不一样，是在这个项目仓库里，新建一个分支 gh-pages，然后来添加网站内容。
 
 下面咱俩一块动手来建一个项目网站，如下图这样
 
@@ -48,7 +47,7 @@ $ git checkout gh-pages
 
 ### jekyll
 
-> Jekyll is a simple, blog aware, static site generator. 
+> Jekyll is a simple, blog aware, static site generator.
 
 上面这段话是 Tom 在 [blogging-like-a-hacke](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) 中说的。
 
@@ -90,7 +89,7 @@ Jeklly 的具体使用本身跟 git 没有直接联系，所以这里就不细�
 gitbeijing.com
 {% endhighlight %}
 
-<!--  you will need to create A records that point to 192.30.252.153 and 192.30.252.154 
+<!--  you will need to create A records that point to 192.30.252.153 and 192.30.252.154
 https://help.github.com/articles/my-custom-domain-isn-t-working/
  -->
 
