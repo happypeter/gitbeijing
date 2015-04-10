@@ -44,10 +44,9 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 ### jekyll
 
-> Jekyll is a simple, blog aware, static site generator.
 > Jekyll 是一个简单的，支持博客结构的，静态网站生成器。
 
-上面这段话是 Tom 在 [blogging-like-a-hacke](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) 中说的。
+上面这段话是 Jekyll 之父 Tom 在一篇文章叫做 [blogging-like-a-hacker](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html) 中说的。
 
 Jeklly 的具体使用本身跟 git 没有直接联系，所以这里就不细说了。它主要能完成的功能有下面几项：
 
@@ -56,9 +55,9 @@ Jeklly 的具体使用本身跟 git 没有直接联系，所以这里就不细�
 3. 代码高亮支持
 4. 可以使用变量
 
-详细内容参考 [jekyll 官网](http://jekyllrb.com/) 。 我也录了一期视频，放在我的[好多视频](http://haoduoshipin.com/episodes/113)网站上。
+详细内容参考 [jekyll 官网](http://jekyllrb.com/) 。 我也录了一期详细的 Jekyll 使用视频，放在我的[好多视频](http://haoduoshipin.com/episodes/113)网站上。
 
-### 自己的域名
+### 绑定自己的域名
 
 有一个功能其实很重要就是绑定自己的域名。想想如果有天 github 网站被依法和谐了，那怎么办？如果一开始就是用自己的域名，那就简单了，直接换一台服务器就好了。
 
