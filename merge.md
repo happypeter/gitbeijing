@@ -24,13 +24,13 @@ title: 合并分支
 
 ![](images/merge/after_merge.png)
 
-新生成了一个 `C5` ，这是一个“融合版本”（ Merge Commit ）这个版本挺特殊，里面一般没有修改内容，它的作用主要是吧两个分支连接起来。怎么连接的呢？把 master 的内容 sync 到 github.com 上，然后查看一下这个 merge commit ，会发现它有两个 parent 。
+新生成了一个 `C5` ，这是一个“融合版本”（ Merge Commit ）这个合并挺特殊，里面一般没有修改内容，它的作用主要是吧两个分支合并起来。怎么合并的呢？把 master 的内容 sync 到 github.com 上，然后查看一下这个 merge commit ，会发现它有两个 parent 。
 
 merge 之后， master 分支指针指向了 merge commit，也就自动拥有了 idea 分支上的 `C3` 这个版本了。idea 分支一般这会儿就可以删除了。
 
 ### 代码冲突 conflicts
 
-实际中经常有这样的情况，我正在 idea 分支上开发一个比较大的功能。但是这个时候突然发现了一个紧急的问题需要修复，所以我会直接到 master 分支上，修改做一个 commit，来解决这个紧急的问题。然后会来继续到 idea 上开发。
+实际中经常有这样的情况，我正在 idea 分支上开发一个比较大的功能。但是这个时候突然发现了一个紧急的问题需要修复，所以我会直接到 master 分支上，做一个 commit 来解决这个紧急的问题。然后会来继续到 idea 上开发。
 
 其他的情形也有，总之这样就会出现，两个不同分支上并行开发，同时都有新的 commit ，这个一般没有问题，一样可以直接 merge ，如下图
 
@@ -44,7 +44,6 @@ merge 之后， master 分支指针指向了 merge commit，也就自动拥有�
 
 点击上图中的 `Open In External Editor` 按钮，就可以在你的编辑器中中打开存在冲突的文件，看到如下内容
 
-
 {% highlight text %}
 test project for gitbeijing book
 <<<<<<< HEAD
@@ -54,8 +53,7 @@ AAA
 >>>>>>> idea
 {% endhighlight %}
 
-
-注意上面的 `HEAD` 是代表当前分支，此刻对应我的情形就是 master 。所以 `=====` 就是两个冲突代码块的分解线了。上面的代码就是 master 分支上的，下面的代码是 idea 分支的。解决冲突就是把上面的三行“冲突标示符”都删掉，然后修改代码 。回到客户端，点击 2 处的 `Commit to Master` 。 这样，这次分支合并就完成了，也一样是通过 merge 这种方式，所以也会生成一个 Merge Commit 。
+注意上面的 `HEAD` 是代表当前分支，此刻对应我的情形就是 master 。所以 `=====` 就是两个冲突代码块的分解线了。上面的代码就是 master 分支上的，下面的代码是 idea 分支的。解决冲突就是把上面的三行“冲突标示符”都删掉，然后修改代码。之后，回到客户端，点击 2 处的 `Commit to Master` 。 这样，这次分支合并就完成了，也会生成一个 merge commit 。
 
 合并分支除了融合（ merge ）还有另外一种形式叫”变基“（ rebase ）这里暂时用不上，先不管。
 
@@ -67,9 +65,7 @@ AAA
 
 另外一种情况，在我没有 sync 之前，我自己在本地也做了一个 commit，也就是本地的 master 和远端 master 出现了并行开发的情况，这种情况是非常常见的。这个时候我执行 sync ，会发生什么呢？
 
-来操作一下。我自己到 github.com 上面，打开 coco 项目，添加一个文件进来，叫 remote。然后到本地也添加一个文件叫 local，做一个 commit 。这样我执行 sync，跟本地两个分支合并是一样的，也会生成一个 merge commit，在本地客户端和 github.com 上的历史线可以看到。
-
-<!-- sync 按钮执行的时 git pull 和 git push 并没有进行 rebase -->
+来操作一下。我自己到 github.com 上面，打开 coco 项目，添加一个文件进来，叫 remote。然后到本地也添加一个文件叫 local，做一个 commit 。这样我执行 sync，跟本地两个分支合并是一样的，也会生成一个 merge commit，在本地客户端和 github.com 上的历史线都可以看到。
 
 ### 总结
 前面学会了怎么开分支，今天又学会了怎么合并分支，那分支的基本操作就会了。后面就是在实际开发情形中运用了。
