@@ -71,21 +71,19 @@ DNS 设置的方式并不唯一，但也是大同小异，下面演示一下我�
 
 ![](images/pages/do_dns.png)
 
-插一句，以前我还设置过一个 coldbutsweet.com 是在万网 net.cn 上设置的，下面是截图
+也就是添加了四个 `A` 记录，这样后面用 http://gitbeijing.com 或者 http://www.gitbeijing.com 就都可以指向 github pages 的服务器了。
+
+插一句，以前我还设置过一个 coldbutsweet.com 是在万网 net.cn 上设置的，操作完全一样，下面是截图
 
 ![](images/pages/netcn_dns.png)
 
-最后，当然是要到项目 gh-pages 分支，创建 CNAME 文件，里面的内容是
+到这里，如果有人访问 gitbeijing.com 就可以指向 github 了，但是 github pages 上面网站众多，如何能找到我自己的那个特定网站呢？要到 [happypeter/gitbeijing](https://github.com/happypeter/gitbeijing)项目的 gh-pages 分支，创建 CNAME 文件，里面的内容为
 
 {% highlight console %}
 gitbeijing.com
 {% endhighlight %}
 
-<!--  you will need to create A records that point to 192.30.252.153 and 192.30.252.154
-https://help.github.com/articles/my-custom-domain-isn-t-working/
- -->
-
-晚上做完上面的操作，第二天早上访问 <http://gitbeijing.com> 已经可以访问到我的网站了，如果访问 <http://www.gitbeijing.com> 则可以跳转到 <http://gitbeijing.com> ，效果完美。
+这样操作结束，当然还要稍微等几个小时给 DNS 扩散。晚上做完上面的操作，第二天早上访问 <http://gitbeijing.com> 已经可以访问到我的网站了，如果访问 <http://www.gitbeijing.com> 则可以跳转到 <http://gitbeijing.com> ，效果完美。
 
 ### 总结
 喜欢分享是一个好程序员的标志，我给我的很多初学编程的朋友的建议就是，先学习如何用 Github Pages 搭建自己的个人网站，一来可以锻炼一些基本的网站开发技巧，二来可以建立一个分享的阵地。
