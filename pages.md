@@ -23,7 +23,7 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 首先来到项目首页，例如 https://github.com/happypeter/coco 。
 
-
+![](images/pages/site_branch.png)
 
 好，不管是用网页还是命令行来操作，上面这些还只是展示了，Github Pages 的托管静态页面的功能，但是其实故事并不停在这个地方。在 <https://pages.github.com/> 的最低端还可以看到下面三个事情：
 
