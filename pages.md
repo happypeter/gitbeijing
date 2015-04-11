@@ -78,9 +78,7 @@ DNS 设置的方式并不唯一，但也是大同小异，下面演示一下我�
 
 到这里，如果有人访问 gitbeijing.com 就可以指向 github 了，但是 github pages 上面网站众多，如何能找到我自己的那个特定网站呢？要到 [happypeter/gitbeijing](https://github.com/happypeter/gitbeijing)项目的 gh-pages 分支，创建 CNAME 文件，里面的内容为
 
-{% highlight console %}
-gitbeijing.com
-{% endhighlight %}
+    gitbeijing.com
 
 这样操作结束，当然还要稍微等几个小时给 DNS 扩散。晚上做完上面的操作，第二天早上访问 <http://gitbeijing.com> 已经可以访问到我的网站了，如果访问 <http://www.gitbeijing.com> 则可以跳转到 <http://gitbeijing.com> ，效果完美。
 
