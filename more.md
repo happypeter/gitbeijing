@@ -37,7 +37,7 @@ Github 其实要解决的核心问题是人和人如何相处协作的问题，�
 ![](images/more/zach.png)
 
 
-第三组 Tom 和 Chris，Github 最早的两位创始人，也就是本书的封面人物。他们有大量的演讲在网上，有大量的演讲在网上，充满颠覆性的思维。
+第三组 Tom 和 Chris，Github 最早的两位创始人，也就是本书的封面人物。他们有大量的演讲在网上，充满颠覆性的思维。
 
 ![](images/more/tom_chris.png)
 
