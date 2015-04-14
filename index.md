@@ -15,8 +15,7 @@ title: git
       <p class='book-description'>
         这是一本带初学者学会 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。
       </p>
-      <a href="https://github.com/happypeter/gitbeijing/issues/new" class="read-btn">提意见</a>
-      <a href="https://selfstore.io/products/266" class="read-btn">本书完成度90%</a>
+      <a href="https://selfstore.io/products/341" class="read-btn">购买电子书</a>
     </div>
     <img alt="git" class="book-image" src="images/index/cover_3d_move2github.png"/>
   </div>
