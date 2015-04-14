@@ -31,7 +31,7 @@ title: git
        happypeter
       </div>
       <div class="job-title"><a href="http://happycasts.net">本书作者，haoduoshipin.com 作者</a></div>
-      挥汗写下本书，致敬北京 Linux 用户组的那些曾经帮助过我的朋友们。<a href="histroy.html">点击查看</a>为何起了个这么傻的书名。
+      挥汗写下本书，致敬北京 Linux 用户组的那些曾经帮助过我的朋友们。<a href="history.html">点击查看</a>为何起了个这么傻的书名。
     </div>
   </div>
 </div>
