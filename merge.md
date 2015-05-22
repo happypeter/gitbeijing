@@ -24,7 +24,7 @@ title: 合并分支
 
 ![](images/merge/after_merge.png)
 
-新生成了一个 `C5` ，这是一个“融合版本”（ Merge Commit ）这个合并挺特殊，里面一般没有修改内容，它的作用主要是吧两个分支合并起来。怎么合并的呢？把 master 的内容 sync 到 github.com 上，然后查看一下这个 merge commit ，会发现它有两个 parent 。
+新生成了一个 `C5` ，这是一个“融合版本”（ Merge Commit ）这个合并挺特殊，里面一般没有修改内容，它的作用主要是把两个分支合并起来。怎么合并的呢？把 master 的内容 sync 到 github.com 上，然后查看一下这个 merge commit ，会发现它有两个 parent 。
 
 merge 之后， master 分支指针指向了 merge commit，也就自动拥有了 idea 分支上的 `C3` 这个版本了。idea 分支一般这会儿就可以删除了。
 
