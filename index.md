@@ -13,7 +13,7 @@ title: git
         <a href="https://github.com/happypeter">happypeter</a>
       </div>
       <p class='book-description'>
-        [《 Git 北京》](http://haoqicat.com/gitbeijing)是一本带初学者学会 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。这里免费开放的《搬进 Github》是[《 Git 北京》](http://haoqicat.com/gitbeijing)的第一部分内容。
+        《 Git 北京》是一本带初学者学会 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。这里免费开放的《搬进 Github》是《 Git 北京》的第一部分内容。
       </p>
       <a href="https://selfstore.io/products/341" class="read-btn">购买电子书</a>
     </div>
