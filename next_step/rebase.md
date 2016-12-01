@@ -19,9 +19,9 @@ git 的变基（ rebase ）操作是非常有用的。首先来用图解的形�
 最好的方式是 git pull --rebase
 
 
-### 合并多个 commit 
+### 合并多个 commit
 
-参考 [这个视频](http://happycasts.net/episodes/92) 。
+参考 [这个视频](http://haoduoshipin.com/v/92) 。
 
 项目开发中由于经常犯错误，所以好的习惯是，每写几行就 commit 一下，这样最新的修改永远就是那么几行，很容易用 git diff 来查看，所以出问题了，非常好定位。小步多 commit 是个好主意。
 

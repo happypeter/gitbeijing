@@ -65,7 +65,7 @@ $ rm -r .ssh
 
 
 来生成一对 ssh key
-  
+
 {% highlight console %}
 $ ssh-keygen
 {% endhighlight %}
@@ -112,7 +112,7 @@ Are you sure you want to continue connecting (yes/no)?
 如上图这样，得到箭头指向的仓库地址就可以运行
 
 {% highlight console %}
-$ git clone git@github.com:happypeter/happycasts.git
+$ git clone git@github.com:happypeter/haoduoshipin.git
 {% endhighlight %}
 
 来下载项目仓库到本地了。注意最好就用 ssh 协议的这个地址，下面还可以用 https 的，用这个 clone 之后，每次 push 的时候都要求输入用户名和密码，非常讨厌。后面的两个大大的按钮。
