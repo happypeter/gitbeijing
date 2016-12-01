@@ -64,6 +64,6 @@ Git 和 Github 改变了我的职业发展路线，多年过去了，依然感�
 
 ### 反馈和改版
 
-这本书的网页版发布在 <http://gitbeijing.com> 上，同时这个网页上也可以购买电子版（ pdf epub mobi ）。根据大家的反馈，我会随时更新。大家可以到本书的[源码仓库](https://github.com/happypeter/gitbeijing)去查看更新或者提意见。有任何勘误或者是我没讲清楚的地方，也可以直接发邮件到我的邮箱：happypeter1983@gmail.com
+根据大家的反馈，我会随时更新。大家可以到本书的[源码仓库](https://github.com/happypeter/gitbeijing)去查看更新或者提意见。有任何勘误或者是我没讲清楚的地方，也可以直接发邮件到我的邮箱：happypeter1983@gmail.com 。或者微信联系我：happypeter1983 。
 
 谢谢！

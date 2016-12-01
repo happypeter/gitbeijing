@@ -15,13 +15,13 @@ title: git
       <p class='book-description'>
         《 Git 北京》是一本带初学者学会 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。这里免费开放的《搬进 Github》是《 Git 北京》的第一部分内容。
       </p>
-      <a href="https://selfstore.io/products/341" class="read-btn">购买电子书</a>
+      <a href="http://haoqicat.com/gitbeijing" class="read-btn">购买视频课程</a>
     </div>
     <img alt="git" class="book-image" src="images/index/cover_3d_move2github.png"/>
   </div>
 </section>
 <div class="divider">
-  <a href="http://haoqicat.com/gitbeijing">访问完整的《 Git 北京》课程</a>
+  <a href="http://haoqicat.com/gitbeijing">访问好奇猫网站上完整的《 Git 北京》视频课程</a>
 </div>
 <div class="reviewers">
   <div class="name-card">
