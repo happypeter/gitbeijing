@@ -15,7 +15,7 @@ export default () => {
                 <Link to="./">简介</Link>
               </Col2>
             </Row>
-            <Row class="even">
+            <Row className="even">
               <Col1>第 1 天</Col1>
               <Col2>
                 <Link to="./">简介</Link>

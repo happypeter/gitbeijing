@@ -5,3 +5,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
+a {
+  text-decoration: none;
+  color: #14877e;
+}

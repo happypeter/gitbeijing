@@ -12,7 +12,7 @@ export default () => {
           GitHub 贡献者页面
         </a>
       </Divider>
-      <div class="contributors">
+      <div>
         <Row>
           <Card>
             <img src={peter} alt="happypeter" />
@@ -35,9 +35,9 @@ export default () => {
             </Text>
           </Card>
         </Row>
-        <Logo class="logo">
+        <Picture>
           <img src={people} height="102" width="250" alt="" />
-        </Logo>
+        </Picture>
       </div>
     </Wrap>
   )
@@ -125,16 +125,12 @@ const Name = styled.div`
 
 const Job = styled.div`
   margin-bottom: 15px;
-  a {
-    color: #14877e;
-    text-decoration: none;
-  }
   a:hover {
     text-decoration: underline;
   }
 `
 
-const Logo = styled.div`
+const Picture = styled.div`
   margin: 50px auto 100px;
   img {
     display: block;
