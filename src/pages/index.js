@@ -1,3 +1,10 @@
-import React from "react"
+import React from 'react'
+import Toc from '../components/Toc'
 
-export default () => <div>Hello world!</div>
+export default () => {
+  return (
+    <div>
+      <Toc />
+    </div>
+  )
+}
