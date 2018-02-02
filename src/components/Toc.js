@@ -2,42 +2,31 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-export default () => {
+export default ({ posts }) => {
+  const content = posts.map((p, index) => {
+    return (
+      <div key={index}>
+        <Part>{p.node.part}</Part>
+        <Table>
+          <tbody>
+            {p.node.articles.map((article, i) => {
+              return (
+                <Row key={i}>
+                  <Col1>第 {article.id} 天</Col1>
+                  <Col2>
+                    <Link to={article.link}>{article.title}</Link>
+                  </Col2>
+                </Row>
+              )
+            })}
+          </tbody>
+        </Table>
+      </div>
+    )
+  })
   return (
     <Wrap>
-      <Content>
-        <Part>搬进 Github</Part>
-        <Table>
-          <tbody>
-            <Row>
-              <Col1>第 1 天</Col1>
-              <Col2>
-                <Link to="./">简介</Link>
-              </Col2>
-            </Row>
-            <Row className="even">
-              <Col1>第 1 天</Col1>
-              <Col2>
-                <Link to="./">简介</Link>
-              </Col2>
-            </Row>
-          </tbody>
-        </Table>
-
-        <Part>进阶内容</Part>
-        <Table>
-          <tbody>
-            <Row>
-              <Col1>x</Col1>
-              <Col2>
-                <a href="http://haoqicat.com/gitbeijing">
-                  更多命令行中使用 Git 的技巧，尽在 《 Git 北京》
-                </a>
-              </Col2>
-            </Row>
-          </tbody>
-        </Table>
-      </Content>
+      <Content>{content}</Content>
     </Wrap>
   )
 }
@@ -58,7 +47,6 @@ const Content = styled.div`
 const Part = styled.p`
   font-family: 'Crete Round', Georgia, Times New Roman, serif;
   font-size: 20px;
-  text-transform: uppercase;
   color: #14877e;
   margin: 20px 0;
   text-align: center;

@@ -11,6 +11,8 @@
     "gatsby": "^1.9.158",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-styled-components": "^2.0.5",
+    "gatsby-source-filesystem": "^1.5.16",
+    "gatsby-transformer-json": "^1.0.14",
     "styled-components": "^3.1.5"
   }
 }
