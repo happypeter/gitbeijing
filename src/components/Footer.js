@@ -22,8 +22,6 @@ export default () => {
 const Footer = styled.footer`
   width: 100%;
   height: 70px;
-  position: absolute;
-  bottom: 0;
   nav {
     background: #333;
     min-height: 70px;

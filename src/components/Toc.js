@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-const Toc = () => {
+export default () => {
   return (
     <Wrap>
       <Content>
@@ -41,8 +41,6 @@ const Toc = () => {
     </Wrap>
   )
 }
-
-export default Toc
 
 const Wrap = styled.div`
   background: #f5f5f5;

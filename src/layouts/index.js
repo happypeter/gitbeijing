@@ -14,4 +14,7 @@ export default ({ children }) => {
   )
 }
 
-const Wrap = styled.div``
+const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+`
