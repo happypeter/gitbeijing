@@ -1,6 +1,6 @@
 [
   {
-    "part": "搬进 GITHUB",
+    "part": "搬进 GitHub",
     "articles": [
       {
         "id": "1",
@@ -9,12 +9,12 @@
       },
       {
         "id": "2",
-        "title": "浏览器中使用 github",
+        "title": "浏览器中使用 GitHub",
         "link": "github_in_browser.html"
       },
       {
         "id": "3",
-        "title": "Github For Mac 客户端",
+        "title": "GitHub For Mac 客户端",
         "link": "github_for_mac.html"
       },
       {
@@ -39,17 +39,17 @@
       },
       {
         "id": "8",
-        "title": "Github Issues",
+        "title": "GitHub Issues",
         "link": "issues.html"
       },
       {
         "id": "9",
-        "title": "Github Pages 搭建网站",
+        "title": "GitHub Pages 搭建网站",
         "link": "pages.html"
       },
       {
         "id": "10",
-        "title": "更多 Github 技巧",
+        "title": "更多 GitHub 技巧",
         "link": "more.html"
       }
     ]

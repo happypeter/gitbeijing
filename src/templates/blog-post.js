@@ -3,9 +3,12 @@ import styled from 'styled-components'
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  const { articles } = data.indexJson
+  const select = articles.filter(item => `/${item.link.split('.')[0]}/` === post.fields.slug)[0]
   return (
     <Wrap>
       <div className="book-wrapper">
+        <Title>{select.title}</Title>
         <div className="chapter-contents">
           <h1 />
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -19,9 +22,27 @@ export const query = graphql`
   query BlogPostQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
+    }
+    indexJson {
+      articles {
+        link
+        title
+      }
     }
   }
 `
+
+const Title = styled.div`
+  font-family: 'Crete Round', Georgia, Times New Roman, serif;
+  font-size: 24px;
+  color: #e5533c;
+  margin-top: 0;
+  text-align: center;
+`
+
 const Wrap = styled.div`
   max-width: 1000px;
   width: 100%;
