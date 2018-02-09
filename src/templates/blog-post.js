@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Helmet from 'react-helmet'
 
 export default ({ data }) => {
   const post = data.markdownRemark
@@ -7,6 +8,7 @@ export default ({ data }) => {
   const select = articles.filter(item => `/${item.link.split('.')[0]}/` === post.fields.slug)[0]
   return (
     <Wrap>
+      <Helmet title={select.title} />
       <div className="book-wrapper">
         <Title>{select.title}</Title>
         <div className="chapter-contents">
