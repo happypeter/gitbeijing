@@ -10,16 +10,18 @@ export default ({ posts }) => {
         <Table>
           <tbody>
             {p.node.articles.map((article, i) => {
-              return (
-                <Row key={i}>
+              return <Row key={i}>
                   <Col1>第 {article.id} 天</Col1>
                   <Col2>
-                    <Link to={`/${article.link.split('.')[0]}`}>
-                      {article.title}
-                    </Link>
+                    {article.id === 'x' ? (
+                      <a href={article.link}>{article.title}</a>
+                    ) : (
+                      <Link to={`${article.link.split('.')[0]}`}>
+                        {article.title}
+                      </Link>
+                    )}
                   </Col2>
                 </Row>
-              )
             })}
           </tbody>
         </Table>
