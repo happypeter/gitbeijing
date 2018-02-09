@@ -74,4 +74,62 @@ const Wrap = styled.div`
     display: block;
     width: 291px;
   }
+
+  :not(pre) > code[class*='language-'],
+  pre {
+    background: #f5f5f5;
+  }
+
+  pre {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+  }
+
+  code[class*='language-'],
+  pre {
+    color: #000;
+    text-shadow: 0 1px #fff;
+    font-size: 14px;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 26px;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .chapter-contents pre {
+    color: #767676;
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .chapter-contents p > code,
+  .chapter-contents ul > code,
+  .chapter-contents ol > code,
+  .chapter-contents li > code {
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #f5f5f5;
+    color: #14877e;
+    border-radius: 4px;
+    font-size: 15px;
+  }
 `
