@@ -42,12 +42,14 @@ merge 之后， master 分支指针指向了 merge commit，也就自动拥有�
 
 点击上图中的 `Open In External Editor` 按钮，就可以在你的编辑器中打开存在冲突的文件，看到如下内容
 
-    test project for gitbeijing book
-    <<<<<<< HEAD
-    BBB
-    =======
-    AAA
-    >>>>>>> idea
+```
+test project for gitbeijing book
+<<<<<<< HEAD
+BBB
+=======
+AAA
+>>>>>>> idea
+```
 
 注意上面的 `HEAD` 是代表当前分支，此刻对应我的情形就是 master 。所以 `=====` 就是两个冲突代码块的分界线了。上面的代码就是 master 分支上的，下面的代码是 idea 分支的。解决冲突就是把上面的三行“冲突标示符”都删掉，然后修改代码。之后，回到客户端，点击 2 处的 `Commit to Master` 。 这样，这次分支合并就完成了，也会生成一个 merge commit 。
 
