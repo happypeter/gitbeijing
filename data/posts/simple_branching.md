@@ -16,40 +16,40 @@ title: 简单分支操作
 
 意思就是 master 分支上的代码是随时可以放到产品服务器上跑的代码。这样，如果想开发一个新功能，可以新开分支。 想象一下历史线上有很多节，每个版本就是一节。一个分支相当于一跟竹子，一节节的往上长。
 
-![](images/simple_branching/bamboo.jpeg)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/simple_branching/bamboo.jpeg)
 
 但是实际上在底层并不是每个分支都拷贝出自己独立的一条历史线。其实 master 本身只是一个指针，指向 master 分支上最新的一个版本。这样由于每个 commit 都可以顺藤摸瓜找到自己的前一个 commit，那么这条历史线就可以确定了。
 
-![](images/simple_branching/master_branch.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/simple_branching/master_branch.png?raw=true)
 
 ### 创建新分支
 
-什么时候需要开一个新分支，这个后面讲各种工作流程的时候会介绍，今天先把基本操作学会。
-到客户端的 `Branches` 这一项
+什么时候需要开一个新分支，这个后面讲各种工作流程的时候会介绍，今天先把基本操作学会。到客户端的 `Branches` 这一项
 
-![](images/simple_branching/create.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/simple_branching/create.png?raw=true)
 
-点击1处的加号，就会弹出2处的对话框。`Create a new branch off master` 就是来创建一个分支。在对话框中填入 `idea`，创建了 idea 分支的。所谓 `off master` 意思是“基于 master ”分支，所以此刻 idea 分支并不为空，而是拥有和 master 一样的历史。如下图，箭头所指的小对勾表示“当前分支”（ current branch ）已经自动切换到 idea 分支。
+点击 1 处的加号，就会弹出 2 处的对话框。`Create a new branch off master` 就是来创建一个分支。在对话框中填入 `idea`，创建了 idea 分支的。所谓 `off master` 意思是“基于 master ”分支，所以此刻 idea 分支并不为空，而是拥有和 master 一样的历史。如下图，箭头所指的小对勾表示“当前分支”（ current branch ）已经自动切换到 idea 分支。
 
-![](images/simple_branching/idea_branch.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/simple_branching/idea_branch.png?raw=true)
 
 但是，在底层这个的实现是非常巧妙的，就是又创建一个新的 idea 指针，跟 master 指针指向同一个版本，根本没有拷贝历史线。
 
-![](images/simple_branching/new_branch.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/simple_branching/new_branch.png?raw=true)
 
 如果现在我对项目做一下修改，然后 commit 了。那么移动的只是 idea 指针，master 不变。就成了这样：
 
-![](images/simple_branching/new_branch_commit.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/simple_branching/new_branch_commit.png?raw=true)
 
 现在 master 分支包含两个版本 C1 和 C2，idea 分支包含三个版本 C1，C2，C3 。
 
 默认情况下这个 idea 分支只是存在于本地，如果想在远端仓库上发布这个分支，就点一下 idea 分支右侧的 `Publish` 按钮。
 
-这样，到远端仓库看一下，点击下图1处，发现果然2处多了一个 idea 分支，3处的输入框中，不但能搜索已有分支，还能创建新分支，看到了吧，很多操作在本地客户端和 github.com 上都能进行。
+这样，到远端仓库看一下，点击下图 1 处，发现果然 2 处多了一个 idea 分支，3 处的输入框中，不但能搜索已有分支，还能创建新分支，看到了吧，很多操作在本地客户端和 github.com 上都能进行。
 
-![](images/simple_branching/github_idea_branch.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/simple_branching/github_idea_branch.png?raw=true)
 
 ### 切换分支
+
 到 branches 标签下，相中哪个分支了，双击一下就切换过去了。时间长了你会觉得这个也不够快，还是纯键盘操作快。敲 Cmd-B 可以打开分支切换框，输入名字回车，就切换成功了。
 
 如果你在 idea 分支上有了修改但是还没有来得及 commit，这时候如果切换分支，那么 git 会替你保存这部分修改，也就是在切换到的分支上是看不到这部分修改的。但是不要担心，只要你切换回老分支，修改内容又回来了。
@@ -66,11 +66,11 @@ title: 简单分支操作
 
 在远端仓库，也就是 github.com 上如何切换默认分支呢？到 `settings` 下面就更改 `Default branch` 就可以了。
 
-![](images/simple_branching/default_branch.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/simple_branching/default_branch.png?raw=true)
 
 如果只想删除远端分支，保留本地分支，可以在客户端中使用每个分支右侧的 `Unpublish` 这个选项。
 
-![](images/simple_branching/unpublish.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/simple_branching/unpublish.png?raw=true)
 
 ### 总结
 

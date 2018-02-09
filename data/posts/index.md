@@ -8,7 +8,7 @@ title: git
 </div>
 <div class="reviewers">
   <div class="name-card">
-    <img src="images/index/peter.jpg">
+    <img src="images/index/peter.jpg?raw=true">
     <div class="text">
       <div class="name">
        happypeter

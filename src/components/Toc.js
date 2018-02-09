@@ -14,7 +14,9 @@ export default ({ posts }) => {
                 <Row key={i}>
                   <Col1>第 {article.id} 天</Col1>
                   <Col2>
-                    <Link to={article.link}>{article.title}</Link>
+                    <Link to={`/${article.link.split('.')[0]}`}>
+                      {article.title}
+                    </Link>
                   </Col2>
                 </Row>
               )

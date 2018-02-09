@@ -8,11 +8,11 @@ title: 团队合作流程
 
 在 [How Github Use Github To Build Github](https://www.youtube.com/watch?v=qyz3jkOBbQY) 的演讲中，Zach Holman 说，
 
->多年来我一直在寻找做软件正确的方式，现在我想我找到了，github 就是这种方式。
+> 多年来我一直在寻找做软件正确的方式，现在我想我找到了，github 就是这种方式。
 
 究竟 Github 是什么的问题从它的标语中也可以看出
 
-![](images/github_flow/better_together.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/better_together.png?raw=true)
 
 Github 多年来总结出来一套自己的团队协作流程，简单而且强大，叫做 [Github Flow](https://guides.github.com/introduction/flow/index.html) ，网站上的各个功能都是围绕着这个流程来开发的。另，中文版的 Github Flow 在[这里](http://gitbeijing.com/flow/) 。
 
@@ -24,23 +24,23 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 第一步，创建新的话题分支。如下图所示
 
-![](images/github_flow/new_branch.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/new_branch.png?raw=true)
 
 第二步，不断实现功能，做成一个个新版本。
 
-![](images/github_flow/make_changes.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/make_changes.png?raw=true)
 
 第三步，发起”拉取请求“（ Pull Request ），后面简称 PR 吧。
 
-![](images/github_flow/open_pr.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/open_pr.png?raw=true)
 
 第四步，大家讨论。这是一个代码审核的过程。
 
-![](images/github_flow/discuss.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/discuss.png?raw=true)
 
 最后，把话题分支的内容合并到 master 。
 
-![](images/github_flow/merge_in.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/merge_in.png?raw=true)
 
 下面跑一个实际例子。
 
@@ -54,11 +54,11 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 首先到项目页面，点击 Settings 一项，
 
-![](images/github_flow/find_settings.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/find_settings.png?raw=true)
 
 到项目的 Settings 页面，可以看到如下图所示的 collaborator 选项，输入框中输入 `bi` 就可以自动补齐出 `billie66` 了
 
-![](images/github_flow/add_collaborator.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/add_collaborator.png?raw=true)
 
 回车选中，然后点 `Add collaborator` 按钮，这样就完成了。
 
@@ -72,7 +72,7 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 这样我做了两个版本，而且都同步到远端仓库了。所以到 describe-project 分支的历史上可以看到多了下面两个新 commit 。
 
-![](images/github_flow/two_commits.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/two_commits.png?raw=true)
 
 功能实现了，可以发 PR 了。
 
@@ -82,15 +82,15 @@ PR 在整个 Github Flow 流程中占有核心位置。其实 PR 的目的就是
 
 先到仓库页面，找到发 PR 的大绿按钮
 
-![](images/github_flow/compare_btn.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/compare_btn.png?raw=true)
 
-下面图中显示的界面中，看1处，注意一下是拿出哪两个分支来进行对比。2处，我要填写一些内容，解释一下我的修改内容。3处，可以上传图片。
+下面图中显示的界面中，看 1 处，注意一下是拿出哪两个分支来进行对比。2 处，我要填写一些内容，解释一下我的修改内容。3 处，可以上传图片。
 
-![](images/github_flow/pr_main_view.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/pr_main_view.png?raw=true)
 
 同样在这个页面上，滑动到下方还可以看到这次 PR 的具体对比出来的代码内容
 
-![](images/github_flow/pr_content.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/pr_content.png?raw=true)
 
 点击 `Create Pull Request` 按钮，这样发 PR 就成功了。
 
@@ -98,21 +98,21 @@ PR 在整个 Github Flow 流程中占有核心位置。其实 PR 的目的就是
 
 ### 讨论审核代码
 
-![](images/github_flow/final_pr.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/final_pr.png?raw=true)
 
 PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟们的代码，可以是队友之间的互相审核。
 
 @billie66 看到这个 PR 之后，就会发表她的意见了。
 
-![](images/github_flow/billie_comment.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/billie_comment.png?raw=true)
 
 看到之后我觉得有道理，代码需要调整，那我现在是不是要撤销这 PR 重新发呢？不用。我只需要继续在 describe-project 分支上改代码然后再同步上来。
 
-![](images/github_flow/more_code.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/more_code.png?raw=true)
 
 上面的图中可以看到，讨论不断继续，会形成一条由评论和代码穿插而成的一条线。最后达成一致，我或者 @billie 其中之一可以点一下上面的大大的 `Merge Pull Request` （ 融合拉取请求 ）的按钮，这样话题分支上的代码就合并到 master 之上了。接下来 describe-project 这个话题分支也就可以删掉了。然后关闭这个 PR 了。
 
-![](images/github_flow/delete_branch.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/delete_branch.png?raw=true)
 
 每一个 PR 都是开发历史上的一次小事件，很长时间过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码，所以是项目发展的珍贵资料。从这个角度来说，即使一个 PR 没有被 merge 进 master ，那它里面的代码和讨论的内容也会是非常有意义的尝试，也可能在未来会有很大的参考价值。
 
@@ -122,14 +122,14 @@ PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟�
 
 网页界面中，找到我要修改的文件，点击 `edit`
 
-![](images/github_flow/quick_pr_view.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/quick_pr_view.png?raw=true)
 
 然后在下面的界面中，可以直接填写一个 Topic 分支名，创建这个分支，并 commit 到这个分支上发 PR 了
 
-![](images/github_flow/quick_pr_view.png)
-
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/quick_pr_view.png?raw=true)
 
 说实话要只是一个小改动，即使是老手，你让我切换到编辑器和客户端，再跑一遍整个的这个发 PR 的流程，我也会觉得挺麻烦挺分心的。快速 PR 方法真的是非常方便。
 
 ### 总结
+
 其实，每一个打开的 PR 都很类似于后面我们要讲的 Issue （ 事务卡片 )，比如二者都可以用 Markdown 格式来写评论。这些技巧会在 Issue 相关的那一部分来介绍。

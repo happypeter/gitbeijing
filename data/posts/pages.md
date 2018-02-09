@@ -2,10 +2,9 @@
 title: Github Pages
 ---
 
-
 Github Pages 是 github 公司提供的免费的静态网站托管服务，用起来方便而且功能强大，不仅没有空间限制，还可以绑定自己的域名。在 <https://pages.github.com/> 首页上可以看到很多用 Github Pages 托管的网站，很漂亮。另外很多非常著名的公司和项目也都用这种方式来搭建网站，如[微软](http://microsoft.github.io/)和 [twitter](http://twitter.github.io/) 的网站，还有 [谷歌的 Material Design 图标](http://google.github.io/material-design-icons/) 网站。
 
-![](images/pages/logo.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/pages/logo.png?raw=true)
 
 ### 分类和文档
 
@@ -13,7 +12,7 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 建一个项目网站的详细步骤在 <https://pages.github.com/> 页面上是有的，如下图
 
-![](images/pages/project_site.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/pages/project_site.png?raw=true)
 
 选择 `Project Site` 然后下面有两项，一个是用自动生成器自动生成（ Generate a site ）一个漂亮的网站，另一个方案是自己手写，咱们选后者，因为这个方案比较能展示清楚整个 Github Pages 的使用原理。
 
@@ -23,22 +22,21 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 首先来到项目首页，例如 https://github.com/happypeter/coco 。
 
-![](images/pages/site_branch.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/pages/site_branch.png?raw=true)
 
 上图中，点 `master` 按钮，弹出的输入框中输入 `gh-pages` ，注意拼写和大小写都不要写错。然后回车，就可以创建出新分支 gh-pages 了。如下图
 
-![](images/pages/site_branch_created.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/pages/site_branch_created.png?raw=true)
 
 上图中看到，现在项目以及切换到了 gh-pages 分支，如大箭头所指。虽然 coco 项目不是开源的，但是我们放到 gh-pages 分支上的内容是会被公开成网页的，这个要注意。点击大圆圈中的加号，来添加第一个文件。
 
-![](images/pages/first_page.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/pages/first_page.png?raw=true)
 
 名字一定要叫 index.html ，里面的内容就随便写了。保存之后，过几分钟就可以到 username.github.io/project 这个链接中看到页面了，对于这类的情况就是 http://happypeter.github.io/coco/ 这个链接就是网站的公网 url 了。后面可以继续添加 HTML，CSS 和 JS 进来，丰富网站功能。
 
-
 上面这些还只是展示了 Github Pages 的托管静态页面的功能，但是其实故事并不停在这个地方。在 <https://pages.github.com/> 的最低端还可以看到下面三个事情：
 
-![](images/pages/more_function.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/pages/more_function.png?raw=true)
 
 最后一项“指南”大家可以用来参考。下面分别来介绍一下 Jekyll 和绑定自己域名的功能。
 
@@ -65,16 +63,15 @@ Jeklly 的具体使用本身跟 git 没有直接联系，所以这里就不细�
 
 DNS 设置的方式并不唯一，但也是大同小异，下面演示一下我自己的操作过程。我的 gitbeijing.com 这个域名是在 godaddy.com 上买的。 首先在 godaddy.com 上，让 gitbeijing.com 使用 digitalocean 的 domain server : ns1.digitalocean.com 。
 
-
 下一步，到 digitalocean 网站上，添加 A Record 指向 192.30.252.153 和 192.30.252.154 也就是设置成下图这样
 
-![](images/pages/do_dns.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/pages/do_dns.png?raw=true)
 
 也就是添加了四个 `A` 记录，这样后面用 http://gitbeijing.com 或者 http://www.gitbeijing.com 就都可以指向 github pages 的服务器了。
 
 插一句，以前我还设置过一个 coldbutsweet.com 是在万网 net.cn 上设置的，操作完全一样，下面是截图
 
-![](images/pages/netcn_dns.png)
+![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/pages/netcn_dns.png?raw=true)
 
 到这里，如果有人访问 gitbeijing.com 就可以指向 github 了，但是 github pages 上面网站众多，如何能找到我自己的那个特定网站呢？要到 [happypeter/gitbeijing](https://github.com/happypeter/gitbeijing)项目的 gh-pages 分支，创建 CNAME 文件，里面的内容为
 
@@ -85,4 +82,5 @@ gitbeijing.com
 这样操作结束，当然还要稍微等几个小时给 DNS 扩散。晚上做完上面的操作，第二天早上访问 <http://gitbeijing.com> 已经可以访问到我的网站了，如果访问 <http://www.gitbeijing.com> 则可以跳转到 <http://gitbeijing.com> ，效果完美。
 
 ### 总结
+
 喜欢分享是一个好程序员的标志，我给我的很多初学编程的朋友的建议就是，先学习如何用 Github Pages 搭建自己的个人网站，一来可以锻炼一些基本的网站开发技巧，二来可以建立一个分享的阵地。
