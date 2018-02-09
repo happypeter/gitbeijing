@@ -8,7 +8,9 @@ export default ({ data }) => {
   const select = articles.filter(item => `/${item.link.split('.')[0]}/` === post.fields.slug)[0]
   return (
     <Wrap>
-      <Helmet title={select.title} />
+      <Helmet title={select.
+        title} />
+        
       <div className="book-wrapper">
         <Title>{select.title}</Title>
         <div className="chapter-contents">
