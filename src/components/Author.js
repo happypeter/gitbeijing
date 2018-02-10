@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
 class Author extends Component {
   render() {
@@ -21,9 +22,9 @@ class Author extends Component {
               <div className="job-title">
                 <a href="http://haoduoshipin.com">本书作者，好多视频网作者</a>
               </div>
-              挥汗写下本书，致敬北京 Linux 用户组的那些曾经帮助过我的朋友们。<a href="history.html">
+              挥汗写下本书，致敬北京 Linux 用户组的那些曾经帮助过我的朋友们。<Link to="/history">
                 点击查看
-              </a>{' '}
+              </Link>{' '}
               Gitbeijing 的由来。
             </div>
           </div>
