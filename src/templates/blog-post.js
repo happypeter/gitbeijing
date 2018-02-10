@@ -6,13 +6,12 @@ export default ({ data }) => {
   const post = data.markdownRemark
   const { articles } = data.indexJson
   const select = articles.filter(item => `/${item.link.split('.')[0]}/` === post.fields.slug)[0]
+
   return (
     <Wrap>
-      <Helmet title={select.
-        title} />
-        
+      {select ? <Helmet title={select.title} /> : null }
       <div className="book-wrapper">
-        <Title>{select.title}</Title>
+        {select ? <Title>{select.title}</Title> : null}
         <div className="chapter-contents">
           <h1 />
           <div dangerouslySetInnerHTML={{ __html: post.html }} />

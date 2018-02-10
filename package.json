@@ -5,7 +5,8 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && cp CNAME public && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^1.9.158",
@@ -15,6 +16,7 @@
     "gatsby-source-filesystem": "^1.5.16",
     "gatsby-transformer-json": "^1.0.14",
     "gatsby-transformer-remark": "^1.7.30",
+    "gh-pages": "^1.1.0",
     "react-helmet": "^5.2.0",
     "styled-components": "^3.1.5"
   }
