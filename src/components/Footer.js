@@ -39,5 +39,6 @@ const Footer = styled.footer`
     padding: 40px;
     text-align: center;
     font-size: 13px;
+    margin-top: 0;
   }
 `

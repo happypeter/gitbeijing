@@ -5,11 +5,13 @@ import Helmet from 'react-helmet'
 export default ({ data }) => {
   const post = data.markdownRemark
   const { articles } = data.indexJson
-  const select = articles.filter(item => `/${item.link.split('.')[0]}/` === post.fields.slug)[0]
+  const select = articles.filter(
+    item => `/${item.link.split('.')[0]}/` === post.fields.slug
+  )[0]
 
   return (
     <Wrap>
-      {select ? <Helmet title={select.title} /> : null }
+      {select ? <Helmet title={select.title} /> : null}
       <div className="book-wrapper">
         {select ? <Title>{select.title}</Title> : null}
         <div className="chapter-contents">
@@ -47,24 +49,36 @@ const Title = styled.div`
 `
 
 const Wrap = styled.div`
-  max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
-  .book-content {
-    background: #f5f5f5;
-  }
+  background: #f5f5f5;
   .book-wrapper {
-    width: 1000px;
-    padding: 40px 0 60px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 40px 16px 60px;
     margin: 0 auto;
     background: #fff;
+  }
+  blockquote {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+    color: #8a6d3b;
+    padding: 15px 30px;
+    margin: 0;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    h4 {
+      text-align: center;
+      margin: 0;
+    }
   }
   .contents-wrapper {
     background: #f5f5f5;
     padding: 30px 0;
   }
   .chapter-contents {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
     font-family: 'ProximaNova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -93,6 +107,7 @@ const Wrap = styled.div`
     display: block;
     max-width: 700px;
     margin: 20px auto;
+    width: 100%;
   }
   .book-wrapper img[alt='certificates'] {
     display: block;
