@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import peter from '../assets/images/index/peter.jpg'
 
 class Author extends Component {
   render() {
@@ -13,7 +12,10 @@ class Author extends Component {
         </div>
         <div>
           <div className="name-card">
-            <img src={peter} alt="peter" />
+            <img
+              src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
+              alt="peter"
+            />
             <div className="text">
               <div className="name">happypeter</div>
               <div className="job-title">

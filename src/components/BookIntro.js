@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import cover from '../assets/images/index/cover_3d_move2github.png'
 
 class BookIntro extends Component {
   render() {
@@ -8,7 +7,10 @@ class BookIntro extends Component {
       <Section>
         <Container>
           <Left>
-            <Image alt="git" src={cover} />
+            <Image
+              alt="git"
+              src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/cover_3d_move2github.png?raw=true"
+            />
           </Left>
           <Right>
             <Title>搬进 Github</Title>

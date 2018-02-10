@@ -1,5 +1,4 @@
-import React from "react"
-import fav from './assets/images/favicon.png'
+import React from 'react'
 
 let stylesStr
 if (process.env.NODE_ENV === `production`) {
@@ -30,7 +29,11 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <link rel="shortcut icon" type="image/png" href={fav} />
+          <link
+            rel="shortcut icon"
+            type="image/png"
+            href="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/favicon.png?raw=true"
+          />
           {this.props.headComponents}
           {css}
         </head>

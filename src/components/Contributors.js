@@ -1,8 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import peter from '../assets/images/index/peter.jpg'
-import billie from '../assets/images/index/billie.png'
-import people from '../assets/images/index/people.png'
 
 export default () => {
   return (
@@ -15,7 +12,10 @@ export default () => {
       <div>
         <Row>
           <Card>
-            <img src={peter} alt="happypeter" />
+            <img
+              src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
+              alt="happypeter"
+            />
             <Text>
               <Name>happypeter</Name>
               <Job>
@@ -25,7 +25,10 @@ export default () => {
             </Text>
           </Card>
           <Card>
-            <img src={billie} alt="billie66" />
+            <img
+              src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/billie.png?raw=true"
+              alt="billie66"
+            />
             <Text>
               <Name>billie66</Name>
               <Job>
@@ -36,7 +39,12 @@ export default () => {
           </Card>
         </Row>
         <Picture>
-          <img src={people} height="102" width="250" alt="" />
+          <img
+            src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/people.png?raw=true"
+            height="102"
+            width="250"
+            alt="people"
+          />
         </Picture>
       </div>
     </Wrap>
