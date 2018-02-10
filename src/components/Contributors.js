@@ -9,44 +9,42 @@ export default () => {
           GitHub 贡献者页面
         </a>
       </Divider>
-      <div>
-        <Row>
-          <Card>
-            <img
-              src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
-              alt="happypeter"
-            />
-            <Text>
-              <Name>happypeter</Name>
-              <Job>
-                <a href="http://haoduoshipin.com">好多视频网创始人</a>
-              </Job>
-              本书作者。欢迎添加 Peter 微信：happypeter1983 。
-            </Text>
-          </Card>
-          <Card>
-            <img
-              src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/billie.png?raw=true"
-              alt="billie66"
-            />
-            <Text>
-              <Name>billie66</Name>
-              <Job>
-                <a href="http://haoqicat.com">好奇猫共同创始人</a>
-              </Job>
-              维护本网页及其电子书
-            </Text>
-          </Card>
-        </Row>
-        <Picture>
+      <Row>
+        <Card>
           <img
-            src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/people.png?raw=true"
-            height="102"
-            width="250"
-            alt="people"
+            src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
+            alt="happypeter"
           />
-        </Picture>
-      </div>
+          <Text>
+            <Name>happypeter</Name>
+            <Job>
+              <a href="http://haoduoshipin.com">好多视频网创始人</a>
+            </Job>
+            本书作者。欢迎添加 Peter 微信：happypeter1983 。
+          </Text>
+        </Card>
+        <Card>
+          <img
+            src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/billie.png?raw=true"
+            alt="billie66"
+          />
+          <Text>
+            <Name>billie66</Name>
+            <Job>
+              <a href="http://haoqicat.com">好奇猫共同创始人</a>
+            </Job>
+            维护本网页及其电子书
+          </Text>
+        </Card>
+      </Row>
+      <Picture>
+        <img
+          src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/people.png?raw=true"
+          height="102"
+          width="250"
+          alt="people"
+        />
+      </Picture>
     </Wrap>
   )
 }
@@ -58,11 +56,12 @@ const Wrap = styled.div`
 const Divider = styled.div`
   min-height: 140px;
   background: #008080;
-  text-align: center;
   letter-spacing: 1px;
   font-size: 30px;
   font-weight: bold;
-  line-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #fff;
   a {
     color: #fff;
@@ -75,30 +74,30 @@ const Divider = styled.div`
 
 const Row = styled.div`
   display: flex;
-  width: 1000px;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 16px;
+  }
 `
 
 const Card = styled.div`
-  width: 330px;
-  min-height: 100px;
+  width: 100%;
   background: transparent;
   position: relative;
-  margin-bottom: 3em;
   background: #fff;
   padding: 2em;
   border-right: 30px solid #fff;
   min-height: 147px;
-  width: 800px;
   margin: 50px auto;
   &:before {
     content: '';
     position: absolute;
     z-index: -1;
-    -ms-transform: skew(-3deg, -2deg);
-    -webkit-transform: skew(-3deg, -2deg);
-    -o-transform: skew(-3deg, -2deg);
-    -moz-transform: skew(-3deg, -2deg);
+    transform: skew(-3deg, -2deg);
     bottom: 14px;
     box-shadow: 0 16px 5px rgba(0, 0, 0, 0.2);
     height: 50px;

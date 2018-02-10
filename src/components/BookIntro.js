@@ -40,11 +40,19 @@ const Container = styled.div`
   width: 1000px;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
+  @media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `
 
 const Left = styled.div`
   margin-top: 75px;
   width: 450px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 const Image = styled.img`
@@ -55,12 +63,20 @@ const Right = styled.div`
   width: 535px;
   margin-top: 75px;
   font-family: 'Crete Round', Georgia, 'Times New Roman', Times, serif;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 0;
+    padding: 16px;
+  }
 `
 
 const Title = styled.div`
   font-size: 30px;
   color: #e5533c;
   margin-top: 35px;
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
 `
 
 const Author = styled.div`

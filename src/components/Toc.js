@@ -10,7 +10,8 @@ export default ({ posts }) => {
         <Table>
           <tbody>
             {p.node.articles.map((article, i) => {
-              return <Row key={i}>
+              return (
+                <Row key={i}>
                   <Col1>第 {article.id} 天</Col1>
                   <Col2>
                     {article.id === 'x' ? (
@@ -22,6 +23,7 @@ export default ({ posts }) => {
                     )}
                   </Col2>
                 </Row>
+              )
             })}
           </tbody>
         </Table>
@@ -44,6 +46,10 @@ const Content = styled.div`
   padding-top: 10px;
   padding-bottom: 10px;
   width: 800px;
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 16px;
+  }
   margin: 30px auto 70px;
   background: #fff;
 `
@@ -59,6 +65,9 @@ const Part = styled.p`
 const Table = styled.table`
   border-collapse: collapse;
   width: 700px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   margin: 0 auto 30px;
   td {
     border: 1px solid #ddd;

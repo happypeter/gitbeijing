@@ -10,7 +10,7 @@ class Author extends Component {
             访问好奇猫网站上完整的《 Git 北京》视频课程
           </a>
         </div>
-        <div>
+        <div className="name-card-wrapper">
           <div className="name-card">
             <img
               src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
@@ -44,7 +44,9 @@ const Wrap = styled.div`
     letter-spacing: 1px;
     font-size: 30px;
     font-weight: bold;
-    line-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     a {
       color: #fff;
@@ -53,8 +55,8 @@ const Wrap = styled.div`
       }
     }
   }
-  .divider.name-list {
-    margin-top: -40px;
+  .name-card-wrapper {
+    padding: 16px;
   }
   .name-card {
     background: transparent;
@@ -65,15 +67,15 @@ const Wrap = styled.div`
     border-right: 30px solid #fff;
     min-height: 147px;
     width: 800px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     margin: 50px auto;
     &:before {
       content: '';
       position: absolute;
       z-index: -1;
-      -ms-transform: skew(-3deg, -2deg);
-      -webkit-transform: skew(-3deg, -2deg);
-      -o-transform: skew(-3deg, -2deg);
-      -moz-transform: skew(-3deg, -2deg);
+      transform: skew(-3deg, -2deg);
       bottom: 14px;
       box-shadow: 0 16px 5px rgba(0, 0, 0, 0.2);
       height: 50px;
