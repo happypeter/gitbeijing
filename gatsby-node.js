@@ -30,11 +30,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.map(({ node }) => {
+        const slug = node.fields.slug
         createPage({
-          path: node.fields.slug,
+          path: `${slug.slice(0, slug.length - 1)}.html`,
           component: path.resolve(`./src/templates/blog-post.js`),
           context: {
-            slug: node.fields.slug
+            slug: slug
           }
         })
       })
