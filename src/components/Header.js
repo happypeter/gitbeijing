@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import DocSearch from './DocSearch'
 
 export default () => {
   return (
@@ -8,6 +9,7 @@ export default () => {
       <Header>
         <Link to="/">Git 北京</Link>
       </Header>
+      <DocSearch />
     </Wrap>
   )
 }
@@ -15,12 +17,14 @@ export default () => {
 const Wrap = styled.div`
   background: teal;
   min-height: 80px;
-  line-height: 80px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 const Header = styled.h2`
-  margin: 0;
+  margin-bottom: 24px;
   a {
     color: #fff;
     text-decoration: none;

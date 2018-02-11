@@ -9,6 +9,10 @@ if (process.env.NODE_ENV === `production`) {
   }
 }
 
+const JS_NPM_URLS = [
+  '//cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js'
+]
+
 module.exports = class HTML extends React.Component {
   render() {
     let css
@@ -20,6 +24,9 @@ module.exports = class HTML extends React.Component {
         />
       )
     }
+
+    const js = JS_NPM_URLS.map(url => <script key={url} src={url} />)
+
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -32,8 +39,13 @@ module.exports = class HTML extends React.Component {
           <link
             rel="shortcut icon"
             type="image/png"
-            href="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/favicon.png?raw=true"
+            href="//github.com/happypeter/gitbeijing/blob/master/src/assets/images/favicon.png?raw=true"
           />
+          <link
+            rel="stylesheet"
+            href="//cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
+          />
+
           {this.props.headComponents}
           {css}
         </head>
@@ -45,6 +57,7 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          {js}
         </body>
       </html>
     )
