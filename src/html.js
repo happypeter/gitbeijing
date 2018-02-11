@@ -41,11 +41,6 @@ module.exports = class HTML extends React.Component {
             type="image/png"
             href="//github.com/happypeter/gitbeijing/blob/master/src/assets/images/favicon.png?raw=true"
           />
-          <link
-            rel="stylesheet"
-            href="//cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
-          />
-
           {this.props.headComponents}
           {css}
         </head>
