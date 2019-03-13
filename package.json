@@ -1,23 +1,37 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "gitbeijing",
+  "private": true,
+  "description": "gitbeijing.com",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
-    "deploy": "gatsby build && cp CNAME public && gh-pages -d public"
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^1.9.158",
-    "gatsby-link": "^1.6.34",
-    "gatsby-plugin-react-helmet": "^2.0.4",
-    "gatsby-plugin-styled-components": "^2.0.5",
-    "gatsby-source-filesystem": "^1.5.16",
-    "gatsby-transformer-json": "^1.0.14",
-    "gatsby-transformer-remark": "^1.7.30",
-    "gh-pages": "^1.1.0",
+    "babel-plugin-styled-components": "^1.10.0",
+    "gatsby": "^2.1.31",
+    "gatsby-plugin-react-helmet": "^3.0.9",
+    "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-source-filesystem": "^2.0.24",
+    "gatsby-transformer-json": "^2.1.10",
+    "gatsby-transformer-remark": "^2.3.2",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
-    "styled-components": "^3.1.5"
+    "styled-components": "^4.1.3"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }

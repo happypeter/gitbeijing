@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React, { Component } from "react"
+import styled from "styled-components"
 
 class DocSearch extends Component {
   state = {
-    enabled: true
+    enabled: true,
   }
 
   componentDidMount() {
     if (window.docsearch) {
       window.docsearch({
-        apiKey: 'e7d7fcfb5ab7b179b4e5424f16404c6a',
-        indexName: 'gitbeijing',
-        inputSelector: '#algolia-doc-search'
+        apiKey: "e7d7fcfb5ab7b179b4e5424f16404c6a",
+        indexName: "gitbeijing",
+        inputSelector: "#algolia-doc-search",
       })
     } else {
-      console.warn('Search has failed to load and now is being disabled')
+      console.warn("Search has failed to load and now is being disabled")
       this.setState({ enabled: false })
     }
   }

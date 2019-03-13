@@ -1,34 +1,30 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React from "react"
+import styled from "styled-components"
 
-class BookIntro extends Component {
-  render() {
-    return (
-      <Section>
-        <Container>
-          <Left>
-            <Image
-              alt="git"
-              src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/cover_3d_move2github.png?raw=true"
-            />
-          </Left>
-          <Right>
-            <Title>搬进 Github</Title>
-            <Author>
-              <a href="https://github.com/happypeter">happypeter</a>
-            </Author>
-            <Desc>
-              《 Git 北京》是一本带初学者学会 git 版本控制工具和 github.com
-              社交化编程平台的书。用爱打造。这里免费开放的《搬进 Github》是《
-              Git 北京》的第一部分内容。
-            </Desc>
-            <Button href="http://haoqicat.com/gitbeijing">购买视频课程</Button>
-          </Right>
-        </Container>
-      </Section>
-    )
-  }
-}
+const BookIntro = () => (
+  <Section>
+    <Container>
+      <Left>
+        <Image
+          alt="git"
+          src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/cover_3d_move2github.png?raw=true"
+        />
+      </Left>
+      <Right>
+        <Title>搬进 Github</Title>
+        <Author>
+          <a href="https://github.com/happypeter">happypeter</a>
+        </Author>
+        <Desc>
+          《 Git 北京》是一本带初学者学会 git 版本控制工具和 github.com
+          社交化编程平台的书。用爱打造。这里免费开放的《搬进 Github》是《 Git
+          北京》的第一部分内容。
+        </Desc>
+        <Button href="http://haoqicat.com/gitbeijing">购买视频课程</Button>
+      </Right>
+    </Container>
+  </Section>
+)
 
 export default BookIntro
 
@@ -62,7 +58,7 @@ const Image = styled.img`
 const Right = styled.div`
   width: 535px;
   margin-top: 75px;
-  font-family: 'Crete Round', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Crete Round", Georgia, "Times New Roman", Times, serif;
   @media (max-width: 768px) {
     width: 100%;
     margin-top: 0;
@@ -84,11 +80,11 @@ const Author = styled.div`
   font-size: 18px;
   margin-top: 20px;
   position: relative;
-  font-family: 'myriad-pro', Arial, sans-serif;
+  font-family: "myriad-pro", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   &:after {
-    content: ' ';
+    content: " ";
     width: 100%;
     border-bottom: 1px solid #e1e1e0;
     position: absolute;
@@ -103,7 +99,7 @@ const Author = styled.div`
 const Desc = styled.div`
   color: #333;
   font-size: 18px;
-  font-family: 'myriad-pro', Arial, sans-serif;
+  font-family: "myriad-pro", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   margin-top: 40px;
@@ -117,7 +113,7 @@ const Button = styled.a`
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  font-family: 'myriad-pro', Arial, sans-serif;
+  font-family: "myriad-pro", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   padding: 10px 30px;

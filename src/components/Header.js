@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import Link from 'gatsby-link'
-import DocSearch from './DocSearch'
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
+import DocSearch from "./DocSearch"
 
 export default () => {
   return (

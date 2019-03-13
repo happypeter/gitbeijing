@@ -1,25 +1,29 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import Helmet from 'react-helmet'
+import React from "react"
+import styled from "styled-components"
+import { Helmet } from "react-helmet"
+import { graphql } from "gatsby"
+import Layout from "../components/Layout"
 
 export default ({ data }) => {
   const post = data.markdownRemark
   const { articles } = data.indexJson
   const select = articles.filter(
-    item => `/${item.link.split('.')[0]}/` === post.fields.slug
+    item => `/${item.link.split(".")[0]}/` === post.fields.slug
   )[0]
 
   return (
-    <Wrap>
-      {select ? <Helmet title={select.title} /> : null}
-      <div className="book-wrapper">
-        {select ? <Title>{select.title}</Title> : null}
-        <div className="chapter-contents">
-          <h1 />
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    <Layout>
+      <Wrap>
+        {select ? <Helmet title={select.title} /> : null}
+        <div className="book-wrapper">
+          {select ? <Title>{select.title}</Title> : null}
+          <div className="chapter-contents">
+            <br />
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          </div>
         </div>
-      </div>
-    </Wrap>
+      </Wrap>
+    </Layout>
   )
 }
 
@@ -41,7 +45,7 @@ export const query = graphql`
 `
 
 const Title = styled.div`
-  font-family: 'Crete Round', Georgia, Times New Roman, serif;
+  font-family: "Crete Round", Georgia, Times New Roman, serif;
   font-size: 24px;
   color: #e5533c;
   margin-top: 0;
@@ -80,21 +84,21 @@ const Wrap = styled.div`
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    font-family: 'ProximaNova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     letter-spacing: 0.3px;
     line-height: 36px;
     font-size: 16px;
   }
   .chapter-contents h1 {
-    font-family: 'Crete Round', Georgia, Times New Roman, serif;
+    font-family: "Crete Round", Georgia, Times New Roman, serif;
     font-size: 24px;
     color: #e5533c;
     margin-top: 0;
     text-align: center;
   }
   .chapter-contents h3 {
-    font-family: 'Crete Round', Georgia, Times New Roman, serif;
+    font-family: "Crete Round", Georgia, Times New Roman, serif;
     font-size: 18px;
     color: #14877e;
   }
@@ -109,12 +113,12 @@ const Wrap = styled.div`
     margin: 20px auto;
     width: 100%;
   }
-  .book-wrapper img[alt='certificates'] {
+  .book-wrapper img[alt="certificates"] {
     display: block;
     width: 291px;
   }
 
-  :not(pre) > code[class*='language-'],
+  :not(pre) > code[class*="language-"],
   pre {
     background: #f5f5f5;
   }
@@ -125,7 +129,7 @@ const Wrap = styled.div`
     overflow: auto;
   }
 
-  code[class*='language-'],
+  code[class*="language-"],
   pre {
     color: #000;
     text-shadow: 0 1px #fff;

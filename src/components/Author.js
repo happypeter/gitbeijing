@@ -1,38 +1,32 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import Link from 'gatsby-link'
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
 
-class Author extends Component {
-  render() {
-    return (
-      <Wrap>
-        <div className="divider">
-          <a href="http://haoqicat.com/gitbeijing">
-            访问好奇猫网站上完整的《 Git 北京》视频课程
-          </a>
-        </div>
-        <div className="name-card-wrapper">
-          <div className="name-card">
-            <img
-              src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
-              alt="peter"
-            />
-            <div className="text">
-              <div className="name">happypeter</div>
-              <div className="job-title">
-                <a href="http://haoduoshipin.com">本书作者，好多视频网作者</a>
-              </div>
-              挥汗写下本书，致敬北京 Linux 用户组的那些曾经帮助过我的朋友们。<Link to="/history">
-                点击查看
-              </Link>{' '}
-              Gitbeijing 的由来。
-            </div>
+const Author = () => (
+  <Wrap>
+    <div className="divider">
+      <a href="http://haoqicat.com/gitbeijing">
+        访问好奇猫网站上完整的《 Git 北京》视频课程
+      </a>
+    </div>
+    <div className="name-card-wrapper">
+      <div className="name-card">
+        <img
+          src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
+          alt="peter"
+        />
+        <div className="text">
+          <div className="name">happypeter</div>
+          <div className="job-title">
+            <a href="http://haoduoshipin.com">本书作者，好多视频网作者</a>
           </div>
+          挥汗写下本书，致敬北京 Linux 用户组的那些曾经帮助过我的朋友们。
+          <Link to="/history">点击查看</Link> Gitbeijing 的由来。
         </div>
-      </Wrap>
-    )
-  }
-}
+      </div>
+    </div>
+  </Wrap>
+)
 
 export default Author
 
@@ -73,7 +67,7 @@ const Wrap = styled.div`
     }
     margin: 50px auto;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       z-index: -1;
       transform: skew(-3deg, -2deg);
@@ -99,7 +93,7 @@ const Wrap = styled.div`
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 10px;
-        font-family: 'Crete Round';
+        font-family: "Crete Round";
         font-style: italic;
         color: #e5533c;
       }

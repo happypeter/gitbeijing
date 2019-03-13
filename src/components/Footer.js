@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React from "react"
+import styled from "styled-components"
 
 export default () => {
   return (
@@ -8,10 +8,10 @@ export default () => {
         <p>
           有任何问题请联系
           <a href="https://github.com/happypeter"> happypeter</a> ：
-          happypeter1983@gmail.com <br /> 所有内容基于{' '}
+          happypeter1983@gmail.com <br /> 所有内容基于{" "}
           <a href="https://creativecommons.org/licenses/by/4.0/">
             允许商用保留署名的 CC 协议
-          </a>{' '}
+          </a>{" "}
           发布
         </p>
       </nav>

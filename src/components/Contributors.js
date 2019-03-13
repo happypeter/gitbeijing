@@ -1,53 +1,53 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react"
+import styled from "styled-components"
 
-export default () => {
-  return (
-    <Wrap>
-      <Divider>
-        <a href="https://github.com/happypeter/gitbeijing/graphs/contributors">
-          GitHub 贡献者页面
-        </a>
-      </Divider>
-      <Row>
-        <Card>
-          <img
-            src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
-            alt="happypeter"
-          />
-          <Text>
-            <Name>happypeter</Name>
-            <Job>
-              <a href="http://haoduoshipin.com">好多视频网创始人</a>
-            </Job>
-            本书作者。欢迎添加 Peter 微信：happypeter1983 。
-          </Text>
-        </Card>
-        <Card>
-          <img
-            src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/billie.png?raw=true"
-            alt="billie66"
-          />
-          <Text>
-            <Name>billie66</Name>
-            <Job>
-              <a href="http://haoqicat.com">好奇猫共同创始人</a>
-            </Job>
-            维护本网页及其电子书
-          </Text>
-        </Card>
-      </Row>
-      <Picture>
+const Contributors = () => (
+  <Wrap>
+    <Divider>
+      <a href="https://github.com/happypeter/gitbeijing/graphs/contributors">
+        GitHub 贡献者页面
+      </a>
+    </Divider>
+    <Row>
+      <Card>
         <img
-          src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/people.png?raw=true"
-          height="102"
-          width="250"
-          alt="people"
+          src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
+          alt="happypeter"
         />
-      </Picture>
-    </Wrap>
-  )
-}
+        <Text>
+          <Name>happypeter</Name>
+          <Job>
+            <a href="http://haoduoshipin.com">好多视频网创始人</a>
+          </Job>
+          本书作者。欢迎添加 Peter 微信：happypeter1983 。
+        </Text>
+      </Card>
+      <Card>
+        <img
+          src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/billie.png?raw=true"
+          alt="billie66"
+        />
+        <Text>
+          <Name>billie66</Name>
+          <Job>
+            <a href="http://haoqicat.com">好奇猫共同创始人</a>
+          </Job>
+          维护本网页及其电子书
+        </Text>
+      </Card>
+    </Row>
+    <Picture>
+      <img
+        src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/people.png?raw=true"
+        height="102"
+        width="250"
+        alt="people"
+      />
+    </Picture>
+  </Wrap>
+)
+
+export default Contributors
 
 const Wrap = styled.div`
   margin-bottom: 30px;
@@ -94,7 +94,7 @@ const Card = styled.div`
   min-height: 147px;
   margin: 50px auto;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     transform: skew(-3deg, -2deg);
@@ -125,7 +125,7 @@ const Name = styled.div`
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: 'Crete Round';
+  font-family: "Crete Round";
   font-style: italic;
   color: #e5533c;
 `
