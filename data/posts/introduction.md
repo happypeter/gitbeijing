@@ -2,11 +2,11 @@
 title: 简介
 ---
 
-这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。你好，我是 Peter，今天是咱们见面的第一天，我想跟你聊的是一些故事和一些关于 git 北京学习安排的想法。
+这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。你好，我是 Peter，今天是咱们见面的第一天，我想跟你聊的是一些故事和学习本书的思路。
 
 ### 我和 git 的罗曼史
 
-git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻 x。关于软件为何以 git 命名，它的作者 Linus 曾经这样调侃：
+git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻 x 。关于软件为何以 git 命名，它的作者 Linus 曾经这样调侃：
 
 > 我是个自负的混蛋，所有我的项目都以我自己的名字命名，先有 Linux，现在是 git 。
 
@@ -19,7 +19,7 @@ First Linux, now git.” – Linus -->
 
 ![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/introduction/linus_gittalk.jpg?raw=true)
 
-上面这张图片是 Linus 在 google 演讲介绍 git 。这个我下载到自己的手持设备上，非常喜欢，听了有 100 遍。 [可以在这里找到视频](http://git-scm.com/doc/ext) 。
+上面这张图片是 Linus 在 google 演讲介绍 git 。 [可以在这里找到视频](http://git-scm.com/doc/ext) 。
 
 Git 的魅力在于开源文化，2008 年 github 的诞生把开源协作的理念更好的进行了推广，因为 Github 让 Git 变得更为易用。
 
@@ -57,7 +57,7 @@ Git 和 Github 改变了我的职业发展路线，多年过去了，依然感�
 
 ![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/introduction/graph_demo.png?raw=true)
 
-总之，这是一本给普通开发者的书（不是培养 git 专家），所以我会从日常开发工作的实际图景把握各个知识点的轻重，让大家花 20%的时间掌握 80%最常用的操作。
+总之，这是一本给普通开发者的书（不是培养 git 专家），所以我会从日常开发工作的实际图景把握各个知识点的轻重，让大家花20%的时间掌握80%最常用的操作。
 
 ### 反馈和改版
 

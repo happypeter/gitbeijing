@@ -4,8 +4,8 @@ import styled from 'styled-components'
 const Author = () => (
   <Wrap>
     <div className="divider">
-      <a href="http://haoqicat.com/gitbeijing">
-        访问好奇猫网站上完整的《 Git 北京》视频课程
+      <a href="https://github.com/happypeter/gitbeijing">
+        LAST UPDATE: Mar 2019
       </a>
     </div>
     <div className="name-card-wrapper">
