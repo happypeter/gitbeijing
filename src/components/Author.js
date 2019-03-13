@@ -1,6 +1,5 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from 'react'
+import styled from 'styled-components'
 
 const Author = () => (
   <Wrap>
@@ -20,8 +19,8 @@ const Author = () => (
           <div className="job-title">
             <a href="http://haoduoshipin.com">本书作者，好多视频网作者</a>
           </div>
-          挥汗写下本书，致敬北京 Linux 用户组的那些曾经帮助过我的朋友们。
-          <Link to="/history">点击查看</Link> Gitbeijing 的由来。
+          挥汗写下本书，致敬北京 Linux 用户组的那些曾经帮助过我的朋友们。北京
+          Git 用户组是2009年由 happypeter 发起的 Linux 用户组之下的小组活动。
         </div>
       </div>
     </div>
@@ -67,7 +66,7 @@ const Wrap = styled.div`
     }
     margin: 50px auto;
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       z-index: -1;
       transform: skew(-3deg, -2deg);
@@ -93,7 +92,7 @@ const Wrap = styled.div`
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 10px;
-        font-family: "Crete Round";
+        font-family: 'Crete Round';
         font-style: italic;
         color: #e5533c;
       }
