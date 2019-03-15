@@ -28,43 +28,9 @@ Github 上操作虽多，但是都是围绕一个个的项目展开的。但是�
 
 ![](https://img.haoqicat.com/2018102402.jpg)
 
-注意要勾选 Initialize this repository with a README ，然后创建这个项目。也会看到 Create Repository ，也就是创建仓库按钮的上方还有两个选择框，一个是关于 .gitignore 的，另一个是关于 LICENSE 的。这两项如果选择了就是在项目中又多了两个文本文件，一个是 .gitignore 文件，另一个是 LICENSE 文件，暂时都不选就可以，回头需要了可以自己用编辑器新建。
+注意要勾选 Initialize this repository with a README ，然后创建这个项目，这样创建仓库中就会添加一个 README 文件了。这里也会看到在 Create Repository （创建仓库）按钮的上方还有两个选择框，一个是关于 .gitignore 的，另一个是关于 LICENSE 的。这两项如果选择了就是在项目中又多了两个文本文件，一个是 .gitignore 文件，另一个是 LICENSE 文件，暂时都不选就可以，回头需要了可以自己用编辑器新建。
 
 点创建仓库按钮，属于我们自己的一个项目仓库就创建成功了。
-
-### 编辑项目
-
-创建项目完成后，就会跳转到 <https://github.com/happypeter/coco> 这个页面。这里的几乎每一个可以点的地方都会涉及到一个新概念，不用着急，后面咱们都会介绍到。先来瞄准一个最为重要的，叫 commit，如图中所指：
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_in_browser/show_commit.png?raw=true)
-
-每次项目修改后，点击 `commit` 按钮就可以生成一个新的版本。commit 英文的基本意思是执行某个重要的事情，例如 commit suicide，自我了断。但是在 git 这里，做动词讲的时候是保存版本，当名词讲就是版本。
-
-现在就来编辑一下。点击上面图中，项目名 `coco` 右侧的加号，进入下面界面。
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_in_browser/add_new_file.png?raw=true)
-
-来新建一个文件叫 `love.md`，在标号 1 处。填写文件内容，标号 2 处。下面 `Commit new file` 部分填写的是“版本留言”（ commit message ），说明一下为什么要做这次修改，一方面是跟队友沟通的一种形式，另一方面如果项目版本多了，自己也可以用这个留言来定位特定的一次修改。标号 3 处填写一个一行的留言，标号 4 处可以写详细留言，这一项是可选的。最后，点击 `Commit new file` 按钮，一个新版本就做好了。
-
-顺便提一下，github 的页面编辑器是经过特殊强化的，用起来非常舒服。点下图 1 处，可以进入全屏模式，编辑后还可以用 2 处的 `Preview changes` 预览一下修改内容。
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_in_browser/github_editor.png?raw=true)
-
-自动跳转回项目页面之后，会发现原来 `1 commit` 的地方，现在已经变成了下图所示的 `2 commits`
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_in_browser/2_commits.png?raw=true)
-
-`2 commits` 是个链接，点进入就进入了项目历史的页面。
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_in_browser/history_view.png?raw=true)
-
-现在看到历史上有两个版本，点开上面的一个版本，或者说一个 commit，就可以看到一个 commit 所包含的信息了。
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_in_browser/4w_commit.png?raw=true)
-
-最重要的是 `版本号` （ commit id ）。每个 commit 都有一个，是一个 40 位 16 进制数，可以用来定位每个版本。注意一下地址栏中 url 的格式，以后只要是拿到了一个版本号，就可以照猫画虎的敲上面这样的链接来查看这次的修改的详细内容了，方便吧？！
-
-一个 commit （版本）中最核心的内容就是这 4 个 `w` 了，谁（ who ）在什么时间（ when ）改了那些内容（ what ），最后一个是为什么要改（ why ），这个是版本留言发挥的作用。
 
 ### 编辑项目
 
