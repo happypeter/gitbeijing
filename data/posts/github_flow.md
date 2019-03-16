@@ -2,7 +2,7 @@
 title: 团队合作流程
 ---
 
-前几天还都是一个开发者唱独角戏。但是尽管如此也可以看出 git 带来的便利了，比如代码写错了可以回滚，为了新功能开发可以开新分支等等。但是 git 和 github 更大的威力在于协作。
+前几天还都是一个开发者唱独角戏。但是尽管如此也可以看出 git 带来的便利了，比如代码写错了可以回滚，为了新功能开发可以开新分支等等。但是 git 和 github 更大的威力在于协作，所以今天来聊团队协作流程。
 
 聊了这么多天的 github，有必要稍微停下来，再想想究竟什么是 github 。没错，前面的使用中也看到了，github 是 git 仓库的托管平台，让我们的项目仓库可以方便的备份同步。但是其实也许比这个还要重要的是，github 是一个大家一起协作做项目的平台，是一种开发者的工作方式，引导一种看着不像流程的一种真正健康轻便的开发流程。
 
@@ -10,111 +10,79 @@ title: 团队合作流程
 
 > 多年来我一直在寻找做软件正确的方式，现在我想我找到了，github 就是这种方式。
 
-究竟 Github 是什么的问题从它的标语中也可以看出
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/better_together.png?raw=true)
-
-Github 多年来总结出来一套自己的团队协作流程，简单而且强大，叫做 [Github Flow](https://guides.github.com/introduction/flow/index.html) ，网站上的各个功能都是围绕着这个流程来开发的。另，中文版的 Github Flow 在[这里](http://gitbeijing.com/flow/) 。
+Github 多年来总结出来一套自己的团队协作流程，简单而且强大，叫做 [Github Flow](https://guides.github.com/introduction/flow/index.html) ，网站上的各个功能都是围绕着这个流程来开发的。
 
 要了解一个流程，没有什么比跑一个最简单的实际例子更好的方式了，官方给出的[Hello World](https://guides.github.com/activities/hello-world/)就是服务于这个目的，不过这个 Hello World 用的是纯粹的网页来实现整个流程。咱们今天用网页配合 Github For Mac 客户端来完成这个流程。
 
 ### 什么是 Github Flow ？
 
-说白了，就是给一个项目开发新功能要走的几步。整个过程的核心是“拉取请求” 。
+来理解一下什么是 Github Flow 。说白了，就是给一个项目开发新功能要走的几步。整个过程的核心是“拉取请求” 。
 
-第一步，创建新的话题分支。如下图所示
+第一步，创建新分支，拥有开发这个新功能。如下图所示
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/new_branch.png?raw=true)
+![](https://img.haoqicat.com/2019031601.jpg)
 
 第二步，不断实现功能，做成一个个新版本。
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/make_changes.png?raw=true)
+![](https://img.haoqicat.com/2019031602.jpg)
+
 
 第三步，发起”拉取请求“（ Pull Request ），后面简称 PR 吧。
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/open_pr.png?raw=true)
+![](https://img.haoqicat.com/2019031603.jpg)
+
 
 第四步，大家讨论。这是一个代码审核的过程。
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/discuss.png?raw=true)
+![](https://img.haoqicat.com/2019031604.jpg)
 
-最后，把话题分支的内容合并到 master 。
+第五步，部署代码。
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/merge_in.png?raw=true)
+![](https://img.haoqicat.com/2019031604.jpg)
 
-下面跑一个实际例子。
+第六步，把分支的内容合并到 master 。
 
-<!-- http://git-scm.com/book/en/v2/GitHub-Contributing-to-a-Project 的例子就挺好 -->
+![](https://img.haoqicat.com/2019031606.jpg)
+
+这就是整个 Github Flow 的几个步骤了。
 
 ### 给队友添加写权限
 
-现在我和 @billi66 要合作开发一个新项目。于是我就来创建这个项目，过程在[浏览器中使用 Github](github_in_browser.html)中已经介绍过了。下面就继续在 coco 这个项目上做演示。
+接下来跑一个实际的例子。首先一步是给队友添加写权限，注意这里的讨论的是团队共同开发自己公司的项目，对于开源项目，是不必给贡献者添加写权限的，后续小节中会有专门介绍。
 
-现在我要把 @billi66 添加进来，让她也具有项目的修改权限了。如何来做呢？把她添加成项目的“协作者”（ collaborator ） 就行了。 coco 本身是一个私有仓库 ，但是对于开源项目也是一样可以添加 collaborator 的。
+现在我和 @billi66 要合作开发一个新项目。于是我就来创建这个项目，过程在[浏览器中使用 Github](github_in_browser)中已经介绍过了。下面就继续在 GUI 这个项目上做演示。
 
-首先到项目页面，点击 Settings 一项，
+现在我要把 @billi66 添加进来，让她也具有项目的修改权限了。如何来做呢？把她添加成项目的“协作者”（ collaborator ） 就行了。 
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/find_settings.png?raw=true)
+首先到项目页面，点击 Settings 一项，可以看到 collaborators 选项，输入框中输入 `bi` 就可以自动补齐出 `billie66` 了
 
-到项目的 Settings 页面，可以看到如下图所示的 collaborator 选项，输入框中输入 `bi` 就可以自动补齐出 `billie66` 了
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/add_collaborator.png?raw=true)
+![](https://img.haoqicat.com/2019031607.jpg)
 
 回车选中，然后点 `Add collaborator` 按钮，这样就完成了。
 
 ### 开话题分支并在上面开发
 
-现在我和 @billie66 都对 coco 项目有写权限，对于非常有把握的代码，可以直接在本地 master 开发然后 sync 到远端 master 分支上面。但是如果是比较重要的功能，还是要发单独开”话题分支“（ Topic Branch ），这个是后面发 PR 的前提。
+现在我和 @billie66 都对项目有写权限，对于非常有把握的代码，可以直接在本地 master 开发然后 Push 到远端 master 分支上面。但是如果是比较重要的功能，还是要发单独开”话题分支“（ Topic Branch ），这个是后面发 PR 的前提。
 
 尽管所有的流程操作都可以在[浏览器中完成](https://github.com/blog/1557-github-flow-in-the-browser)。但是更为常见的情形是我和 @billie 会把代码 clone 到本地开进行新功能的开发，因为这样可以使用自己的编辑器以及测试工具。
 
-现在我要对项目开发一个很大很大的功能，所以就先来开一个分支叫做 describe-project 。名字是越清楚越好的，这样队友比较能一眼看出我在干什么。注意开新分支一定要在刚刚更新过的 master 的基础上开。开好之后把这个分支发布到远端，以后这个分支上每次实现一点小功能就 publish 到远端，这样的好处是队友可以随时看到我的进展。这部分的操作前面[客户端使用](github_for_mac.html)中都介绍了。
+现在我要对项目开发一个很大很大的功能，所以就先来开一个分支叫做 `describe-project` 。名字是越清楚越好的，这样队友比较能一眼看出我在干什么。注意开新分支一定要在刚刚更新过的 master 的基础上开。开好之后把这个分支发布到远端，以后这个分支上每次实现一点小功能就 push 到远端，这样的好处是队友可以随时看到我的进展。这部分的操作前面[客户端使用](github_for_mac.html)中都介绍了。
 
-这样我做了两个版本，而且都同步到远端仓库了。所以到 describe-project 分支的历史上可以看到多了下面两个新 commit 。
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/two_commits.png?raw=true)
-
-功能实现了，可以发 PR 了。
-
-### 发 Pull Request
-
-PR 在整个 Github Flow 流程中占有核心位置。其实 PR 的目的就是讨论，且整个讨论过程是围绕着实打实的代码。
-
-先到仓库页面，找到发 PR 的大绿按钮
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/compare_btn.png?raw=true)
-
-下面图中显示的界面中，看 1 处，注意一下是拿出哪两个分支来进行对比。2 处，我要填写一些内容，解释一下我的修改内容。3 处，可以上传图片。
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/pr_main_view.png?raw=true)
-
-同样在这个页面上，滑动到下方还可以看到这次 PR 的具体对比出来的代码内容
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/pr_content.png?raw=true)
-
-点击 `Create Pull Request` 按钮，这样发 PR 就成功了。
-
-补充一句。实际上，[客户端中也可以发 PR](https://github.com/blog/1946-create-pull-requests-with-github-for-mac)，达成的效果跟网页中发是一样的，这里就不演示了。
+这样我做了两个版本，而且都同步到远端仓库了。所以到 `describe-project` 分支的历史上可以看到多了下面两个新 commit 。然后就可以到项目主页，选中 `describe-project` 分支，来给 master 分支发 Pull Request 了。具体过程之前我们已经介绍过了，这里不再重复。
 
 ### 讨论审核代码
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/final_pr.png?raw=true)
+这样，master 的维护者就可以就这个 Pull Request 来进行讨论和代码审核了。不一定是一个老大审核小弟们的代码，可以是队友之间的互相审核。
 
-PR 的讨论过程也算是代码审核。不一定是一个老大审核小弟们的代码，可以是队友之间的互相审核。
+@billie66 看到这个 PR 之后，就会发表她的意见了。如果我看到之后觉得有道理，代码需要调整，那我现在是不是要撤销这 PR 重新发呢？不用。我只需要继续在 `describe-project` 分支上改代码然后再同步上来。
 
-@billie66 看到这个 PR 之后，就会发表她的意见了。
+![](https://img.haoqicat.com/2019031608.jpg)
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/billie_comment.png?raw=true)
+Pull Request 讨论不断继续，会形成一条由评论和代码穿插而成的一条线。最后达成一致，我或者 @billie 其中之一可以点一下上面的大大的 `Merge Pull Request` （ 融合拉取请求 ）的按钮，这样话题分支上的代码就合并到 master 之上了。接下来 `describe-project` 这个话题分支也就可以删掉了。然后关闭这个 PR 了。
 
-看到之后我觉得有道理，代码需要调整，那我现在是不是要撤销这 PR 重新发呢？不用。我只需要继续在 describe-project 分支上改代码然后再同步上来。
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/more_code.png?raw=true)
-
-上面的图中可以看到，讨论不断继续，会形成一条由评论和代码穿插而成的一条线。最后达成一致，我或者 @billie 其中之一可以点一下上面的大大的 `Merge Pull Request` （ 融合拉取请求 ）的按钮，这样话题分支上的代码就合并到 master 之上了。接下来 describe-project 这个话题分支也就可以删掉了。然后关闭这个 PR 了。
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/delete_branch.png?raw=true)
-
-每一个 PR 都是开发历史上的一次小事件，很长时间过去之后，再看看当时的 PR 就可以看到当时为什么要开发这个功能，大家都是什么意见，都写了哪些代码，所以是项目发展的珍贵资料。从这个角度来说，即使一个 PR 没有被 merge 进 master ，那它里面的代码和讨论的内容也会是非常有意义的尝试，也可能在未来会有很大的参考价值。
+==== To be Continued ===
 
 ### 快速 PR
 
