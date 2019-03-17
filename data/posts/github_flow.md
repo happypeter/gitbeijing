@@ -82,19 +82,14 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 Pull Request 讨论不断继续，会形成一条由评论和代码穿插而成的一条线。最后达成一致，我或者 @billie 其中之一可以点一下上面的大大的 `Merge Pull Request` （ 融合拉取请求 ）的按钮，这样话题分支上的代码就合并到 master 之上了。接下来 `describe-project` 这个话题分支也就可以删掉了。然后关闭这个 PR 了。
 
 
-==== To be Continued ===
 
 ### 快速 PR
 
 走一遍 Github Flow 其实方式并不唯一。前面讨论的，在自己的机器上改代码，用客户端作 commit，然后在网页上发 PR 是一种常见的方式。如果我只是改一个文件中的一个小地方，完全可以使用 github 网页功能提供的[快速 PR](https://github.com/blog/1945-quick-pull-requests)这种方法。来演示一下。
 
-网页界面中，找到我要修改的文件，点击 `edit`
+网页界面中，找到我要修改的文件，点击 `edit`，修改一下文件内容，然后在下面的界面中，可以直接填写一个 Topic 分支名，创建这个分支，并 commit 到这个分支上发 PR 了。
 
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/quick_pr_view.png?raw=true)
-
-然后在下面的界面中，可以直接填写一个 Topic 分支名，创建这个分支，并 commit 到这个分支上发 PR 了
-
-![](https://github.com/happypeter/gitbeijing/blob/master/data/posts/images/github_flow/quick_pr_view.png?raw=true)
+![](https://img.haoqicat.com/2019031608.jpg)
 
 说实话要只是一个小改动，即使是老手，你让我切换到编辑器和客户端，再跑一遍整个的这个发 PR 的流程，我也会觉得挺麻烦挺分心的。快速 PR 方法真的是非常方便。
 
