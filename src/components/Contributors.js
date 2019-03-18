@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Contributors = () => (
   <Wrap>
@@ -10,10 +10,7 @@ const Contributors = () => (
     </Divider>
     <Row>
       <Card>
-        <img
-          src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/peter.jpg?raw=true"
-          alt="happypeter"
-        />
+        <img src="https://img.haoqicat.com/2019031822.jpg" alt="happypeter" />
         <Text>
           <Name>happypeter</Name>
           <Job>
@@ -23,10 +20,7 @@ const Contributors = () => (
         </Text>
       </Card>
       <Card>
-        <img
-          src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/billie.png?raw=true"
-          alt="billie66"
-        />
+        <img src="https://img.haoqicat.com/2019031824.jpg" alt="billie66" />
         <Text>
           <Name>billie66</Name>
           <Job>
@@ -38,7 +32,7 @@ const Contributors = () => (
     </Row>
     <Picture>
       <img
-        src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/people.png?raw=true"
+        src="https://img.haoqicat.com/2019031899.png"
         height="102"
         width="250"
         alt="people"
@@ -94,7 +88,7 @@ const Card = styled.div`
   min-height: 147px;
   margin: 50px auto;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: -1;
     transform: skew(-3deg, -2deg);
@@ -125,7 +119,7 @@ const Name = styled.div`
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
-  font-family: "Crete Round";
+  font-family: 'Crete Round';
   font-style: italic;
   color: #e5533c;
 `

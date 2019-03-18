@@ -1,14 +1,11 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const BookIntro = () => (
   <Section>
     <Container>
       <Left>
-        <Image
-          alt="git"
-          src="https://github.com/happypeter/gitbeijing/blob/master/src/assets/images/index/cover_3d_move2github.png?raw=true"
-        />
+        <Image alt="git" src="https://img.haoqicat.com/2019031834.jpg" />
       </Left>
       <Right>
         <Title>搬进 Github</Title>
@@ -58,7 +55,7 @@ const Image = styled.img`
 const Right = styled.div`
   width: 535px;
   margin-top: 75px;
-  font-family: "Crete Round", Georgia, "Times New Roman", Times, serif;
+  font-family: 'Crete Round', Georgia, 'Times New Roman', Times, serif;
   @media (max-width: 768px) {
     width: 100%;
     margin-top: 0;
@@ -80,11 +77,11 @@ const Author = styled.div`
   font-size: 18px;
   margin-top: 20px;
   position: relative;
-  font-family: "myriad-pro", Arial, sans-serif;
+  font-family: 'myriad-pro', Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   &:after {
-    content: " ";
+    content: ' ';
     width: 100%;
     border-bottom: 1px solid #e1e1e0;
     position: absolute;
@@ -99,7 +96,7 @@ const Author = styled.div`
 const Desc = styled.div`
   color: #333;
   font-size: 18px;
-  font-family: "myriad-pro", Arial, sans-serif;
+  font-family: 'myriad-pro', Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
   margin-top: 40px;
@@ -113,7 +110,7 @@ const Button = styled.a`
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  font-family: "myriad-pro", Arial, sans-serif;
+  font-family: 'myriad-pro', Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   padding: 10px 30px;
