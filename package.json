@@ -16,6 +16,7 @@
     "gatsby": "^2.1.31",
     "gatsby-plugin-react-helmet": "^3.0.9",
     "gatsby-plugin-styled-components": "^3.0.7",
+    "gatsby-remark-autolink-headers": "^2.0.16",
     "gatsby-source-filesystem": "^2.0.24",
     "gatsby-transformer-json": "^2.1.10",
     "gatsby-transformer-remark": "^2.3.2",
