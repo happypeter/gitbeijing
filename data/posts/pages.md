@@ -6,7 +6,6 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 ![](https://img.haoqicat.com/2019031801.jpg)
 
-
 ### 分类和文档
 
 到 <https://pages.github.com/> 上，看到可以创建的网站有两类，一类是为自己或者是自己的组织创建站点，就是新建一个仓库，仓库的名字叫做，username.github.io 或者是 orgnizationname.github.io ，注意这里的 username 和 orgnizationname 要严格替换成你自己的用户名或者组织名，大小写也要区分，不然就会有问题。然后就往仓库里面放页面内容就行了。第二类是为项目创建网站，这个其实主要步骤都是一样的，只不过稍微比创建用户或组织网站复杂一点点。
@@ -66,7 +65,7 @@ Jekyll 的好处是简单易用，同时是 Github Pages 服务直接支撑的�
 gitbeijing.com
 ```
 
-这样操作结束，可能还要稍微等几个小时给 DNS 扩散。然后访问 gitbeijing.com 已经可以访问到我的网站了，如果访问 <http://www.gitbeijing.com> 则可以跳转到 <https://gitbeijing.com> ，效果完美。
+这样操作结束，可能还要稍微等几个小时给 DNS 扩散以及 HTTPS 的证书的颁发。然后访问 gitbeijing.com 已经可以访问到我的网站了，如果访问 <http://www.gitbeijing.com> 则可以跳转到 <https://gitbeijing.com> ，效果完美。
 
 ### 总结
 
