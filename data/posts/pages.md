@@ -6,7 +6,7 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 ![](https://img.haoqicat.com/2019031801.jpg)
 
-### 分类和文档
+## 分类和文档
 
 到 <https://pages.github.com/> 上，看到可以创建的网站有两类，一类是为自己或者是自己的组织创建站点，就是新建一个仓库，仓库的名字叫做，username.github.io 或者是 orgnizationname.github.io ，注意这里的 username 和 orgnizationname 要严格替换成你自己的用户名或者组织名，大小写也要区分，不然就会有问题。然后就往仓库里面放页面内容就行了。第二类是为项目创建网站，这个其实主要步骤都是一样的，只不过稍微比创建用户或组织网站复杂一点点。
 
@@ -15,7 +15,7 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 下面我们来创建一个组织网站，详细步骤在 <https://pages.github.com/> 页面上是有的。
 
-### 制作过程
+## 制作过程
 
 下面我们动手来做一下。
 
@@ -25,7 +25,7 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 然后再该组织之下，创建一个先的仓库名为 gitbeijing.github.io 。注意这个仓库的名字是有严格规定的，不要拼错。到新项目中，添加一个新文件，名字叫 index.html ，里面的内容就随便写了。保存之后，过几分钟就可以到 gitbeijing.github.io 这个链接中看到页面了。
 
-### jekyll
+## jekyll
 
 > Jekyll 是一个简单的，支持博客结构的，静态网站生成器。
 
@@ -42,7 +42,7 @@ Jeklly 的具体使用本身跟 git 没有直接联系，所以这里就不细�
 
 Jekyll 的好处是简单易用，同时是 Github Pages 服务直接支撑的，也就是说只要按照 Jekyll 规范来写的内容，推送到 github.com 之后就能够自动转换为 html 显示出来。但是 Jekyll 的不足是灵活性弱，gitbeijing 就没有使用 Jekyll ，而是[使用了 Gatsby ](https://github.com/happypeter/gitbeijing)来生成静态页面，然后把生成好的静态页面再托管到 gitbeijing.github.io 。
 
-### 绑定自己的域名
+## 绑定自己的域名
 
 有一个功能其实很重要，就是绑定自己的域名。想想如果有天 github 网站被依法和谐了，那怎么办？如果一开始就是用自己的域名，那就简单了，直接换一台服务器就好了。
 
@@ -67,6 +67,6 @@ gitbeijing.com
 
 这样操作结束，可能还要稍微等几个小时给 DNS 扩散以及 HTTPS 的证书的颁发。然后访问 gitbeijing.com 已经可以访问到我的网站了，如果访问 <http://www.gitbeijing.com> 则可以跳转到 <https://gitbeijing.com> ，效果完美。
 
-### 总结
+## 总结
 
 喜欢分享是一个好程序员的标志，我给我的很多初学编程的朋友的建议就是，先学习如何用 Github Pages 搭建自己的个人网站，一来可以锻炼一些基本的网站开发技巧，二来可以建立一个分享的阵地。

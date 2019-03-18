@@ -4,7 +4,7 @@ title: Github issues
 
 Github 上的每个项目仓库，都有三套基础设置可供使用：一个是通过 Github Pages 机制建立项目网站，后面会介绍的。另外一个就是每个项目都可以开自己的 wiki ，作为项目的知识库。第三个就是咱们今天的主角，事务卡片（ Issues ）。很多比较复杂的项目管理软件会把“报 Bug ”，“提新需求”，“其他讨论”，这些项目相关的内容分成不同的板块来进行，在 Github 这里，所有的内容就都作为事务卡片来统一管理了。
 
-### 基本使用
+## 基本使用
 
 比较详细的 Issues 功能介绍，可以参考[官方的 Issue 指南](https://guides.github.com/features/issues/)，今天咱们这里会捡着一些重要的来说。在 [How Github Use Github To Build Github](https://zachholman.com/talk/how-github-uses-github-to-build-github/) 这个演讲中有 Issues 的使用哲学的一些讨论，非常有启发性的。
 
@@ -21,7 +21,7 @@ Github 上的每个项目仓库，都有三套基础设置可供使用：一个�
 
 另外，对于开源项目，任何人都有权利提 Issue 的，有时候我有问题需要跟项目拥有者沟通，就可以提一个 Issue 。
 
-### 支持 Markdown 语法
+## 支持 Markdown 语法
 
 在上面的新建 Issue 的界面上可以看到 `Markdown Supported` （支持 Markdown）的链接，点开，可以看到一篇详细的 Markdown 介绍文档。
 
@@ -65,7 +65,7 @@ Markdown 是一种标记性语言，通过很简单的标注就可以表示出�
 
 另外也可以插入图片和链接等其他格式。
 
-### Issue 中的一些其他小技巧
+## Issue 中的一些其他小技巧
 
 还有几个小技巧也非常的能提高工作效率。
 
@@ -81,6 +81,6 @@ Markdown 是一种标记性语言，通过很简单的标注就可以表示出�
 
 另外，Issue 上也可以添加标签，设置 milestone，并且把任务布置给一个特定的开发者。
 
-### 总结
+## 总结
 
 前面咱们用过很多 Pull Request 的功能了，其实一个 PR 和一个 Issue 在很多方面都是一样的，所以 Issue 这里介绍的大部分功能都可以在 PR 讨论中使用。另外，Issue 中一般是放一些临时性的讨论，最终是要被关掉的。如果 Issue 里面有一些精华的内容，可以拷贝出来贴到 wiki 中，方便大家查阅。

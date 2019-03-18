@@ -4,7 +4,7 @@ title: 简介
 
 这是一本带初学者学会使用 git 版本控制工具和 github.com 社交化编程平台的书。用爱打造。你好，我是 Peter，今天是咱们见面的第一天，我想跟你聊的是一些故事和学习本书的思路。
 
-### 我和 git 的罗曼史
+## 我和 git 的罗曼史
 
 git 和 github 两个词初学者经常搞不清谁是谁？Git 是一个版本控制工具，是一个可以安装在你自己机器上的软件。Git 这个单词的中文意思是傻 x 。关于软件为何以 git 命名，它的作者 Linus 曾经这样调侃：
 
@@ -31,7 +31,7 @@ Github 首先是一个公司，<https://github.com> 网站是他们的产品，�
 
 Git 和 Github 改变了我的职业发展路线，多年过去了，依然感觉当年遇见 Git 是如此的幸运。
 
-### Git 和 Github 如何改变生活
+## Git 和 Github 如何改变生活
 
 <!-- >Programming is not just code and computers. It's about people. It is decision making, information sharing, and the tools and mental models we use to solve problems and iterate on the solutions. -->
 
@@ -50,7 +50,7 @@ Git 和 Github 改变了我的职业发展路线，多年过去了，依然感�
 
 我自己当时找工作的时候，Github 其实就是我的简历。实际的项目，详细的改版历史中都可以看到心思和汗水，这个要比简历上空洞的写“我精通 xxx"要有说服力。
 
-### 本书内容
+## 本书内容
 
 首先这本书是写给初学者的，是给没有任何版本控制经验的同学的。书中展示了使用 git 和 github 的一套最简单的方式，让新人能快速上手。Git 是一个命令行工具，但是对于很多不会命令行的人来说造成了入门困难。《搬进 Github》全部以 Github 的网站配合图形化客户端来讲解，这样学完，即使你不会用命令行，对于版本控制的最核心和重要的操作也一样会游刃有余。
 
@@ -64,7 +64,7 @@ Git 和 Github 改变了我的职业发展路线，多年过去了，依然感�
 
 总之，这是一本给普通开发者的书（不是培养 git 专家），所以我会从日常开发工作的实际图景把握各个知识点的轻重，让大家花20%的时间掌握80%最常用的操作。
 
-### 反馈和改版
+## 反馈和改版
 
 根据大家的反馈，我会随时更新。大家可以到本书的[源码仓库](https://github.com/happypeter/gitbeijing)去查看更新或者提意见。有任何勘误或者是我没讲清楚的地方，也可以直接发邮件到我的邮箱：happypeter1983@gmail.com 。或者微信联系我：happypeter1983 。
 
