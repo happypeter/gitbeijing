@@ -14,7 +14,6 @@ export default ({ data }) => {
       <Author />
       <Toc posts={posts} />
       <Contributors />
-      hello world
     </Layout>
   )
 }
