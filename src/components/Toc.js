@@ -17,7 +17,7 @@ const Toc = ({ posts }) => {
                     {article.id === 'x' ? (
                       <a href={article.link}>{article.title}</a>
                     ) : (
-                      <Link to={article.link}>{article.title}</Link>
+                      <Link to={`/${article.link}`}>{article.title}</Link>
                     )}
                   </Col2>
                 </Row>
