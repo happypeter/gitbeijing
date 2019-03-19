@@ -11,7 +11,7 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 ![](https://img.haoqicat.com/2019031701.jpg)
 
 
-基于 fork 的整个的流程就是上图展示的思路。第一步，先 fork，这样我就有了 happypeter/TLCL 这个项目了，那既然是我自己的项目，我就可以把它 clone 到我本地，做修改，然后推送到 github 上的我自己的那个 fork 之中。这样我把我自己的 fork 跟上游的仓库，也就是 billie66 名下的仓库来进行对比，就可以发出 Pull Request 了。
+基于 fork 的整个的流程就是上图展示的思路。第一步，先 fork，这样我就有了 happypeter/TLCL 这个仓库了，既然是属于自己的仓库，我就可以把它 clone 到本地，做修改，然后推送到回这个仓库之中。这样我把我自己的仓库（或者说 fork ）跟上游的仓库（ billie66 名下的仓库）来进行对比，就可以发 Pull Request 了。
 
 下面来实际操作。
 
@@ -20,7 +20,7 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 ![](https://img.haoqicat.com/2019031702.jpg)
 
 
-这样，我自己的名下就多了一个 TLCL 项目，这个项目就叫做原项目的一个 fork 。
+这样，我自己的名下就多了一个 TLCL 仓库。
 
 ![](https://img.haoqicat.com/2019031703.jpg)
 
@@ -31,9 +31,9 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 ## 做版本和同步
 
-区别于团队合作的 [Github Flow](http://gitbeijing.com/flow/)，这里主要是没有开新分支，而是创建了一个新的 fork。上游仓库 billie66/TLCL 中代码是在 gh-pages 分支上，那现在我在本地的 gh-pages 修改，新版本同步到在 happypeter/TLCL 的 gh-pages 上就可以了。
+区别于团队合作的 [Github Flow](http://gitbeijing.com/flow/)，这里没有开新分支，而是创建了一个新的 fork。上游仓库 billie66/TLCL 中代码是在 gh-pages 分支上，那现在我在本地的 gh-pages 修改，新版本同步到在 happypeter/TLCL 的 gh-pages 上就可以了。
 
-本地修改，做 commit，然后同步到远端的 happypeter/TLCL 中，这些步骤到现在应该是轻车熟路，小菜一碟了。于是到 github.com 可以看到下图的内容。
+本地修改，做 commit，然后同步到远端的 happypeter/TLCL 中，这些步骤是轻车熟路了。于是到 github.com 可以看到下图的内容。
 
 ![](https://img.haoqicat.com/2019031705.jpg)
 
@@ -56,9 +56,9 @@ Github 是目前世界上最大的开源项目的托管交流平台。[贡献开
 
 ## 基于 fork 的快速 PR
 
-前面介绍过[快速 PR](https://github.com/blog/1945-quick-pull-requests)了，不过那个流程是基于一个我自己有写权限的项目。那对于人家的开源项目，我根本就不能修改，能不用在网页上直接发开速 PR 呢？幸运的是，答案是肯定的。而且过程是超级的简单和直观。
+前面介绍过[快速 PR](https://github.com/blog/1945-quick-pull-requests)了，不过那个流程是基于一个我自己有写权限的项目。那对于人家的开源项目，我根本就不能修改，能不用在网页上直接发开速 PR 呢？答案是 Yes ，而且过程也一样简单和直观。
 
-做法就是，我来到 bille66/TLCL 的这个项目，不做 fork，而是直接打开一个我想要编辑的文件，修改，然后做 commit 的时候点 'Propose file change`。
+做法就是，我来到 bille66/TLCL 的这个项目，不需要自己动手 fork，而是直接打开一个我想要编辑的文件，修改，然后做 commit 的时候点 'Propose file change`。
 
 ![](https://img.haoqicat.com/2019031708.jpg)
 
