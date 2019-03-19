@@ -5,52 +5,52 @@
       {
         "id": "1",
         "title": "简介",
-        "link": "introduction.html"
+        "link": "introduction"
       },
       {
         "id": "2",
         "title": "浏览器中使用 GitHub",
-        "link": "github_in_browser.html"
+        "link": "github_in_browser"
       },
       {
         "id": "3",
         "title": "GitHub For Mac 客户端",
-        "link": "github_for_mac.html"
+        "link": "github_for_mac"
       },
       {
         "id": "4",
         "title": "简单分支操作",
-        "link": "simple_branching.html"
+        "link": "simple_branching"
       },
       {
         "id": "5",
         "title": "合并分支",
-        "link": "merge.html"
+        "link": "merge"
       },
       {
         "id": "6",
         "title": "团队协作流程",
-        "link": "github_flow.html"
+        "link": "github_flow"
       },
       {
         "id": "7",
         "title": "开源项目贡献流程",
-        "link": "fork_flow.html"
+        "link": "fork_flow"
       },
       {
         "id": "8",
         "title": "GitHub Issues",
-        "link": "issues.html"
+        "link": "issues"
       },
       {
         "id": "9",
         "title": "GitHub Pages 搭建网站",
-        "link": "pages.html"
+        "link": "pages"
       },
       {
         "id": "10",
         "title": "更多 GitHub 技巧",
-        "link": "more.html"
+        "link": "more"
       }
     ]
   },

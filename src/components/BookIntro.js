@@ -42,7 +42,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   margin-top: 75px;
-  width: 450px;
+  width: 400px;
   @media (max-width: 768px) {
     width: 100%;
   }

@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 const Toc = ({ posts }) => {
   const content = posts.map((p, index) => {
@@ -14,7 +14,7 @@ const Toc = ({ posts }) => {
                 <Row key={i}>
                   <Col1>第 {article.id} 天</Col1>
                   <Col2>
-                    {article.id === "x" ? (
+                    {article.id === 'x' ? (
                       <a href={article.link}>{article.title}</a>
                     ) : (
                       <Link to={article.link}>{article.title}</Link>
@@ -55,7 +55,7 @@ const Content = styled.div`
 `
 
 const Part = styled.p`
-  font-family: "Crete Round", Georgia, Times New Roman, serif;
+  font-family: 'Crete Round', Georgia, Times New Roman, serif;
   font-size: 20px;
   color: #14877e;
   margin: 20px 0;
