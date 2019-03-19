@@ -2,7 +2,7 @@
 title: 合并分支
 ---
 
-新的一天开始。比如昨天我在一个 idea 分支上实现了一个想法，实际测试之后发现代码没有问题。那么今天我们要做的就是让这两个分支合并，或者说的具体一些，就是把 idea 分支的新代码融合（ Merge )到 master 分支，因为 master 分支才是所有同事都会关注的分支，也是最终会被上线的分支。
+新的一天开始。比如昨天我在一个 idea 分支上实现了一个想法，实际测试之后发现代码没有问题。那么今天我们要做的就是让这两个分支合并，或者说的具体一些，就是把 idea 分支的新代码融合（ merge ）到 master 分支，因为 master 分支才是最终会被上线的分支。
 
 ## 通过发 Pull Request 来合并分支
 
@@ -14,13 +14,13 @@ title: 合并分支
 
 那如何让 idea 的代码 merge 到 master 呢？首先要把 idea 分支 Push 到远端仓库中，这个前一节已经介绍过了。
 
-![](https://img.haoqicat.com/2019031512.jpg)
+![](https://img.haoqicat.com/2019031904.jpg)
 
 到 github.com 上的项目主页，首先切换到 idea 分支，然后点 `New pull request` 按钮，来创建一个先的 Pull Request 。Pull Request 翻译过来叫“拉取请求”，意思是请求 master 分支去把 idea 分支的代码拉取到 master 之上。
 
-![](https://img.haoqicat.com/2019031513.jpg)
+![](https://img.haoqicat.com/2019031905.jpg)
 
-接下来就进入了创建这个 Pull Request 的界面，可以看到，绿色的 `Able To Merge` 字样，代码 idea 上的修改跟 master 分支上没有冲突，可以直接融合。关于代码冲突，稍后我们会有进一步的介绍。下面可以看到有 input 和 text area 区域，可以去填写本次 Pull Request 的理由，也就是要解释给 master 分支的维护者，要拉取的这些修改内容都实现了那些有意义的功能。大绿按钮就是创建 Pull Request ，但是创建之前还可以看一下最底部的这些内容，也就是此次 Pull Request 中有包含了哪些代码的改动。
+接下来就进入了创建这个 Pull Request 的界面，可以看到，绿色的 `Able To Merge` 字样，意思是 idea 上的修改跟 master 分支上没有冲突，可以直接融合。关于代码冲突，稍后我们会有进一步的介绍。下面可以看到有 input 和 textarea 区域，可以去填写本次 Pull Request 的理由，也就是要解释给 master 分支的维护者，要拉取的这些修改内容都实现了那些有意义的功能。大绿按钮就是创建 Pull Request ，但是创建之前还可以看一下最底部的这些内容，也就是此次 Pull Request 中有包含了哪些代码的改动。
 
 ![](https://img.haoqicat.com/2019031514.jpg)
 
@@ -37,7 +37,7 @@ Master 分支的维护者将会看到这个 Pull Request 的详细内容，审�
 
 实际中经常有这样的情况，我正在 idea 分支上开发一个比较大的功能。但是这个时候突然发现了一个紧急的问题需要修复，所以我会直接到 master 分支上，做一个 commit 来解决这个紧急的问题。然后会来继续到 idea 上开发。
 
-其他的情形也有，总之这样就会出现，两个不同分支上并行开发，同时都有新的 commit ，这个一般没有问题，一样可以直接 merge 。
+这样就会出现，两个不同分支上并行开发，同时都有新的 commit ，这个一般没有问题，一样可以直接 merge 。
 
 
 ![](https://img.haoqicat.com/2019031516.jpg)
@@ -45,13 +45,13 @@ Master 分支的维护者将会看到这个 Pull Request 的详细内容，审�
 
 但是如果在两个分支上改动了同一个地方，合并的就会出现代码冲突。 因为 git 不知道该听哪个分支的，所以只能报出冲突的位置，让开发者手动解决。
 
-来具体操作一下。再次创建一个跟 master 拥有完全一样的历史的分支，名为 new-idea ，在这个分支上，改动 README 文件中的一行，改成 `AAA`，commit 一下。然后切换到 master 分支上，把这一行的内容改为 `BBB` ，也一样做 commit。再次重复之前的合并分支的操作。
+来具体操作一下。再次创建一个跟 master 拥有完全一样历史的分支，名为 new-idea ，在这个分支上，改动 README 文件中的一行，改成 `AAA`，commit 一下。然后切换到 master 分支上，把这一行的内容改为 `BBB` ，也一样做 commit。再次重复之前的合并分支的操作。
 
 这样发 Pull Request 的时候，就会看到 `Can not Merge` 的警告，继续进行就可以进入手动解决冲突的界面。
 
 ![](https://img.haoqicat.com/2019031517.jpg)
 
-这里我们以 master 分支的意见为最终意见，于是就可以直接删除图中红色框选内容即可。
+这里我们以 master 分支的意见为最终意见，于是就可以直接删除图中红色框选内容，然后按照界面的提示继续完成融合即可。
 
 ## 合并远端分支
 
