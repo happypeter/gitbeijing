@@ -11,7 +11,8 @@ class DocSearch extends Component {
       window.docsearch({
         apiKey: 'e7d7fcfb5ab7b179b4e5424f16404c6a',
         indexName: 'gitbeijing',
-        inputSelector: '#algolia-doc-search'
+        inputSelector: '#algolia-doc-search',
+        debug: true
       })
     } else {
       console.warn('Search has failed to load and now is being disabled')
