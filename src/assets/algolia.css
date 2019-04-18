@@ -247,7 +247,7 @@
     right: 1rem !important;
     width: 600px;
     max-width: calc(100% - 2rem);
-    max-height: calc(100% - 5rem);
+    max-height: calc(100% - 12rem);
     display: block;
     overflow: auto; /* make its child not overflow */
     background: #fff;
