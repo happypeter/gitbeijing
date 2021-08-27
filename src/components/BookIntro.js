@@ -14,10 +14,9 @@ const BookIntro = () => (
         </Author>
         <Desc>
           《 Git 北京》是一本带初学者学会 git 版本控制工具和 github.com
-          社交化编程平台的书。用爱打造。这里免费开放的《搬进 Github》是《 Git
-          北京》的第一部分内容。
+          社交化编程平台的书。用爱打造。
         </Desc>
-        <Button href="http://haoqicat.com/gitbeijing">购买视频课程</Button>
+        <Button href="introduction.html">免费阅读</Button>
       </Right>
     </Container>
   </Section>
