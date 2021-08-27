@@ -14,22 +14,22 @@ title: 简单分支操作
 
 意思就是 master 分支上的代码是通过了测试的，可以随时放心的放到产品服务器上跑的代码。这样，如果想开发一个新功能，可以新开分支。想象一下历史线上有很多节，每个版本就是一节。一个分支相当于一跟竹子，一节节的往上长。
 
-![](https://img.haoqicat.com/2019031501.jpg)
+![](https://happypeter.github.io/images/2019031501.jpg)
 
 但是实际上在底层并不是每个分支都拷贝出自己独立的一条历史线。其实 master 本身只是一个指针，指向 master 分支上最新的一个版本。这样由于每个 commit 都可以找到自己的前一个 commit，那么这条历史线就可以确定了。
 
-![](https://img.haoqicat.com/2019031502.jpg)
+![](https://happypeter.github.io/images/2019031502.jpg)
 
 
 ## 创建新分支
 
 什么时候需要开一个新分支，这个后面讲各种工作流程的时候会介绍，今天先把基本操作学会。单击界面顶部的分支名，就可以显示所有分支。
 
-![](https://img.haoqicat.com/2019031503.jpg)
+![](https://happypeter.github.io/images/2019031503.jpg)
 
 如果想创建一个新分支，只需要点 `new branch` 按钮。
 
-![](https://img.haoqicat.com/2019031902.jpg)
+![](https://happypeter.github.io/images/2019031902.jpg)
 
 弹出的界面中可以看到
 
@@ -41,16 +41,16 @@ title: 简单分支操作
 
 或者说白了就是，新分支 idea 会跟 master 有完全一样的历史。
 
-![](https://img.haoqicat.com/2019031505.jpg)
+![](https://happypeter.github.io/images/2019031505.jpg)
 
 
 可以看到新的 idea 分支下，项目历史线果然跟 master 分支一模一样。但是，在底层这个的实现是非常巧妙的，就是又创建一个新的 idea 指针，跟 master 指针指向同一个版本，根本没有拷贝历史线。
 
-![](https://img.haoqicat.com/2019031506.jpg)
+![](https://happypeter.github.io/images/2019031506.jpg)
 
 如果现在我对项目做一下修改，然后 commit 了。那么移动的只是 idea 指针，master 不变。就成了这样：
 
-![](https://img.haoqicat.com/2019031507.jpg)
+![](https://happypeter.github.io/images/2019031507.jpg)
 
 现在 master 分支包含两个版本 C1 和 C2，idea 分支包含三个版本 C1，C2，C3 。
 
@@ -58,7 +58,7 @@ title: 简单分支操作
 
 这样，到远端仓库看一下，发现果然多了一个 idea 分支，搜索框中，不但能搜索已有分支，还能创建新分支，看到了吧，很多操作在本地客户端和 github.com 上都能进行。
 
-![](https://img.haoqicat.com/2019031508.jpg)
+![](https://happypeter.github.io/images/2019031508.jpg)
 
 这就是创建新分支的原理和具体操作方式了。
 
@@ -68,11 +68,11 @@ title: 简单分支操作
 
 点 current branches 标签，就可以显示所有分支，想要切换到哪个分支，点一下就切换过去了。时间长了你会觉得这个也不够快，还是纯键盘操作快。敲 Cmd-B 可以打开分支切换框，输入名字回车，就切换成功了。
 
-![](https://img.haoqicat.com/2019031509.jpg)
+![](https://happypeter.github.io/images/2019031509.jpg)
 
 每次切换分支的时候，其实也是底层有一个名为 HEAD 的指针在不断发生变化，比如当然 HEAD 指向 master ，那么 master 就是当前分支。
 
-![](https://img.haoqicat.com/2019031510.jpg)
+![](https://happypeter.github.io/images/2019031510.jpg)
 
 注意，每次切换分支，项目代码，术语叫工作树（ Working Tree ）是会随着变化的，在编辑器中看看就知道了。
 

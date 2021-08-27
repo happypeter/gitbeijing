@@ -4,13 +4,13 @@ title: GitHub Pages 搭建网站
 
 Github Pages 是 github 公司提供的免费的静态网站托管服务，用起来方便而且功能强大，不仅没有空间限制，还可以绑定自己的域名。很多非常著名的公司和项目也都用这种方式来搭建网站，如[微软](http://microsoft.github.io/)和 [twitter](http://twitter.github.io/) 的网站，还有 [谷歌的 Material Design 图标](http://google.github.io/material-design-icons/) 网站。
 
-![](https://img.haoqicat.com/2019031801.jpg)
+![](https://happypeter.github.io/images/2019031801.jpg)
 
 ## 分类和文档
 
 到 <https://pages.github.com/> 上，看到可以创建的网站有两类，一类是为自己或者是自己的组织创建站点，就是新建一个仓库，仓库的名字叫做，username.github.io 或者是 orgnizationname.github.io ，注意这里的 username 和 orgnizationname 要严格替换成你自己的用户名或者组织名，大小写也要区分，不然就会有问题。然后就往仓库里面放页面内容就行了。第二类是为项目创建网站，这个其实主要步骤都是一样的，只不过稍微比创建用户或组织网站复杂一点点。
 
-![](https://img.haoqicat.com/2019031802.jpg)
+![](https://happypeter.github.io/images/2019031802.jpg)
 
 
 下面我们来创建一个组织网站，详细步骤在 <https://pages.github.com/> 页面上是有的。
@@ -21,7 +21,7 @@ Github Pages 是 github 公司提供的免费的静态网站托管服务，用�
 
 首先创建一个组织，名为 gitbeijing 。
 
-![](https://img.haoqicat.com/2019031803.jpg)
+![](https://happypeter.github.io/images/2019031803.jpg)
 
 然后再该组织之下，创建一个名为 `gitbeijing.github.io` 的仓库。注意这个仓库的名字是有严格规定的，不要拼错。到新项目中，添加一个新文件，名字叫 index.html ，里面的添加自己想要在网站首页展示的内容。保存之后，过几分钟就可以到 gitbeijing.github.io 这个链接中看到页面了。
 
@@ -48,12 +48,12 @@ Jekyll 的好处是简单易用，同时是 Github Pages 服务直接支撑的�
 
 绑定域名的具体的操作步骤在[这里](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages/) 。我的 gitbeijing.com 这个域名是在 godaddy.com 上买的。 到 godaddy.com 上，添加 A Record 指向 185.199.111.153 ，注意这个 IP 可能会在未来发生变化，具体值请参考[官方文档](https://help.github.com/en/articles/troubleshooting-custom-domains#https-errors)。并且添加一个 CNAME ，以便让 www.gitbeijing.com 可以重定向到 gitbeijing.com 。
 
-![](https://img.haoqicat.com/2019031804.jpg)
+![](https://happypeter.github.io/images/2019031804.jpg)
 
 
 这样后面用 gitbeijing.com 或者 www.gitbeijing.com 就都可以指向 Github 了。但是 github pages 上面网站众多，如何能找到我的网站呢？
 
-![](https://img.haoqicat.com/2019031805.jpg)
+![](https://happypeter.github.io/images/2019031805.jpg)
 
 要到 [gitbeijing/gitbeijing.github.io](https://github.com/gitbeijing/gitbeijing.github.io)项目的 settings 页面，添加域名，并强制使用 HTTPS 。
 

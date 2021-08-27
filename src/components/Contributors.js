@@ -10,7 +10,7 @@ const Contributors = () => (
     </Divider>
     <Row>
       <Card>
-        <img src="https://img.haoqicat.com/2019031822.jpg" alt="happypeter" />
+        <img src="https://happypeter.github.io/images/2019031822.jpg" alt="happypeter" />
         <Text>
           <Name>happypeter</Name>
           <Job>
@@ -20,7 +20,7 @@ const Contributors = () => (
         </Text>
       </Card>
       <Card>
-        <img src="https://img.haoqicat.com/2019031824.jpg" alt="billie66" />
+        <img src="https://happypeter.github.io/images/2019031824.jpg" alt="billie66" />
         <Text>
           <Name>billie66</Name>
           <Job>
@@ -32,7 +32,7 @@ const Contributors = () => (
     </Row>
     <Picture>
       <img
-        src="https://img.haoqicat.com/2019031899.png"
+        src="https://happypeter.github.io/images/2019031899.png"
         height="102"
         width="250"
         alt="people"

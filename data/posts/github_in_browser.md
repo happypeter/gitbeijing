@@ -20,12 +20,12 @@ Github 上操作虽多，但是都是围绕一个个的项目展开的。但是�
 
 登录后再到首页，看到的就不是欢迎界面了，而是 dashboard （控制面板）。
 
-![](https://img.haoqicat.com/2018102401.jpg)
+![](https://happypeter.github.io/images/2018102401.jpg)
 
 这里可以看到一个非常醒目的新建仓库的按钮。猛戳一下，就到达了新建仓库页面。
 
 
-![](https://img.haoqicat.com/2018102402.jpg)
+![](https://happypeter.github.io/images/2018102402.jpg)
 
 注意要勾选 Initialize this repository with a README ，然后创建这个项目，这样新仓库中就会添加一个 README 文件了。这里也会看到在 Create Repository （创建仓库）按钮的上方还有两个选择框，一个是关于 .gitignore 的，另一个是关于 LICENSE 的。这两项如果选择了就是在项目中又多了两个文本文件，一个是 .gitignore 文件，另一个是 LICENSE 文件，暂时都不选就可以，回头需要了可以自己用编辑器新建。
 
@@ -35,22 +35,22 @@ Github 上操作虽多，但是都是围绕一个个的项目展开的。但是�
 
 创建项目完成后，就会跳转到 https://github.com/happypeter/toy-project 这个页面。这里的几乎每一个可以点的地方都会涉及到一个新概念，不用着急，咱们一点点的学。先来瞄准一个最为重要的，叫 commit 。
 
-![](https://img.haoqicat.com/2018102403.jpg)
+![](https://happypeter.github.io/images/2018102403.jpg)
 
 每次项目修改后，点击 commit 按钮就可以生成一个新的版本。commit 英文意思是”执行某个重要的操作“，例如 commit suicide，自我了断。但是在 git 这里，做动词讲的时候，意思是保存版本，当名词讲就是版本的意思。
 
 现在就来编辑一下。点击界面上 Create new file 按钮，来创建一个新文件。
 
-![](https://img.haoqicat.com/2018102404.jpg)
+![](https://happypeter.github.io/images/2018102404.jpg)
 
 新建一个文件叫 love.md。填写文件名和文件内容。
 
-![](https://img.haoqicat.com/2018102405.jpg)
+![](https://happypeter.github.io/images/2018102405.jpg)
 
 下面 Commit new file 部分填写的是“版本留言”（ Commit message ），说明一下为什么要做这次修改，一方面这是跟队友沟通的一种形式，另一方面如果项目版本多了，这个留言也相当于自己的笔记。上面填写一个一行的留言，下面还可以写详细留言，不过详细留言这一项是可选的。最后，点击 Commit new file ，也就是”把这个文件做到版本中“，按钮，一个新版本就做好了。
 
 
-![](https://img.haoqicat.com/2018102406.jpg)
+![](https://happypeter.github.io/images/2018102406.jpg)
 
 这样，一次项目编辑工作就结束了，不但是做了文件修改，而且也新添加了一个版本。
 
@@ -60,23 +60,23 @@ Github 上操作虽多，但是都是围绕一个个的项目展开的。但是�
 
 刚才的编辑操作进行完毕，自动跳转回项目页面之后，会发现原来 1 commit 的地方，现在已经变成 2 commits 。
 
-![](https://img.haoqicat.com/2018102407.jpg)
+![](https://happypeter.github.io/images/2018102407.jpg)
 
 2 commits 是个链接，点进入就进入了项目历史界面，看到的就是项目历史线了，可以看到历史线上已经有了两个版本。
 
-![](https://img.haoqicat.com/2018102408.jpg)
+![](https://happypeter.github.io/images/2018102408.jpg)
 
 点开历史线上的最新一个版本，可以看到这个版本的详细情况。一个版本中最核心的内容就是这 4 个 w 了，谁（ who ）在什么时间（ when ）改了那些内容（ what ），最后一个是为什么要改（ why ），这个是版本留言发挥的作用。
 
-![](https://img.haoqicat.com/2018102409.jpg)
+![](https://happypeter.github.io/images/2018102409.jpg)
 
 这里还可以看到当前版本号（ commit id ），同时还显示了它之前的一个 commit 的版本号，也就是它的“父版本”（ parent ）的版本号。
 
-![](https://img.haoqicat.com/2018102410.jpg)
+![](https://happypeter.github.io/images/2018102410.jpg)
 
 底层原理是这样，一个 commit 内部是保存了它的 parent 的版本号的，这样就把它和它爹连在了一起，爹还有自己的爹，就会形成下图的一条历史线。
 
-![](https://img.haoqicat.com/2018102411.jpg)
+![](https://happypeter.github.io/images/2018102411.jpg)
 
 有些版本工具是以 1，2，3… 作为版本号的，但是 Git 这里每个版本号都是 40 位十六进制数，当然有时候可以采用简写形式，取前几位来代表整个的版本号。这样的长长的版本号，表面看起来稍微麻烦一些，但是实际上妙用无穷，这里我们暂时不展开了。
 

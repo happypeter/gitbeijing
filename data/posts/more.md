@@ -10,19 +10,19 @@ Github 的前员工 Zach Holman 有两个重要的演讲，一个叫 Git and Git
 
 打开一个项目主页，当然会有很多文件和目录了，如何快速找到一个文件呢？可以敲 `t` 然后在打开的页面中就可以输入文件名进行筛选了，如下图：
 
-![](https://img.haoqicat.com/2019031810.jpg)
+![](https://happypeter.github.io/images/2019031810.jpg)
 
 
 ## 社交化
 
 Github 是一个[社交化编程平台](https://guides.github.com/activities/socialize/)，把传统的代码托管（ sourceforge 是当年的王者 ）跟社交网络（以 facebook 和 twitter 为代表）这两个概念结合起来，看似很雕虫小技，但是多年过来确实是引发了革命。Github 的诞生引发了一个编程的热潮，很多非专业的爱好者进入到了编程领域。这个可能跟 Github 本身的文化背景有关系，两位最重要的创始人，Tom 和 Chris 自己就是非计算机专业的编程爱好者。
 
-![](https://img.haoqicat.com/2019031811.jpg)
+![](https://happypeter.github.io/images/2019031811.jpg)
 
 
 Github 上每个人都有一个漂亮的个人主页，链接非常简短，例如我的是 github.com/happypeter 。上面能看到我的帅照片和我做过的所有项目代码，每一个人都是独立的人格，是一个独立的创作者。可以方便的分享项目给朋友们，并且邀请他们一起进来创作。 另外你也可以参与到别人的项目中，跟大家一起讨论，一起成长。可以去 Follow 一个大牛，也可以去 Watch 一个项目。如果想要给项目开发者一个鼓励，可以给项目一个 Star 。Star 数目现在对于大家是否选择使用这个项目已经变得非常重要了。
 
-![](https://img.haoqicat.com/2019031812.jpg)
+![](https://happypeter.github.io/images/2019031812.jpg)
 
 
 ## 人是一切的根本
@@ -31,17 +31,17 @@ Github 要解决的核心问题是人和人如何相处协作的问题，技术�
 
 第一位 Scott Schcon ， Github 的联合创始人，Peter 自己学 Git 的启蒙老师， Progit 第一版作者。网上 Google 一下，他有很多精致的演讲和教程在网上。
 
-![](https://img.haoqicat.com/2019031813.jpg)
+![](https://happypeter.github.io/images/2019031813.jpg)
 
 
 第二位 Zach Holman ，Github 的前员工，在他的[个人网站](http://zachholman.com/)上面有对 Github 哲学层面的很多文章和演讲。例如 How Github Wroks 和 Reputation: Kind of a big deal 等等。
 
-![](https://img.haoqicat.com/2019031814.jpg)
+![](https://happypeter.github.io/images/2019031814.jpg)
 
 
 第三组 Tom 和 Chris，Github 最早的两位创始人，也就是本书的封面人物。他们有大量的演讲在网上，充满颠覆性的思维。
 
-![](https://img.haoqicat.com/2019031815.jpg)
+![](https://happypeter.github.io/images/2019031815.jpg)
 
 
 ## 总结

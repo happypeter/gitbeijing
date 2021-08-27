@@ -10,12 +10,12 @@ Github 上的每个项目仓库，都有三套基础设置可供使用：一个�
 
 到项目主页，例如 http://github.com/happypeter/gitbeijing 页面上，如何来提一个 Issue 呢？
 
-![](https://img.haoqicat.com/2019031806.jpg)
+![](https://happypeter.github.io/images/2019031806.jpg)
 
 
 上面图中，点击项目主页右侧的 `Issues` 链接，打开的页面中的大大的绿按钮就是新建 Issue 按钮，点一下就可以看到下图所示的界面
 
-![](https://img.haoqicat.com/2019031807.jpg)
+![](https://happypeter.github.io/images/2019031807.jpg)
 
 如上图，是一个简单到不能再简单的页面，但是很多时候简单的确意味着更加的灵活和强大。添加标题，详细描述一下，要加图片？拖拽进来即可。需要丰富的格式？使用 Mardown 语法来写即可。
 
@@ -61,7 +61,7 @@ Markdown 是一种标记性语言，通过很简单的标注就可以表示出�
 
 发布后显示效果如下：
 
-![](https://img.haoqicat.com/2019031808.jpg)
+![](https://happypeter.github.io/images/2019031808.jpg)
 
 另外也可以插入图片和链接等其他格式。
 
@@ -75,7 +75,7 @@ Markdown 是一种标记性语言，通过很简单的标注就可以表示出�
 
 第三个，用版本留言关闭 Issue。如果有人给我的项目提了个 Bug，在一个编号为 20 的 Issue （后面简写为 Issue#20） 里。那我写几行代码修复这个 Bug 之后，在客户端作版本时，只要在版本留言里面写 `fix #20` 这样的字样，这个版本同步到 Github 上之后，这个 Issue#20 就自动关闭了。
 
-![](https://img.haoqicat.com/2019031809.jpg)
+![](https://happypeter.github.io/images/2019031809.jpg)
 
 第四个，如果我在当前 Issue#36 的评论框中写 `#34` 就可以自动链接到 Issue#34 了。同时 Issue#34 那边也会显示出 Issue#36 。这样就把两个 issue 中的讨论就关联了起来。
 

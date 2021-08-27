@@ -10,7 +10,7 @@ const Author = () => (
     </div>
     <div className="name-card-wrapper">
       <div className="name-card">
-        <img src="https://img.haoqicat.com/2019031822.jpg" alt="peter" />
+        <img src="https://happypeter.github.io/images/2019031822.jpg" alt="peter" />
         <div className="text">
           <div className="name">happypeter</div>
           <div className="job-title">

@@ -5,7 +5,7 @@ const BookIntro = () => (
   <Section>
     <Container>
       <Left>
-        <Image alt="git" src="https://img.haoqicat.com/2019031834.jpg" />
+        <Image alt="git" src="https://happypeter.github.io/images/2019031834.jpg" />
       </Left>
       <Right>
         <Title>搬进 Github</Title>

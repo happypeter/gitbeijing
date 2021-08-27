@@ -21,29 +21,29 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 第一步，创建新分支，用来开发这个新功能。如下图所示
 
-![](https://img.haoqicat.com/2019031601.jpg)
+![](https://happypeter.github.io/images/2019031601.jpg)
 
 第二步，不断实现功能，做成一个个新版本。
 
-![](https://img.haoqicat.com/2019031602.jpg)
+![](https://happypeter.github.io/images/2019031602.jpg)
 
 
 第三步，发起”拉取请求“（ Pull Request ），后面简称 PR 吧。
 
-![](https://img.haoqicat.com/2019031603.jpg)
+![](https://happypeter.github.io/images/2019031603.jpg)
 
 
 第四步，大家讨论。这是一个代码审核的过程。
 
-![](https://img.haoqicat.com/2019031604.jpg)
+![](https://happypeter.github.io/images/2019031604.jpg)
 
 第五步，部署代码。
 
-![](https://img.haoqicat.com/2019031604.jpg)
+![](https://happypeter.github.io/images/2019031604.jpg)
 
 第六步，把分支的内容合并到 master 。
 
-![](https://img.haoqicat.com/2019031606.jpg)
+![](https://happypeter.github.io/images/2019031606.jpg)
 
 这就是整个 Github Flow 的几个步骤了。
 
@@ -57,7 +57,7 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 首先到项目页面，点击 Settings 一项，可以看到 collaborators 选项，输入框中输入 `bi` 就可以自动补齐出 `billie66` 了
 
-![](https://img.haoqicat.com/2019031607.jpg)
+![](https://happypeter.github.io/images/2019031607.jpg)
 
 回车选中，然后点 `Add collaborator` 按钮，这样就完成了。
 
@@ -77,7 +77,7 @@ Github 多年来总结出来一套自己的团队协作流程，简单而且强�
 
 @billie66 看到这个 PR 之后，就会发表她的意见了。如果我看到之后觉得有道理，代码需要调整，那我现在是不是要撤销这 PR 重新发呢？不用。我只需要继续在 `describe-project` 分支上改代码然后再同步上来。
 
-![](https://img.haoqicat.com/2019031608.jpg)
+![](https://happypeter.github.io/images/2019031608.jpg)
 
 Pull Request 讨论不断继续，会形成一条由评论和代码穿插而成的线。最后达成一致，我或者 @billie 其中之一可以点一下上面的大大的 `Merge Pull Request` （ 融合拉取请求 ）的按钮，这样话题分支上的代码就合并到 master 之上了。接下来 `describe-project` 这个话题分支也就可以删掉，然后关闭这个 PR 了。
 
@@ -87,7 +87,7 @@ Pull Request 讨论不断继续，会形成一条由评论和代码穿插而成�
 
 网页界面中，找到我要修改的文件，点击 `edit`，修改一下文件内容，然后在下面的界面中，可以直接填写一个 Topic 分支名，创建这个分支，并 commit 到这个分支上发 PR 了。
 
-![](https://img.haoqicat.com/2019031609.jpg)
+![](https://happypeter.github.io/images/2019031609.jpg)
 
 如果只是一个小改动，即使是对于老手，切换到编辑器和客户端，跑一遍整个 PR 的流程，也会觉得挺麻烦的。快速 PR 方法真的是非常方便。
 
